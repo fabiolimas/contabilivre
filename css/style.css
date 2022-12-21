@@ -27,6 +27,7 @@ header, .navbar{
 }
 nav.navbar.navbar-expand.pagamentos {
     background: #fff;
+    box-shadow: none;
 }
 .gray{
     color: #868E96;
@@ -762,7 +763,7 @@ padding: 126px 19px 32px;
 
 position: absolute;
 width: 248px;
-height: 1166px;
+
 left: 0px;
 top: 0px;
 
@@ -969,13 +970,30 @@ a.btn.btn-danger.remover i {
     font-size: 47px;
     color: #4AA3E5;
 }
+.col-md-2.minbusca input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 180px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 .col-md-2.minbusca {
     position: absolute;
     top: 13px;
-    right: 15px;
+    right: 35px;
 }
-.minbusca i, .busca i{
+.minbusca i, .busca i {
     color: #4AA3E5;
+    margin-top: 18px !important;
 }
 .col-md-10.busca {
     top: 13px;
@@ -1138,14 +1156,27 @@ p.titulosecao {
     margin-left: 171px;
 }
 .plan1 {
-    background: #fff;
+    /* background: #fff; */
+    /* height: auto; */
+    /* width: 73%; */
+    /* margin-left: 175px !important; */
+    /* border-radius: 8px; */
+    /* position: relative; */
+    /* margin-top: 139px !important; */
+    /* box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px;
+    gap: 24px;
+    position: absolute;
+    /* width: 1128px; */
     height: auto;
-    width: 73%;
-    margin-left: 274px !important;
+    left: 280px;
+    top: 232px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     border-radius: 8px;
-    position: relative;
-    margin-top: 139px !important;
-    box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 }
 span.ano.gray {
     font-size: 14px;
@@ -1252,8 +1283,8 @@ footer{
 
 }
 .col-md-7.indice {
-    margin-left: 251px;
-    margin-top: -10px;
+    margin-left: 169px;
+    margin-top: 115px;
     margin-bottom: 10px;
 }
 .indice a{

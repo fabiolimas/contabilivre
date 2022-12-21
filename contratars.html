@@ -44,11 +44,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav position-relative">
-                        <div class="col-md-10 busca">
-                            <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
-                                class="form-control" placeholder="Pesquisar">
-                        </div>
+                    <div class="navbar-nav">
                         <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
                         <div class="dropdown m-3">
 
@@ -70,6 +66,8 @@
                         <div class="ticket m-2">
                             <a href="#"><img src="img/iconticket.png" alt="Ticket"></a>
                         </div>
+                        <div class="help"><i class="fa fa-question-circle"></i></div>
+                        
 
                     </div>
                 </div>
@@ -77,19 +75,20 @@
             </nav>
         </div>
     </header>
+    <div class="container">
     <!--Menu lateral-->
     <aside>
-        <nav class="collapse navbar-collapse col-md-2 d-md-block bg-light mt-5 sidebar" id="navbar-links">
+        <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link active" href="index.html">
 
-                            <i class="fa fa-home"></i>Início
+                            <i class="fa fa-home"></i>Início <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="servicosa.html">
+                        <a class="nav-link" href="servicosa.html">
 
                             <i class="fa fa-folder"></i>Serviços avulsos
                         </a>
@@ -139,49 +138,49 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="declaracoes.html">
 
                             <i class="fa fa-edit"></i>Declarações
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="movimentacoes.html">
 
                             <i class="fa fa-usd"></i> Movimentações
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="notas-fiscais.html">
 
                             <i class="fa fa-file-alt"></i> Notas fiscais
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="recibos.html">
 
                             <i class="fa fa-file-invoice-dollar"></i></i>Recibos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="relatorios-contabies.html">
 
                             <i class="fa fa-clipboard-list"></i>Relatórios contábeis
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="distribuicao-de-lucros.html">
 
                             <i class="fa fa-percent"></i>Distribuição de lucros
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="dmed.html">
 
                             <i class="fa fa-check-square"></i> DMED
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="dimob.html">
 
                             <i class="fa fa-building"></i> DIMOB
                         </a>
@@ -199,11 +198,13 @@
         <!--planos-->
 
         <div class="col col-md-12">
-            <main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4 position-relative">
-                <p><i class="fa fa-chevron-left"></i><b>Contratar serviços</b></p>
+            <main class="col-md-9 titlesection">
+                <p><a href="servicosa.html"><i class="fa fa-chevron-left"></i></a><b>Contratar serviços</b></p>
 
-
-
+                <div class="col-md-2 minbusca">
+                    <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa" class="form-control" placeholder="Pesquisar">
+                </div>
+                
             </main>
 
             <div class="row">
@@ -215,9 +216,9 @@
         </div>
         <div class="row">
             <div class="col col-md-12">
-                <div class="plan1 mb-5">
+                <div class="col-md-9 plan1 mb-5" style="height: 843px;">
                     <div class="row">
-                        <div class="col col-md-7">
+                        <div class="col col-md-7 p-4">
                             <p><b>
                                     Resumo
                                 </b></p>
@@ -229,8 +230,8 @@
                                         <td>Total</td>
                                     </tr>
                                     <tr>
-                                        <td>Nome do serviço a ser contratado</td>
-                                        <td> R$0,00</td>
+                                        <td><b>Nome do serviço a ser contratado</b></td>
+                                        <td><b> R$0,00</b> </td>
                                     </tr>
                                 </table>
                              
@@ -513,8 +514,8 @@
                 </div>
             </div>
         </div>
-        <!--Rodapé-->
-        <footer>
+        <!--Rodapé
+        <footer class="position-absolute bottom-0 start-50 translate-middle-x">
             <div class="row">
                 <div class="col col-md-12">
                     <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
@@ -529,7 +530,7 @@
 
             </div>
 
-        </footer>
+        </footer>-->
 </body>
 <!--Graficos Chartjs-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"
