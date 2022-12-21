@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Endereço Fiscal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--scripts-->
+    <!--Fulcallendar-->
+    <link rel="stylesheet" href="js/fullcalendar-5.11.3/lib/main.css">
+
+    <script src="js/fullcalendar-5.11.3/lib/main.js"></script>
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/cd1b9a04c6.js" crossorigin="anonymous"></script>
+    <!--progressbar-->
+    <script src="js/progressbar.min.js"></script>
+    <!--parallax-->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body class="position-relative">
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    area-controls="#navbar-links" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav position-relative">
+                        <div class="col-md-10 busca">
+                            <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                                class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
+                        <div class="dropdown m-3">
+
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="thumb">
+                                    <img src="img/thumb.png" alt="Usuario thumb">
+                                </div> Nome do Cliente
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><i class="fa fa-user-check"></i>Editar perfil</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-check-square"></i>Lembretes</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-file-invoice-dollar"></i>
+                                    Financeiro</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-gift"></i>Indique e ganhe</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Sair</a>
+                            </div>
+                        </div>
+                        <div class="ticket m-2">
+                            <a href="#"><img src="img/iconticket.png" alt="Ticket"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!--Menu lateral-->
+    <aside>
+        <nav class="collapse navbar-collapse col-md-2 d-md-block bg-light mt-5 sidebar" id="navbar-links">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+
+                            <i class="fa fa-home"></i>Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="servicosa.html">
+
+                            <i class="fa fa-folder"></i>Serviços avulsos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="endereco-fiscal.html">
+
+                            <i class="fa fa-map-marker-alt"></i> Endereço fiscal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dados-da-empresa.html">
+
+                            <i class="fa fa-store"></i>Dados da empresa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus-clientes.html">
+
+                            <i class="fa fa-user-friends"></i>Meus clientes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="central-de-documentos.html">
+
+                            <i class="fa fa-clipboard-list"></i>Central de documentos
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meus-colaboradores.html">
+
+                            <i class="fa fa-user-tie"></i> Meus colaboradores
+                        </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="socios.html">
+
+                            <i class="fa fa-id-card"></i>Sócios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="impostos.html">
+
+                            <i class="fa fa-file-invoice-dollar"></i>Impostos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-edit"></i>Declarações
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-usd"></i> Movimentações
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-file-alt"></i> Notas fiscais
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-file-invoice-dollar"></i></i>Recibos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-clipboard-list"></i>Relatórios contábeis
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-percent"></i>Distribuição de lucros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-check-square"></i> DMED
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+
+                            <i class="fa fa-building"></i> DIMOB
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+        </nav>
+
+    </aside>
+    <div class="row">
+        <!--planos-->
+
+        <div class="col col-md-12">
+            <main class="col-md-9 ml-sm-auto col-lg-9 pt-3 px-4 position-relative">
+                <p><i class="far fa-star m-2"></i><b>Endereço fiscal</b></p>
+
+
+                <div class="col-md-2 minbusca">
+                    <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                        class="form-control" placeholder="Pesquisar">
+                </div>
+            </main>
+
+            <div class="row">
+                <div class="col-md-7 indice">
+                    <a href="endereco-fiscal.html">Endereço Fiscal</a> <i
+                        class="fa fa-chevron-right"></i>Correspondência
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col col-md-2 submenu">
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="endereco-fiscal.html">
+
+                            Correspondênicas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sala-de-reuniao.html">
+
+                            Sala de Reunião
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col col-md-10 correspondencia">
+                <div class="plan1 mb-5 mt-4 table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Arquivo</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Ação</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider text-center">
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='rcorreio'>Enviado por correio</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='remail'>Enviado por E-mail</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='rlocal'>Retirado no local</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='rcorreio'>Enviado por correio</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='rlocal'>Retirado no local</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do arquivo</td>
+                                <td>00/00/0000</td>
+                                <td><span class='remail'>Enviado por E-mail</span></td>
+                                <td><a href="altera-situacao.html" data-bs-toggle="modal" data-bs-target="#opcoes"
+                                        class="btn btn-success">Opções</a></td>
+                            </tr>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <!--Modal Opções-->
+        <div class="modal fade" tabindex="-1" id="opcoes" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Alterar situação</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="row inputsr">
+                                <div class="col col-md3">
+                                    <div class="titleinput"><b>Encaminhar foto</b></div>
+                                    <input type="radio" value="" name="envio" id="encaminharfoto"> <label
+                                        for="encaminharfoto" class="gray">Iremos abrir a correspondência e encaminhar
+                                        para você uma foto do conteúdo da mesma.</label>
+
+                                </div>
+                                <div class="col col-md3">
+                                    <div class="titleinput"><b>Receber pelo correio</b></div>
+                                    <input type="radio" value="" name="envio" id="recebcorreio"> <label
+                                        for="recebcorreio" class="gray"><b>Atenção:</b> Valores pagos em taxas de
+                                        Correio serão inseridos em sua próxima mensalidade.</label>
+
+                                </div>
+                                <div class="col col-md3">
+                                    <div class="titleinput"><b>Retirada no local</b></div>
+                                    <input type="radio" value="" name="envio" id="retiralocal"> <label for="retiralocal"
+                                        class="gray">Verifique o local de retirada</label>
+
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <p><b>Dados para o envio</b></p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mt-2">
+                                    <input type="text" class="form-control" placeholder="CEP" name="cep">
+                                </div>
+                                <div class="col-md-6 mt-2">
+                                    <input type="text" class="form-control" placeholder="Endereço" name="endereco">
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <input type="text" class="form-control" placeholder="Número" name="numero">
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <input type="text" class="form-control" placeholder="Bairro" name="bairro">
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <input type="text" class="form-control" placeholder="Cidade" name="cidade">
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <select name="estado" id="" class="form-control">
+                                        <option value="">Estado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder="Complemento"
+                                        name="complemento">
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <a href="#" ata-bs-dismiss="modal" aria-label="Close" class="ms-3">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Modal avaliaçao 1-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                            melhor.
+                        </p>
+                        <img src="img/avaliações.png" alt="Avaliacoes">
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Rodapé-->
+        <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+            <div class="row">
+                <div class="col col-md-12">
+                    <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+                </div>
+                <div class="col col-md-2 btns">
+                    <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
+                        data-bs-target="#avaliacao1">Avaliar Serviço</a>
+                    <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+                </div>
+
+
+
+            </div>
+
+        </footer>
+</body>
+<!--Graficos Chartjs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"
+    integrity="sha512-5u+0INguQJub0j7cBrQYM5g+X8JCvYS2vdl1bRy8LwfwN6Y6tBjG0HhXsWwy+/y5k1kMDQQapFUqDE86ddQ4lQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        const ctx = document.getElementById('barChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                datasets: [{
+                    label: 'Despesas',
+                    label: 'Receitas',
+                    data: [12, 19, 3, 5, 2, 3, 14, 9, 71, 5, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 19, 64, 0.2)',
+                        'rgba(255, 12, 634, 0.2)',
+                        'rgba(255, 159, 564, 0.2)',
+                        'rgba(25, 99, 164, 0.2)',
+                        'rgba(25, 159, 64, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 19, 64, 0.2)',
+                        'rgba(255, 12, 634, 0.2)',
+                        'rgba(255, 159, 564, 0.2)',
+                        'rgba(25, 99, 164, 0.2)',
+                        'rgba(25, 159, 64, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+
+    });
+    /*pizza chart*/
+
+    //-------------
+    //- DONUT CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var donutChartCanvas = $('#fatChart').get(0).getContext('2d')
+    var donutData = {
+        labels: [
+            'Disponivel Para Faturamento',
+            'Valor Faturado',
+
+        ],
+        datasets: [
+            {
+                data: [80000, 1000],
+                backgroundColor: ['#3B00ED', '#FF9800',],
+            }
+        ]
+    }
+    var donutOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(donutChartCanvas, {
+        type: 'doughnut',
+        data: donutData,
+        options: donutOptions
+    })
+
+    //-------------
+    //- PIE CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+    var pieData = donutData;
+    var pieOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(pieChartCanvas, {
+        type: 'pie',
+        data: pieData,
+        options: pieOptions
+    })
+
+
+
+
+
+</script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+                left: 'prev',
+                center: 'title',
+                right: 'next'
+            },
+            initialDate: '2022-09-12',
+            navLinks: true, // can click day/week names to navigate views
+            selectable: true,
+            selectMirror: true,
+            select: function (arg) {
+                var title = prompt('Event Title:');
+                if (title) {
+                    calendar.addEvent({
+                        title: title,
+                        start: arg.start,
+                        end: arg.end,
+                        allDay: arg.allDay
+                    })
+                }
+                calendar.unselect()
+            },
+            eventClick: function (arg) {
+                if (confirm('Are you sure you want to delete this event?')) {
+                    arg.event.remove()
+                }
+            },
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: '2020-09-01'
+                },
+                {
+                    title: 'Long Event',
+                    start: '2020-09-07',
+                    end: '2020-09-10'
+                },
+                {
+                    groupId: 999,
+                    title: 'Repeating Event',
+                    start: '2020-09-09T16:00:00'
+                },
+                {
+                    groupId: 999,
+                    title: 'Repeating Event',
+                    start: '2020-09-16T16:00:00'
+                },
+                {
+                    title: 'Conference',
+                    start: '2020-09-11',
+                    end: '2020-09-13'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2020-09-12T10:30:00',
+                    end: '2020-09-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2020-09-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2020-09-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2020-09-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2020-09-12T20:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2020-09-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2020-09-28'
+                }
+            ]
+        });
+
+        calendar.render();
+    });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
