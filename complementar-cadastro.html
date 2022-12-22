@@ -44,11 +44,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav position-relative">
-                        <div class="col-md-10 busca">
-                            <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
-                                class="form-control" placeholder="Pesquisar">
-                        </div>
+                    <div class="navbar-nav">
                         <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
                         <div class="dropdown m-3">
 
@@ -59,17 +55,19 @@
                                 </div> Nome do Cliente
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#"><i class="fa fa-user-check"></i>Editar perfil</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-check-square"></i>Lembretes</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-file-invoice-dollar"></i>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/financeiro.png">
                                     Financeiro</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-gift"></i>Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i>Sair</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
                             </div>
                         </div>
                         <div class="ticket m-2">
                             <a href="#"><img src="img/iconticket.png" alt="Ticket"></a>
                         </div>
+                        <div class="help"><img src="img/help.png" alt=""></div>
+                        
 
                     </div>
                 </div>
@@ -77,112 +75,114 @@
             </nav>
         </div>
     </header>
+    <div class="container">
     <!--Menu lateral-->
     <aside>
-        <nav class="collapse navbar-collapse col-md-2 d-md-block bg-light mt-5 sidebar" id="navbar-links">
+        <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link active" href="index.html">
 
-                            <i class="fa fa-home"></i>Início
+                           <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="servicosa.html">
+                        <a class="nav-link" href="servicosa.html">
 
-                            <i class="fa fa-folder"></i>Serviços avulsos
+                            <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="endereco-fiscal.html">
 
-                            <i class="fa fa-map-marker-alt"></i> Endereço fiscal
+                            <img src="img/menu/icons/24/endereco.png"> Endereço fiscal
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="dados-da-empresa.html">
 
-                            <i class="fa fa-store"></i>Dados da empresa
+                            <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="meus-clientes.html">
 
-                            <i class="fa fa-user-friends"></i>Meus clientes
+                            <img src="img/menu/icons/24/clientes.png">Meus clientes
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="central-de-documentos.html">
 
-                            <i class="fa fa-clipboard-list"></i>Central de documentos
+                            <img src="img/menu/icons/24/centraldoc.png">Central de documentos
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="meus-colaboradores.html">
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="meus-colaboradores.html">
 
-                            <i class="fa fa-user-tie"></i> Meus colaboradores
+                            <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
                         </a>
                     </li>
-
+                   
                     <li class="nav-item">
-                        <a class="nav-link active" href="socios.html">
+                        <a class="nav-link" href="socios.html">
 
-                            <i class="fa fa-id-card"></i>Sócios
+                            <img src="img/menu/icons/24/socios.png">Sócios
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="impostos.html">
 
-                            <i class="fa fa-file-invoice-dollar"></i>Impostos
+                            <img src="img/menu/icons/24/impostos.png">Impostos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="declaracoes.html">
 
-                            <i class="fa fa-edit"></i>Declarações
+                            <img src="img/menu/icons/24/declaracoes.png">Declarações
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="movimentacoes.html">
 
-                            <i class="fa fa-usd"></i> Movimentações
+                            <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="notas-fiscais.html">
 
-                            <i class="fa fa-file-alt"></i> Notas fiscais
+                            <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="recibos.html">
 
-                            <i class="fa fa-file-invoice-dollar"></i></i>Recibos
+                            <img src="img/menu/icons/24/recibos.png">Recibos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="relatorios-contabies.html">
 
-                            <i class="fa fa-clipboard-list"></i>Relatórios contábeis
+                            <img src="img/menu/icons/24/relatoriosc.png">Relatórios contábeis
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="distribuicao-de-lucros.html">
 
-                            <i class="fa fa-percent"></i>Distribuição de lucros
+                            <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="dmed.html">
 
-                            <i class="fa fa-check-square"></i> DMED
+                            <img src="img/menu/icons/24/dmed.png"> DMED
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="dimob.html">
 
-                            <i class="fa fa-building"></i> DIMOB
+                            <img src="img/menu/icons/24/dimod.png"> DIMOB
                         </a>
                     </li>
 

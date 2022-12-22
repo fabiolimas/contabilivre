@@ -1,5 +1,6 @@
 /*Gerais*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body{
     font-family:'Poppins', sans-serif;
     background: #f2fcf3;
@@ -9,10 +10,18 @@ body{
 .row{
     margin: 0;
 }
+.dropdown-menu.show {
+    width: -webkit-fill-available;
+}
 
-p, li{
-    color:#444;
-    font-size: 14px;
+p, li {
+    color: #868E96;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter';
+}
+li.nav-item {
+    padding: 7px;
 }
 
 /*barra de navegação*/
@@ -109,7 +118,7 @@ box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
 border-radius: 8px;
 }
 .col.col-md-2.submenu {
-    margin-left: 209px;
+    margin-left: 143px;
     position: absolute;
     margin-top: 36px;
     z-index: 2;
@@ -721,10 +730,28 @@ div#about-area {
 a.dropdown-item {
     border-bottom: 1px solid rgba(74, 163, 229, 0.2);
     color: #868E96;
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px;
-    width: 141px;
+    width:inherit;
     margin-left: 6px;
+}
+a.dropdown-item img {
+    margin-right: 5px;
+    margin-left: -11px;
+}
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 132px;
+    /* height: 40px; */
+    background: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-size: 12px;
 }
 div#perfilPessoal p {
     font-size: 12px;
@@ -1092,6 +1119,11 @@ flex-grow: 0;
     margin-left: 242px !important;
     margin-bottom: 106px !important;
 }
+.tabelasect {
+    background: #fff;
+    border-radius: 7px;
+    margin-left: 161px;
+}
 .titlesection{
     display: flex;
 flex-direction: row;
@@ -1267,6 +1299,14 @@ nav.col-md-2.d-md-block.bg-light.mt-5.sidebar {
 .card-body {
     border: 1px solid #E9ECEF;
 }
+li.nav-item img {
+   
+    left: 20.83%;
+    right: 20.83%;
+    top: 12.5%;
+    bottom: 12.5%;
+    margin: 3px;
+}
 footer{
     display: flex;
     flex-direction: row;
@@ -1279,7 +1319,7 @@ footer{
     
     bottom: 0px;
     background: linear-gradient(260.35deg, #74C83C -6.12%, #9AFF56 102.54%);
-    margin-top: 230px;
+    margin-top: 277px;
 
 }
 .col-md-7.indice {
