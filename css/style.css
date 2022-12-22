@@ -944,12 +944,55 @@ border-radius: 8px;
 
 
 .btarquivoslista {
-    margin-top: -43px;
-    font-size: 15px;
-    width: 29%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    width: 129px;
+    height: 30px;
+    background: #4AA3E5;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-size: 12px;
+    margin-left: 38px;
+    position: absolute;
+    right: 71px;
+    top: 27px;
+}
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-top: -63px;
+    margin-left: 58px;
+}
+.searchbar .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 99px;
+    height: 50px;
+    background: #4AA3E5;
+    border-radius: 4px;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    border: none;
 }
 
-
+.visualizacao .btn {
+    position: absolute;
+    top: 2px;
+    right: -220px;
+}
 .btarquivos {
     
     display: flex;
@@ -972,6 +1015,7 @@ border-radius: 8px;
     flex: none;
     order: 0;
     flex-grow: 0;
+    font-size: 12px;
     
    
 }
@@ -995,18 +1039,18 @@ gap: 32px;
 }
 .visualizacao {
     position: absolute;
-    right: -560px;
-    top: 6px;
+    right: -373px;
+    top: -10px;
 }
 i.fa.fa-search.position-absolute.m-2.inputbusca {
     right: 11px;
-    top: 3px;
+    top: 13px;
     color: #4aa3e5;
 }
 
 i.fas.fa-calendar.position-absolute.m-2.inputdata1,i.fas.fa-calendar.position-absolute.m-2.inputdata2 {
     color: #4aa3e5;
-    top: 3px;
+    top: 11px;
 }
 .col-md-2.datain.position-relative .form-control, .col-md-2.datafi.position-relative .form-control {
     padding-left: 37px;
@@ -1028,7 +1072,13 @@ i.fas.fa-calendar.position-absolute.m-2.inputdata1,i.fas.fa-calendar.position-ab
     height: 84px;
     align-content: center;
     align-items: baseline;
-    padding: 21px;
+    position: relative;
+    
+}
+.lista img {
+    position: absolute;
+    left: 13px;
+    top: 22px;
 }
 
 
@@ -1043,6 +1093,10 @@ a.btn.btn-danger.remover {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    margin-left: -16px;
+    position: absolute;
+    right: 22px;
+    top: 28px;
 }
 table.table.resumo.dependentes {
  
@@ -1067,8 +1121,11 @@ a.btn.btn-danger.remover i {
     cursor: pointer;
 }
 .lista p {
-    width: 229px;
-    font-size: 13px;
+    width: 285px;
+    font-size: 14px;
+    margin-top: 34px;
+    margin-left: -150px;
+    margin-right: 95px;
 }
 .arquivos i {
     font-size: 47px;
