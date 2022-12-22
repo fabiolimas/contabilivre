@@ -120,14 +120,16 @@ border-radius: 8px;
 .col.col-md-2.submenu {
     margin-left: 143px;
     position: absolute;
-    margin-top: 36px;
+    margin-top: 60px;
     z-index: 2;
     border-left: 2px solid #a7ef4b;
     width: fit-content;
 }
 p.titulosecaos {
-    margin-left: 427px;
+    margin-left: 309px;
     width: max-content;
+    font-size: 15px;
+    margin-bottom: 24px;
 }
 .row.table-responsive {
     border-radius: 8px;
@@ -1119,6 +1121,20 @@ flex-grow: 0;
     margin-left: 242px !important;
     margin-bottom: 106px !important;
 }
+.titulosecao {
+    width: 151px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #343A40;
+    left: 440px;
+    margin-left: 334px;
+    font-size: 16px;
+    margin-top: 10px;
+}
 .tabelasect {
     background: #fff;
     border-radius: 7px;
@@ -1175,13 +1191,16 @@ p.titulosecao {
     margin-left: -128px;
     width: max-content;
 }
+.titulosecao p {
+    font-size: 16px;
+}
 .reshorario {
-    margin-right: 39px;
+    margin-right: -87px;
     margin-top: -12px;
     font-size: 14px;
     float: right;
     width: auto;
-    background:#004578;
+    background: #4AA3E5;
     border: none;
 }
 .col.col-md-10.correspondencia,.dados-empresa, .addColaborador, .holeritediv, .addSocio {
