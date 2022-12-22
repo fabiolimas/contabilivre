@@ -854,9 +854,34 @@ top: 0px;
 background: #FFFFFF;
    
 }
+.col.col-md-10.addEvento {
+    margin-left: 285px;
+    width: 948px;
+}
+.row.formempresa .btn {
+    margin-right: 10px;
+}
+.colaboradoresf {
+    /* background: #fff; */
+    /* border-radius: 7px; */
+    /* margin-left: 161px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 32px;
+    gap: 32px;
+    position: absolute;
+    width: 847px;
+    /* height: 656px; */
+    left: 467px;
+    top: 275px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 24px;
+}
 
 .col.col-md-2.submenu.u {
-    margin-left: 221px;
+    margin-left: 247px;
 }
 .sidebar-sticky {
     background: #fff;
