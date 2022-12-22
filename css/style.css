@@ -1194,6 +1194,33 @@ p.titulosecao {
 .titulosecao p {
     font-size: 16px;
 }
+a.btn.btn-primary {
+    background: #4aa3e5;
+    border: none;
+}
+.titulo1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Cinza / 800 */
+
+color: #495057;
+}
+.reservap {
+    width: 384px;
+    height: 96px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #343A40;
+}
 .reshorario {
     margin-right: -87px;
     margin-top: -12px;
@@ -1202,6 +1229,10 @@ p.titulosecao {
     width: auto;
     background: #4AA3E5;
     border: none;
+}
+a.btn.btn-success.btnres {
+    /* float: right; */
+    margin-left: 297px;
 }
 .col.col-md-10.correspondencia,.dados-empresa, .addColaborador, .holeritediv, .addSocio {
     margin-left: 171px;
