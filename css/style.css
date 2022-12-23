@@ -142,10 +142,34 @@ p.titulosecaos {
 padding: 1rem .8rem;
 color: #fff;
 }
+.eventosdrop a {
+    margin-left: -14px;
+}
 .dropdown.addevento {
     float: right;
-    right: 19px;
+    right: -97px;
+    top: -19px;
     
+}
+
+.dropdown.addrecisao {
+    float: right;
+    top: -19px;
+    color: #fff;
+    
+}
+a.btn.btn-primary.btaddrecisao {
+    color: #fff;
+    right: -97px;
+    float: right;
+    position: absolute;
+    width: max-content;
+}
+.col.col-md-10.recisao {
+    margin-left: 327px;
+    margin-top: 51px;
+   
+    width: 774px;
 }
 button.btn.btn-light {
     border-color: #74C83C;
@@ -166,9 +190,14 @@ button.btn.btn-light:hover{
     color: #fff;
     background:#74C83C ;
 }
-.dropdown.addevento .btn {
+.dropdown.addevento .btn, .dropdown.detalhesrecisao .btn{
     color: #fff;
     background: #4aa3e5;
+}
+.col-md-11.recisaos.mb-5.mt-3 {
+    margin-left: 460px;
+    width: 800px;
+    background: #fff;
 }
 p.titulosecaoce {
     margin-bottom: -52px;
@@ -871,7 +900,7 @@ background: #FFFFFF;
     padding: 32px;
     gap: 32px;
     position: absolute;
-    width: 847px;
+    width: 800px;
     /* height: 656px; */
     left: 467px;
     top: 275px;
@@ -1278,7 +1307,7 @@ flex-grow: 0;
     margin-left: 242px !important;
     margin-bottom: 106px !important;
 }
-.titulosecao {
+.titulosecao, .titulosecaod {
     width: 191px;
     height: 24px;
     font-family: 'Poppins';
@@ -1286,7 +1315,7 @@ flex-grow: 0;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #343A40;
+    color: #343A40 !important;
     left: 440px;
     margin-left: 334px;
     font-size: 16px;
@@ -1296,6 +1325,7 @@ flex-grow: 0;
     background: #fff;
     border-radius: 7px;
     margin-left: 161px;
+    width:833px;
 }
 .titlesection{
     display: flex;
@@ -1345,10 +1375,15 @@ border-radius: 50px 24px 0px 50px;
 }
 p.titulosecao {
     float: left;
+    /*margin-left: -128px;*/
+    width: max-content;
+}
+.titulosecaod {
+    float: left;
     margin-left: -128px;
     width: max-content;
 }
-.titulosecao p {
+.titulosecao p, p.titulosecaod {
     font-size: 16px;
 }
 a.btn.btn-primary {
