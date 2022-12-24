@@ -1711,7 +1711,7 @@ button.navbar-toggler.collapsed {
     .titlesection {
      
         left: 13px;
-        width: 332px;
+        width: 405px;
     }
     .col-md-2.minbusca input {
        
@@ -1726,6 +1726,10 @@ button.navbar-toggler.collapsed {
     .col.col-md-8.side {
         
          margin-left: 0px;
+    }
+    .row.btnscliente .btn {
+        width: 332px;
+        margin-top: 5px;
     }
     .card.card-primary {
         margin-left: 0px; 
@@ -1814,7 +1818,7 @@ button.navbar-toggler.collapsed {
         text-align: center;
         z-index: 0;
         width: 100%;
-        margin-top: 22px;
+        margin-top: 62px;
      
     }
     .titulosecao, .titulosecaod {
@@ -1832,8 +1836,21 @@ button.navbar-toggler.collapsed {
         margin-left: 20px;
         
     }
+    button.btn.addnovo {
+        width: max-content;
+        right: -152px;
+    }
+    .col.col-md-3.ms-2.mt-2.lista .gray {
+        display: none;
+    }
+    .col.col-md-3.ms-2.mt-2.lista p {
+        visibility: hidden;
+    }
+    .searchbar {
+        display: none;
+    }
     .col.col-md-10.correspondencia, .dados-empresa{
-        margin-top: 117px !important;
+        margin-top: 210px !important;
         margin-left: 0px;
         margin-left: -166px;
     }  
@@ -1843,14 +1860,27 @@ button.navbar-toggler.collapsed {
        
         padding: 25px;
     } 
-    .tabelasect {
+    .tabelasect, .colaboradoresf, .addEvento {
        
-        width: min-content;
-        margin-left: 99px;
+        width: 376px;
+        margin-left: 137px;
        
+    }
+    .colaboradoresf, .addEvento{
+        margin-left: -459px;
+    top: 700px;
+    }
+    .dropdown.addevento {
+       
+        right: -52px;
+        
     }
     .addColaborador{
         margin-left: 0px;
+    }
+    .btnscliente{
+        margin-top: -12px;
+    margin-left: -36px !important;
     }
     .reshorario {
         margin-right: -11%;
@@ -1860,6 +1890,10 @@ button.navbar-toggler.collapsed {
         width: 125%;
        
     }
+    
+    .row.bts.mt-3 .col-md-12 {
+    margin-left: 21px !important;
+}
     p.titulosecaoc {
         
        display: none;
@@ -1881,8 +1915,8 @@ button.navbar-toggler.collapsed {
         margin-left: 0;
     }
     .visualizacao {
-       right: 20px;
-        top: 30px;
+       right: 135px;
+       top: -9px;
     }
     .arquivosdiv{
     
@@ -1895,8 +1929,8 @@ button.navbar-toggler.collapsed {
     }
     .row.btnscliente {
         margin-left: 0px;
-        margin-bottom: -27px;
-        margin-top: 54px;
+        margin-bottom: -31px;
+        margin-top: 127px;
     
        
     }
@@ -1910,7 +1944,8 @@ button.navbar-toggler.collapsed {
         margin-left: 0px;
     }
     .col.col-md-10.addColaborador {
-        margin-top: 339px;
+        margin-top: 429px;
+        margin-left: -154px;
     }
     .col.data {
         margin-left: -34px;
