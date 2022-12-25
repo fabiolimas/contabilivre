@@ -30,6 +30,9 @@ a#btndownload {
 .holeritecheck {
     margin-right: 7px;
 }
+.impostocheck {
+    margin-right: 7px;
+}
 .contadorselect {
     margin-left: 470px;
     border: 1px solid #74c83c;
@@ -403,6 +406,13 @@ thead.table-dark tr {
     margin-bottom: -26px;
     margin-top: 21px;
 }
+.row.btnsimposto {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.row.btnsimposto.position-absolute .btn {
+    margin-left: 12px;
+}
 p.titulosecaoc {
     position: absolute;
     margin-left: 81px;
@@ -496,7 +506,7 @@ border-radius: 12px;
 margin: 20px 0px 0px 11px;
 }
 .row.btnscliente {
-    margin-left: 816px;
+    margin-left: 797px;
     /* margin-bottom: 10px; */
     margin-top: 144px;
 }
@@ -1404,7 +1414,7 @@ flex-grow: 0;
     background: #fff;
     border-radius: 7px;
     margin-left: 161px;
-    width:836px;
+    width:813px;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
 }
 .col.col-md-10.completarCadastro {

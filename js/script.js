@@ -501,6 +501,31 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+    var check=document.querySelector('.impostocheck');
+    var contador=document.querySelector('.contadorselect');
+  
+
+    $('input[type=checkbox]').on('change', function () {
+
+        var total = $('input[type=checkbox]:checked').length;
+
+        if(total < 1){
+            contador.style.display="none";
+        }else if(total  == 0){
+            contador.style.display="none";
+           
+            
+        }else{
+            
+            contador.style.display="block";
+            contador.innerHTML= total+' Holerites Selecionados';
+        }
+        
+    });
+
+});
+
 
 
 
