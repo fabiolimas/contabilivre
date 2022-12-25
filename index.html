@@ -673,12 +673,13 @@
                 center: 'title',
                 right: 'next'
             },
+            locale: 'pt-br',
             initialDate: '2022-09-12',
-            navLinks: true, // can click day/week names to navigate views
+            navLinks: false, // can click day/week names to navigate views
             selectable: true,
             selectMirror: true,
             select: function (arg) {
-                var title = prompt('Event Title:');
+                var title = prompt('Titulo do evento:');
                 if (title) {
                     calendar.addEvent({
                         title: title,
@@ -689,8 +690,9 @@
                 }
                 calendar.unselect()
             },
+           
             eventClick: function (arg) {
-                if (confirm('Are you sure you want to delete this event?')) {
+                if (confirm('Você quer remover esse evento?')) {
                     arg.event.remove()
                 }
             },

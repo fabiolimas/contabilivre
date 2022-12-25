@@ -468,7 +468,36 @@ $(document).ready(function(){
     }
 
 
+   
 });
+
+
+
+
+});
+
+$(document).ready(function(){
+    var check=document.querySelector('.holeritecheck');
+    var contador=document.querySelector('.contadorselect');
+    var btndownload=document.querySelector('#btndownload');
+
+    $('input[type=checkbox]').on('change', function () {
+
+        var total = $('input[type=checkbox]:checked').length;
+
+        if(total<1){
+
+        }else if(total -1 == 0){
+            contador.style.display="none";
+            btndownload.style.display='none';
+            
+        }else{
+            btndownload.style.display='block';
+            contador.style.display="block";
+            contador.innerHTML= total-1+' Holerites Selecionados';
+        }
+        
+    });
 
 });
 
