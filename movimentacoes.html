@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilivre - Holerite</title>
+    <title>Contabilivre - Movimentações</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -122,7 +122,7 @@
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="meus-colaboradores.html">
+                            <a class="nav-link" href="meus-colaboradores.html">
 
                                 <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
                             </a>
@@ -135,7 +135,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="impostos.html">
+                            <a class="nav-link " href="impostos.html">
 
                                 <img src="img/menu/icons/24/impostos.png">Impostos
                             </a>
@@ -147,7 +147,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="movimentacoes.html">
+                            <a class="nav-link active" href="movimentacoes.html">
 
                                 <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
                             </a>
@@ -202,62 +202,45 @@
 
             <div class="col col-md-12">
                 <main class="col-md-9 titlesection">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <p><img src="img/star.png"><b>Meus Colaboradores</b></p>
-                        </div>
+                    <p><img src="img/star.png"><b>Movimentações</b></p>
 
 
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
-
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
-                        </div>
+                    <div class="col-md-2 minbusca">
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
                     </div>
                 </main>
 
                 <div class="row">
                     <div class="col-md-7 indice">
-                        <a href="meus-colaboradores.html">Meus colaboradaores</a> <i
-                            class="fa fa-chevron-right"></i>Holerite
+                        <a href="movimentacoes.html">Movimentações</a> <i class="fa fa-chevron-right"></i>Últimas movimentações
                     </div>
                     <div class="row">
 
                         <div class="row btnsclientec">
 
                             <div class="col-md-3">
-                                <p class="titulosecao" style="margin-left:315px"><b>Holerite</b></p>
+                                <p class="titulosecaos"><b>Últimas movimentações</b></p>
 
                             </div>
-                            <div class="col-md-9">
+                            <div class="row btnsimposto position-absolute"
+                                style="margin-top:-12px; margin-left:-419px;">
 
 
+                                <a href="#" class="btn gerenciarContas" data-bs-toggle="modal"
+                                data-bs-target="#solicitaParcelamento"> Gerenciar Contas </a>
+                                <div class="dropdown addnovo">
 
-
-                                <div class="dropdown m-3 addevento holeritswitch">
-
-
-                                    <label for="habilitaenvio">Habilitar envio de holerites via e-mail</label><label
-                                        class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round a"></span>
-                                    </label>
-
+                                    <button class="btn dropdown-toggle " type="button" id="dropdownImportarButton"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Importar
+                                    </button>
+                                    
                                 </div>
+                                <a href="adicionar-colaborador.html" class="btn btn-success addmovimentacao"
+                                    style="width: max-content;" data-bs-toggle="modal"
+                                    data-bs-target="#meusParcelamentos">Adicionar nova movimentação
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -279,229 +262,218 @@
         <div class="col col-md-2 submenu u">
 
             <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link " href="meus-colaboradores.html">
 
-                        Agenda
-                    </a>
-                </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="colaboradores.html">
+                    <a class="nav-link  " href="impostos.html">
 
-                        Colaboradores
+                        Guias
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="documentos.html">
+                    <a class="nav-link active" href="parcelamento.html">
 
-                        Documentos
+                        Parcelamento
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="eventos.html">
 
-                        Eventos
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="recisao.html">
 
-                        Rescisão
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="folha-de-pagamento.html">
-
-                        Folha de pagamento
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="holerite.html">
-
-                        Holerite
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="folha-de-ponto.html">
-
-                        Folha de ponto
-                    </a>
-                </li>
             </ul>
 
         </div>
     </div>
     <div class="col col-md-10">
         <div class="row">
-            <div class="contadorselect"></div><a href="#" class="btn addnovo" id="btndownload" style="width:272px"> <img
-                src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
-        </a>
+            <div class="contadorselect"></div><a href="#" class="btn addnovo d-none" id="btndownload"
+                style="width:272px"> <img src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
+            </a>
         </div>
-
-        <div class="col-md-11 recisaos mb-5 mt-3 ">
-
-
-
+        <div class="col-md-11 recisaos mb-5 mt-3">
             <div class="row table-responsive">
-
-                <table class="table recisaotable">
+                <table class="table text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Funcionário</th>
-                            <th scope="col">Competência</th>
-                            <th scope="col">Stataus</th>
-                            <th scope="col">Ação</th>
-                            <th scope="col"></th>
+                            <th scope="col">Tipo imposto</th>
+                            <th scope="col">Situação</th>
 
                         </tr>
                     </thead>
                     <tbody class="table-group-divider text-center">
 
                         <tr>
-                            <td><input type="checkbox" id="funcionario1" class="holeritecheck"><label for="funcionario1"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="rcorreio">Contabilivre</span></td>
 
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td><input type="checkbox" id="funcionario2" class="holeritecheck"><label for="funcionario2"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
-
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="funcionario3" class="holeritecheck"><label for="funcionario3"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="rcorreio ">Não enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="remail">Minha empresa</span></td>
 
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="funcionario4" class="holeritecheck"><label for="funcionario4"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="rcorreio ">Não enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="rcorreio">Contabilivre</span></td>
 
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox" id="funcionario5" class="holeritecheck"><label for="funcionario5"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="rcorreio">Contabilivre</span></td>
 
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
+                        <tr>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="remail">Minha empresa</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>Nome da guia de parcelamento</td>
+                            <td><span class="rcorreio">Contabilivre</span></td>
+
+                        </tr>
+
+
+
+
 
 
                 </table>
+            </div>
+        </div>
+        <!--Meus parcelamentos-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="meusParcelamentos" style="--bs-modal-width: 888px;
+        --bs-modal-height: 568px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Meus parcelamentos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row table-responsive">
+                            <table class="table resumo">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">ID </th>
+                                        <th scope="col">Valor total</th>
+                                        <th scope="col">Valor da parcela</th>
+                                        <th scope="col">Nº de parcelas</th>
+                                        <th scope="col">Situação</th>
 
 
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>0000000</td>
+                                    <td>R$0.000,00</td>
+                                    <td>R$0,00</td>
+                                    <td>12</td>
+                                    <td><span class="finalizado">Ativo</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>0000000</td>
+                                    <td>R$0.000,00</td>
+                                    <td>R$0,00</td>
+                                    <td>12</td>
+                                    <td><span class="rcorreio">Cancelado</span></td>
+
+                                </tr>
+                                <tr>
+                                    <td>0000000</td>
+                                    <td>R$0.000,00</td>
+                                    <td>R$0,00</td>
+                                    <td>12</td>
+                                    <td><span class="finalizado">Ativo</span></td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Entendi</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-    <!--Modal detalhes recisao-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
+  
+    <!--Modal solicitar parcelamento-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="solicitaParcelamento" style="--bs-modal-width: 888px;
+    --bs-modal-height: 568px;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title greentitle">Atenção</h5>
+                    <h5 class="modal-title greentitle">Serviço de solicitação de parcelamento <span class="rs">R$ 00,00</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="gray">Se a empresa possui parcelamentos, informe o tipo de parcelamento e se deseja que a Contabilivre se responsabilize pela emissão das guias</p>
+                    <select name="" id="" class="form-select">
+                        <option value="">Tipo de parcelamento</option>
+                    </select>
+                    <div class="form-group mt-3">
+                        <input type="radio" value="" id="op1" name="op"><label for="op1" class="ms-3">Eu serei o responsável pela emissão das guias deste parcelamento</label><br>
+                        <input type="radio" value="" id="op2" name="op"><label for="op2" class="ms-3">Desejo que a Contabilivre seja responsável pela emissão das guias deste parcelamento</label>
+
+                    </div>
+                    <div class="row mt-4 mb-3">
+                        <div class="col aviso pt-3">
+                            <i class="fa fa-info-circle icoinfo"></i><p> Cada guia de parcelamento emitida pela Contabilivre tem o custo de R$ 12,00 e será acrescentado na mensalidade da contabilidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Contratar serviço</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal enviar arquivos-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="enviarArquivos"
+        data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Enviar arquivos</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado junto
-                        com sua próxima mensalidade.
-                    </p>
 
+
+                    <div class="row formempresa">
+
+
+                        <div class="row">
+
+                            <div class="upload">
+                                <img src="img/uploadico.png" alt="">
+                                <p><b>Selecionar arquivo</b></p>
+                                <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <p><b>Arquivos enviados</b></p>
+                        </div>
+                        <div class="row table-responsive">
+
+                            <div class="row anexos">
+                                <div class="col col-md-5">
+                                    <p>Campo para a descrição do documento</p>
+                                </div>
+                                <div class="col col-md-2">
+                                    <p class="gray">01/02/2020</p>
+                                </div>
+                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                </div>
+
+                                <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
                 </div>
                 <div class="modal-footer text-center">
                     <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
@@ -511,12 +483,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
     <!--Modal avaliaçao 1-->
     <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
         <div class="modal-dialog">

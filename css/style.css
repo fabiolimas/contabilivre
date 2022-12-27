@@ -13,7 +13,10 @@ body{
 .dropdown-menu.show {
     width: -webkit-fill-available;
 }
-
+main.col-md-9.titlesection img {
+    width: 18px;
+    margin-right: 7px;
+}
 p, li {
     color: #868E96;
     font-size: 12px;
@@ -412,6 +415,15 @@ thead.table-dark tr {
 }
 .row.btnsimposto.position-absolute .btn {
     margin-left: 12px;
+    font-size:14px;
+}
+.dropdown.addnovo {
+    width: 106px;
+}
+a.btn.btn-success.addmovimentacao {
+    position: absolute;
+    right: -257px;
+    height:36px;
 }
 p.titulosecaoc {
     position: absolute;
@@ -552,6 +564,7 @@ order: 2;
 flex-grow: 0;
 color: #fff;
 font-size: 13px;
+margin-left: 12px;
 }
 .addnovo:hover{
     background: #004579;
@@ -1422,6 +1435,15 @@ flex-grow: 0;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     border-radius: 24px;
 }
+.gerenciarContas {
+    background: #ebf6ed !important;
+    border: 1px solid #004578;
+    color: #004578;
+    width: max-content;
+}
+.dropdown.addnovo .btn {
+    color: #fff !important;
+}
 .titlesection{
     display: flex;
 flex-direction: row;
@@ -1435,7 +1457,7 @@ position: absolute;
 height: 88px;
 left: 280px;
 top: 104px;
-
+padding-top: 37px;
 background: #FFFFFF;
 /* Shadow / XL */
 
@@ -1883,12 +1905,7 @@ button.navbar-toggler.collapsed {
          margin-left: 0px;
         
     }
-    footer {
-        
-        width: 208%;
-       
-         margin-top: 0px; 
-    }
+   
     .col.col-md-2.submenu {
         margin-left: 0px !important;
         text-align: center;
