@@ -1865,7 +1865,7 @@ button.navbar-toggler.collapsed {
         margin-top: 44px;
     background: none;
     }
-    .plan11, .plan2 {
+    .plan11, .plan2, .plan1 {
     
         width: 100%;
     /* margin-left: 0px !important; */
@@ -1922,7 +1922,7 @@ button.navbar-toggler.collapsed {
     }
    
     .col.col-md-2.submenu {
-        margin-left: 0px !important;
+        left: 0px !important;
         text-align: center;
         z-index: 0;
         width: 100%;
