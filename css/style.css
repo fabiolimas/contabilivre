@@ -422,12 +422,19 @@ thead.table-dark tr {
 }
 a.btn.btn-success.addmovimentacao {
     position: absolute;
-    right: -257px;
+    right:-244px;
     height:36px;
 }
 p.titulosecaoc {
     position: absolute;
     margin-left: 81px;
+}
+a.position-absolute.visualizarmodel {
+    top: 86px;
+    font-size: 12px;
+    color: #74c83c;
+    text-decoration: none;
+    right: 9px;
 }
 .aviso{
     display: flex;
@@ -930,10 +937,9 @@ a.dropdown-item img {
 .dropdown-menu.show {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 8px 16px;
     gap: 10px;
-    width: 132px;
+    width: min-content;
     /* height: 40px; */
     background: #FFFFFF;
     flex: none;
