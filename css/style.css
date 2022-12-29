@@ -188,7 +188,7 @@ box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
 border-radius: 8px;
 }
 .col.col-md-2.submenu {
-    margin-left: 143px;
+    left: 248px;
     position: absolute;
     margin-top: 60px;
     z-index: 2;
@@ -1433,7 +1433,7 @@ flex-grow: 0;
     background: #fff;
     border-radius: 7px;
     margin-left: 161px;
-    width:813px;
+    /*width:813px;*/
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
 }
 .col.col-md-10.completarCadastro {
