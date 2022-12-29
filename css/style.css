@@ -1066,7 +1066,7 @@ main {
 .plan1 a.btn.btn-secondary {
     width: 100%;
 }
-.plan1 h4, .plan2 h4 {
+.plan1 h4, .plan2 h4, .plan11 h4 {
     
     font-style: normal;
     font-weight: 700;
@@ -1610,7 +1610,16 @@ span.year {
 .plan2 {
     background: #fff;
     height: auto;
-    width: 76%;
+    margin-left: 97px !important;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 35px;
+    box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
+}
+.plan11 {
+    background: #fff;
+    height: auto;
+    
     margin-left: 97px !important;
     border-radius: 8px;
     position: relative;
@@ -1856,7 +1865,7 @@ button.navbar-toggler.collapsed {
         margin-top: 44px;
     background: none;
     }
-    .plan1, .plan2 {
+    .plan11, .plan2 {
     
         width: 100%;
     /* margin-left: 0px !important; */
