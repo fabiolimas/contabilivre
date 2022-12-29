@@ -501,7 +501,7 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     var check=document.querySelector('.impostocheck');
     var contador=document.querySelector('.contadorselect');
   
@@ -532,5 +532,5 @@ $(document).ready(function(){
 
 
 
-
+*/
 
