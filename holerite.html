@@ -235,12 +235,13 @@
                         <a href="meus-colaboradores.html">Meus colaboradaores</a> <i
                             class="fa fa-chevron-right"></i>Holerite
                     </div>
+                    <div class="container">
                     <div class="row">
 
                         <div class="row btnsclientec">
 
                             <div class="col-md-3">
-                                <p class="titulosecao" style="margin-left:315px"><b>Holerite</b></p>
+                                <p class="titulosecao" style="margin-left:118px"><b>Holerite</b></p>
 
                             </div>
                             <div class="col-md-9">
@@ -261,6 +262,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -331,215 +333,228 @@
 
         </div>
     </div>
-    <div class="col col-md-10">
+
+    <div class="container">
+    <div class="col col-md-10 addColaborador">
         <div class="row">
             <div class="contadorselect"></div><a href="#" class="btn addnovo" id="btndownload" style="width:272px"> <img
-                src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
-        </a>
+                    src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
+            </a>
         </div>
 
-        <div class="col-md-11 recisaos mb-5 mt-3 ">
+       
+        
+                <div class="col-md-11 tabelasect  mb-5 mt-3 ">
+
+                    <div class="row table-responsive">
+
+                        <table class="table recisaotable">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Funcionário</th>
+                                    <th scope="col">Competência</th>
+                                    <th scope="col">Stataus</th>
+                                    <th scope="col">Ação</th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider text-center">
+
+                                <tr>
+                                    <td><input type="checkbox" id="funcionario1" class="holeritecheck"><label
+                                            for="funcionario1" class=""> Nome do funcionário</label></td>
+                                    <td class="">00/0000</td>
+                                    <td><span class="finalizado ">Enviado</span></td>
+                                    <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a>
+                                    </td>
+
+                                    <td>
+                                        <div class="dropdown  detalhesrecisao">
+
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#"><i class="fa fa-file-alt"></i>Ver Detalhes</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="fa fa-file-download"></i>Baixar
+                                                    Médico</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
 
 
+                                <tr>
+                                    <td><input type="checkbox" id="funcionario2" class="holeritecheck"><label
+                                            for="funcionario2" class=""> Nome do funcionário</label></td>
+                                    <td class="">00/0000</td>
+                                    <td><span class="finalizado ">Enviado</span></td>
+                                    <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a>
+                                    </td>
 
-            <div class="row table-responsive">
+                                    <td>
+                                        <div class="dropdown  detalhesrecisao">
 
-                <table class="table recisaotable">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">Funcionário</th>
-                            <th scope="col">Competência</th>
-                            <th scope="col">Stataus</th>
-                            <th scope="col">Ação</th>
-                            <th scope="col"></th>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#"><i class="fa fa-file-alt"></i>Ver Detalhes</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="fa fa-file-download"></i>Baixar
+                                                    Médico</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="funcionario3" class="holeritecheck"><label
+                                            for="funcionario3" class=""> Nome do funcionário</label></td>
+                                    <td class="">00/0000</td>
+                                    <td><span class="rcorreio ">Não enviado</span></td>
+                                    <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a>
+                                    </td>
 
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider text-center">
+                                    <td>
+                                        <div class="dropdown  detalhesrecisao">
 
-                        <tr>
-                            <td><input type="checkbox" id="funcionario1" class="holeritecheck"><label for="funcionario1"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#"><i class="fa fa-file-alt"></i>Ver Detalhes</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="fa fa-file-download"></i>Baixar
+                                                    Médico</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="funcionario4" class="holeritecheck"><label
+                                            for="funcionario4" class=""> Nome do funcionário</label></td>
+                                    <td class="">00/0000</td>
+                                    <td><span class="rcorreio ">Não enviado</span></td>
+                                    <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a>
+                                    </td>
 
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
+                                    <td>
+                                        <div class="dropdown  detalhesrecisao">
 
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#"><i class="fa fa-file-alt"></i>Ver Detalhes</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="fa fa-file-download"></i>Baixar
+                                                    Médico</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="funcionario5" class="holeritecheck"><label
+                                            for="funcionario5" class=""> Nome do funcionário</label></td>
+                                    <td class="">00/0000</td>
+                                    <td><span class="finalizado ">Enviado</span></td>
+                                    <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a>
+                                    </td>
 
+                                    <td>
+                                        <div class="dropdown  detalhesrecisao">
 
-                        <tr>
-                            <td><input type="checkbox" id="funcionario2" class="holeritecheck"><label for="funcionario2"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
-
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" id="funcionario3" class="holeritecheck"><label for="funcionario3"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="rcorreio ">Não enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
-
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" id="funcionario4" class="holeritecheck"><label for="funcionario4"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="rcorreio ">Não enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
-
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" id="funcionario5" class="holeritecheck"><label for="funcionario5"
-                                    class=""> Nome do funcionário</label></td>
-                            <td class="">00/0000</td>
-                            <td><span class="finalizado ">Enviado</span></td>
-                            <td><a href="#" class="btn btn-success holerite">Reenviar holerite via e-mail</a></td>
-
-                            <td>
-                                <div class="dropdown  detalhesrecisao">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="true">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#"><i
-                                                class="fa fa-file-alt"></i>Ver Detalhes</a>
-                                        <a class="dropdown-item" href="#"><i class="fa fa-file-download"></i>Baixar
-                                            Médico</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#"><i class="fa fa-file-alt"></i>Ver Detalhes</a>
+                                                <a class="dropdown-item" href="#"><i
+                                                        class="fa fa-file-download"></i>Baixar
+                                                    Médico</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
 
 
-                </table>
+                        </table>
 
 
-            </div>
-        </div>
-    </div>
-
-
-    <!--Modal detalhes recisao-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title greentitle">Atenção</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado junto
-                        com sua próxima mensalidade.
-                    </p>
-
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                        aria-label="Close">Continuar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!--Modal detalhes recisao-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Atenção</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado
+                            junto
+                            com sua próxima mensalidade.
+                        </p>
 
-
-
-
-
-    <!--Modal avaliaçao 1-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                        melhor.
-                    </p>
-                    <img src="img/avaliações.png" alt="Avaliacoes">
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                        aria-label="Close">Continuar</button>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Continuar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Rodapé
+
+
+
+
+
+
+        <!--Modal avaliaçao 1-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                            melhor.
+                        </p>
+                        <img src="img/avaliações.png" alt="Avaliacoes">
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Rodapé
     <footer class="position-absolute bottom-0 start-50 translate-middle-x">
         <div class="row">
             <div class="col col-md-12">
