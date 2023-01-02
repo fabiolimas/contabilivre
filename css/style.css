@@ -406,7 +406,7 @@ thead.table-dark tr {
     text-align: center;
 }
 .row.btnsclientec {
-    margin-left: 173px;
+    margin-left: 318px;
     margin-bottom: -26px;
     margin-top: 21px;
 }
@@ -1503,6 +1503,15 @@ p.titulosecao {
     margin-left: -128px;
     width: max-content;
 }
+p.titulosecao.u{
+    float: left;
+    margin-left: -31px;
+    width: max-content;
+}
+.flex-column {
+    flex-direction: column!important;
+    margin-left: -14px;
+}
 .titulosecaod {
     float: left;
     margin-left: -128px;
@@ -1553,6 +1562,7 @@ a.btn.btn-success.btnres {
 }
 .col.col-md-10.correspondencia,.dados-empresa, .addColaborador, .holeritediv, .addSocio {
     margin-left: 171px;
+    margin-top: 15px;
 }
 .plan1 {
     /* background: #fff; */
