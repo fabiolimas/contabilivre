@@ -1327,6 +1327,7 @@ a.btn.btn-danger.remover i {
 .minbusca i, .busca i {
     color: #4AA3E5;
     margin-top: 18px !important;
+    left: 142px;
 }
 .col-md-10.busca {
     top: 13px;
