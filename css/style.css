@@ -412,14 +412,22 @@ thead.table-dark tr {
 }
 .row.btnsimposto {
     display: flex;
-    flex-direction: row-reverse;
+    right: 515px;
+}
+input.btn.btn-success.gerenciabtn {
+    height: 55px;
 }
 .row.btnsimposto.position-absolute .btn {
     margin-left: 12px;
     font-size:14px;
+    margin-right: -4px;
 }
 .dropdown.addnovo {
     width: 106px;
+}
+table.table.recisaotable.text-center td img {
+    margin: 24px;
+    cursor: pointer;
 }
 a.btn.btn-success.addmovimentacao {
     position: absolute;
