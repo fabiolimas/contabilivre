@@ -23,6 +23,43 @@ p, li {
     font-weight: 400;
     font-family: 'Inter';
 }
+.row.btnsfluxoimposto {
+    display: flex;
+    right: 236px;
+}
+.row.filtrosf {
+    margin-top: 54px;
+    margin-left: -316px;
+}
+.filtrosf select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: min-content;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    font-size: 12px;
+}
+hr{
+    border: 1px solid rgba(74, 163, 229, 0.2);
+}
+p.titulo {
+    width: 872px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #495057;
+}
+.row.btnsfluxoimposto.position-absolute a {
+    margin-left: 10px;
+}
 a#btndownload {
     float: right;
     position: absolute;

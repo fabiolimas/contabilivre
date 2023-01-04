@@ -224,17 +224,43 @@
 
                             </div>
                             <div class="col col-md-9">
-                                <div class="row btnsimposto position-absolute">
+                                <div class="row btnsfluxoimposto position-absolute">
 
 
                                     <button class="btn gerenciarContas" data-bs-toggle="modal"
                                         data-bs-target="#corrigirSaldo"> Corrigir Saldo </button>
-
-                                    <a href="adicionar-colaborador.html" class="btn btn-success addmovimentacao"
-                                        style="width: max-content;" data-bs-toggle="modal"
-                                        data-bs-target="#adicionarMovimentacao">PDF
+                                    <a href="#" class="btn btn-primary addmovimentacao" style="width: max-content;"
+                                        data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">Excel
+                                    </a>
+                                    <a href="#" class="btn btn-success exportpdf" style="width: max-content;"
+                                        data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">PDF
                                     </a>
                                 </div>
+                                <div class="row filtrosf">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col col-md-2 mt-2"> <select name="" id="" class="form-select">
+                                                    <option value="">Competência inicial</option>
+                                                </select></div>
+                                            <div class="col col-md-2 mt-2">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">Competência final</option>
+                                                </select>
+                                            </div>
+                                            <div class="col col-md-2 mt-2">
+                                                <select name="" id="" class="form-select">
+                                                    <option value="">Tipo de conta</option>
+                                                </select>
+                                            </div>
+                                            <div class="col col-md-2 mt-2">
+                                                <button type="submit" class="btn addnovo" style="width: max-content;
+                                        height: 55px;
+                                        margin-left: -38px;">Buscar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -270,580 +296,534 @@
     </div>
     <div class="container">
         <div class="col col-md-10 addColaborador">
-            <div class="row">
-                <div class="contadorselect"></div><a href="#" class="btn addnovo d-none" id="btndownload"
-                    style="width:272px"> <img src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
-                </a>
-            </div>
-
-            <div class="col-md-11 tabelasect mb-5 mt-3">
-                <div class="row table-responsive">
-                    <table class="table recisaotable">
-                        <thead class="table-dark">
-                            <tr>
-                                <th scope="col">Data</th>
-                                <th scope="col">Conta</th>
-                                <th scope="col">Tipo</th>
-                                <th scope="col">Valor</th>
-                                <th scope="col">Ação</th>
-
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider text-center">
-
-                            <tr>
-                                <td><input type="checkbox" id="mov1" class="movimentcheck"><label for="mov1" class="">
-                                        00/00/0000</label></td>
-                                <td class="">Descrição da conta</td>
-                                <td>Caixa</td>
-                                <td>R$0.000,00</td>
-
-
-                                <td>
-                                    <div class="dropdown  detalhesrecisao">
-
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editarMovimentacao"><img src="img/edit.png">Editar
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#importarDocumento"><img src="img/importdoc.png">Importar
-                                                documento
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#remover"><img src="img/lixeira.png">Remover
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" id="mov2" class="movimentcheck"><label for="mov2" class="">
-                                        00/00/0000</label></td>
-                                <td class="">Descrição da conta</td>
-                                <td>Caixa</td>
-                                <td>R$0.000,00</td>
-
-
-                                <td>
-                                    <div class="dropdown  detalhesrecisao">
-
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editarMovimentacao"><img src="img/edit.png">Editar
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#importarDocumento"><img src="img/importdoc.png">Importar
-                                                documento
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#remover"><img src="img/lixeira.png">Remover
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" id="mov3" class="movimentcheck"><label for="mov3" class="">
-                                        00/00/0000</label></td>
-                                <td class="">Descrição da conta</td>
-                                <td>Caixa</td>
-                                <td>R$0.000,00</td>
-
-
-                                <td>
-                                    <div class="dropdown  detalhesrecisao">
-
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editarMovimentacao"><img src="img/edit.png">Editar
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#importarDocumento"><img src="img/importdoc.png">Importar
-                                                documento
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#remover"><img src="img/lixeira.png">Remover
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" id="mov4" class="movimentcheck"><label for="mov4" class="">
-                                        00/00/0000</label></td>
-                                <td class="">Descrição da conta</td>
-                                <td>Caixa</td>
-                                <td>R$0.000,00</td>
-
-
-                                <td>
-                                    <div class="dropdown  detalhesrecisao">
-
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#editarMovimentacao"><img src="img/edit.png">Editar
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#importarDocumento"><img src="img/importdoc.png">Importar
-                                                documento
-                                            </a>
-                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                            data-bs-target="#remover"><img src="img/lixeira.png">Remover
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p><b>Total das movimentações: R$0.000,00</b></p>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <p><b>Saldo final: R$0.000,00</b></p>
-                                </td>
-                            </tr>
-
-
-
-
-                    </table>
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+                <div class="row">
+                    <p class="titulo"><b>Informações</b></p>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Entradas</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Impostos</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Devoluções</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Entradas líquidas</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
                 </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Saídas</b></p>
+                    <div class="col col-md-6">
+                        <span class="gray" style="font-size:10px">Água, luz, energia, internet e telefone</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-6">
+                        <span class="gray" style="font-size:10px">Não categorizado</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Total de saídas</b></p>
+                    <div class="col col-md-12">
+                        <span class="gray" style="font-size:10px">Total de saídas</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Resultado operacional de caixa</b></p>
+                    <div class="col col-md-12">
+                        <span class="gray" style="font-size:10px">Resultado operacional de caixa</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Rendimentos financeiros</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Despesas financeiras</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Outras entradas</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Outras saídas</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Resultado não operacional de caixa</b></p>
+                    <div class="col col-md-12">
+                        <span class="gray" style="font-size:10px">Resultado não operacional de caixa</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Resultado líquido de caixa</b></p>
+                    <div class="col col-md-12">
+                        <span class="gray" style="font-size:10px">Resultado líquido de caixa</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+                <div class="row">
+                    <p class="titulo"><b>Outras origens de caixa</b></p>
+                    <div class="col col-md-12">
+                        <span class="gray" style="font-size:10px">Total das origens</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    
+                    
+                </div>
+                <hr>
+
+                <div class="row">
+                    <p class="titulo"><b>Destinações de caixa</b></p>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Total das destinações</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Resultado de caixa após origens e destinações</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Saldo anterior</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                    <div class="col col-md-3">
+                        <span class="gray" style="font-size:10px">Saldo final</span>
+                        <p style="font-size:14px"><b>R$0.000,00</b></p>
+                    </div>
+                </div>
+               
+                    
             </div>
+        </div>
 
-
-            <!--Modal importar extrato-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="importarExtrato" style="--bs-modal-width: 888px;
+        <!--Modal importar extrato-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="importarExtrato" style="--bs-modal-width: 888px;
     --bs-modal-height: 568px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Importar do extrato bancário </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <select name="" id="" class="form-select">
-                                <option value="">Selecionar o banco</option>
-                            </select>
-                            <p class="mt-3"><b>Selecione o arquivo no formato OFX ou um arquivo no formato CSV</b></p>
-                            <a href="#" class="position-absolute visualizarmodel">Visualizar o modelo padrão <img
-                                    src="img/uploaddoc.png"></a>
-                            <div class="modal-body text-center">
-
-
-                                <div class="row formempresa">
-
-
-                                    <div class="row">
-
-                                        <div class="upload">
-                                            <img src="img/uploadico.png" alt="">
-                                            <p><b>Selecionar arquivo</b></p>
-                                            <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <p><b>Arquivos enviados</b></p>
-                                    </div>
-                                    <div class="row table-responsive">
-
-                                        <div class="row anexos">
-                                            <div class="col col-md-5">
-                                                <p>Campo para a descrição do documento</p>
-                                            </div>
-                                            <div class="col col-md-2">
-                                                <p class="gray">01/02/2020</p>
-                                            </div>
-                                            <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
-                                                    documento</a>
-                                            </div>
-
-                                            <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div class="modal-footer text-center">
-                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                    aria-label="Close">Importar do extrato bancário</button>
-                            </div>
-                        </div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Importar do extrato bancário </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
+                    <div class="modal-body">
 
-            <!--Modal importar documento-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="importarDocumento" style="--bs-modal-width: 888px;
-    --bs-modal-height: 533px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Importar documento</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                          
-                            <p class="mt-3"><b>Selecione o arquivo</b></p>
-                           
-                            <div class="modal-body text-center">
-
-
-                                <div class="row formempresa">
-
-
-                                    <div class="row">
-
-                                        <div class="upload">
-                                            <img src="img/uploadico.png" alt="">
-                                            <p><b>Selecionar arquivo</b></p>
-                                            <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <p><b>Arquivos enviados</b></p>
-                                    </div>
-                                    <div class="row table-responsive">
-
-                                        <div class="row anexos">
-                                            <div class="col col-md-5">
-                                                <p>Campo para a descrição do documento</p>
-                                            </div>
-                                            <div class="col col-md-2">
-                                                <p class="gray">01/02/2020</p>
-                                            </div>
-                                            <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
-                                                    documento</a>
-                                            </div>
-
-                                            <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div class="modal-footer text-center">
-                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                    aria-label="Close">Importar documento</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Modal Remover-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="remover" style="--bs-modal-width: 380px;
-    --bs-modal-height: 202;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        
+                        <select name="" id="" class="form-select">
+                            <option value="">Selecionar o banco</option>
+                        </select>
+                        <p class="mt-3"><b>Selecione o arquivo no formato OFX ou um arquivo no formato CSV</b></p>
+                        <a href="#" class="position-absolute visualizarmodel">Visualizar o modelo padrão <img
+                                src="img/uploaddoc.png"></a>
                         <div class="modal-body text-center">
 
-                          <h4>Tem certeza que deseja remover a movimentação?</h4>
-                            
-                          <p> <span class="gray">Essa ação não pode ser desfeita.</span></p>
-                          
+
+                            <div class="row formempresa">
 
 
-                               
-                          
-                            <div class="modal-footer d-flex justify-content-center">
-                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                <button type="submit" class="btn btn-danger" data-bs-dismiss="modal"
-                                    aria-label="Close">Remover</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Modal editar movimentação-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="editarMovimentacao" style="--bs-modal-width: 888px;
-            --bs-modal-height: 214px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Editar movimentação</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body ">
+                                <div class="row">
 
-                            <div class="row">
-                                <div class="col col-md-4 mt-3">
-                                    <input type="text" placeholder="Data" class="form-control">
-                                </div>
-                                <div class="col col-md-4 mt-3">
-                                    <select name="" id="" class="form-select">
-                                        <option value="">Tipo</option>
-                                    </select>
-                                </div>
-                                <div class="col col-md-4 mt-3">
-                                    <select name="" id="" class="form-select">
-                                        <option value="">Conta</option>
-                                    </select>
-                                </div>
-                                <div class="col col-md-9 mt-3">
-                                    <input type="text" class="form-control" placeholder="Conta">
-                                </div>
-                                <div class="col col-md-3 mt-3">
-                                    <input type="text" class="form-control" placeholder="Valor">
-                                </div>
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Descrição">
-                                </div>
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Observação">
-                                </div>
-                                
-                            </div>
-                            <div class="modal-footer text-center">
-                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                    aria-label="Close">Salvar</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-             <!--Modal ver detalhes-->
-             <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="verDetalhes" style="--bs-modal-width: 888px;
-             --bs-modal-height: 214px;">
-                 <div class="modal-dialog">
-                     <div class="modal-content">
-                         <div class="modal-header">
-                             <h5 class="modal-title greentitle">00/00/000</h5>
-                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                         </div>
-                         <div class="modal-body ">
- 
-                             <div class="row">
-                                 <div class="col col-md-4">
-                                     <span class="gray">Tipo</span>
-                                     <p><b>Banco ou caixa</b></p>
- 
-                                 </div>
-                                 <div class="col col-md-4">
-                                     <span class="gray">Conta</span>
-                                     <p><b>Nome da conta</b></p>
- 
-                                 </div>
-                                 <div class="col col-md-4">
-                                     <span class="gray">Categoria</span>
-                                     <p><b>Categoria selecionada</b></p>
- 
-                                 </div>
-                                 <div class="col col-md-4">
-                                     <span class="gray">Valor</span>
-                                     <p><b>R$0.000,00</b></p>
- 
-                                 </div>
-                                 <div class="col col-md-4">
-                                     <span class="gray">Descrição</span>
-                                     <p><b>Descrição do imposto</b></p>
- 
-                                 </div>
-                                 <div class="col col-md-4">
-                                     <span class="gray">Observação</span>
-                                     <p><b>Observação, se houver</b></p>
- 
-                                 </div>
-                             </div>
- 
-                         </div>
- 
-                     </div>
- 
-                 </div>
-             </div>
-
-
-            <!--Modal Gerenciar contas-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="gerenciarContas" style="--bs-modal-width: 888px;
-            --bs-modal-height: 626px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Gerenciar contas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col col-md-9"><input type="text" class="form-control" placeholder="Nome da conta"></div>
-                            <div class="col col-md-3"> <input type="button" value="Adicionar" class="btn btn-success gerenciabtn"></div>
-                           
-                        </div>
-                            <p class="m-3"><b>Contas cadastradas</b></p>
-
-                            <table class="table recisaotable text-center">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th scope="col" class="col-md-9 text-start">Nome</th>
-
-                                        <th scope="col" class="col-md-3">Ação</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-start">
-                                        <td style="padding:25px">Nome da conta</td>
-                                        <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
-                                                src="img/lixeirared.png" alt=""></td>
-                                    </tr>
-                                    <tr class="text-start">
-                                        <td style="padding:25px">Nome da conta</td>
-                                        <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
-                                                src="img/lixeirared.png" alt=""></td>
-                                    </tr>
-                                    <tr class="text-start">
-                                        <td style="padding:25px">Nome da conta</td>
-                                        <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
-                                                src="img/lixeirared.png" alt=""></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-           <!--Modal adicionar movimentação-->
-           <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="adicionarMovimentacao" style="--bs-modal-width: 888px;
-           --bs-modal-height: 757px;">
-                       <div class="modal-dialog">
-                           <div class="modal-content">
-                               <div class="modal-header">
-                                   <h5 class="modal-title greentitle">Adicionar movimentação </h5>
-                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                               </div>
-                               <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col col-md-4 mt-3">
-                                            <input type="text" placeholder="Data" class="form-control">
-                                        </div>
-                                        <div class="col col-md-4 mt-3">
-                                            <select name="" id="" class="form-select">
-                                                <option value="">Tipo</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-md-4 mt-3">
-                                            <select name="" id="" class="form-select">
-                                                <option value="">Conta</option>
-                                            </select>
-                                        </div>
-                                        <div class="col col-md-9 mt-3">
-                                            <input type="text" class="form-control" placeholder="Conta">
-                                        </div>
-                                        <div class="col col-md-3 mt-3">
-                                            <input type="text" class="form-control" placeholder="Valor">
-                                        </div>
-                                        <div class="col col-md-6 mt-3">
-                                            <input type="text" class="form-control" placeholder="Descrição">
-                                        </div>
-                                        <div class="col col-md-6 mt-3">
-                                            <input type="text" class="form-control" placeholder="Observação">
-                                        </div>
-                                        
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
                                     </div>
-                                   <p class="mt-3"><b>Selecionar arquivos</b></p>
-                                   
-                                   <div class="modal-body text-center">
-       
-       
-                                       <div class="row formempresa">
-       
-       
-                                           <div class="row">
-       
-                                               <div class="upload">
-                                                   <img src="img/uploadico.png" alt="">
-                                                   <p><b>Selecionar arquivo</b></p>
-                                                   <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                                               </div>
-                                           </div>
-                                           <div class="row mt-3">
-                                               <p><b>Arquivos enviados</b></p>
-                                           </div>
-                                           <div class="row table-responsive">
-       
-                                               <div class="row anexos">
-                                                   <div class="col col-md-5">
-                                                       <p>Campo para a descrição do documento</p>
-                                                   </div>
-                                                   <div class="col col-md-2">
-                                                       <p class="gray">01/02/2020</p>
-                                                   </div>
-                                                   <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
-                                                           documento</a>
-                                                   </div>
-       
-                                                   <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
-                                               </div>
-       
-                                           </div>
-       
-       
-                                       </div>
-                                   </div>
-                                   <div class="modal-footer text-center">
-                                       <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                       <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                           aria-label="Close">Adicionar movimentação</button>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-            <!--Rodapé
+                                </div>
+                                <div class="row mt-3">
+                                    <p><b>Arquivos enviados</b></p>
+                                </div>
+                                <div class="row table-responsive">
+
+                                    <div class="row anexos">
+                                        <div class="col col-md-5">
+                                            <p>Campo para a descrição do documento</p>
+                                        </div>
+                                        <div class="col col-md-2">
+                                            <p class="gray">01/02/2020</p>
+                                        </div>
+                                        <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
+                                                documento</a>
+                                        </div>
+
+                                        <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Importar do extrato bancário</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal importar documento-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="importarDocumento" style="--bs-modal-width: 888px;
+    --bs-modal-height: 533px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Importar documento</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <p class="mt-3"><b>Selecione o arquivo</b></p>
+
+                        <div class="modal-body text-center">
+
+
+                            <div class="row formempresa">
+
+
+                                <div class="row">
+
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <p><b>Arquivos enviados</b></p>
+                                </div>
+                                <div class="row table-responsive">
+
+                                    <div class="row anexos">
+                                        <div class="col col-md-5">
+                                            <p>Campo para a descrição do documento</p>
+                                        </div>
+                                        <div class="col col-md-2">
+                                            <p class="gray">01/02/2020</p>
+                                        </div>
+                                        <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
+                                                documento</a>
+                                        </div>
+
+                                        <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Importar documento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Remover-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="remover" style="--bs-modal-width: 380px;
+    --bs-modal-height: 202;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body text-center">
+
+                        <h4>Tem certeza que deseja remover a movimentação?</h4>
+
+                        <p> <span class="gray">Essa ação não pode ser desfeita.</span></p>
+
+
+
+
+
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-danger" data-bs-dismiss="modal"
+                                aria-label="Close">Remover</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal editar movimentação-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="editarMovimentacao" style="--bs-modal-width: 888px;
+            --bs-modal-height: 214px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Editar movimentação</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+
+                        <div class="row">
+                            <div class="col col-md-4 mt-3">
+                                <input type="text" placeholder="Data" class="form-control">
+                            </div>
+                            <div class="col col-md-4 mt-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Tipo</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-4 mt-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Conta</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-9 mt-3">
+                                <input type="text" class="form-control" placeholder="Conta">
+                            </div>
+                            <div class="col col-md-3 mt-3">
+                                <input type="text" class="form-control" placeholder="Valor">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" class="form-control" placeholder="Descrição">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" class="form-control" placeholder="Observação">
+                            </div>
+
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Salvar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Modal ver detalhes-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="verDetalhes" style="--bs-modal-width: 888px;
+             --bs-modal-height: 214px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">00/00/000</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+
+                        <div class="row">
+                            <div class="col col-md-4">
+                                <span class="gray">Tipo</span>
+                                <p><b>Banco ou caixa</b></p>
+
+                            </div>
+                            <div class="col col-md-4">
+                                <span class="gray">Conta</span>
+                                <p><b>Nome da conta</b></p>
+
+                            </div>
+                            <div class="col col-md-4">
+                                <span class="gray">Categoria</span>
+                                <p><b>Categoria selecionada</b></p>
+
+                            </div>
+                            <div class="col col-md-4">
+                                <span class="gray">Valor</span>
+                                <p><b>R$0.000,00</b></p>
+
+                            </div>
+                            <div class="col col-md-4">
+                                <span class="gray">Descrição</span>
+                                <p><b>Descrição do imposto</b></p>
+
+                            </div>
+                            <div class="col col-md-4">
+                                <span class="gray">Observação</span>
+                                <p><b>Observação, se houver</b></p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Modal Gerenciar contas-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="gerenciarContas" style="--bs-modal-width: 888px;
+            --bs-modal-height: 626px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Gerenciar contas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col col-md-9"><input type="text" class="form-control"
+                                    placeholder="Nome da conta"></div>
+                            <div class="col col-md-3"> <input type="button" value="Adicionar"
+                                    class="btn btn-success gerenciabtn"></div>
+
+                        </div>
+                        <p class="m-3"><b>Contas cadastradas</b></p>
+
+                        <table class="table recisaotable text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="col-md-9 text-start">Nome</th>
+
+                                    <th scope="col" class="col-md-3">Ação</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-start">
+                                    <td style="padding:25px">Nome da conta</td>
+                                    <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
+                                            src="img/lixeirared.png" alt=""></td>
+                                </tr>
+                                <tr class="text-start">
+                                    <td style="padding:25px">Nome da conta</td>
+                                    <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
+                                            src="img/lixeirared.png" alt=""></td>
+                                </tr>
+                                <tr class="text-start">
+                                    <td style="padding:25px">Nome da conta</td>
+                                    <td><img src="img/edit.png" alt=""> <img src="img/olhob.png" alt=""> <img
+                                            src="img/lixeirared.png" alt=""></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Modal adicionar movimentação-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="adicionarMovimentacao" style="--bs-modal-width: 888px;
+           --bs-modal-height: 757px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Adicionar movimentação </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col col-md-4 mt-3">
+                                <input type="text" placeholder="Data" class="form-control">
+                            </div>
+                            <div class="col col-md-4 mt-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Tipo</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-4 mt-3">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Conta</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-9 mt-3">
+                                <input type="text" class="form-control" placeholder="Conta">
+                            </div>
+                            <div class="col col-md-3 mt-3">
+                                <input type="text" class="form-control" placeholder="Valor">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" class="form-control" placeholder="Descrição">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" class="form-control" placeholder="Observação">
+                            </div>
+
+                        </div>
+                        <p class="mt-3"><b>Selecionar arquivos</b></p>
+
+                        <div class="modal-body text-center">
+
+
+                            <div class="row formempresa">
+
+
+                                <div class="row">
+
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <p><b>Arquivos enviados</b></p>
+                                </div>
+                                <div class="row table-responsive">
+
+                                    <div class="row anexos">
+                                        <div class="col col-md-5">
+                                            <p>Campo para a descrição do documento</p>
+                                        </div>
+                                        <div class="col col-md-2">
+                                            <p class="gray">01/02/2020</p>
+                                        </div>
+                                        <div class="col col-md-3"><a href="#" class="btn btn-success">Ver
+                                                documento</a>
+                                        </div>
+
+                                        <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Adicionar movimentação</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Rodapé
     <footer class="position-absolute bottom-0 start-50 translate-middle-x">
         <div class="row">
             <div class="col col-md-12">
