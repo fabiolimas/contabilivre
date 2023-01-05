@@ -47,6 +47,18 @@ p, li {
 hr{
     border: 1px solid rgba(74, 163, 229, 0.2);
 }
+.dropdown.m-3.saldomod.holeritswitch label {
+    margin-right: -37px;
+}
+.dropdown.m-3.saldomod.holeritswitch {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #343A40;
+    left: 38px;
+}
 p.titulo {
     width: 872px;
     height: 18px;
@@ -1867,6 +1879,31 @@ button.navbar-toggler.collapsed {
         flex-direction: row;
         background: #fff;
     }
+    .addmovimentacao{
+        position: relative !important;
+        right: 0px !important;
+
+    }
+    .row.btnsclientec .btn {
+        width: 86%;
+        margin: 5px;
+    }
+    .dropdown.addnovo {
+        width: max-content;
+    }
+    
+    .row.btnsimposto {
+        position: relative !important;
+        right: 49px;
+        /* width: max-content; */
+    }
+    .row.btnsclientec {
+        margin-left: 0px;
+       
+    }
+    .container.movimenta {
+        margin-top: -285px;
+    }
     main.col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4 {
        
         margin-left: 0px;
@@ -1975,17 +2012,39 @@ button.navbar-toggler.collapsed {
         margin-left: -17px;
     }
     .col-md-7.indice {
-         margin-left: 0px;
+         margin-left: 0px !important;
         
     }
    
     .col.col-md-2.submenu {
-        left: 0px !important;
+        left: 24px !important;
         text-align: center;
         z-index: 0;
         width: 100%;
-        margin-top: 62px;
+        margin-top: 114px;
      
+    }
+    .row.btnsfluxoimposto {
+        display: flex;
+        right: 88px;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+    }
+    .filtrosf select {
+       
+        width: 355px;
+      
+    }
+    .row.filtrosf {
+       
+        margin-left: -75px;
+    }
+    .row.filtrosf .btn {
+        
+        width: 100% !important;
+        
+        margin-left: 27px !important;
+    
     }
     .titulosecao, .titulosecaod {
        
@@ -2022,14 +2081,14 @@ button.navbar-toggler.collapsed {
     }  
     .row.table-responsive {
         border-radius: 8px;
-        width:fit-content;
+        width:356px;
        
         padding: 25px;
     } 
     .tabelasect, .colaboradoresf, .addEvento {
        
-        width: 376px;
-        margin-left: 150px;
+        width: 392px;
+    margin-left: 146px;
        
     }
     .colaboradoresf, .addEvento{
@@ -2074,7 +2133,7 @@ button.navbar-toggler.collapsed {
         width: 100%;
     }
     .col.col-md-10.dados-empresa {
-        margin-top: 303px !important;
+        margin-top: 341px !important;
     }
     .row.position-relative.tit {
          width: 100%; 
@@ -2116,7 +2175,7 @@ button.navbar-toggler.collapsed {
         margin-left: 0px;
     }
     .col.col-md-10.addColaborador {
-        margin-top: 429px;
+        margin-top: 505px;
         margin-left: -154px;
     }
     .col.data {
