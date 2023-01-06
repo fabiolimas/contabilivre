@@ -211,17 +211,17 @@
 
                         <div class="searchbar">
                             <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text" name="pesquisa"
-                                    class="form-control" placeholder="Pesquisar">
+                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
                             </div>
                             <div class="col-md-2 datain position-relative mt-2 ms-3">
-        
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text" name="pesquisa"
-                                    class="form-control" placeholder="Periodo">
+
+                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Periodo">
                             </div><span class="gray ms-3"> Até </span>
                             <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text" name="pesquisa"
-                                    class="form-control" placeholder="Periodo">
+                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Periodo">
                             </div>
                             <div class="col-md-2 datafi mt-2 ms-3">
                                 <button class="btn btn-primary headbusca">Buscar</button>
@@ -230,403 +230,293 @@
                     </div>
                 </main>
 
-                
-                <div class="container">
+
+                <div class="container mt-5">
                     <div class="row">
 
-                        <div class="row btnsclientec">
+                        <div class="row btnsnfs">
 
                             <div class="col-md-3">
-                                <p class="titulosecao" style="margin-left:-32px"><b>Eventos</b></p>
+                                <ul class="nav flex-row">
+                                    <li class="nav-item nfitem">
+                                        <a class="nav-link " href="#">
+
+                                            NF
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nfitem">
+                                        <a class="nav-link " href="#">
+
+                                            NFe
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nfitem">
+                                        <a class="nav-link " href="#">
+
+                                            NFSe
+                                        </a>
+                                    </li>
+
+                                </ul>
 
                             </div>
-                            <div class="col-md-9">
 
+                            <div class="col col-md-9">
+                                <div class="btnacoes">
+                                    <a href="#"><img src="img/importanf.png" class="ms-3"> Importar</a>
 
+                                    <div class="dropdown  ms-3">
 
+                                        <button class="btn btn-primary dropdown-toggle btnemitir" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Emitir
+                                        </button>
+                                        <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="emitir-nfe.html"><img src="img/detalhes.png"> NFe</a>
+                                                    <a class="dropdown-item" href="emitir-nfse.html"><img src="img/nfes.png">NFSe</a>
+                                                        <a class="dropdown-item" href="emitir-faturamento.html"><img src="img/faturamento.png">Faturamento</a>
 
-                                <div class="dropdown m-3 addevento" style="right: 231px;">
-
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Adicionar novos
-                                    </button>
-                                    <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="evento.html"><i
-                                                class="fa fa-volume-down"></i>Evento</a>
-                                        <a class="dropdown-item" href="atestado.html"><i
-                                                class="fa fa-desktop"></i>Atestado
-                                            Médico</a>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
-                <div class="container">
-                    <div class="col col-md-10 addColaborador ">
-                        <div class="col-md-11 tabelasect  mb-5 mt-3 ">
-            
+
+
+                <div class="container mt-5">
+                    
+                        <div class="col-md-9 plan1 mb-5 mt-5 ">
+
                             <div class="row mb-3">
-            
+
                                 <div class="col-md-12">
-            
-                                    <nav class="navbar navbar-expand pagamentos">
-                                        <ul class="metodospag navbar-nav me-auto mb-2 mb-lg-0">
-            
-                                            <li class="nav-item"><a href="#" class="nav-link" id="eventosbtn">Eventos em geral</a>
+
+                                    <nav class="navbar navbar-expand nfs">
+                                        <ul class="metodospag navbar-nav me-auto">
+
+                                            <li class="nav-item"><a href="#" class="nav-link" id="saidasBtn">Saídas/Vendas</a>
                                             </li>
-                                            <li class="nav-item"><a href="#" class="nav-link" id="atestadobtn">Atestado médico</a>
+                                            <li class="nav-item"><a href="#" class="nav-link" id="entradasBtn">Entradas/Compras</a>
                                             </li>
-                                            <li class="nav-item"><a href="#" class="nav-link" id="consultabtn">Consulta de
-                                                    férias</a>
-                                            </li>
-            
-            
+                                         
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="row table-responsive">
-                                <table class="table eventostable">
+                            <div class="row table-responsive w-100">
+                                <table class="table nftable">
                                     <thead class="table-dark">
                                         <tr>
-                                            <th scope="col">Funcionário</th>
-                                            <th scope="col">Evento</th>
-                                            <th scope="col">Data</th>
-                                            <th scope="col">Ação</th>
-            
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider text-center">
-            
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='finalizado'>Adiantamento salarial</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rlocal'>Comissão</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='remail'>Plano de saúde</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='reembolso'>Reembolso</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='plr'>PLR</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='diastrabalhados'>Dias trabalhados intermitente</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>
-                                                <div class="dropdown m-3 detalhesrecisao">
-            
-                                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                            data-bs-target="#detalhes"><i class="fa fa-file-alt"></i>Ver
-                                                            Detalhes</a>
-            
-                                                    </div>
-                                                </div>
-                                            </td>
-            
-                                        </tr>
-            
-            
-                                </table>
-            
-                                <!--tabela atestado medico-->
-            
-                                <table class="table atestadoTable">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th scope="col">Funcionário</th>
-                                            <th scope="col">Tipo</th>
-                                            <th scope="col">Data</th>
-                                            <th scope="col">Qtd. de horas</th>
-                                            <th scope="col">Ação</th>
-            
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider text-center">
-            
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>00/00/0000</td>
-                                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                                    title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>00/00/0000</td>
-                                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                                    title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>00/00/0000</td>
-                                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                                    title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>00/00/0000</td>
-                                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                                    title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
-            
-                                        </tr>
-                                        <tr>
-                                            <td>Nome completo</td>
-                                            <td><span class='rcorreio'>Férias</span></td>
-                                            <td>00/00/0000</td>
-                                            <td>00/00/0000</td>
-                                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                                    title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
-            
-                                        </tr>
-            
-            
-            
-                                </table>
-            
-                                <!--tabela consulta de ferias-->
-            
-                                <table class="table consultaFerias">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th scope="col">CPF</th>
-                                            <th scope="col">Funcionário</th>
-                                            <th scope="col">Vencimento</th>
+                                            <th scope="col">Origem</th>
+                                            <th scope="col">Número</th>
+                                            <th scope="col">Competência</th>
+                                            <th scope="col">Emissão</th>
+                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Valor Total</th>
                                             <th scope="col">Situação</th>
-            
-            
+                                            <th scope="col">Tipo</th>
+                                            <th scope="col"></th>
+
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider text-center">
-            
+
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='finalizado'>Em dia</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='finalizado'>Válida</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='finalizado'>Em dia</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='finalizado'>Válida</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='finalizado'>Em dia</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='rcorreio'>Cancelada</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='rcorreio'>Atrasada</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='finalizado'>Válida</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='rcorreio'>Atrasada</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='finalizado'>Válida</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
+                                        </tr>
+                                        
+
+
+                                </table>
+
+                                <!--tabela entradas compras-->
+
+                                <table class="table entradasCompras">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th scope="col">Origem</th>
+                                            <th scope="col">Número</th>
+                                            <th scope="col">Competência</th>
+                                            <th scope="col">Emissão</th>
+                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Valor Total</th>
+                                            <th scope="col">Situação</th>
+                                            <th scope="col">Tipo</th>
+                                            <th scope="col"></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider text-center">
+
+                                        <tr>
+                                            <td>Serviço</td>
+                                            <td>00</td>
+                                            <td>00/00/0000</td>
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='finalizado'>Válida</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
                                         <tr>
-                                            <td>000.000.000-00</td>
-            
-                                            <td>Nome completo</td>
+                                            <td>Serviço</td>
+                                            <td>00</td>
                                             <td>00/00/0000</td>
-                                            <td><span class='rcorreio'>Atrasada</span></td>
-            
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='rlocal'>Tag</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
                                         </tr>
-            
-            
-            
-            
+                                        <tr>
+                                            <td>Serviço</td>
+                                            <td>00</td>
+                                            <td>00/00/0000</td>
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='remail'>Tag</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
+                                        </tr>
+                                        <tr>
+                                            <td>Serviço</td>
+                                            <td>00</td>
+                                            <td>00/00/0000</td>
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='reembolso'>Tag</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
+                                        </tr>
+                                        <tr>
+                                            <td>Serviço</td>
+                                            <td>00</td>
+                                            <td>00/00/0000</td>
+                                            <td>00/00/0000</td>
+                                            <td>Nome do Cliente</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td>R$ 0.000,00</td>
+                                            <td><span class='plr'>Tag</span></td>
+                                            <td><a href="#" class="btn btn-success">Ver NF</a></td>
+                                            
+
+                                        </tr>
+                                        
+
+
                                 </table>
                             </div>
                         </div>
                     </div>
 
-            </div>
+                </div>
 
 
 
 
-            <!--Modal avaliaçao 1-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                                melhor.
-                            </p>
-                            <img src="img/avaliações.png" alt="Avaliacoes">
-                        </div>
-                        <div class="modal-footer text-center">
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Continuar</button>
+                <!--Modal avaliaçao 1-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                                    atendê-lo
+                                    melhor.
+                                </p>
+                                <img src="img/avaliações.png" alt="Avaliacoes">
+                            </div>
+                            <div class="modal-footer text-center">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Continuar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Rodapé
+                <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">

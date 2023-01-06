@@ -236,6 +236,76 @@ background: #FFFFFF;
 box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
 border-radius: 8px;
 }
+.btnacoes {
+    display: flex;
+    position: absolute;
+    right: 61px;
+    align-items: center;
+}
+.btnacoes a{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+text-decoration: none;
+
+/* Info / Darker */
+
+color: #004578;
+}
+#saidasBtn{
+    border-bottom:1px solid #4aa3e5;
+
+}
+nav.navbar.navbar-expand.nfs {
+    margin-bottom: -35px;
+}
+.entradasCompras{
+    display: none;
+}
+.btnemitir{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+color: #fff !important;
+width: 123px;
+height: 50px;
+
+/* Info / Darker */
+
+background: #004578;
+border-radius: 4px;
+
+}
+.row.btnsnfs {
+    margin-top: 94px;
+    float: right;
+    
+    margin-left: 97px;
+}
+li.nav-item.nfitem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 43px;
+    height: 34px;
+    background: #4AA3E5;
+    border-radius: 100px;
+    margin-left: 20px;
+    border-radius: 7px;
+    
+}
+.nfitem a{
+    color: #fff !important;
+}
 .col.col-md-2.submenu {
     left: 248px;
     position: absolute;

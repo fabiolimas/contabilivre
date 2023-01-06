@@ -533,4 +533,42 @@ $(document).ready(function(){
 
 
 */
+$(document).ready(function(){
+    var btnSaidas=document.querySelector("#saidasBtn");
+    var btnEntradas=document.querySelector("#entradasBtn");
+   
 
+    var tabelaSaidas=document.querySelector('.nftable');
+    var tabelaEntradas=document.querySelector('.entradasCompras');
+   
+
+    btnSaidas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='inline-table';
+        tabelaEntradas.style.display='none';
+       
+       
+
+        btnEntradas.style.border='none';
+        btnSaidas.style.borderBottom='1px solid #4aa3e5';
+       
+      
+        
+    });
+
+    btnEntradas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='none';
+        tabelaEntradas.style.display='inline-table';
+       
+       
+
+        btnEntradas.style.borderBottom='1px solid #4aa3e5';
+        btnSaidas.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
