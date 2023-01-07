@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilivre - Importar Nota Fiscal</title>
+    <title>Contabilivre - Faturamento</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -222,16 +222,12 @@
 
                         <div class="col-md-3">
                             <p class="titulosecao titimport"><b><a href="notas-fiscais.html"><i
-                                            class="fa fa-chevron-left"></i></a> Importar nota fiscal</b></p>
+                                            class="fa fa-chevron-left"></i></a> Registrar faturamento sem nota
+                                    fiscal</b></p>
 
                         </div>
                         <div class="col col-md-9">
-                            <div class="btnacoes">
-                                <a href="#" class="btn btn-primary "> Importar Notas Fora do Prazo</a>
-                                <a href="#" class="btn btn-success ms-3"> Emitir notas fora do prazo</a>
 
-
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,15 +240,16 @@
 
                     <div class="row mb-3">
 
-                        <div class="col-md-12 w-100">
+                        <div class="col-md-12">
 
                             <nav class="navbar navbar-expand nfs">
                                 <ul class="metodospag navbar-nav me-auto">
 
-                                    <li class="nav-item"><a href="#" class="nav-link" id="importarBtn">Importar</a>
+                                    <li class="nav-item"><a href="#" class="nav-link" id="importarBtn">Registrar</a>
                                     </li>
-                                    <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtn">Ultimas
-                                            emissões</a>
+                                    <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtn">Últimos
+                                            Registros
+                                        </a>
                                     </li>
 
 
@@ -264,53 +261,24 @@
 
 
 
-                                <div class="col col-md-12 mt-3">
-                                    <select name="" id="" class="form-select">
-                                        <option value="">Tipo de nota fiscal</option>
-                                    </select>
+                                <div class="col col-md-6 mt-3">
+                                    <input type="text" class="form-control" placeholder="Competência">
+                                </div>
+
+                                <div class="col col-md-6 mt-3">
+                                    <input type="text" class="form-control" placeholder="Valor">
                                 </div>
 
 
 
                                 </form>
                             </div>
-                            <hr>
-                            <div class="row">
-                                <p><b>Selecione o arquivo no formato CSV</b></p>
-                            </div>
-                            <div class="row">
 
-                                <div class="upload w-100">
-                                    <img src="img/uploadico.png" alt="">
-                                    <p><b>Selecionar arquivo</b></p>
-                                    <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <p><b>Arquivos enviados</b></p>
-                            </div>
-                            <div class="row table-responsive">
-
-                                <div class="row anexos">
-                                    <div class="col col-md-5">
-                                        <p>Campo para a descrição do documento</p>
-                                    </div>
-                                    <div class="col col-md-2">
-                                        <p class="gray">01/02/2020</p>
-                                    </div>
-                                    <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
-                                    </div>
-
-                                    <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
-                                </div>
-
-                            </div>
                             <hr>
                             <div class="row bts mt-3 w-100">
                                 <div class="col-md-12 d-flex justify-content-end ms-5">
                                     <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
-                                    <div class="col-md-3"><a href="#" class="btn btn-primary">Importar nota
-                                            fiscal</a>
+                                    <div class="col-md-3"><a href="#" class="btn btn-primary">Registrar</a>
                                     </div>
 
                                 </div>
@@ -322,12 +290,10 @@
                             <table class="table ultimasEmissoes">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th scope="col">Código</th>
-                                        <th scope="col">Descrição</th>
                                         <th scope="col">Competência</th>
-                                        <th scope="col">Situação</th>
-
-                                        <th scope="col">Valor Total</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Ação</th>
+                                     
 
 
 
@@ -337,65 +303,45 @@
                                 <tbody class="table-group-divider text-center">
 
                                     <tr>
-                                        <td>00</td>
-                                        <td>Descrição da nota</td>
                                         <td>00/00/0000</td>
-
-
-
-                                        <td><span class='finalizado'>Finalizado</span></td>
+                                        <td>R$0.000,00</td>
                                         <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
 
 
                                     </tr>
                                     <tr>
-                                        <td>00</td>
-                                        <td>Descrição da nota</td>
                                         <td>00/00/0000</td>
-
-
-
-                                        <td><span class='finalizado'>Finalizado</span></td>
+                                        <td>R$0.000,00</td>
                                         <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
 
 
                                     </tr>
+                                    
                                     <tr>
-                                        <td>00</td>
-                                        <td>Descrição da nota</td>
                                         <td>00/00/0000</td>
-
-
-
-                                        <td><span class='reembolso'>Rejeitado</span></td>
+                                        <td>R$0.000,00</td>
                                         <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
 
 
                                     </tr>
+                                    
                                     <tr>
-                                        <td>00</td>
-                                        <td>Descrição da nota</td>
                                         <td>00/00/0000</td>
-
-
-
-                                        <td><span class='reembolso'>Rejeitado</span></td>
+                                        <td>R$0.000,00</td>
                                         <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
 
 
                                     </tr>
+                                    
                                     <tr>
-                                        <td>00</td>
-                                        <td>Descrição da nota</td>
                                         <td>00/00/0000</td>
-
-
-
-                                        <td><span class='finalizado'>Finalizado</span></td>
+                                        <td>R$0.000,00</td>
                                         <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
 
 
                                     </tr>
+                                    
+                                    
 
 
 
