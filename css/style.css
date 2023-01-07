@@ -314,6 +314,64 @@ li.nav-item.nfitem {
     border-left: 2px solid #a7ef4b;
     width: fit-content;
 }
+p.titulosecao.titnf {
+    margin-left: -188px;
+    
+}
+.nfe{
+   
+    border-radius: 8px; 
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    /* width: 1128px; */
+    height: auto;
+    left: 280px;
+    top: 258px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 8px;
+
+}
+.produtos {
+    
+    margin-top: 206px;
+    margin-left: 0;
+    width: 93%;
+}
+.col-md-2.minbusca.buscaprodutos {
+    right: 589px;
+    top: -6px;
+    width: 286px;
+height: 56px;
+}
+.col-md-2.minbusca.buscaprodutos input {
+    
+    width: 286px;
+height: 56px;
+}
+.successnf{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+
+width: 213px;
+height: 50px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+
+/* Inside auto layout */
+}
 p.titulosecaos {
     margin-left: -30px;
     width: max-content;
@@ -1446,7 +1504,7 @@ a.btn.btn-danger.remover i {
 .minbusca i, .busca i {
     color: #4AA3E5;
     margin-top: 18px !important;
-    left: 142px;
+    /*left: 142px;*/
 }
 .col-md-10.busca {
     top: 13px;
