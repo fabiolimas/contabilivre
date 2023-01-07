@@ -572,3 +572,43 @@ $(document).ready(function(){
 
 
 });
+
+$(document).ready(function(){
+    var btnImportar=document.querySelector("#importarBtn");
+    var btnUltimasEm=document.querySelector("#ultimasemissoesBtn");
+   
+
+    var importar=document.querySelector('.importarNota');
+    var ultimasEmissoes=document.querySelector('.ultimasEmissoes');
+   
+
+    btnImportar.addEventListener('click', function(e){
+        e.preventDefault();
+        importar.style.display='block';
+        ultimasEmissoes.style.display='none';
+       
+       
+
+        btnUltimasEm.style.border='none';
+        btnImportar.style.borderBottom='1px solid #4aa3e5';
+       
+      
+        
+    });
+
+    btnUltimasEm.addEventListener('click', function(e){
+        e.preventDefault();
+        importar.style.display='none';
+        ultimasEmissoes.style.display='inline-table';
+       
+       
+
+        btnUltimasEm.style.borderBottom='1px solid #4aa3e5';
+        btnImportar.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
