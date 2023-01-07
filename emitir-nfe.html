@@ -221,21 +221,22 @@
                     <div class="row btnsclientec">
 
                         <div class="col-md-3">
-                            <p class="titulosecao titnf"><b><a href="notas-fiscais.html"><i class="fa fa-chevron-left"></i></a> Emitir NFe</b></p>
+                            <p class="titulosecao titnf"><b><a href="notas-fiscais.html"><i
+                                            class="fa fa-chevron-left"></i></a> Emitir NFe</b></p>
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-                <div class="container" style="margin-top:200px">
+            <div class="container" style="margin-top:200px">
 
 
-                    <div class="col col-md-10 correspondencia">
-                        <div class="col-md-9 nfe p-3 mb-5 mt-5 ">
-                           <p><b>Dados da NFe</b></p>
+                <div class="col col-md-10 correspondencia">
+                    <div class="col-md-9 nfe p-3 mb-5 mt-5 ">
+                        <p><b>Dados da NFe</b></p>
 
-                           <div class="row">
+                        <div class="row">
                             <div class="col col-md-3 mt-2">
                                 <input type="text" class="form-control" placeholder="Série">
                             </div>
@@ -292,174 +293,267 @@
                                 </select>
                             </div>
                             <div class="col col-md-3 mt-2">
-                               <input type="button" class="btn btn-success successnf" value="Cadastrar novo cliente">
+                                <input type="button" class="btn btn-success successnf" value="Cadastrar novo cliente">
                             </div>
-                           </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="produtos">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="row btnsclientec position-relative">
+
+                                <div class="col-md-3">
+                                    <p class="titulosecao titnf"><b>Produtos</b></p>
+                                    <div class="col-md-2 minbusca buscaprodutos">
+                                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text"
+                                            name="pesquisa" class="form-control" placeholder="Pesquisar">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-9 ">
+
+
+
+
+
+
+                                    <button class="btncadproduto" type="button" id="dropdownMenuButton" data-bs-toggle="modal" data-bs-target="#cadastrarProduto"
+                                       >
+                                        Cadatrar novo produto
+                                    </button>
+                                    <button class="importarcsv" type="button" id="dropdownMenuButton"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="img/importcsv.png"> Importar em lote via CSV
+                                    </button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="tabprodutos container">
+
+        <div class="col-md-9 produtostabs mb-5 mt-5 ">
+
+            <div class="row table-responsive w-100">
+                <table class="table nftable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">CFOP</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Valor unitário</th>
+                            <th scope="col">Valor Total</th>
+
+                            <th scope="col"></th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider text-center">
+
+                        <tr>
+
+                            <td>00</td>
+                            <td>Descrição</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>R$ 0.000,00</td>
+                            <td>R$ 0.000,00</td>
+                            <td><a href=""><img src="img/edit.png"></a> <a href="#"><img src="img/lixeirared.png"></a>
+                            </td>
+
+
+
+                        </tr>
+                        <tr>
+
+                            <td>00</td>
+                            <td>Descrição</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>R$ 0.000,00</td>
+                            <td>R$ 0.000,00</td>
+                            <td><a href=""><img src="img/edit.png"></a> <a href="#"><img src="img/lixeirared.png"></a>
+                            </td>
+
+
+
+                        </tr>
+                        <tr>
+
+                            <td>00</td>
+                            <td>Descrição</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>R$ 0.000,00</td>
+                            <td>R$ 0.000,00</td>
+                            <td><a href=""><img src="img/edit.png"></a> <a href="#"><img src="img/lixeirared.png"></a>
+                            </td>
+
+
+
+                        </tr>
+
+
+
+
+                </table>
+                <a href="#" class="maisprodutos">Carregar mais produtos</a>
+                <!--tabela entradas compras-->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="informefrete container">
+
+        <div class="col-md-9 produtostabs mb-5 mt-5 p-3 ">
+            <p><b>Informe o frete desta NF-e</b></p>
+
+            <div class="row">
+                <div class="col col-md-4 mt-2">
+                    <select name="" id="" class="form-select">
+                        <option value="">Modalidade do frete</option>
+                    </select>
+                </div>
+                <div class="col col-md-4 mt-2">
+                    <input type="text" class="form-control" placeholder="Valor do frete">
+                </div>
+                <div class="col col-md-4 mt-2">
+                    <select name="" id="" class="form-select">
+                        <option value="">Transportadora</option>
+                    </select>
+                </div>
+
+                <p class="mt-3"><b>Informações adicionais da NF-e</b></p>
+                <div class="col col-md-12">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Descrição"></textarea>
+                </div>
+                <hr class="mt-3">
+                <div class="row bts mt-3">
+                    <div class="col-md-12 d-flex justify-content-end ms-5">
+                        <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
+                        <div class="col-md-3"><a href="#" class="btn btn-primary">Emitir nota fiscal</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Modal cadastrar produto-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="cadastrarProduto" style="--bs-modal-width: 888px;
+    --bs-modal-height: 532px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Cadastrar novo produto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-md-3 mt-2">
+                            <input type="text" class="form-control" placeholder="Código">
+
+                        </div>
+                        <div class="col col-md-9 mt-2">
+                            <input type="text" class="form-control" placeholder="Descrição">
+
+                        </div>
+                        <div class="col col-md-3 mt-2">
+                            <input type="text" class="form-control" placeholder="EAN">
+
+                        </div>
+                        <div class="col col-md-3 mt-2">
+                            <input type="text" class="form-control" placeholder="EX TIPI">
+
+                        </div>
+                        <div class="col col-md-3 mt-2">
+                            <input type="text" class="form-control" placeholder="NCM">
+
+                        </div>
+                        <div class="col col-md-3 mt-2">
+                            <input type="text" class="form-control" placeholder="CEST">
+
+                        </div>
+                        <div class="col col-md-4 mt-2">
+                            <input type="text" class="form-control" placeholder="Unidade">
+
+                        </div>
+                        <div class="col col-md-4 mt-2">
+                            <input type="text" class="form-control" placeholder="Valor unitário">
+
+                        </div>
+                        <div class="col col-md-4 mt-2">
+                            <select name="" id="" class="form-select">
+                                <option value="">Status do produto</option>
+                            </select>
+
+                        </div>
+
+                        <p class="mt-3"><b>Tributação simples nacional</b></p>
+                        <div class="col col-md-6 mt-2">
+                            <select name="" id="" class="form-select">
+                                <option value="">Situação tributária</option>
+                            </select>
+
+                        </div>
+                        <div class="col col-md-6 mt-2">
+                            <select name="" id="" class="form-select">
+                                <option value="">Origem</option>
+                            </select>
+
                         </div>
                         
                     </div>
-                    <div class="produtos"> 
-                        <div class="container">
-                            <div class="row">
-    
-                                <div class="row btnsclientec position-relative">
-    
-                                    <div class="col-md-3">
-                                        <p class="titulosecao titnf"><b>Produtos</b></p>
-                                        <div class="col-md-2 minbusca buscaprodutos">
-                                            <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
-                                                class="form-control" placeholder="Pesquisar">
-                                        </div>
-    
-                                    </div>
-                                    <div class="col-md-9 ">
-    
-    
-                                      
-    
-                                     
-    
-                                            <button class="btn btn-primary btncadproduto " type="button"
-                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                Cadatrar novo produto
-                                            </button>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
                 </div>
-
-            </div>
-            <!--Modal Opções-->
-            <div class="modal fade" tabindex="-1" id="opcoes">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Alterar situação</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="#">
-                                <div class="row inputsr">
-                                    <div class="col col-md3">
-                                        <div class="titleinput"><b>Encaminhar foto</b></div>
-                                        <input type="radio" value="" name="envio" id="encaminharfoto"> <label
-                                            for="encaminharfoto" class="gray">Iremos abrir a correspondência e
-                                            encaminhar
-                                            para você uma foto do conteúdo da mesma.</label>
-
-                                    </div>
-                                    <div class="col col-md3">
-                                        <div class="titleinput"><b>Receber pelo correio</b></div>
-                                        <input type="radio" value="" name="envio" id="recebcorreio"> <label
-                                            for="recebcorreio" class="gray"><b>Atenção:</b> Valores pagos em taxas de
-                                            Correio serão inseridos em sua próxima mensalidade.</label>
-
-                                    </div>
-                                    <div class="col col-md3">
-                                        <div class="titleinput"><b>Retirada no local</b></div>
-                                        <input type="radio" value="" name="envio" id="retiralocal"> <label
-                                            for="retiralocal" class="gray">Verifique o local de retirada</label>
-
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <p><b>Dados para o envio</b></p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mt-2">
-                                        <input type="text" class="form-control" placeholder="CEP" name="cep">
-                                    </div>
-                                    <div class="col-md-6 mt-2">
-                                        <input type="text" class="form-control" placeholder="Endereço" name="endereco">
-                                    </div>
-                                    <div class="col-md-3 mt-2">
-                                        <input type="text" class="form-control" placeholder="Número" name="numero">
-                                    </div>
-                                    <div class="col-md-3 mt-2">
-                                        <input type="text" class="form-control" placeholder="Bairro" name="bairro">
-                                    </div>
-                                    <div class="col-md-3 mt-2">
-                                        <input type="text" class="form-control" placeholder="Cidade" name="cidade">
-                                    </div>
-                                    <div class="col-md-3 mt-2">
-                                        <select name="estado" id="" class="form-control">
-                                            <option value="">Estado</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12 mt-2">
-                                        <input type="text" class="form-control" placeholder="Complemento"
-                                            name="complemento">
-                                    </div>
-                                </div>
-
-                        </div>
-                        <div class="modal-footer">
-
-                            <a href="#" ata-bs-dismiss="modal" aria-label="Close" class="ms-3">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Salvar</button>
-                            </form>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                  
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Cadastrar novo produto</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-
-            <!--Modal ajuda-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Ajuda</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
-                                aproveitar
-                                todas
-                                as funcionalidades e serviços que a Contabilivre fornece.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="position-absolute bottom-2 start-0">
-                                <p><b>4/5</b></p>
-                            </div>
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Pular tour</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Entendi</button>
-                        </div>
-                    </div>
+    <!--Modal avaliaçao 1-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                        melhor.
+                    </p>
+                    <img src="img/avaliações.png" alt="Avaliacoes">
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
                 </div>
             </div>
-
-            <!--Modal avaliaçao 1-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                                melhor.
-                            </p>
-                            <img src="img/avaliações.png" alt="Avaliacoes">
-                        </div>
-                        <div class="modal-footer text-center">
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Rodapé
+        </div>
+    </div>
+    <!--Rodapé
     <footer>
         <div class="row">
             <div class="col col-md-12">

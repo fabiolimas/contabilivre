@@ -93,6 +93,46 @@ a#btndownload {
     color: #21ab1f;
     display: none;
 }
+.btncadproduto{
+    margin-left: 180px;
+    border: 1px solid #74c83c;
+    width: max-content;
+    border-radius: 5px;
+   
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+height: 46px;
+    background: #f2fcf3;
+/* Secundária / Main */
+
+color: #74C83C;
+
+}
+.importarcsv{
+    margin-left: 19px;
+    border: 1px solid #38ABFF;
+    width: max-content;
+    border-radius: 5px;
+   
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+height: 46px;
+    background: #f2fcf3;
+/* Secundária / Main */
+
+color: #38ABFF;
+
+}
 li.nav-item {
     padding: 7px;
 }
@@ -344,7 +384,7 @@ p.titulosecao.titnf {
     width: 93%;
 }
 .col-md-2.minbusca.buscaprodutos {
-    right: 589px;
+    right: 568px;
     top: -6px;
     width: 286px;
 height: 56px;
@@ -1751,15 +1791,9 @@ a.btn.btn-success.btnres {
     margin-top: 15px;
 }
 .plan1 {
-    /* background: #fff; */
-    /* height: auto; */
-    /* width: 73%; */
-    /* margin-left: 175px !important; */
+   
      border-radius: 8px; 
-    /* position: relative; */
-    /* margin-top: 139px !important; */
-    /* box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%); */
-    display: flex;
+        display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
@@ -1772,6 +1806,33 @@ a.btn.btn-success.btnres {
     background: #FFFFFF;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     border-radius: 8px;
+}
+.tabprodutos.container img {
+    margin-right: 38px;
+}.maisprodutos{
+    color: #74C83C;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.informefrete.container {
+    margin-top: 250px;
+}
+.produtostabs{
+    border-radius: 8px; 
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0;
+position: absolute;
+/* width: 1128px; */
+height: auto;
+left: 280px;
+
+background: #FFFFFF;
+box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+border-radius: 8px;
+
 }
 span.ano.gray {
     font-size: 14px;
