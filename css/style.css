@@ -354,6 +354,19 @@ li.nav-item.nfitem {
     border-left: 2px solid #a7ef4b;
     width: fit-content;
 }
+.row.formempresa label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #343A40;
+}
+.listaEmails .titulosecao {
+
+    margin-left: 157px;
+    width: 100%;
+}
 p.titulosecao.titnf {
     margin-left: -188px;
     

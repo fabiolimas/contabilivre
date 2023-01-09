@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilivre - Faturamento</title>
+    <title>Contabilivre - Editar perfil</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -116,7 +116,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="central-de-documentos.html">
+                            <a class="nav-link" href="central-de-documentos.html">
 
                                 <img src="img/menu/icons/24/centraldoc.png">Central de documentos
                             </a>
@@ -154,7 +154,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="notas-fiscais.html">
+                            <a class="nav-link" href="notas-fiscais.html">
 
                                 <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
                             </a>
@@ -203,187 +203,155 @@
 
             <div class="col col-md-12">
                 <main class="col-md-9 titlesection">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <p><img src="img/star.png"><b>Notas Fiscais</b></p>
-                        </div>
+                    <p><img src="img/star.png"><b>Editar perfil</b></p>
 
 
 
-                    </div>
                 </main>
-            </div>
 
-            <div class="container mt-5">
+
                 <div class="row">
+                    <div class="col-md-7 indice">
+                        <a href="editar-perfil.html">Editar perfil</a> <i class="fa fa-chevron-right"></i>Informações
+                        básicas
+                    </div>
+                </div>
+                <div class="row position-relative tit">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-7">
 
-                    <div class="row btnsnfs">
 
-
-                        <div class="col-md-3">
-                            <p class="titulosecao titimport"><b><a href="notas-fiscais.html"><i
-                                            class="fa fa-chevron-left"></i></a> Registrar faturamento sem nota
-                                    fiscal</b></p>
-
-                        </div>
-                        <div class="col col-md-9">
-
-                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col col-md-2 submenu">
 
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="editar-perfil.html">
 
-            <div class="container mt-5">
+                                Informações básicas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notificacoes.html">
 
-                <div class="col-md-9 nfe mb-5 mt-5 ">
+                                Notificações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="encaminhar-email.html">
 
-                    <div class="row mb-3">
+                                Encaminhar e-mail
+                            </a>
+                        </li>
 
-                        <div class="col-md-12">
+                    </ul>
 
-                            <nav class="navbar navbar-expand nfs">
-                                <ul class="metodospag navbar-nav me-auto">
-
-                                    <li class="nav-item"><a href="#" class="nav-link" id="importarBtn">Registrar</a>
-                                    </li>
-                                    <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtn">Últimos
-                                            Registros
-                                        </a>
-                                    </li>
-
-
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="importarNota">
-                            <div class="row formempresa">
-
-
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Competência">
-                                </div>
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Valor">
-                                </div>
+                </div>
+                <div class="row">
+                    <div class="titulosecao">
+                        <p><b>Informações básicas</b></p>
+                    </div>
 
 
 
-                                </form>
-                            </div>
+                </div>
+                <div class="col col-md-10 dados-empresa">
+                    <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
+                        <div class="row formempresa">
 
-                            <hr>
-                            <div class="row bts mt-3 w-100">
-                                <div class="col-md-12 d-flex justify-content-end ms-5">
-                                    <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
-                                    <div class="col-md-3"><a href="#" class="btn btn-primary">Registrar</a>
+                            <form action="">
+                                <div class="row">
+                                  
+                                    <div class="col col-md-12 text-center">
+                                        <input type="file" id="file" style="display:none;"><label for="file">
+                                        <img src="img/camera.png">
+                                        <p>Clique para adicionar uma foto/logo da empresa</p>
+                                    </label>
+                                    </div>
+                                    <div class="col col-md-12 mt-2">
+                                        <input type="text" class="form-control" placeholder="Nome">
+                                    </div>
+                                    <div class="col col-md-12 mt-2">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                    <div class="col col-md-10 mt-2">
+                                        <input type="password" class="form-control" placeholder="Senha">
+                                    </div>
+                                    <div class="col col-md-2 mt-2">
+                                        <input type="submit" class="btn btn-success successnf" style="font-size:13px;" value="Trocar senha">
                                     </div>
 
                                 </div>
+                            </form>
+                        <hr class="mt-3">
+                        <div class="row bts mt-3">
+                            <div class="col-md-12 d-flex justify-content-end ms-5">
+                                <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
+                                <div class="col-md-2"><a href="#" class="btn btn-primary">Salvar</a></div>
+
                             </div>
                         </div>
+                    </div>
 
-                        <!--tabela ultimas emissões-->
-                        <div class="row table-responsive w-100">
-                            <table class="table ultimasEmissoes">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th scope="col">Competência</th>
-                                        <th scope="col">Valor</th>
-                                        <th scope="col">Ação</th>
-                                     
+                </div>
 
 
 
-
-                                    </tr>
-                                </thead>
-                                <tbody class="table-group-divider text-center">
-
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    
-
-
-
-
-
-
-                            </table>
+                <!--Modal ajuda-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Ajuda</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
+                                    aproveitar
+                                    todas
+                                    as funcionalidades e serviços que a Contabilivre fornece.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="position-absolute bottom-2 start-0">
+                                    <p><b>4/5</b></p>
+                                </div>
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Pular tour</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Entendi</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-
-
-
-
-            <!--Modal avaliaçao 1-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                                atendê-lo
-                                melhor.
-                            </p>
-                            <img src="img/avaliações.png" alt="Avaliacoes">
-                        </div>
-                        <div class="modal-footer text-center">
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Continuar</button>
+                <!--Modal avaliaçao 1-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                                    atendê-lo
+                                    melhor.
+                                </p>
+                                <img src="img/avaliações.png" alt="Avaliacoes">
+                            </div>
+                            <div class="modal-footer text-center">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Continuar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Rodapé
+                <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">
