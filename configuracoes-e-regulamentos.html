@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilivre - Indique e ganhe</title>
+    <title>Contabilivre - Configurações e regulamentos</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -203,16 +203,39 @@
 
             <div class="col col-md-12">
                 <main class="col-md-9 titlesection">
-                    <p><img src="img/star.png"><b>Indique e ganhe</b></p>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <p><img src="img/star.png"><b>Indique e ganhe</b></p>
+                        </div>
 
 
+                        <div class="searchbar">
+                            <div class="col-md-2 position-relative mt-2 ms-3">
+                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
+                            </div>
+                            <div class="col-md-2 datain position-relative mt-2 ms-3">
 
+                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Periodo">
+                            </div><span class="gray ms-3"> Até </span>
+                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
+                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
+                                    name="pesquisa" class="form-control" placeholder="Periodo">
+                            </div>
+                            <div class="col-md-2 datafi mt-2 ms-3">
+                                <button class="btn btn-primary headbusca">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
                 </main>
 
 
                 <div class="row">
                     <div class="col-md-7 indice">
-                        <a href="indique-e-ganhe.html">Indique e ganhe</a> <i class="fa fa-chevron-right"></i>Indique
+                        <a href="indique-e-ganhe.html">Indique e ganhe</a> <i
+                            class="fa fa-chevron-right"></i>Configurações e regulamentos
                     </div>
                 </div>
                 <div class="row position-relative tit">
@@ -228,7 +251,7 @@
 
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="indique-e-ganhe.html">
+                            <a class="nav-link" href="indique-e-ganhe.html">
 
                                 Indique
                             </a>
@@ -246,7 +269,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="configuracoes-e-regulamentos.html">
+                            <a class="nav-link active" href="configuracoes-e-regulamentos.html">
 
                                 Configurações e regulamentos
                             </a>
@@ -261,119 +284,148 @@
                         <div class="row btnsclientec" style="margin-left: 342px;">
 
                             <div class="col-md-3">
-                                <p class="titulosecaos"><b>Indique</b></p>
+                                <p class="titulosecaos"><b>Configurações e regulamentos</b></p>
 
                             </div>
-                            <div class="row btnscliente position-absolute" style="margin-top:-12px; margin-left:565px;">
 
-
-
-
-                                <a href="adicionar-colaborador.html" class="btn addnovo">Ver regulamento</a>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-10 dados-empresa">
-                    <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
-                        <div class="row">
-
-                            <nav class="navbar navbar-expand pagamentos">
-                                <ul class="metodospag navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item"><a href="#" class="nav-link" id="acessosbtn">Gerar link de
-                                            indicação</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link" id="certificadobtn">Cadastrar
-                                            indicação</a></li>
-
-                                </ul>
-                            </nav>
+                    <div class="col-md-11 tabelasect p-3 mb-5 mt-3">
+                        <div class="row mt-4 mb-3">
+                            <div class="col aviso pt-3">
+                                <i class="fa fa-info-circle icoinfo"></i>
+                                <p> Leia todos os regulamentos com atenção antes de aceitá-los e começar a usar nossos
+                                    serviços de indique e ganhe.</p>
+                            </div>
                         </div>
-                        <form action="#">
-                            <div class="row formempresa">
-
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Nome">
-                                </div>
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="email" class="form-control" placeholder="E-mail">
-                                </div>
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Telefone">
-                                </div>
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Cidade/UF">
-                                </div>
-                                <div class="col col-md-6 mt-3">
-                                    <select name="" id="" class="form-select">
-                                        <option value="">Serviço</option>
-                                    </select>
-                                </div>
-
-
-                                <div class="row bts mt-3">
-                                    <div class="col-md-12 d-flex justify-content-end ms-5">
-
-                                        <div class="col-md-2"><a href="#" class="btn btn-primary">Indicar</a></div>
-
-                                    </div>
-                                </div>
+                        <div class="row pt-4">
+                            <button class="btn gerenciarContas" style="background-color:#fff !important;"
+                                data-bs-toggle="modal" data-bs-target="#gerenciarContas"> Regulamento indique e ganhe
+                            </button>
+                            <a href="#" class="btn addnovo" style="width: max-content;">Clique para visualizar o
+                                regulamento</a>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-4 mt-3">
+                                <sub class="gray">Aceite regulamento</sub>
+                                <p>20/12/2019 18:42 via endereço de IP 201.76.70.115</p>
                             </div>
-                        </form>
-                        <hr>
-                        <div class="row formcertificado">
-
-                            <div class="row">
-                                <div class="col col-md-5 mt-2">
-                                    <select name="" id="" class="form-select">
-                                        <option value="">Serviço</option>
-                                    </select>
-                                </div>
-
-                                <div class="col col-md-5 mt-2">
-                                    <input type="text" class="form-control" placeholder="Link de indicação">
-                                </div>
-                                <div class="col col-md-2 mt-2">
-                                    <input type="submit" class="btn btn-success successnf" style="font-size:13px;"
-                                        value="Gerar link ">
-                                </div>
+                            <div class="col col-md-4 mt-3">
+                                <sub class="gray">Participante des</sub>
+                                <p>00/00/0000</p>
                             </div>
-
+                            <div class="col col-md-4 mt-3">
+                                <sub class="gray">Situação</sub>
+                                <p>Ativo</p>
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <label for="CLT">Declaração postada</label><label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-3 mt-2">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Banco</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Nome do titular da conta">
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="CPF do titular da conta">
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="CNPJ do titular da conta">
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Agência">
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Agência DV">
+                            </div>
+                            <div class="col col-md-3 mt-2">
+                                <input type="text" class="form-control" placeholder="Conta corrente">
+                            </div>
+                            <div class="col col-md-3">
+                                <input type="text" class="form-control" placeholder="Conta DV">
+                            </div>
                             <div class="row bts mt-3">
                                 <div class="col-md-12 d-flex justify-content-end ms-5">
-
-                                    <div class="col-md-2"><a href="#" class="btn btn-primary">Indicar</a></div>
-
+    
+                                    <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar configurações</a></div>
+    
                                 </div>
                             </div>
                         </div>
+                      
 
                     </div>
 
 
 
-                    <!--Modal ajuda-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">
+                    <!--Modal detalhes-->
+                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes" style="--bs-modal-width: 888px;
+                --bs-modal-height: 404px;">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Ajuda</h5>
+                                    <h5 class="modal-title greentitle">Detalhes da indicação</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
-                                        aproveitar
-                                        todas
-                                        as funcionalidades e serviços que a Contabilivre fornece.</p>
+                                    <div class="row">
+                                        <div class="col col-md-12">
+                                            <sub class="gray">Indicado</sub>
+                                            <p>Nome do Indicado</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Plano contratado</sub>
+                                            <p>Nome do plano contratado</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Pagamento mensalidade</sub>
+                                            <p>R$0,00</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Método de pagamento</sub>
+                                            <p>Cartão de crédito</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Valor devido</sub>
+                                            <p>R$0,00</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Data previsão</sub>
+                                            <p>00/00/0000</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Data previsão</sub>
+                                            <p>R$0,00</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Data de pagamento</sub>
+                                            <p>00/00/0000</p>
+                                        </div>
+                                        <div class="col col-md-3">
+                                            <sub class="gray">Situação</sub>
+                                            <p>Situação</p>
+                                        </div>
+                                        <div class="col col-md-12">
+                                            <sub class="gray">Comentários</sub>
+                                            <p>Campo para comentário caso houver</p>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="modal-footer">
-                                    <div class="position-absolute bottom-2 start-0">
-                                        <p><b>4/5</b></p>
-                                    </div>
-                                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Pular tour</a>
+
+
                                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
                                         aria-label="Close">Entendi</button>
                                 </div>
