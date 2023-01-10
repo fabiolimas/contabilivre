@@ -304,7 +304,7 @@
                             <button class="btn gerenciarContas" style="background-color:#fff !important;"
                                 data-bs-toggle="modal" data-bs-target="#gerenciarContas"> Regulamento indique e ganhe
                             </button>
-                            <a href="#" class="btn addnovo" style="width: max-content;">Clique para visualizar o
+                            <a href="#" class="btn addnovo" data-bs-toggle="modal" data-bs-target="#regulamento"style="width: max-content;">Clique para visualizar o
                                 regulamento</a>
                         </div>
                         <div class="row">
@@ -369,65 +369,29 @@
 
 
                     <!--Modal detalhes-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes" style="--bs-modal-width: 888px;
-                --bs-modal-height: 404px;">
+                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="regulamento" style="--bs-modal-width: 888px;
+                --bs-modal-height: 540px;">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Detalhes da indicação</h5>
+                                    <h5 class="modal-title greentitle">Termos e regulamentos - Indique e ganhe</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col col-md-12">
-                                            <sub class="gray">Indicado</sub>
-                                            <p>Nome do Indicado</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Plano contratado</sub>
-                                            <p>Nome do plano contratado</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Pagamento mensalidade</sub>
-                                            <p>R$0,00</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Método de pagamento</sub>
-                                            <p>Cartão de crédito</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Valor devido</sub>
-                                            <p>R$0,00</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Data previsão</sub>
-                                            <p>00/00/0000</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Data previsão</sub>
-                                            <p>R$0,00</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Data de pagamento</sub>
-                                            <p>00/00/0000</p>
-                                        </div>
-                                        <div class="col col-md-3">
-                                            <sub class="gray">Situação</sub>
-                                            <p>Situação</p>
-                                        </div>
-                                        <div class="col col-md-12">
-                                            <sub class="gray">Comentários</sub>
-                                            <p>Campo para comentário caso houver</p>
-                                        </div>
-                                    </div>
+                                    <p>Antes de prosseguir é necessário estar de acordo com nossa <b>Política de Privacidade e Segurança</b></p>
+                                    <p class="gray">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                        <div class="row permissao text-left">
+                                            <input type="checkbox"  id="vincularRps" class=""><label for="vincularRps" ><p>Declaro que eu aceito os <b>termos e regulamentos</b></p></label>
+                                        </div>
                                 </div>
                                 <div class="modal-footer">
-
+                                    
 
                                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                        aria-label="Close">Entendi</button>
+                                        aria-label="Close">Aceito</button>
                                 </div>
                             </div>
                         </div>
