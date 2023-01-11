@@ -367,6 +367,94 @@ li.nav-item.nfitem {
     margin-left: 157px;
     width: 100%;
 }
+.etAzul{
+    box-sizing: border-box;
+
+position: absolute;
+left: 32%;
+    right: 0%;
+    top: 11%;
+width: 48px;
+    height: 28px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+/* Primária / Dark */
+
+border: 1px solid #3664BC;
+border-radius: 8px;
+}
+.etVerde{
+    box-sizing: border-box;
+
+position: absolute;
+left: 32%;
+    right: 0%;
+    top: 11%;
+width: 48px;
+    height: 28px;
+
+/* Primária / Main */
+
+background:  #A7EF4B;
+/* Primária / Dark */
+
+border: 1px solid  #A7EF4B;
+border-radius: 8px;
+}
+
+.etRoxo{
+    box-sizing: border-box;
+
+position: absolute;
+left: 32%;
+    right: 0%;
+    top: 11%;
+width: 48px;
+    height: 28px;
+
+/* Primária / Main */
+
+background:  #9747FF;
+/* Primária / Dark */
+
+border: 1px solid  #9747FF;
+border-radius: 8px;
+}
+form.w-100.novolembreteform img, .novolembreteform i {
+    margin-top: 16px !important;
+}
+form.w-100.novolembreteform input {
+    padding-left: 39px;
+}
+.col.col-md-1.radios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.etVermelho{
+    box-sizing: border-box;
+
+position: absolute;
+left: 32%;
+    right: 0%;
+    top: 11%;
+width: 48px;
+    height: 28px;
+
+/* Primária / Main */
+
+background:  #FF7777;
+/* Primária / Dark */
+
+border: 1px solid  #FF7777;
+border-radius: 8px;
+}
+
 p.titulosecao.titnf {
     margin-left: -188px;
     
