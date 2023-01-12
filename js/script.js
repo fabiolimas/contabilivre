@@ -612,3 +612,91 @@ $(document).ready(function(){
 
 
 });
+
+$(document).ready(function(){
+    var btnmensalidade=document.querySelector("#mensalidadeBtn");
+    var btnhistorico=document.querySelector("#histBtn");
+    var btnavulsos=document.querySelector("#avulsosBtn");
+    var btncredito=document.querySelector("#creditosBtn");
+   
+
+    var mensalidade=document.querySelector('.mensalidades');
+    var historico=document.querySelector('.historicoM');
+    var avulsos=document.querySelector('.avulsos');
+    var credito=document.querySelector('.creditost');
+    var saldoc=document.querySelector('.saldoCreditos');
+    
+   
+
+    btnmensalidade.addEventListener('click', function(e){
+        e.preventDefault();
+        mensalidade.style.display='block';
+        historico.style.display='none';
+        avulsos.style.display='none';
+        credito.style.display='none';
+        saldoc.style.display='none';
+       
+        btnavulsos.style.border='none';
+        btncredito.style.border='none';
+        btnhistorico.style.border='none';
+        btnmensalidade.style.borderBottom='1px solid #4aa3e5';
+       
+      
+        
+    });
+
+    btnhistorico.addEventListener('click', function(e){
+        e.preventDefault();
+        mensalidade.style.display='none';
+        historico.style.display='block';
+        avulsos.style.display='none';
+        credito.style.display='none';
+        saldoc.style.display='none';
+       
+        btnavulsos.style.border='none';
+        btncredito.style.border='none';
+        btnhistorico.style.borderBottom='1px solid #4aa3e5';
+        btnmensalidade.style.borderBottom='none';
+       
+      
+        
+    });
+
+    btnavulsos.addEventListener('click', function(e){
+        e.preventDefault();
+        mensalidade.style.display='none';
+        historico.style.display='none';
+        avulsos.style.display='block';
+        credito.style.display='none';
+        saldoc.style.display='none';
+       
+        btnavulsos.style.borderBottom='1px solid #4aa3e5';
+        btncredito.style.border='none';
+        btnhistorico.style.border='none';
+        btnmensalidade.style.borderBottom='none';
+       
+      
+        
+    });
+
+    btncredito.addEventListener('click', function(e){
+        e.preventDefault();
+        mensalidade.style.display='none';
+        historico.style.display='none';
+        avulsos.style.display='none';
+        credito.style.display='block';
+        saldoc.style.display='block';
+       
+        btnavulsos.style.border='none';
+        btncredito.style.borderBottom='1px solid #4aa3e5';
+        btnhistorico.style.border='none';
+        btnmensalidade.style.border='none';
+       
+      
+        
+    });
+
+   
+
+
+});

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Financeiro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--scripts-->
+    <!--Fulcallendar-->
+    <link rel="stylesheet" href="js/fullcalendar-5.11.3/lib/main.css">
+
+    <script src="js/fullcalendar-5.11.3/lib/main.js"></script>
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/cd1b9a04c6.js" crossorigin="anonymous"></script>
+    <!--progressbar-->
+    <script src="js/progressbar.min.js"></script>
+    <!--parallax-->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body class="position-relative">
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    area-controls="#navbar-links" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
+                        <div class="dropdown m-3">
+
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="thumb">
+                                    <img src="img/thumb.png" alt="Usuario thumb">
+                                </div> Nome do Cliente
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="editar-perfil.html"><img
+                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                                <a class="dropdown-item" href="lembretes.html"><img
+                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                                <a class="dropdown-item" href="financeiro.html"><img
+                                        src="img/dropdown/icons/24/financeiro.png">
+                                    Financeiro</a>
+                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            </div>
+                        </div>
+                        <div class="ticket m-2">
+                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                        </div>
+                        <div class="help"><img src="img/help.png" alt=""></div>
+
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!--Menu lateral-->
+        <aside>
+            <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">
+
+                                <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicosa.html">
+
+                                <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="endereco-fiscal.html">
+
+                                <img src="img/menu/icons/24/endereco.png"> Endereço fiscal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dados-da-empresa.html">
+
+                                <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-clientes.html">
+
+                                <img src="img/menu/icons/24/clientes.png">Meus clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="central-de-documentos.html">
+
+                                <img src="img/menu/icons/24/centraldoc.png">Central de documentos
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-colaboradores.html">
+
+                                <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="socios.html">
+
+                                <img src="img/menu/icons/24/socios.png">Sócios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="impostos.html">
+
+                                <img src="img/menu/icons/24/impostos.png">Impostos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="declaracoes.html">
+
+                                <img src="img/menu/icons/24/declaracoes.png">Declarações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movimentacoes.html">
+
+                                <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas-fiscais.html">
+
+                                <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recibos.html">
+
+                                <img src="img/menu/icons/24/recibos.png">Recibos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relatorios-contabies.html">
+
+                                <img src="img/menu/icons/24/relatoriosc.png">Relatórios contábeis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="distribuicao-de-lucros.html">
+
+                                <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dmed.html">
+
+                                <img src="img/menu/icons/24/dmed.png"> DMED
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dimob.html">
+
+                                <img src="img/menu/icons/24/dimod.png"> DIMOB
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </nav>
+
+        </aside>
+        <div class="row">
+            <!--planos-->
+
+            <div class="col col-md-12">
+                <main class="col-md-9 titlesection">
+                    <p><img src="img/star.png"><b>Financeiro</b></p>
+
+
+                    <div class="col-md-2 minbusca">
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
+                    </div>
+                </main>
+
+                <div class="row">
+                    <div class="col-md-7 indice">
+                        <a href="financeiro.html">Financeiro</a> <i class="fa fa-chevron-right"></i>Pagamentos
+                    </div>
+                    <div class="row">
+
+                        <div class="row btnsclientec position-relative">
+
+                            <div class=" col col-md-3">
+                                <p class="titulosecao u"><b>Pagamentos</b></p>
+
+                            </div>
+                            <div class="col col-md-9">
+                                <div class="row btnsfinanceiro position-absolute">
+
+
+                                    <button class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#corrigirSaldo"> Plano anual com 3,5% de desconto</button>
+                                    <a href="#" class="btn btn-danger mensalidadesa"><img
+                                            src="img/notifyred.png">Existem mensalidades em aberto</a>
+
+                                </div>
+                                <div class="row menufinanceiro">
+                                    <div class="col-md-9">
+
+                                        <nav class="navbar navbar-expand financeiro">
+                                            <ul class="metodospag navbar-nav me-auto mb-2 mb-lg-0">
+
+                                                <li class="nav-item"><a href="#" class="nav-link"
+                                                        id="mensalidadeBtn">Mensalidades</a>
+                                                </li>
+                                                <li class="nav-item"><a href="#" class="nav-link" id="histBtn">Histórico
+                                                        sem movimentação</a>
+                                                </li>
+                                                <li class="nav-item"><a href="#" class="nav-link"
+                                                        id="avulsosBtn">Serviços avulsos contratados</a>
+                                                </li>
+                                                <li class="nav-item"><a href="#" class="nav-link"
+                                                        id="creditosBtn">Créditos</a>
+                                                </li>
+                                                
+                                                
+
+                                            </ul>
+                                           
+                                            <div class="row saldoCreditos">
+                                                <p>Saldo em créditos</p>
+                                                <span class="val">R$ 0,00</span>
+                                            </div>
+                                        </nav>
+                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-2 submenu">
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item ">
+                    <a class="nav-link active " href="financeiro.html">
+
+                        Pagamentos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="metodo-de-pagamento.html">
+
+                        Método de pagamento
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="container mensalidades">
+        <div class="col col-md-10 addColaborador">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+                <div class="row table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Vencimento</th>
+                                <th scope="col">Data do pagamento</th>
+                                <th scope="col">Valor pago</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Ação</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider text-center">
+
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000</td>
+                                <td>R$0.000,00</td>
+                                <td><span class="rcorreio">Aguardando pagamento</span></td>
+
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                            </a>
+
+
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000</td>
+                                <td>R$0.000,00</td>
+                                <td><span class="finalizado">Pagamento  Realizado</span></td>
+
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                            </a>
+
+
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000</td>
+                                <td>R$0.000,00</td>
+                                <td><span class="finalizado">Pagamento  Realizado</span></td>
+
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                            </a>
+
+
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000</td>
+                                <td>R$0.000,00</td>
+                                <td><span class="finalizado">Erro no pagamento</span></td>
+
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                            </a>
+
+
+                                        </div>
+                                </td>
+                            </tr>
+                            
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container historicoM">
+        <div class="col col-md-10 addColaborador">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+                <div class="row table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Competência</th>
+                                <th scope="col">Período referente</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Motivo</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider text-center">
+
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000 à 00/00/0000</td>
+                              
+                                <td><span class="finalizado">Desconto concedido</span></td>
+
+                                <td>
+                                    Empresa com funcionário (1)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000 à 00/00/0000</td>
+                               
+                                <td><span class="rcorreio">Desconto não concedido</span></td>
+
+                                <td>
+                                    Empresa com funcionário (1)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000 à 00/00/0000</td>
+                               
+                                <td><span class="rcorreio">Desconto não concedido</span></td>
+
+                                <td>
+                                    Empresa com funcionário (1)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>00/00/0000 à 00/00/0000</td>
+                               
+                                <td><span class="rcorreio">Desconto não concedido</span></td>
+
+                                <td>
+                                    Empresa com funcionário (1)
+                                </td>
+                            </tr>
+                           
+                            
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container avulsos ">
+        <div class="col col-md-10 addColaborador">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+                <div class="row table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Contratação</th>
+                                <th scope="col">Nome do serviço</th>
+                                <th scope="col">Valor</th>
+                                
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider text-center">
+
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Nome completo do serviço avulso contratado</td>
+                              
+                                <td>R$0,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Nome completo do serviço avulso contratado</td>
+                              
+                                <td>R$0,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Nome completo do serviço avulso contratado</td>
+                              
+                                <td>R$0,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Nome completo do serviço avulso contratado</td>
+                              
+                                <td>R$0,00</td>
+
+                            </tr>
+                           
+                            
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container creditost">
+        <div class="col col-md-10 addColaborador">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+                <div class="row table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Data</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Movimentação</th>
+                                <th scope="col">Valor do crédito</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider text-center">
+
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Descrição do crédito</td>
+                              
+                                <td>R$100,00</td>
+                                <td>R$0.000,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Descrição do crédito</td>
+                              
+                                <td>R$100,00</td>
+                                <td>R$0.000,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Descrição do crédito</td>
+                              
+                                <td>R$100,00</td>
+                                <td>R$0.000,00</td>
+
+                            </tr>
+                            <tr>
+                                <td>00/00/0000</td>
+                                <td>Descrição do crédito</td>
+                              
+                                <td>R$100,00</td>
+                                <td>R$0.000,00</td>
+
+                            </tr>
+                            
+                           
+                            
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Detalhes-->
+   
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="verDetalhes" style="--bs-modal-width: 888px;
+    --bs-modal-height: 214px;">
+ <div class="modal-dialog">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title greentitle">Detalhes da mensalidade</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body ">
+
+             <div class="row">
+                 <div class="col col-md-6">
+                     <span class="gray">Valor mensal</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                     <span class="gray">Adic. funcionário(s) plano antigo</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                     <span class="gray">Loc. endereço fiscal</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                     <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal (Últimos 12 meses)</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                     <span class="gray">Reemissão DAS - PGMEI REF. Competência  04/2020</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                     <span class="gray">Adi. Plano PRO</span>
+                     <p><b>R$0,00</b></p>
+
+                 </div>
+                 <div class="col col-md-6">
+                    <span class="gray">Valor Total</span>
+                    <p><b>R$0,00</b></p>
+
+                </div>
+             </div>
+             <div class="modal-footer text-center">
+                
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                    aria-label="Close">Entendi</button>
+            </div>
+
+         </div>
+
+     </div>
+
+ </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+    <!--Rodapé
+    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="row">
+            <div class="col col-md-12">
+                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+            </div>
+            <div class="col col-md-2 btns">
+                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
+                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
+                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+            </div>
+
+
+
+        </div>
+
+    </footer>-->
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>

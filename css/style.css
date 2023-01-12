@@ -422,6 +422,63 @@ background:  #9747FF;
 border: 1px solid  #9747FF;
 border-radius: 8px;
 }
+.row.btnsfinanceiro {
+    display: flex;
+    right: 236px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.historicoM, .avulsos, .creditost{
+    display: none;
+}
+.saldoCreditos{
+    width: 147px;
+height: 24px;
+
+/* Title / Title-7 */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Cinza / 700 */
+
+color: #868E96;
+margin-top: -43px;
+display:none;
+
+}
+.val{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+/* Secundária / Main */
+
+color: #74C83C;
+}
+.row.btnsfinanceiro.position-absolute .btn {
+    width: max-content;
+    margin-right: 20px;
+    font-size: 13px;
+}
+a.btn.btn-danger.mensalidadesa {
+    background: none;
+    color: red;
+}
+nav.navbar.navbar-expand.financeiro {
+    margin-top: 64px;
+    border-radius: 9px;
+    margin-left: -305px;
+}
 form.w-100.novolembreteform img, .novolembreteform i {
     margin-top: 16px !important;
 }
@@ -1927,7 +1984,7 @@ p.titulosecao.titimport {
     width: 100%;
     margin-top: 32px;
 }
-#importarBtn{
+#importarBtn, #mensalidadeBtn{
     border-bottom:1px solid #4aa3e5;
 }
 table.table.ultimasEmissoes {
