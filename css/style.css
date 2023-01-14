@@ -82,6 +82,19 @@ a#btndownload {
 .holeritecheck {
     margin-right: 7px;
 }
+.importPlanilha{
+    display:none
+}
+.anexos.s .btn{
+    margin-right: -23px !important;
+    font-size: 10px;
+    margin-left: 13px;
+}
+img.helpdmd {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+}
 .impostocheck {
     margin-right: 7px;
 }

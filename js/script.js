@@ -700,3 +700,39 @@ $(document).ready(function(){
 
 
 });
+
+$(document).ready(function(){
+    var btnManual=document.querySelector("#manual");
+    var btnExcel=document.querySelector("#excel");
+   
+
+    var manual=document.querySelector('.manual');
+    var excel=document.querySelector('.importPlanilha');
+   
+
+    btnManual.addEventListener('click', function(e){
+        e.preventDefault();
+        manual.style.display='block';
+        excel.style.display='none';
+       
+          
+      
+        
+    });
+
+    btnExcel.addEventListener('click', function(e){
+        e.preventDefault();
+        manual.style.display='none';
+        excel.style.display='flex';
+       
+       
+
+        btnEntradas.style.borderBottom='1px solid #4aa3e5';
+        btnSaidas.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
