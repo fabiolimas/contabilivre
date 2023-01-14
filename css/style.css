@@ -85,6 +85,20 @@ a#btndownload {
 .impostocheck {
     margin-right: 7px;
 }
+.obrigado{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+
+
+/* Sucesso/Main */
+
+color: #4FCE66;
+
+}
 .contadorselect {
     margin-left: 178px;
     border: 1px solid #74c83c;
@@ -428,8 +442,74 @@ border-radius: 8px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+.row p b {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212529;
+}
+.listaaviso ul li{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+/* Primária / Darker */
+
+color: #093270;
+}
+button.btn.btn-primary {
+    background: #4AA3E5;
+    border-radius: 4px;
+    border: none;
+}
+.listaaviso{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+margin-left:20px;
+width: 840px;
+height: 213px;
+
+/* Info / 8% */
+
+background: rgba(56, 171, 255, 0.08);
+/* Primária / Light */
+
+border: 1px solid #58C0ED;
+border-radius: 4px;
+}
+button.btncadproduto.entendabtn {
+    float: right !important;
+    position: absolute;
+    right: 24px;
+    top: 21px;
+}
+label.form-check-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212529;
+}
 .historicoM, .avulsos, .creditost{
     display: none;
+}
+p.titulosecao.u.cartoescad {
+    margin-bottom: -54px;
+    margin-left: 0px;
 }
 .saldoCreditos{
     width: 147px;
@@ -1341,9 +1421,56 @@ div#perfilPessoal p {
     font-size: 13px;
 }*/
 .greentitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
     color: #74C83C;
 }
+.redolar{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
 
+text-decoration-line: line-through;
+
+/* Erro / Lighter */
+
+color: #FFB5B5;
+}
+.precoPromo{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 70px;
+/* identical to box height, or 125% */
+
+
+/* Primária / Dark */
+
+color: #3664BC;
+
+}
+
+.valPromo{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+text-decoration-line: line-through;
+
+/* Erro / Lighter */
+
+color: #ff452c;
+}
 #avaliacao1 .modal-footer.text-center {
     margin: 0 auto;
 }
