@@ -276,7 +276,7 @@
             <div class="col col-md-10 dados-empresa">
                 <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
                     <div class="row formempresa">
-
+                        <form action="#" class="d-flex">
                         <div class="col col-md-3 mt-3">
                             <select name="distLucros" class="form-select">
                                 <option value="">Distribuição de Lucros</option>
@@ -295,7 +295,7 @@
                             <input type="text" class="form-control" placeholder="Data de registro">
                         </div>
 
-                        </form>
+                       
                     </div>
                     <hr>
                     <div class="row">
@@ -303,12 +303,14 @@
                                 no formato PDF:</b></p>
                     </div>
                     <div class="row">
-
+                        <input type="file" name="" id="arquivo" class="d-none">
+                        <label for="arquivo">
                         <div class="upload">
                             <img src="img/uploadico.png" alt="">
                             <p><b>Selecionar arquivo</b></p>
                             <p class="gray">Ou arraste o arquivo e solte aqui</p>
                         </div>
+                    </label>
                     </div>
                     <div class="row mt-3">
                         <p><b>Arquivos enviados</b></p>
@@ -345,7 +347,10 @@
                             <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar informações</a></div>
 
                         </div>
+
                     </div>
+                    </div>
+                </form>
                 </div>
 
             </div>
