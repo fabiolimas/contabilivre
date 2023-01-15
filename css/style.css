@@ -322,12 +322,96 @@ text-decoration: none;
 
 color: #fff;
 }
-#saidasBtn{
+.mesbtn.ativo{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 32px;
+gap: 8px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 100%;
+/* identical to box height, or 10px */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+width: 74px;
+height: 42px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+/* Shadow / XXL */
+
+box-shadow: 0px 25px 60px -10px rgba(28, 39, 49, 0.12);
+border-radius: 100px;
+
+}
+.mesbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 8px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 100%;
+/* identical to box height, or 10px */
+
+
+/* Cinza / 100 */
+
+color: #4aa3e5;
+    width: 74px;
+    height: 42px;
+    
+    /* Primária / Main */
+    
+    background: #fff;
+    /* Shadow / XXL */
+    
+    box-shadow: 0px 25px 60px -10px rgba(28, 39, 49, 0.12);
+    border-radius: 100px;
+    border:1px solid #4aa3e5;
+}
+.importarcsv.m{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 16px;
+gap: 8px;
+
+width: 105px;
+height: 30px;
+
+/* Primária / Main */
+
+border: 1px solid #4AA3E5;
+border-radius: 4px;
+
+}.aluguel{
+    display: none;
+}
+.row.formempresa.m {
+    margin-top: 0;
+}
+#saidasBtn, #vendasBtn{
     border-bottom:1px solid #4aa3e5;
 
 }
 nav.navbar.navbar-expand.nfs {
     margin-bottom: -35px;
+    background: #fff;
+    box-shadow: none;
 }
 .entradasCompras{
     display: none;

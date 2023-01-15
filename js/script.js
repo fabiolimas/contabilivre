@@ -714,6 +714,8 @@ $(document).ready(function(){
         e.preventDefault();
         manual.style.display='block';
         excel.style.display='none';
+        btnExcel.checked=false;
+        btnManual.checked=true;
        
           
       
@@ -724,11 +726,89 @@ $(document).ready(function(){
         e.preventDefault();
         manual.style.display='none';
         excel.style.display='flex';
+        btnExcel.checked=true;
+        btnManual.checked=false;
        
        
 
-        btnEntradas.style.borderBottom='1px solid #4aa3e5';
-        btnSaidas.style.borderBottom='none';
+       
+       
+      
+        
+    });
+
+
+});
+
+$(document).ready(function(){
+    var btnVendas=document.querySelector("#vendasBtn");
+    var btnLocacao=document.querySelector("#locacaoBtn");
+   
+
+    var venda=document.querySelector('.venda');
+    var aluguel=document.querySelector('.aluguel');
+   
+
+    btnVendas.addEventListener('click', function(e){
+        e.preventDefault();
+        venda.style.display='block';
+        aluguel.style.display='none';
+       
+        btnLocacao.style.border='none';
+        btnVendas.style.borderBottom='1px solid #4aa3e5';
+       
+          
+      
+        
+    });
+
+    btnLocacao.addEventListener('click', function(e){
+        e.preventDefault();
+        venda.style.display='none';
+        aluguel.style.display='block';
+        btnLocacao.style.borderBottom='1px solid #4aa3e5';
+        btnVendas.style.borderBottom='none';
+       
+
+       
+       
+      
+        
+    });
+
+
+});
+$(document).ready(function(){
+    var btnManual=document.querySelector("#manuall");
+    var btnExcel=document.querySelector("#excell");
+   
+
+    var manual=document.querySelector('.manuall');
+    var excel=document.querySelector('.importPlanilhal');
+   
+
+    btnManual.addEventListener('click', function(e){
+        e.preventDefault();
+        manual.style.display='block';
+        excel.style.display='none';
+        btnExcel.checked=false;
+        btnManual.checked=true;
+       
+          
+      
+        
+    });
+
+    btnExcel.addEventListener('click', function(e){
+        e.preventDefault();
+        manual.style.display='none';
+        excel.style.display='flex';
+        btnExcel.checked=true;
+        btnManual.checked=false;
+       
+       
+
+       
        
       
         
