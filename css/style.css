@@ -2474,7 +2474,7 @@ button.navbar-toggler.collapsed {
 
     }
     .row.btnsclientec .btn {
-        width: 86%;
+        width: max-content;
         margin: 5px;
     }
     .dropdown.addnovo {
@@ -2482,16 +2482,60 @@ button.navbar-toggler.collapsed {
     }
     
     .row.btnsimposto {
-        position: relative !important;
-        right: 49px;
+       
+        right: -11px;
         /* width: max-content; */
     }
     .row.btnsclientec {
         margin-left: 0px;
+        margin-bottom: 37px;
        
+    }
+    .row.btnsnfs {
+        margin-top: 90px;
+       
+    }
+    .nfe {
+     
+        left: 21px;
+       
+       
+    }
+    .col-md-3.btnf {
+        display: none;
     }
     .container.movimenta {
         margin-top: -285px;
+    }
+    .form-control, .form-select {
+       
+        width: -webkit-fill-available;
+       
+    }
+    .produtostabs {
+        
+        width: -webkit-fill-available;
+        
+        left: 0px;
+      
+        top: 1650px;
+    }
+    .tabprodutos.container {
+        margin-top: 58px;
+        top: -430px;
+        position: absolute;
+    }
+    .importarcsv {
+        margin-left: 96px;
+        margin-top: 11px;
+    }
+    button.btncadproduto.recibo {
+        margin-top: 0px;
+    }
+    .btncadproduto {
+        margin-left: 133px;
+        
+        margin-top: 468px;
     }
     main.col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4 {
        
@@ -2554,8 +2598,40 @@ button.navbar-toggler.collapsed {
         width: 100%;
     /* margin-left: 0px !important; */
     margin-top: 14px;
-    left: 22px !important;
+    left: -133px !important;
       
+    }
+    .row.menufinanceiro {
+        width: max-content;
+        margin-left: 102px;
+        
+    }
+    button.btn.gerenciarContas {
+        margin-left: 26px;
+        margin-bottom: 10px;
+    }
+    .col.col-md-10.dados-empresa.indique {
+        margin-top: 150px !important;
+    }
+    .row.btnsfinanceiro {
+        display: flex;
+        /* right: 236px; */
+        flex-direction: column;
+       
+        top: -21px;
+    }
+    .col.col-md-10.addColaborador.financeiro {
+        margin-top: 115px;
+      
+    }
+    a.btn.addnovo.lembrete {
+        margin-left: -159px;
+    }
+    .col.col-md-10.dados-empresa.perfil {
+        margin-top: 150px !important;
+    }
+    .col-md-9.plan1.lembrete.mb-5.mt-5 {
+        left: 0!important;
     }
     main.col-md-9.ml-sm-auto.col-lg-9.pt-3.px-4 {
       
@@ -2610,12 +2686,12 @@ button.navbar-toggler.collapsed {
         text-align: center;
         z-index: 0;
         width: 100%;
-        margin-top: 114px;
+        margin-top: 0px;
      
     }
     .row.btnsfluxoimposto {
         display: flex;
-        right: 88px;
+       right: -2px;
         /* flex-direction: row; */
         flex-wrap: nowrap;
     }
@@ -2685,9 +2761,8 @@ button.navbar-toggler.collapsed {
     top: 700px;
     }
     .dropdown.addevento {
-       
-        right: -52px;
-        
+        right: -39px !important;
+        width: 100%;
     }
     .addColaborador{
         margin-left: 0px;
@@ -2695,6 +2770,27 @@ button.navbar-toggler.collapsed {
     .btnscliente{
         margin-top: -12px;
     margin-left: -36px !important;
+    }
+    .col.col-md-10.addColaborador.eventos {
+        margin-top: 395px;
+    }
+    .col.col-md-10.addColaborador.socios {
+        margin-top: 162px;
+       
+    }
+    .col.col-md-10.addColaborador.impostos {
+        margin-top: 98px;
+       
+    }
+    .col.col-md-2.submenu.movimentacoes {
+       
+        margin-top: 113px;
+    }
+    span.slider.round.a {
+     margin-left: 0px;
+    }
+    .row.btnsclientec.holerit {
+        margin-left: -5px !important;
     }
     .reshorario {
         margin-right: -11%;
@@ -2704,10 +2800,15 @@ button.navbar-toggler.collapsed {
         width: 125%;
        
     }
+    .plan1 h1, .plan2 h1 {
+       
+        font-size: 42px;
+       
+    }
     
     .row.bts.mt-3 .col-md-12 {
-    margin-left: 21px !important;
-}
+        margin-left: -16px !important;
+    }
     p.titulosecaoc {
         
        display: none;
@@ -2766,6 +2867,13 @@ button.navbar-toggler.collapsed {
     .col.col-md-10.addColaborador {
         margin-top: 505px;
         margin-left: -154px;
+    }
+    .col.col-md-10.addColaborador.enderecofiscal {
+        margin-top: 221px;
+    }
+    .col-md-9.btnreservah {
+        margin-top: 22px;
+        margin-left: 25px;
     }
     .col.data {
         margin-left: -34px;
