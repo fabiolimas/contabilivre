@@ -2703,7 +2703,7 @@ button.navbar-toggler.collapsed {
     }
    
     .col.col-md-2.submenu {
-        left: 24px !important;
+        left: 11px !important;
         text-align: center;
         z-index: 0;
         width: 100%;
@@ -2800,7 +2800,7 @@ button.navbar-toggler.collapsed {
        
     }
     .col.col-md-10.addColaborador.impostos {
-        margin-top: 98px;
+        margin-top: 141px;
        
     }
     .col.col-md-2.submenu.movimentacoes {
@@ -2863,7 +2863,7 @@ button.navbar-toggler.collapsed {
     }
     .visualizacao .btn {
         margin-top: 1px;
-    right: -176pxpx;
+    right: -176px;
     font-size: 13px;
     width: auto;
     }
@@ -2874,6 +2874,10 @@ button.navbar-toggler.collapsed {
     
        
     }
+    .dropdown.addrecisao {
+       
+        right: 134px !important;
+    }
     li.nav-item.filter {
         margin-bottom: 8px;
     }
@@ -2882,6 +2886,11 @@ button.navbar-toggler.collapsed {
     }
     .col.aviso.pt-3 p {
         font-size: 10px;
+    }
+    .col.col-md-2.submenu.parcelamento {
+        left: 11px !important;
+      
+        margin-top: 44px;
     }
     .col.col-md-2.submenu.u {
         margin-left: 0px;
