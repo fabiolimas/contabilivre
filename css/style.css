@@ -2546,8 +2546,17 @@ button.navbar-toggler.collapsed {
     }
     div#boasvindas {
         padding-right: 0px !important;
-        width: 94%;
-    margin-left: 17px;
+        width: 382px;
+        margin-left: 5px;
+    }
+    .grafico2 h4 {
+        margin-top: 133px;
+        margin-left: -27px;
+    }
+    .anografico {
+        position: absolute;
+        margin-top: 182px;
+        margin-left: -17px;
     }
     .titlesection {
      
@@ -2571,6 +2580,14 @@ button.navbar-toggler.collapsed {
     .row.btnscliente .btn {
         width: 332px;
         margin-top: 5px;
+    }
+    footer {
+       
+        margin-top:0px; 
+    }
+    .form-group.d-flex {
+       
+        display: block !important;
     }
     .card.card-primary {
         margin-left: 0px; 
@@ -2643,8 +2660,12 @@ button.navbar-toggler.collapsed {
         width: 306px;
     }
     main{
-        left: 29px;
+        left: -2px;
         padding: 21px;
+        width: 100%;
+    }
+    .grafico1, .grafico2 {
+        width: 100%;
     }
     .sidebar-sticky {
         background: #ffffff;
@@ -2668,7 +2689,7 @@ button.navbar-toggler.collapsed {
     }
     .col-md-5.right-side {
         margin-top: 1143px;
-        margin-left: 153px;
+       /* margin-left: 153px;*/
     }
     nav.col-md-2.d-md-block.bg-light.mt-5.sidebar {
         width: 243%;
@@ -2830,8 +2851,9 @@ button.navbar-toggler.collapsed {
         margin-left: 0;
     }
     .visualizacao {
-       right: 135px;
+       right: 135px !important;
        top: -9px;
+       font-size: 13px;
     }
     .arquivosdiv{
     
@@ -2841,7 +2863,7 @@ button.navbar-toggler.collapsed {
     }
     .visualizacao .btn {
         margin-top: 1px;
-    right: -157px;
+    right: -176pxpx;
     font-size: 13px;
     width: auto;
     }
@@ -2864,12 +2886,35 @@ button.navbar-toggler.collapsed {
     .col.col-md-2.submenu.u {
         margin-left: 0px;
     }
+    .col.col-md-2.submenu.documentos{
+       
+        margin-top: 56px;
+    }
     .col.col-md-10.addColaborador {
         margin-top: 505px;
         margin-left: -154px;
     }
     .col.col-md-10.addColaborador.enderecofiscal {
-        margin-top: 221px;
+        margin-top: 118px;
+    margin-left: -167px;
+    }
+    .col.col-md-10.addColaborador.centraldocumentos {
+        margin-top: 229px;
+        margin-left: -167px;
+    }
+    .col.col-md-2.submenu.central {
+       
+        margin-top: 75px;
+    }
+    .col.col-md-2.submenu.salas {
+        left: 10px !important;
+       
+        margin-top: 55px;
+    }
+    .plan11, .plan2, .plan1.servicosa {
+     
+        left: 0px !important;
+        height: auto !important;
     }
     .col-md-9.btnreservah {
         margin-top: 22px;
