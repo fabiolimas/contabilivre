@@ -219,29 +219,7 @@
                         Adicionar
                         novo colaborador
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec">
-
-                            <div class="col-md-3">
-
-
-                            </div>
-                            <div class="col-md-9">
-                                <p class="titulosecaoc"><b>Adicionar novo colaborador</b></p>
-                                <a href="#" class="btn btn-success reshorario" data-bs-toggle="modal"
-                                    data-bs-target="#importCadastro"><i class="fas fa-file"></i> Importar </a>
-
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                    </div>
+                
 
                 </div>
             </div>
@@ -302,8 +280,26 @@
 
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="titulotela">
+
+                    <div class="titulosecao">
+                        <p><b><a href="meus-colaboradores.html"><i class="fa fa-chevron-left"></i></a> Adicionar novo
+                                colaborador
+
+                            </b></p>
+                    
+                    <div class="btnimportcolaborador">
+                             <a href="#" class="btn btn-success reshorario" data-bs-toggle="modal"
+                            data-bs-target="#importCadastro"><i class="fas fa-file"></i> Importar </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col col-md-10 addColaborador">
-            <div class="col-md-11 tabelasect p-4 mb-5 mt-5">
+            <div class="col-md-11 tabelasect p-4 mb-5">
                 <form action="#">
                     <div class="row">
 
@@ -321,137 +317,139 @@
                             </div>
 
                         </div>
-<form action="">
-                        <div class="row formAddColaborador">
-                            <p class="mt-3"><b>Informações Pessoais</b></p>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Nome" class="form-control">
+                        <form action="">
+                            <div class="row formAddColaborador">
+                                <p class="mt-3"><b>Informações Pessoais</b></p>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Nome" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="email" placeholder="E-mail" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="CPF" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Data de Nascimento" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <select class="form-select">
+                                        <option value="">Escolaridade</option>
+                                    </select>
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <select class="form-select">
+                                        <option value="">Estado Civil</option>
+                                    </select>
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <select class="form-select">
+                                        <option value="">Sexo</option>
+                                    </select>
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <select class="form-select">
+                                        <option value="">Deficiência</option>
+                                    </select>
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Nome da Mãe" class="form-control">
+                                </div>
+                                <hr class="mt-3">
+                                <p class="mt-1"><b>Endereço</b></p>
+                                <div class="col col-md-2 mt-3">
+                                    <input type="text" placeholder="CEP" class="form-control">
+                                </div>
+                                <div class="col col-md-8 mt-3">
+                                    <input type="text" placeholder="Endereço" class="form-control">
+                                </div>
+                                <div class="col col-md-2 mt-3">
+                                    <input type="text" placeholder="Número" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Complemento" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Bairro" class="form-control">
+                                </div>
+                                <div class="col col-md-4 mt-3">
+                                    <input type="text" placeholder="Cidade" class="form-control">
+                                </div>
+                                <hr class="mt-3">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="mt-1"><b>Dependente</b></p>
+                                        <a href="#" class="btn btn-success adddpendente"> Adicionar dependente
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col col-md-3 mt-3">
+                                    <input type="text" placeholder="Nome" class="form-control">
+                                </div>
+                                <div class="col col-md-3 mt-3">
+                                    <input type="text" placeholder="CPF" class="form-control">
+                                </div>
+                                <div class="col col-md-3 mt-3">
+                                    <input type="text" placeholder="Data de Nascimento" class="form-control">
+                                </div>
+                                <div class="col col-md-3 mt-3">
+                                    <select class="form-select">
+                                        <option value="">Parentesco</option>
+                                    </select>
+                                </div>
+
+                                <hr class="mt-3">
+                                <div class="row table-responsive">
+                                    <table class="table resumo dependentes">
+                                        <tr>
+                                            <td class="gray">Nome</td>
+                                            <td class="gray">CPF</td>
+                                            <td class="gray">Data de nascimento</td>
+                                            <td class="gray">Parentesco</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome completo</td>
+                                            <td>000.000.000-00</td>
+                                            <td>00/00/0000</td>
+                                            <td>Grau de parentesco</td>
+                                            <td><a href="#" class="btn btn-danger remover">X</a></td>
+
+                                        </tr>
+
+                                    </table>
+                                    <table class="table resumo dependentes">
+                                        <tr>
+                                            <td class="gray">Nome</td>
+                                            <td class="gray">CPF</td>
+                                            <td class="gray">Data de nascimento</td>
+                                            <td class="gray">Parentesco</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome completo</td>
+                                            <td>000.000.000-00</td>
+                                            <td>00/00/0000</td>
+                                            <td>Grau de parentesco</td>
+                                            <td><a href="#" class="btn btn-danger remover">X</a></td>
+
+                                        </tr>
+
+                                    </table>
+                                </div>
                             </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="email" placeholder="E-mail" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="CPF" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Data de Nascimento" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <select class="form-select">
-                                    <option value="">Escolaridade</option>
-                                </select>
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <select class="form-select">
-                                    <option value="">Estado Civil</option>
-                                </select>
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <select class="form-select">
-                                    <option value="">Sexo</option>
-                                </select>
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <select class="form-select">
-                                    <option value="">Deficiência</option>
-                                </select>
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Nome da Mãe" class="form-control">
-                            </div>
-                            <hr class="mt-3">
-                            <p class="mt-1"><b>Endereço</b></p>
-                            <div class="col col-md-2 mt-3">
-                                <input type="text" placeholder="CEP" class="form-control">
-                            </div>
-                            <div class="col col-md-8 mt-3">
-                                <input type="text" placeholder="Endereço" class="form-control">
-                            </div>
-                            <div class="col col-md-2 mt-3">
-                                <input type="text" placeholder="Número" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Complemento" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Bairro" class="form-control">
-                            </div>
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" placeholder="Cidade" class="form-control">
-                            </div>
-                            <hr class="mt-3">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="mt-1"><b>Dependente</b></p>
-                                    <a href="#" class="btn btn-success adddpendente"> Adicionar dependente </a>
+                            <div class="row bts mt-3">
+                                <div class="col-md-12 d-flex justify-content-end ms-3">
+                                    <div class="col-md-2"><a href="colaboradores.html" class="ms-3">Cancelar</a>
+                                    </div>
+                                    <div class="col-md-3"><a href="adicionar-colaborador-2.html"
+                                            class="btn btn-primary">Continuar cadastro</a></div>
+
                                 </div>
                             </div>
 
-                            <div class="col col-md-3 mt-3">
-                                <input type="text" placeholder="Nome" class="form-control">
-                            </div>
-                            <div class="col col-md-3 mt-3">
-                                <input type="text" placeholder="CPF" class="form-control">
-                            </div>
-                            <div class="col col-md-3 mt-3">
-                                <input type="text" placeholder="Data de Nascimento" class="form-control">
-                            </div>
-                            <div class="col col-md-3 mt-3">
-                                <select class="form-select">
-                                    <option value="">Parentesco</option>
-                                </select>
-                            </div>
-
-                            <hr class="mt-3">
-                            <div class="row table-responsive">
-                                <table class="table resumo dependentes">
-                                    <tr>
-                                        <td class="gray">Nome</td>
-                                        <td class="gray">CPF</td>
-                                        <td class="gray">Data de nascimento</td>
-                                        <td class="gray">Parentesco</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nome completo</td>
-                                        <td>000.000.000-00</td>
-                                        <td>00/00/0000</td>
-                                        <td>Grau de parentesco</td>
-                                        <td><a href="#" class="btn btn-danger remover">X</a></td>
-
-                                    </tr>
-
-                                </table>
-                                <table class="table resumo dependentes">
-                                    <tr>
-                                        <td class="gray">Nome</td>
-                                        <td class="gray">CPF</td>
-                                        <td class="gray">Data de nascimento</td>
-                                        <td class="gray">Parentesco</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nome completo</td>
-                                        <td>000.000.000-00</td>
-                                        <td>00/00/0000</td>
-                                        <td>Grau de parentesco</td>
-                                        <td><a href="#" class="btn btn-danger remover">X</a></td>
-
-                                    </tr>
-
-                                </table>
-                            </div>
-                        </div>
-                        <div class="row bts mt-3">
-                            <div class="col-md-12 d-flex justify-content-end ms-3">
-                                <div class="col-md-2"><a href="colaboradores.html" class="ms-3">Cancelar</a></div>
-                                <div class="col-md-3"><a href="adicionar-colaborador-2.html"
-                                        class="btn btn-primary">Continuar cadastro</a></div>
-
-                            </div>
-                        </div>
-
-                    </form>
+                        </form>
 
 
 
@@ -462,7 +460,7 @@
                 </form>
             </div>
         </div>
-
+    </div>
     </div>
 
 
@@ -498,12 +496,14 @@
 
                             <div class="row anexos">
                                 <div class="col col-md-5">
-                                    <p><i class="fa fa-file-csv iconcsv"></i> Campo para a descrição do documento</p>
+                                    <p><i class="fa fa-file-csv iconcsv"></i> Campo para a descrição do
+                                        documento</p>
                                 </div>
                                 <div class="col col-md-2">
                                     <p class="gray">01/02/2020</p>
                                 </div>
-                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a> </div>
+                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                </div>
 
                                 <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
                             </div>
