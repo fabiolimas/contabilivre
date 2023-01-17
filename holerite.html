@@ -54,7 +54,7 @@
                                     <img src="img/thumb.png" alt="Usuario thumb">
                                 </div> Nome do Cliente
                             </button>
-                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="editar-perfil.html"><img
                                         src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
                                 <a class="dropdown-item" href="lembretes.html"><img
@@ -231,40 +231,7 @@
                     </div>
                 </main>
 
-                <div class="row">
-                    <div class="col-md-7 indice">
-                        <a href="meus-colaboradores.html">Meus colaboradaores</a> <i
-                            class="fa fa-chevron-right"></i>Holerite
-                    </div>
-                    <div class="container">
-                    <div class="row">
-
-                        <div class="row btnsclientec holerit" style="margin-left:173px;">
-
-                            <div class="col-md-3">
-                                <p class="titulosecao" style="margin-left:118px"><b>Holerite</b></p>
-
-                            </div>
-                            <div class="col-md-9">
-
-
-
-
-                                <div class="dropdown m-3 addevento holeritswitch">
-
-
-                                    <label for="habilitaenvio">Habilitar envio de holerites via e-mail</label><label
-                                        class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round a"></span>
-                                    </label>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+              
             </div>
 
 
@@ -335,17 +302,40 @@
         </div>
     </div>
 
-    <div class="container">
-    <div class="col col-md-10 addColaborador eventos">
+    <div class="container position-relative">
         <div class="row">
-            <div class="contadorselect"></div><a href="#" class="btn addnovo" id="btndownload" style="width:272px"> <img
-                    src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
-            </a>
-        </div>
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Holerite</b></p>
+                </div>
+                <div class="col-md-9">
 
-       
-        
-                <div class="col-md-11 tabelasect  mb-5 mt-3 ">
+
+
+
+                    <div class="dropdown m-3 addevento holeritswitch">
+
+
+                        <label for="habilitaenvio">Habilitar envio de holerites via e-mail</label><label
+                            class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round a"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-md-10 addColaborador eventos">
+                <div class="row">
+                    <div class="contadorselect"></div><a href="#" class="btn addnovo" id="btndownload"
+                        style="width:272px"> <img src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
+                    </a>
+                </div>
+
+
+
+                <div class="col-md-11 tabelasect mt-2 mb-5 p-0 pb-2 ">
 
                     <div class="row table-responsive">
 
@@ -500,62 +490,78 @@
 
 
                     </div>
+                    <nav aria-label="Page navigation" class="paginacao mt-5">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">
+                                    <</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Modal detalhes recisao-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Atenção</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado
-                            junto
-                            com sua próxima mensalidade.
-                        </p>
+    <!--Modal detalhes recisao-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Atenção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado
+                        junto
+                        com sua próxima mensalidade.
+                    </p>
 
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
-                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
 
 
-        <!--Modal avaliaçao 1-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                            melhor.
-                        </p>
-                        <img src="img/avaliações.png" alt="Avaliacoes">
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
-                    </div>
+    <!--Modal avaliaçao 1-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                        melhor.
+                    </p>
+                    <img src="img/avaliações.png" alt="Avaliacoes">
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
                 </div>
             </div>
         </div>
-        <!--Rodapé
+    </div>
+    <!--Rodapé
     <footer class="position-absolute bottom-0 start-50 translate-middle-x">
         <div class="row">
             <div class="col col-md-12">

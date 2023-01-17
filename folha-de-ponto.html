@@ -54,7 +54,7 @@
                                     <img src="img/thumb.png" alt="Usuario thumb">
                                 </div> Nome do Cliente
                             </button>
-                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="editar-perfil.html"><img
                                         src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
                                 <a class="dropdown-item" href="lembretes.html"><img
@@ -218,23 +218,7 @@
                             class="fa fa-chevron-right"></i>Folha
                         de ponto
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec">
-
-                            <div class="col-md-3">
-                                <p class="titulosecaos"><b>Folha de Ponto</b></p>
-
-                            </div>
-                            <div class="col-md-9">
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -305,83 +289,95 @@
 
         </div>
     </div>
-    <div class="container">
-        <div class="col col-md-10 addColaborador eventos">
-            <div class="col-md-11 tabelasect  p-3 mb-5 mt-3 ">
-
-                <div class="row">
-                    <div class="col col-md-6">
-                        <input type="text" class="form-control" placeholder="Data">
-                    </div>
-                    <div class="col col-md-6">
-                        <select name="" id="" class="form-select">
-                            <option value="">Funcionário</option>
-                        </select>
-                    </div>
+    <div class="container position-relative">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Folha de Ponto</b></p>
                 </div>
-                <hr class="mt-3">
-                <div class="row bts mt-3">
-                    <div class="col-md-12 d-flex justify-content-end ms-5">
-                        <div class="col-md-2"><a href="dados-gerais.html" class="ms-3">Cancelar</a></div>
-                        <div class="col-md-4"><a href="#" class="btn btn-primary">Exportar folha de ponto</a></div>
+                
 
-                    </div>
-
-                </div>
             </div>
+            <div class="col col-md-10 addColaborador eventos">
+                <div class="col-md-11 tabelasect  p-3 mb-5 ">
 
-
-            <!--Modal detalhes recisao-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Atenção</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <input type="text" class="form-control" placeholder="Data">
                         </div>
-                        <div class="modal-body text-center">
-                            <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado
-                                junto com sua próxima mensalidade.
-                            </p>
+                        <div class="col col-md-6">
+                            <select name="" id="" class="form-select">
+                                <option value="">Funcionário</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="mt-3">
+                    <div class="row bts mt-3">
+                        <div class="col-md-12 d-flex justify-content-end ms-5">
+                            <div class="col-md-2"><a href="dados-gerais.html" class="ms-3">Cancelar</a></div>
+                            <div class="col-md-4"><a href="#" class="btn btn-primary">Exportar folha de ponto</a></div>
 
                         </div>
-                        <div class="modal-footer text-center">
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Continuar</button>
+
+                    </div>
+                </div>
+
+
+                <!--Modal detalhes recisao-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Atenção</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será
+                                    cobrado
+                                    junto com sua próxima mensalidade.
+                                </p>
+
+                            </div>
+                            <div class="modal-footer text-center">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Continuar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-        </div>
-
-
-
-        <!--Modal avaliaçao 1-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                            melhor.
-                        </p>
-                        <img src="img/avaliações.png" alt="Avaliacoes">
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
-                    </div>
-                </div>
             </div>
         </div>
-        <!--Rodapé
+    </div>
+
+
+
+    <!--Modal avaliaçao 1-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                        melhor.
+                    </p>
+                    <img src="img/avaliações.png" alt="Avaliacoes">
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Rodapé
         <footer class="position-absolute bottom-0 start-50 translate-middle-x">
             <div class="row">
                 <div class="col col-md-12">
