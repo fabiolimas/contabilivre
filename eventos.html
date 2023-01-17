@@ -217,48 +217,9 @@
                         <a href="meus-colaboradores.html">Meus colaboradaores</a> <i
                             class="fa fa-chevron-right"></i>Eventos
                     </div>
-                    <div class="container">
-                        <div class="row">
-
-                            <div class="row btnsclientec">
-
-                                <div class="col-md-3">
-                                    <p class="titulosecao" style="margin-left:-32px"><b>Eventos</b></p>
-
-                                </div>
-                                <div class="col-md-9">
-
-
-
-
-                                    <div class="dropdown m-3 addevento" style="right: 231px;">
-
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Adicionar novos
-                                        </button>
-                                        <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="evento.html"><i
-                                                    class="fa fa-volume-down"></i>Evento</a>
-                                            <a class="dropdown-item" href="atestado.html"><i
-                                                    class="fa fa-desktop"></i>Atestado
-                                                Médico</a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
-
-
-
-
-
-
 
         </div>
 
@@ -322,8 +283,33 @@
         </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Eventos</b></p>
+                </div>
+                <div class="col-md-9">
+
+                    <div class="dropdown m-3 addevento">
+
+                        <button class="btn btn-primary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Adicionar novos
+                        </button>
+                        <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="evento.html"><i
+                                    class="fa fa-volume-down"></i>Evento</a>
+                            <a class="dropdown-item" href="atestado.html"><i
+                                    class="fa fa-desktop"></i>Atestado
+                                Médico</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="col col-md-10 addColaborador eventos">
-            <div class="col-md-11 tabelasect  mb-5 mt-3 ">
+            <div class="col-md-11 tabelasect  mb-5  ">
 
                 <div class="row mb-3">
 
@@ -349,17 +335,22 @@
                     <table class="table eventostable">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Funcionário</th>
-                                <th scope="col">Evento</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Ação</th>
+                                <th scope="col" style="width: 272px;
+                                height: 52px;" >Funcionário</th>
+                                <th scope="col" style="width: 272px;
+                                height: 52px;">Evento</th>
+                                <th scope="col" style="width: 272px;
+                                height: 52px;">Data</th>
+                                <th scope="col" style="width: 88px;
+                                height: 52px;
+                                ">Ação</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='finalizado'>Adiantamento salarial</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -381,7 +372,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rlocal'>Comissão</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -403,7 +394,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -425,7 +416,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='remail'>Plano de saúde</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -447,7 +438,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='reembolso'>Reembolso</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -469,7 +460,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='plr'>PLR</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -491,7 +482,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='diastrabalhados'>Dias trabalhados intermitente</span></td>
                                 <td>00/00/0000</td>
                                 <td>
@@ -512,6 +503,8 @@
                                 </td>
 
                             </tr>
+                          
+        
 
 
                     </table>
@@ -521,18 +514,23 @@
                     <table class="table atestadoTable">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Funcionário</th>
-                                <th scope="col">Tipo</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Qtd. de horas</th>
-                                <th scope="col">Ação</th>
+                                <th scope="col" style="width: 240px;
+                                height: 52px;">Funcionário</th>
+                                <th scope="col" style="width: 102px;
+                                height: 52px;">Tipo</th>
+                                <th scope="col" style="width: 112px;
+                                height: 52px;">Data</th>
+                                <th scope="col" style="width: 144px;
+                                height: 52px;">Qtd. de horas</th>
+                                <th scope="col" style="width: 88px;
+                                height: 52px;">Ação</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
@@ -541,7 +539,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
@@ -550,7 +548,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
@@ -559,7 +557,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
@@ -568,7 +566,7 @@
 
                             </tr>
                             <tr>
-                                <td>Nome completo</td>
+                                <td class="ps-3">Nome completo</td>
                                 <td><span class='rcorreio'>Férias</span></td>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
@@ -586,18 +584,25 @@
                     <table class="table consultaFerias">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">CPF</th>
-                                <th scope="col">Funcionário</th>
-                                <th scope="col">Vencimento</th>
-                                <th scope="col">Situação</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;">CPF</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;
+                                ">Funcionário</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;
+                                ">Vencimento</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;
+                                ">Situação</th>
 
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -605,7 +610,7 @@
 
                             </tr>
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -613,7 +618,7 @@
 
                             </tr>
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -621,7 +626,7 @@
 
                             </tr>
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -629,7 +634,7 @@
 
                             </tr>
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -637,7 +642,7 @@
 
                             </tr>
                             <tr>
-                                <td>000.000.000-00</td>
+                                <td class="ps-3">000.000.000-00</td>
 
                                 <td>Nome completo</td>
                                 <td>00/00/0000</td>
@@ -649,7 +654,21 @@
 
 
                     </table>
+                    <nav aria-label="Page navigation" class="paginacao mt-5">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#"><</a></li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">></a></li>
+                          
+                        </ul>
+                      </nav>
                 </div>
+               
             </div>
         </div>
 

@@ -791,10 +791,9 @@ color: #fff;
     margin-left: -14px;
 }
 .dropdown.addevento {
-    float: right;
-    right: 88px;
-    top: -19px;
-    
+    position: absolute;
+    right: 44px;
+    top: 219px; 
 }
 
 .dropdown.addrecisao {
@@ -1080,6 +1079,9 @@ i.fa.fa-info-circle.icoinfo {
     margin-top: -17px;
     font-size: 23px;
 }
+.mercadorativo.colaborador, .mercadorinativo.colaborador{
+    width: 100%;
+}
 .marcadorativo{
     display: flex;
 flex-direction: row;
@@ -1087,7 +1089,7 @@ align-items: center;
 padding: 16px;
 gap: 16px;
 
-width: 230px;
+/*width: 230px;*/
 height: 74px;
 margin: 20px 0px 0px 11px;
 
@@ -1129,6 +1131,10 @@ span.numero.btn.btn-primary.inativo {
     line-height: 32px;
     color: #4AA3E5;
 }
+.row.btnsindice {
+    display: flex;
+    flex-wrap: nowrap;
+}
 .marcadorinativo{
     display: flex;
 flex-direction: row;
@@ -1136,7 +1142,7 @@ align-items: center;
 padding: 8px;
 gap: 16px;
 
-width: 221px;
+/*width: 221px;*/
 height: 74px;
 
 /* Cinza / 01 */
@@ -1511,7 +1517,7 @@ div#about-area {
 .btn-success{
     background-color: #74c83c !important;
     border: none;
-    width: 100%;
+   /* width: 100%;*/
     
 
    /* padding: 15px;*/
@@ -2177,7 +2183,7 @@ flex-grow: 0;
     margin-bottom: 106px !important;
 }
 .titulosecao, .titulosecaod {
-    width: 191px;
+    
     height: 24px;
     font-family: 'Poppins';
     font-style: normal;
@@ -2309,8 +2315,8 @@ color: #495057;
     color: #343A40;
 }
 .reshorario {
-    margin-right: -50px;
-    margin-top: -12px;
+    /*margin-right: -50px;
+    margin-top: -12px;*/
     font-size: 14px;
     float: right;
     width: auto;
