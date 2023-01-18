@@ -217,38 +217,7 @@
                         <a href="movimentacoes.html">Movimentações</a> <i class="fa fa-chevron-right"></i>Últimas
                         movimentações
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec position-relative">
-
-                            <div class=" col col-md-3">
-                                <p class="titulosecao u"><b>Últimas movimentações</b></p>
-
-                            </div>
-                            <div class="col col-md-9">
-                                <div class="row btnsimposto position-absolute">
-
-
-                                    <button class="btn gerenciarContas" data-bs-toggle="modal"
-                                        data-bs-target="#gerenciarContas"> Gerenciar Contas </button>
-
-                                    <div class="dropdown addnovo">
-
-                                        <button class="btn dropdown-toggle importarbtn" type="button"
-                                            id="dropdownImportarButton" aria-expanded="true" data-bs-toggle="modal"
-                                            data-bs-target="#importarExtrato">
-                                            Importar
-                                        </button>
-
-                                    </div>
-                                    <a href="adicionar-colaborador.html" class="btn btn-success addmovimentacao"
-                                        style="width: max-content;" data-bs-toggle="modal"
-                                        data-bs-target="#adicionarMovimentacao">Adicionar nova movimentação
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
 
@@ -286,7 +255,27 @@
 
         </div>
     </div>
-    <div class="container movimenta">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Últimas movimentações</b></p>
+                </div>
+                <div class="dropdown addnovo">
+
+                    <button class="btn dropdown-toggle importarbtn" type="button"
+                        id="dropdownImportarButton" aria-expanded="true" data-bs-toggle="modal"
+                        data-bs-target="#importarExtrato">
+                        Importar
+                    </button>
+
+                </div>
+                <a href="adicionar-colaborador.html" class="btn btn-success addmovimentacao"
+                    style="width: max-content;" data-bs-toggle="modal"
+                    data-bs-target="#adicionarMovimentacao">Adicionar nova movimentação
+                </a>
+
+            </div>
         <div class="col col-md-10 addColaborador">
             <div class="row">
                 <div class="contadorselect"></div><a href="#" class="btn addnovo d-none" id="btndownload"
@@ -294,23 +283,28 @@
                 </a>
             </div>
 
-            <div class="col-md-11 tabelasect mb-5 mt-3">
+            <div class="col-md-11 tabelasect mb-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table recisaotable">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Data</th>
-                                <th scope="col">Conta</th>
-                                <th scope="col">Tipo</th>
-                                <th scope="col">Valor</th>
-                                <th scope="col">Ação</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px; padding-left: 43px;">Data</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Conta</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Tipo</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Valor</th>
+                                <th scope="col" style="width: 88px;
+                                height: 52px;">Ação</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
-                                <td><input type="checkbox" id="mov1" class="movimentcheck"><label for="mov1" class="">
+                                <td class="ps-3"><input type="checkbox" id="mov1" class="movimentcheck"><label for="mov1" class="ps-3">
                                         00/00/0000</label></td>
                                 <td class="">Descrição da conta</td>
                                 <td>Caixa</td>
@@ -344,7 +338,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" id="mov2" class="movimentcheck"><label for="mov2" class="">
+                                <td class="ps-3"><input type="checkbox" id="mov2" class="movimentcheck"><label for="mov2" class="ps-3">
                                         00/00/0000</label></td>
                                 <td class="">Descrição da conta</td>
                                 <td>Caixa</td>
@@ -378,7 +372,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" id="mov3" class="movimentcheck"><label for="mov3" class="">
+                                <td class="ps-3"><input type="checkbox" id="mov3" class="movimentcheck"><label for="mov3" class="ps-3">
                                         00/00/0000</label></td>
                                 <td class="">Descrição da conta</td>
                                 <td>Caixa</td>
@@ -412,7 +406,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" id="mov4" class="movimentcheck"><label for="mov4" class="">
+                                <td class="ps-3"><input type="checkbox" id="mov4" class="movimentcheck"><label for="mov4" class="ps-3">
                                         00/00/0000</label></td>
                                 <td class="">Descrição da conta</td>
                                 <td>Caixa</td>
@@ -463,6 +457,21 @@
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao mt-5">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
 
 

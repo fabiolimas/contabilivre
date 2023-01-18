@@ -7,9 +7,29 @@ body{
     height: 128vh;
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.dropdown.detalhesrecisao i {
+    color: #4aa3e5;
+}
+.sidebar-sticky li img {
+    padding-right: 8px;
+}
+.dropdown.detalhesrecisao button {
+    background: none !important;
+}
 
-
-
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content:unset;
+   border: none;
+   color: red;
+}
 .row{
     margin: 0;
 }
@@ -1060,8 +1080,8 @@ table.table.recisaotable.text-center td img {
 }
 a.btn.btn-success.addmovimentacao {
     position: absolute;
-    right:-244px;
-    height:36px;
+    right: 0px;
+    height: 36px;
 }
 p.titulosecaoc {
     position: absolute;
@@ -1198,28 +1218,23 @@ justify-content: center;
 }
 .addnovo{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 20px;
-gap: 8px;
-
-width: 191px;
-height: 38px;
-
-/* Info / Darker */
-
-background: #004578;
-border-radius: 4px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
-color: #fff;
-font-size: 13px;
-margin-left: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 191px;
+    height: 38px;
+    background: #004578 !important;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 15px;
+    position: absolute;
+    right: 287px;
 }
 .addnovo:hover{
     background: #004579;
