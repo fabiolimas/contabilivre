@@ -205,58 +205,44 @@
                 <main class="col-md-9 titlesection">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col">
                             <p><img src="img/star.png"><b>Impostos</b></p>
                         </div>
 
 
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
 
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
-                        </div>
                     </div>
+                    <div class="formbusca">
+                        <div class="pesquisar">
+                            <img src="img/lupa.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <div class="situacao">
+                            <select name="" id="" class="form-select">
+                                <option value="">Situação</option>
+                            </select>
+                        </div>
+                        <div class="periodo1">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <span class="gray"> Até</span>
+                       
+                        <div class="periodo2">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <button class="btn btn-primary headbusca">Buscar</button>
+                        
+                    </div>
+
                 </main>
                 <div class="container">
                 <div class="row">
                     <div class="col-md-7 indice">
                         <a href="impostos.html">Impostos</a> <i class="fa fa-chevron-right"></i>Parcelamento
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec">
-
-                            <div class="col-md-3">
-                                <p class="titulosecaos"><b>Parcelamento</b></p>
-
-                            </div>
-                            <div class="row btnsimposto position-absolute"
-                                style="margin-top:-12px; margin-left:-475px;">
-
-
-
-                                <a href="#" class="btn btn-success exportar" data-bs-toggle="modal"
-                                    data-bs-target="#solicitaParcelamento"> Solicitar Parcelamento </a>
-                                <a href="adicionar-colaborador.html" class="btn btn-primary btnparcelamento"
-                                    style="width: max-content;" data-bs-toggle="modal"
-                                    data-bs-target="#meusParcelamentos">Meus parcelamentos
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             </div>
@@ -295,52 +281,73 @@
 
         </div>
     </div>
-    <div class="container">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Parcelamento</b></p>
+                </div>
+                <div class="row btnsimposto position-absolute"
+               >
+
+
+
+                <a href="#" class="btn btn-success exportar" data-bs-toggle="modal"
+                    data-bs-target="#solicitaParcelamento"> Solicitar Parcelamento </a>
+                <a href="adicionar-colaborador.html" class="btn btn-primary btnparcelamento"
+                    style="width: max-content;" data-bs-toggle="modal"
+                    data-bs-target="#meusParcelamentos">Meus parcelamentos
+                </a>
+            </div>
+
+            </div>
         <div class="col col-md-10 addColaborador impostos">
             <div class="row">
                 <div class="contadorselect"></div><a href="#" class="btn addnovo d-none" id="btndownload"
                     style="width:272px"> <img src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
                 </a>
             </div>
-            <div class="col-md-11 tabelasect mb-5 mt-3">
+            <div class="col-md-11 tabelasect mb-5 p-0 pb-2">
                 <div class="row table-responsive">
-                    <table class="table text-center">
+                    <table class="table ">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Tipo imposto</th>
-                                <th scope="col">Situação</th>
+                                <th scope="col" style="width: 452px;
+                                height: 52px;">Tipo imposto</th>
+                                <th scope="col" style="width: 452px;
+                                height: 52px;">Situação</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="rcorreio">Contabilivre</span></td>
 
                             </tr>
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="remail">Minha empresa</span></td>
 
                             </tr>
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="rcorreio">Contabilivre</span></td>
 
                             </tr>
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="rcorreio">Contabilivre</span></td>
 
                             </tr>
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="remail">Minha empresa</span></td>
 
                             </tr>
                             <tr>
-                                <td>Nome da guia de parcelamento</td>
+                                <td class="ps-3">Nome da guia de parcelamento</td>
                                 <td><span class="rcorreio">Contabilivre</span></td>
 
                             </tr>
@@ -352,6 +359,21 @@
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao mt-5">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
         <!--Meus parcelamentos-->

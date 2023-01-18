@@ -205,53 +205,44 @@
                 <main class="col-md-9 titlesection">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col">
                             <p><img src="img/star.png"><b>Impostos</b></p>
                         </div>
 
 
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
 
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
-                        </div>
                     </div>
+                    <div class="formbusca">
+                        <div class="pesquisar">
+                            <img src="img/lupa.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <div class="situacao">
+                            <select name="" id="" class="form-select">
+                                <option value="">Situação</option>
+                            </select>
+                        </div>
+                        <div class="periodo1">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <span class="gray"> Até</span>
+                       
+                        <div class="periodo2">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+                        <button class="btn btn-primary headbusca">Buscar</button>
+                        
+                    </div>
+
                 </main>
 
                 <div class="row">
                     <div class="col-md-7 indice">
                         <a href="impostos.html">Impostos</a> <i class="fa fa-chevron-right"></i>Guias
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec">
-
-                            <div class="col-md-3">
-                                <p class="titulosecaos"><b>Guias</b></p>
-
-                            </div>
-                            <div class="col-md-9">
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -289,33 +280,46 @@
 
         </div>
     </div>
-    <div class="container">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Guias</b></p>
+                </div>
+
+
+            </div>
         <div class="col col-md-10 addColaborador impostos">
             <div class="row">
-                <div class="contadorselect"></div><a href="#" class="btn addnovo d-none" id="btndownload"
+                <div class="contadorselect mb-3"></div><a href="#" class="btn addnovo d-none" id="btndownload"
                     style="width:272px"> <img src="img/uploaddoc.png" class="ms-1">Fazer Download em lote
                 </a>
             </div>
 
             
-                <div class="col-md-11 tabelasect mb-5 mt-3">
+                <div class="col-md-11 tabelasect mb-5 p-0 pb-2">
                     <div class="row table-responsive">
-                        <table class="table text-center">
+                        <table class="table">
                             <thead class="table-dark">
                                 <tr>
-                                    <th scope="col">Competência</th>
-                                    <th scope="col">Tipo de imposto</th>
-                                    <th scope="col">Situação</th>
-                                    <th scope="col">Vencimento</th>
+                                    <th scope="col" style="width: 188px;
+                                    height: 52px;">Competência</th>
+                                    <th scope="col" style="width: 163px;
+                                    height: 52px;">Tipo de imposto</th>
+                                    <th scope="col" style="width: 214px;
+                                    height: 52px;">Situação</th>
+                                    <th scope="col" style="width: 135px;
+                                    height: 52px;">Vencimento</th>
 
-                                    <th scope="col">Ação</th>
+                                    <th scope="col" style="width: 88px;
+                                    height: 52px;">Ação</th>
 
                                 </tr>
                             </thead>
-                            <tbody class="table-group-divider text-center">
+                            <tbody class="table-group-divider">
 
                                 <tr>
-                                    <td><input type="checkbox" id="competencia1" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia1" class="impostocheck"><label
                                             for="competencia1" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -352,7 +356,7 @@
 
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="competencia2" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia2" class="impostocheck"><label
                                             for="competencia2" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -390,7 +394,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td><input type="checkbox" id="competencia3" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia3" class="impostocheck"><label
                                             for="competencia3" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -427,7 +431,7 @@
 
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="competencia4" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia4" class="impostocheck"><label
                                             for="competencia4" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -464,7 +468,7 @@
 
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="competencia5" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia5" class="impostocheck"><label
                                             for="competencia5" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -501,7 +505,7 @@
 
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="competencia6" class="impostocheck"><label
+                                    <td class="ps-3"><input type="checkbox" id="competencia6" class="impostocheck"><label
                                             for="competencia6" class="">
                                             00/0000</label></td>
                                     <td>Nome da guia</td>
@@ -544,6 +548,21 @@
 
                         </table>
                     </div>
+                    <nav aria-label="Page navigation" class="paginacao mt-5">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">
+                                    <</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">></a></li>
+    
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

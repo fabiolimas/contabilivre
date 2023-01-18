@@ -776,6 +776,18 @@ p.titulosecaos {
     position: absolute;
     left: 499px;
 }
+button.btn.btn-success.successnf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 94px;
+    height: 50px;
+    background: #74C83C;
+    border-radius: 4px;
+}
 .row.table-responsive {
     border-radius: 8px;
 }
@@ -817,9 +829,11 @@ a.btn.btn-primary.btaddrecisao {
     width: 774px;
 }
 button.btn.btn-light {
-    border-color: #74C83C;
-    color: #74C83C;
-    transition: .2s;
+    font-size: 14px;
+    color: #74c83c;
+    margin-top: 12px;
+    background: #fff;
+    border: none;
 }
 .row.dependentes, .alimentado {
     display: flex;
@@ -1027,7 +1041,7 @@ thead.table-dark tr {
 }
 .row.btnsimposto {
     display: flex;
-    right: 515px;
+    right: 0px;
 }
 input.btn.btn-success.gerenciabtn {
     height: 55px;
