@@ -216,55 +216,7 @@
                     <div class="col-md-7 indice">
                         <a href="movimentacoes.html">Movimentações</a> <i class="fa fa-chevron-right"></i>Fluxo de caixa
                     </div>
-                    <div class="row">
-
-                        <div class="row btnsclientec position-relative">
-
-                            <div class=" col col-md-3">
-                                <p class="titulosecao u"><b>Fluxo de caixa</b></p>
-
-                            </div>
-                            <div class="col col-md-9">
-                                <div class="row btnsfluxoimposto position-absolute">
-
-
-                                    <button class="btn gerenciarContas" data-bs-toggle="modal"
-                                        data-bs-target="#corrigirSaldo"> Corrigir Saldo </button>
-                                    <a href="#" class="btn btn-primary addmovimentacao" style="width: max-content;"
-                                        data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">Excel
-                                    </a>
-                                    <a href="#" class="btn btn-success exportpdf" style="width: max-content;"
-                                        data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">PDF
-                                    </a>
-                                </div>
-                                <div class="row filtrosf">
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col col-md-2 mt-2"> <select name="" id="" class="form-select">
-                                                    <option value="">Competência inicial</option>
-                                                </select></div>
-                                            <div class="col col-md-2 mt-2">
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Competência final</option>
-                                                </select>
-                                            </div>
-                                            <div class="col col-md-2 mt-2">
-                                                <select name="" id="" class="form-select">
-                                                    <option value="">Tipo de conta</option>
-                                                </select>
-                                            </div>
-                                            <div class="col col-md-2 mt-2">
-                                                <button type="submit" class="btn addnovo" style="width: max-content;
-                                        height: 55px;
-                                        margin-left: -38px;">Buscar</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
             </div>
         </div>
@@ -295,7 +247,56 @@
 
         </div>
     </div>
-    <div class="container movimenta">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="titulotela">
+                <div class="titulosecao">
+                    <p><b>Fluxo de caixa</b></p>
+                </div>
+                <div class="col col-md-9">
+                    <div class="row btnsfluxoimposto position-absolute">
+
+
+                        <button class="btn gerenciarContas" data-bs-toggle="modal"
+                            data-bs-target="#corrigirSaldo"> Corrigir Saldo </button>
+                        <a href="#" class="btn btn-primary addmovimentacao" style="width: max-content;"
+                            data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">Excel
+                        </a>
+                        <a href="#" class="btn btn-success exportpdf" style="width: max-content;"
+                            data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">PDF
+                        </a>
+                    </div>
+                  
+
+                </div>
+
+            </div>
+            <div class="row ">
+                <form action="#" class="filtrosf">
+                    <div class="row">
+                        <div class="col col-md-1 filt mt-2 "> <select name="" id="" class="form-select">
+                                <option value="">Competência inicial</option>
+                            </select></div>
+                        <div class="col col-md-1 filt mt-2 ms-3">
+                            <select name="" id="" class="form-select">
+                                <option value="">Competência final</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-1 filt mt-2 ms-3">
+                            <select name="" id="" class="form-select">
+                                <option value="">Tipo de conta</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-1 filt mt-2 ms-3">
+                            <button type="submit" class="btn addnovo" style=" width: max-content;
+                            height: 55px;
+                            /* margin-left: -38px; */
+                            
+                            left: 615px;">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         <div class="col col-md-10 addColaborador">
             <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
                 <div class="row">
