@@ -54,7 +54,7 @@
                                     <img src="img/thumb.png" alt="Usuario thumb">
                                 </div> Nome do Cliente
                             </button>
-                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="editar-perfil.html"><img
                                         src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
                                 <a class="dropdown-item" href="lembretes.html"><img
@@ -198,97 +198,140 @@
             </nav>
 
         </aside>
-        <div class="row">
-            <!--planos-->
+        
+            <div class="row">
+                <!--planos-->
 
-            <div class="col col-md-12">
-                <main class="col-md-9 titlesection">
-                    <div class="row">
+                <div class="col col-md-12">
+                    <main class="col-md-9 titlesection">
+                        <div class="row">
 
-                        <div class="col-md-4">
-                            <p><img src="img/star.png"><b>Notas Fiscais</b></p>
+                            <div class="col-md-4">
+                                <p><img src="img/star.png"><b>Notas Fiscais</b></p>
+                            </div>
+
+
+                            <div class="searchbar">
+                                <div class="col-md-2 position-relative mt-2 ms-3">
+                                    <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
+                                        name="pesquisa" class="form-control" placeholder="Pesquisar">
+                                </div>
+                                <div class="col-md-2 datain position-relative mt-2 ms-3">
+
+                                    <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
+                                        name="pesquisa" class="form-control" placeholder="Periodo">
+                                </div><span class="gray ms-3"> Até </span>
+                                <div class="col-md-2 datafi position-relative mt-2 ms-3">
+                                    <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
+                                        name="pesquisa" class="form-control" placeholder="Periodo">
+                                </div>
+                                <div class="col-md-2 datafi mt-2 ms-3">
+                                    <button class="btn btn-primary headbusca">Buscar</button>
+                                </div>
+                            </div>
                         </div>
+                    </main>
 
 
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
+                    <div class="container mt-5">
+                        <div class="row">
 
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
-                        </div>
-                    </div>
-                </main>
+                            <div class="row btnsnfs">
 
+                                <div class="col-md-3 btnf">
+                                    <ul class="nav flex-row">
+                                        <li class="nav-item nfitem">
+                                            <a class="nav-link " href="#">
 
-                <div class="container mt-5">
-                    <div class="row">
+                                                NF
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nfitem">
+                                            <a class="nav-link " href="#">
 
-                        <div class="row btnsnfs">
+                                                NFe
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nfitem">
+                                            <a class="nav-link " href="#">
 
-                            <div class="col-md-3 btnf">
-                                <ul class="nav flex-row">
-                                    <li class="nav-item nfitem">
-                                        <a class="nav-link " href="#">
+                                                NFSe
+                                            </a>
+                                        </li>
 
-                                            NF
-                                        </a>
-                                    </li>
-                                    <li class="nav-item nfitem">
-                                        <a class="nav-link " href="#">
+                                    </ul>
 
-                                            NFe
-                                        </a>
-                                    </li>
-                                    <li class="nav-item nfitem">
-                                        <a class="nav-link " href="#">
+                                </div>
 
-                                            NFSe
-                                        </a>
-                                    </li>
+                                <div class="col col-md-9">
+                                    <div class="btnacoes">
+                                        <a href="importar-nota-fiscal.html" style="color:  #004578;"><img
+                                                src="img/importanf.png" class="ms-3"> Importar</a>
 
-                                </ul>
+                                        <div class="dropdown  ms-3">
 
-                            </div>
+                                            <button class="btn btn-primary dropdown-toggle btnemitir" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Emitir
+                                            </button>
+                                            <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="emitir-nfe.html"><img
+                                                        src="img/detalhes.png"> NFe</a>
+                                                <a class="dropdown-item" href="emitir-nfse.html"><img
+                                                        src="img/nfes.png">NFSe</a>
+                                                <a class="dropdown-item" href="emitir-faturamento.html"><img
+                                                        src="img/faturamento.png">Faturamento</a>
 
-                            <div class="col col-md-9">
-                                <div class="btnacoes">
-                                    <a href="importar-nota-fiscal.html" style="color:  #004578;"><img src="img/importanf.png" class="ms-3"> Importar</a>
-
-                                    <div class="dropdown  ms-3">
-
-                                        <button class="btn btn-primary dropdown-toggle btnemitir" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false" >
-                                            Emitir
-                                        </button>
-                                        <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="emitir-nfe.html"><img src="img/detalhes.png"> NFe</a>
-                                                    <a class="dropdown-item" href="emitir-nfse.html"><img src="img/nfes.png">NFSe</a>
-                                                        <a class="dropdown-item" href="emitir-faturamento.html"><img src="img/faturamento.png">Faturamento</a>
-
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="container mt-5">
                     
+
+
+                    <div class="container position-relative">
+                        <div class="titulotela">
+                            
+            
+                            <div class="row">
+                                <div class="row btnsnfs">
+
+                                    <div class="col-md-3 btnf">
+                                        <ul class="nav flex-row">
+                                            <li class="nav-item nfitem">
+                                                <a class="nav-link " href="#">
+    
+                                                    NF
+                                                </a>
+                                            </li>
+                                            <li class="nav-item nfitem">
+                                                <a class="nav-link " href="#">
+    
+                                                    NFe
+                                                </a>
+                                            </li>
+                                            <li class="nav-item nfitem">
+                                                <a class="nav-link " href="#">
+    
+                                                    NFSe
+                                                </a>
+                                            </li>
+    
+                                        </ul>
+    
+                                    </div>
+            
+                               
+                                
+                            </div>
+            
+            
+                        </div>
+
                         <div class="col-md-9 plan1 mb-5 mt-5 servicosa">
 
                             <div class="row mb-3">
@@ -298,11 +341,13 @@
                                     <nav class="navbar navbar-expand nfs">
                                         <ul class="metodospag navbar-nav me-auto">
 
-                                            <li class="nav-item"><a href="#" class="nav-link" id="saidasBtn">Saídas/Vendas</a>
+                                            <li class="nav-item"><a href="#" class="nav-link"
+                                                    id="saidasBtn">Saídas/Vendas</a>
                                             </li>
-                                            <li class="nav-item"><a href="#" class="nav-link" id="entradasBtn">Entradas/Compras</a>
+                                            <li class="nav-item"><a href="#" class="nav-link"
+                                                    id="entradasBtn">Entradas/Compras</a>
                                             </li>
-                                         
+
 
                                         </ul>
                                     </nav>
@@ -337,7 +382,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='finalizado'>Válida</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -350,7 +395,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='finalizado'>Válida</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -363,7 +408,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='rcorreio'>Cancelada</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -376,7 +421,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='finalizado'>Válida</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -389,10 +434,10 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='finalizado'>Válida</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
-                                        
+
 
 
                                 </table>
@@ -426,7 +471,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='finalizado'>Válida</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -439,7 +484,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='rlocal'>Tag</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -452,7 +497,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='remail'>Tag</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -465,7 +510,7 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='reembolso'>Tag</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
                                         <tr>
@@ -478,10 +523,10 @@
                                             <td>R$ 0.000,00</td>
                                             <td><span class='plr'>Tag</span></td>
                                             <td><a href="#" class="btn btn-success">Ver NF</a></td>
-                                            
+
 
                                         </tr>
-                                        
+
 
 
                                 </table>
@@ -490,35 +535,35 @@
                     </div>
 
                 </div>
+            </div>
 
 
 
 
-                <!--Modal avaliaçao 1-->
-                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-center">
-                                <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                                    atendê-lo
-                                    melhor.
-                                </p>
-                                <img src="img/avaliações.png" alt="Avaliacoes">
-                            </div>
-                            <div class="modal-footer text-center">
-                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                    aria-label="Close">Continuar</button>
-                            </div>
+            <!--Modal avaliaçao 1-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                                atendê-lo
+                                melhor.
+                            </p>
+                            <img src="img/avaliações.png" alt="Avaliacoes">
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Continuar</button>
                         </div>
                     </div>
                 </div>
-                <!--Rodapé
+            </div>
+            <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">
