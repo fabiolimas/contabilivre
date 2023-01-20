@@ -816,3 +816,12 @@ $(document).ready(function(){
 
 
 });
+$(document).ready(function(){
+    var btnclose=document.querySelector("#btnclose");
+    var avaliacao=document.querySelector("#avaliacaofooter");
+
+    btnclose.addEventListener('click', function(e){
+        e.preventDefault();
+        avaliacao.style.display='none';
+    });
+});

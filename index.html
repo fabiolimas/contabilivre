@@ -203,7 +203,7 @@
         <div class="col col-md-6">
             <main >
                 <h4>Olá, nome do cliente</h4>
-                <div class="container">
+                <div class="container slide">
                     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
@@ -253,8 +253,8 @@
                                 </div>
                             </div>
                             <canvas id="barChart"
-                                style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block;"
-                                width="463" height="250" class="chartjs-render-monitor"></canvas>
+                                style="min-height: 250px; height: 250px; max-height: 250px; width:155%; display: block;"
+                                 height="250" class="chartjs-render-monitor"></canvas>
                         </div>
                     </div>
 
@@ -285,7 +285,7 @@
                                 </div>
                                 <canvas id="fatChart"
                                     style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block;"
-                                    width="463" height="250" class="chartjs-render-monitor"></canvas>
+                                    height="250" class="chartjs-render-monitor"></canvas>
 
                             </div>
 
@@ -535,14 +535,14 @@
     </div>
 </div>
     <!--Rodapé-->
-    <footer>
+    <footer id="avaliacaofooter">
         <div class="row">
             <div class="col col-md-12">
                 <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
             </div>
             <div class="col col-md-2 btns">
                 <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal" data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+                <a href="#" class="btn btn-danger close" id="btnclose"><i class="far fa-times-circle"></i> </a>
             </div>
 
 
