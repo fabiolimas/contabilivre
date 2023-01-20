@@ -338,6 +338,7 @@ nav.navbar.navbar-expand.pagamentos {
 }
 #cartao{
     display:block;
+    margin-left: 18px;
 }
 #linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn{
     border-bottom: 1px solid #4aa3e5;
@@ -1655,14 +1656,29 @@ div#about-area {
     align-content: center;
     justify-content: center;
 }
-.btn-success{
+/*.btn-success{
     background-color: #74c83c !important;
     border: none;
    /* width: 100%;*/
     
 
-   /* padding: 15px;*/
+   /* padding: 15px;
 
+}*/
+.btn-success{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 222px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+    border: none;
+    /* width: 100%; */
+    /* padding: 15px;*/
 }
 .table .btn-success{
     font-size: 13px;
@@ -2665,6 +2681,9 @@ a.btn.btn-success.btnres {
     /*position: absolute;*/
     bottom: 23px;
     right: 0px;
+}
+div#cartao .col-md-2 {
+    width: 128px;
 }
 .plan1 {
    
