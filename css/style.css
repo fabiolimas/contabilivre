@@ -1397,14 +1397,40 @@ border-radius: 100px;
 justify-content: center;
 }
 div#opcoes, div#addCliente, div#editCliente {
-    --bs-modal-width: 1139px;
+    --bs-modal-width: 888px;
+    --bs-modal-height:567px;
     
 }
+.row.inputsr input {
+    background: red;
+    width: 20px;
+    margin-left: -17px;
+    margin-top: 22px;
+    position: absolute;
+}
 div#enviarArquivos, #importCadastro {
-    --bs-modal-width: 924px;
+    --bs-modal-width: 888px;
 }
 #detalhesColaborador, #enviarDocumentos, #fPagamento {
-    --bs-modal-width: 800px;
+    --bs-modal-width: 888px;
+}
+.titleinput {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212529;
+    margin-left: 16px;
+}
+label.gray {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #868E96;
+    margin-left: 18px;
 }
 .botoesdoc {
     position: absolute;
@@ -1447,12 +1473,15 @@ a.btn.btn-success.adddpendente {
 
   
 }
+th {
+    padding-left: 21px !important;
+}
 table.table {
     font-size: 14px;
 }
 .row.inputsr {
     border-top: 1px solid rgba(74, 163, 229, 0.2);
-    padding: 5px;
+    padding: 17px;
     border-bottom: 1px solid rgba(74, 163, 229, 0.2);
 }
 .rlocal{
@@ -2445,6 +2474,7 @@ flex-grow: 0;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: -31px;
+    width: 70%;
 }
 .tabelasect {
     background: #fff;
@@ -2683,7 +2713,7 @@ a.btn.btn-success.btnres {
     right: 0px;
 }
 div#cartao .col-md-2 {
-    width: 128px;
+    width: 121px;
 }
 .plan1 {
    
@@ -2858,7 +2888,7 @@ button.fc-next-button.fc-button.fc-button-primary {
     border: none;
 }
 table.table tr td {
-    padding-left: 30px;
+    padding-left: 30px !important;
 }
 div#calendar table tr {
     background: #f2fcf3;
