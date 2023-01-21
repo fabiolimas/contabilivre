@@ -254,8 +254,8 @@
                         </div>
                     </div>
                     <div class="col col-md-10 correspondencia">
-                        <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
-                            <div class="row">
+                        <div class="col-md-11 tabelasect mb-5 mt-3">
+                            <div class="row steps">
 
                                 <div class="col col-md-3  marcadorinativo">
                                     <a href="reservar-sala-de-reuniao.html" class="numero btn btn-primary inativo">1</a>
@@ -325,26 +325,24 @@
                                     </nav>
                                 </div>
                                 <div class="row">
-                                    <!--Cartao de crédito-->
                                     <div class="col-md-7" id="cartao">
+                                        <form action="#">
                                         <div class="form-group d-flex">
-                                            <div class="col-md-6 ms-2">
-                                                <input type="text" class="form-control" name="numerocartao"
+                                            <div class="col-md-6 ms-2 mt-2">
+                                                <input type="text" class="form-control" name="numerocartao" id="cartaoCredito"
                                                     placeholder="Número do cartão">
                                             </div>
-                                            <div class="col-md-2 ms-2">
-                                                <input type="text" class="form-control " name="cvv" placeholder="CVV">
+                                            <div class="col-md-2 ms-2 mt-2" style="width: 101px;">
+                                                <input type="text" class="form-control " name="cvv" placeholder="CVV" id="cvv">
                                             </div>
-                                            <div class="col-md-2 ms-2">
-                                                <input type="text" class="form-control " name="validade"
-                                                    placeholder="Validade">
+                                            <div class="col-md-2 ms-2 mt-2" style="width: 101px;">
+                                                <input type="text" class="form-control " name="validade" placeholder="Validade" id="validade">
                                             </div>
-
+                                           
                                         </div>
                                         <div class="form-group">
                                             <div class="col-md-11 mt-2">
-                                                <input type="text" class="form-control " name="titular"
-                                                    placeholder="Titular do cartão">
+                                                <input type="text" class="form-control " name="titular" placeholder="Titular do cartão">
                                             </div>
                                             <div class="col-md-11 mt-2">
                                                 <select class="form-select" name="parcelas">
@@ -356,7 +354,7 @@
                                                 <p class="gray">Você pode parcelar em 2 vezes sem juros.</p>
                                             </div>
                                         </div>
-
+                                    </form>
                                     </div>
 
                                     <!--boleto-->
@@ -382,7 +380,7 @@
                             </div>
                             <hr>
                             <div class="row bts mt-3">
-                                <div class="col-md-12 d-flex justify-content-end ms-5">
+                                <div class="col-md-12 d-flex justify-content-end">
                                     <div class="col-md-2"><a href="reservar-horario.html" class="ms-3">Cancelar</a>
                                     </div>
                                     <div class="col-md-3"><a href="reservar-sala-fim.html"
@@ -450,7 +448,29 @@
     
 </body>
 
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cartaon = document.getElementById('cartaoCredito');
+    var inputcvv= document.getElementById('cvv');
+    var inputvalidade= document.getElementById('validade');
 
+var maskOptions = {
+  mask: '0000-0000-0000-0000',
+  
+};
+
+var mascaracvv={
+    mask: '000'
+};
+var mascaravalidade={
+    mask:'00/00'
+};
+
+var mask = IMask(cartaon, maskOptions);
+var cvv=IMask(inputcvv, mascaracvv);
+var validade=IMask(inputvalidade, mascaravalidade);
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

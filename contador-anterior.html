@@ -279,7 +279,7 @@
 
                     </div>
                     <div class="col col-md-10 dados-empresa">
-                        <div class="col-md-11 tabelasect p-4 mb-5">
+                        <div class="col-md-11 tabelasect mb-5">
                             <form action="">
                                 <div class="row formempresa">
 
@@ -289,14 +289,14 @@
                                     </div>
 
                                     <div class="col col-md-6 mt-3">
-                                        <input type="text" class="form-control" placeholder="E-mail">
+                                        <input type="email" class="form-control" placeholder="E-mail">
                                     </div>
                                     <div class="col col-md-6 mt-3">
-                                        <input type="text" class="form-control" placeholder="Telefone">
+                                        <input type="text" class="form-control" placeholder="Telefone" id="telefone">
                                     </div>
 
                                     <div class="col col-md-6 mt-3">
-                                        <input type="text" class="form-control" placeholder="CNPJ">
+                                        <input type="text" class="form-control" placeholder="CNPJ" id="cnpj">
                                     </div>
                                     <div class="row permissao text-left d-flex justify-content-start align-item-start">
                                         <input type="checkbox" name="permissao" id="permissao" class=""><label
@@ -313,9 +313,9 @@
 
                                 <hr>
                                 <div class="row bts mt-3">
-                                    <div class="col-md-12 d-flex justify-content-end ms-5">
+                                    <div class="col-md-12 d-flex justify-content-end">
                                         <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
-                                        <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar informações</a>
+                                        <div class="col-md-3"><a href="#" class="btn btn-primary">Salvar informações</a>
                                         </div>
 
                                     </div>
@@ -378,25 +378,29 @@
                         </div>
                     </div>
                 </div>
-                <!--Rodapé
-            <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-                    </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                    </div>
-
-
-
-                </div>
-
-            </footer>-->
+                
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cnpj = document.getElementById('cnpj');
+    var telefone=document.getElementById('telefone');
+   
+ 
 
+var maskOptions = {
+  mask: '00.000.000/000-00',
+ 
+  
+};
+var maskfone={
+    mask: '(00) 0000-0000'
+}
+
+var mask =IMask(telefone, maskfone);
+var mask = IMask(cnpj, maskOptions);
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

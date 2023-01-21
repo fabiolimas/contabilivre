@@ -281,7 +281,7 @@
 
                 </div>
                 <div class="col col-md-10 dados-empresa">
-                    <div class="col-md-11 tabelasect p-1 mb-5">
+                    <div class="col-md-11 tabelasect mb-5">
                         <div class="row formempresa">
                             <form action="#" class="d-flex">
                                 <div class="col col-md-3 mt-3">
@@ -299,7 +299,7 @@
                                 </div>
 
                                 <div class="col col-md-3 mt-3">
-                                    <input type="text" class="form-control dempresa" placeholder="Data de registro">
+                                    <input type="text" class="form-control dempresa" placeholder="Data de registro" id="data">
                                 </div>
 
 
@@ -326,35 +326,44 @@
                         <div class="row table-responsive">
 
                             <div class="row anexos">
+                                <div class="col col-md-1">
+                                    <img src="img/pdficon.png" alt="">
+                                </div>
                                 <div class="col col-md-5">
                                     <p>Campo para a descrição do documento</p>
                                 </div>
-                                <div class="col col-md-2">
+                                <div class="col col-md-2"></div>
+                                <div class="col col-md-1 me-2">
                                     <p class="gray">01/02/2020</p>
                                 </div>
-                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
                                 </div>
 
-                                <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                             </div>
-                            <div class="row anexos mt-3">
+                            <div class="row anexos">
+                                <div class="col col-md-1">
+                                    <img src="img/pdficon.png" alt="">
+                                </div>
                                 <div class="col col-md-5">
                                     <p>Campo para a descrição do documento</p>
                                 </div>
-                                <div class="col col-md-2">
+                                <div class="col col-md-2"></div>
+                                <div class="col col-md-1 me-2">
                                     <p class="gray">01/02/2020</p>
                                 </div>
-                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
                                 </div>
 
-                                <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                             </div>
+                            
                         </div>
                         <hr>
                         <div class="row bts mt-3">
-                            <div class="col-md-12 d-flex justify-content-end ms-5">
+                            <div class="col-md-12 d-flex justify-content-end">
                                 <div class="col-md-2"><a href="dados-gerais.html" class="ms-3">Cancelar</a></div>
-                                <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar informações</a>
+                                <div class="col-md-3"><a href="#" class="btn btn-primary">Salvar informações</a>
                                 </div>
 
                             </div>
@@ -417,26 +426,25 @@
                 </div>
             </div>
         </div>
-        <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-                    </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                    </div>
-
-
-
-                </div>
-
-            </footer>-->
+    
 </body>
 
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+ 
 
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+
+
+
+var mask = IMask(data, maskOptions);
+
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>

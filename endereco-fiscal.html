@@ -396,7 +396,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 mt-3">
-                                            <input type="text" class="form-control" placeholder="CEP" name="cep">
+                                            <input type="text" class="form-control" placeholder="CEP" name="cep" id="cep">
                                         </div>
                                         <div class="col-md-6 mt-3">
                                             <input type="text" class="form-control" placeholder="Endereço"
@@ -456,6 +456,23 @@
 
         </footer>-->
 </body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cep = document.getElementById('cep');
+ 
+
+var maskOptions = {
+  mask: '00000-000',
+  
+};
+
+
+
+var mask = IMask(cep, maskOptions);
+
+
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

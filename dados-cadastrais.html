@@ -279,13 +279,13 @@
 
                     </div>
                     <div class="col col-md-10 dados-empresa">
-                        <div class="col-md-11 tabelasect p-4 mb-5">
+                        <div class="col-md-11 tabelasect  mb-5">
                             <form action="">
                                 <div class="row formempresa">
                                     <p><b>Endereço para correspondências</b></p>
 
                                     <div class="col col-md-2 mt-3">
-                                        <input type="text" class="form-control" placeholder="CEP">
+                                        <input type="text" class="form-control" placeholder="CEP" id="cep">
                                     </div>
 
                                     <div class="col col-md-8 mt-3">
@@ -305,10 +305,10 @@
                                         <input type="text" class="form-control" placeholder="Cidade">
                                     </div>
                                     <div class="col col-md-4 mt-3">
-                                        <input type="text" class="form-control" placeholder="Telefone fixo">
+                                        <input type="text" class="form-control" placeholder="Telefone fixo" id="telefone">
                                     </div>
                                     <div class="col col-md-4 mt-3">
-                                        <input type="text" class="form-control" placeholder="Celular">
+                                        <input type="text" class="form-control" placeholder="Celular" id="celular">
                                     </div>
 
 
@@ -326,7 +326,7 @@
                                     <div class="col col-md-4 mt-3">
                                         <input type="text" class="form-control" placeholder="Razão social" disabled>
                                     </div>
-                                    <div class="col col-md-4 mt-3">
+                                    <div class="col col-md-5 mt-3">
                                         <input type="text" class="form-control" placeholder="Nome fantasia" disabled>
                                     </div>
                                     <div class="col col-md-2 mt-3">
@@ -365,9 +365,9 @@
 
 
                         <div class="row bts mt-3">
-                            <div class="col-md-12 d-flex justify-content-end ms-5">
+                            <div class="col-md-12 d-flex justify-content-end">
                                 <div class="col-md-2"><a href="dados-gerais.html" class="ms-3">Cancelar</a></div>
-                                <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar informações</a></div>
+                                <div class="col-md-3"><a href="#" class="btn btn-primary">Salvar informações</a></div>
 
                             </div>
                         </div>
@@ -426,25 +426,32 @@
                     </div>
                 </div>
             </div>
-            <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-                    </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                    </div>
 
-
-
-                </div>
-
-            </footer>-->
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cep = document.getElementById('cep');
+    var telefone=document.getElementById('telefone');
+    var celular= document.getElementById('celular');
+ 
 
+var maskOptions = {
+  mask: '00000-000',
+  
+};
+var maskfone={
+    mask: '(00) 0000-0000'
+}
+
+var mask =IMask(telefone, maskfone);
+var mask =IMask(celular, maskfone);
+
+
+
+var mask = IMask(cep, maskOptions);
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

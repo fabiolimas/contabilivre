@@ -22,6 +22,10 @@ body{
     width: 105%;
 
 }
+.row>* {
+   
+     padding-right: 0px; 
+} 
 a.btn.btn-danger.close {
     position: absolute;
     top: 1px;
@@ -281,6 +285,40 @@ span.x {
     border-radius: 10px;
     color: #004578;
     text-align: center;
+    line-height: normal;
+}
+ul.nav.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 872px;
+    height: 34px;
+}
+nav.navbar.navbar-expand.eventos {
+    background: none;
+    box-shadow: none;
+    margin-left: 292px;
+}
+.visualizacao .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 189px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F8F9FA;
 }
 
 li.nav-item.filter {
@@ -380,6 +418,42 @@ background: rgba(74, 163, 229, 0.08);
 
 border: 1px dashed #4AA3E5;
 border-radius: 16px;
+transition:.3s;
+cursor: pointer;
+}
+.upload:hover{
+    background: #157bc669;
+}
+.modal h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #212529;
+}
+.row.btnscliente .addnovo {
+    right: 0px;
+}
+.row.btnscliente .exportar {
+    right: 205px;
+}
+.row.anexos .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    width: 129px;
+    height: 30px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
 }
 .anexos{
     display: flex;
@@ -387,7 +461,7 @@ flex-direction: column;
 align-items: flex-start;
 padding: 8px 16px;
 
-width: 872px;
+width: 98%;
 height: 68px;
 
 background: #FFFFFF;
@@ -902,7 +976,7 @@ color: #fff;
     /* float: right; */
     top: -19px;
     color: #fff;
-    right: 0px;
+    right: -83px;
     position: absolute;
 }
 a.btn.btn-primary.btaddrecisao {
@@ -912,19 +986,41 @@ a.btn.btn-primary.btaddrecisao {
     /* position: absolute; */
     width: max-content;
 }
+.dropdown.detalhesholerite {
+    margin-top: -36px;
+    margin-left: 240px;
+}
+a.btn.btn-success.holerite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    width: 203px;
+    height: 30px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px !important;
+    line-height: 18px;
+    color: #F8F9FA;
+}
 .col.col-md-10.recisao {
     margin-left: 327px;
     margin-top: 51px;
    
     width: 774px;
 }
-button.btn.btn-light {
+/*button.btn.btn-light {
     font-size: 14px;
     color: #74c83c;
     margin-top: 12px;
     background: #fff;
     border: none;
-}
+}*/
 .row.dependentes, .alimentado {
     display: flex;
     flex-wrap: nowrap;
@@ -932,8 +1028,22 @@ button.btn.btn-light {
     align-items: center;
 }
 a.btn.btn-light {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 262px;
+    height: 50px;
+    border-radius: 4px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
     font-size: 15px;
-    color: #74c83c;
+    line-height: 26px;
+    color: #74C83C;
 }
 button.btn.btn-light:hover{
     color: #fff;
@@ -966,6 +1076,7 @@ font-weight: bold;
 background: rgba(255, 133, 65, 0.2);
 border-radius: 100px;
 justify-content: center;
+font-size: 13px;
 }
 .folhaPonto {
     background: #fff;
@@ -1217,9 +1328,8 @@ align-items: center;
 padding: 16px;
 gap: 16px;
 
-/*width: 230px;*/
+width: 274.67px;
 height: 74px;
-margin: 20px 0px 0px 11px;
 
 /* Cinza / 01 */
 
@@ -1228,6 +1338,7 @@ background: #FFFFFF;
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 12px;
+margin-right: 16px;
 }
 .col-md-3.marcadorativo p {
     margin-top: 14px;
@@ -1263,14 +1374,28 @@ span.numero.btn.btn-primary.inativo {
     display: flex;
     flex-wrap: nowrap;
 }
-.marcadorinativo{
+.row.steps {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: auto;
+    height: 74px;
+}
+.marcadorinativo{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
 flex-direction: row;
 align-items: center;
-padding: 8px;
+padding: 16px;
 gap: 16px;
 
-/*width: 221px;*/
+width: 274.67px;
 height: 74px;
 
 /* Cinza / 01 */
@@ -1280,7 +1405,7 @@ background: #FFFFFF;
 
 border: 1px solid rgba(74, 163, 229, 0.2);
 border-radius: 12px;
-margin: 20px 0px 0px 11px;
+margin-right: 16px;
 }
 .row.btnscliente {
     
@@ -1307,6 +1432,7 @@ font-weight: bold;
 background: rgba(26, 222, 22, 0.2);
 border-radius: 100px;
 justify-content: center;
+font-size: 13px;
 
 }
 .addnovo{
@@ -1395,6 +1521,11 @@ font-weight: bold;
 background: rgba(74, 163, 229, 0.2);
 border-radius: 100px;
 justify-content: center;
+font-size: 13px;
+}
+.arquivosm img {
+    width: 40px;
+    height: auto;
 }
 div#opcoes, div#addCliente, div#editCliente {
     --bs-modal-width: 888px;
@@ -1440,7 +1571,14 @@ label.gray {
     align-items: center;
 }
 .row.anexos p {
-    font-size: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #212529;
 }
 .botoesdoc .btn {
     margin-left: -97px !important;
@@ -1503,7 +1641,7 @@ justify-content: center;
 .reembolso{
     display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #FF452C;
@@ -1518,7 +1656,7 @@ justify-content: center;
 .plr{
     display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #FA00FF;
@@ -1529,11 +1667,32 @@ background: rgba(250, 0, 255, 0.2);
 border-radius: 100px;
 justify-content: center;
 }
+.table>tbody {
+    vertical-align: baseline !important;
+}
+p.tituloevento {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+    margin-top: 12px;
+}
+.contentresumo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343A40;
+    line-height: 0;
+}
 
 .diastrabalhados{
     display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #FF8541;
@@ -2220,7 +2379,7 @@ gap: 32px;
 }
 .visualizacao {
     position: absolute;
-    right: 216px;
+    right: 148px;
     font-size: 12px;
 }
 .arquivosm{
@@ -2252,6 +2411,7 @@ i.fa.fa-search.position-absolute.m-2.inputbusca {
     right: 11px;
     top: 13px;
     color: #4aa3e5;
+    cursor: pointer;
 }
 
 i.fas.fa-calendar.position-absolute.m-2.inputdata1,i.fas.fa-calendar.position-absolute.m-2.inputdata2 {
@@ -2269,16 +2429,15 @@ i.fas.fa-calendar.position-absolute.m-2.inputdata1,i.fas.fa-calendar.position-ab
     /* flex-direction: column; */
     gap: 55px;
     width: 100%;
-    /* height: 182px; */
-    background: #F8F9FA;
-    border: 1px solid rgba(74, 163, 229, 0.36);
-    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
-    border-radius: 8px;
+   
+      background: #FFFFFF;
     justify-content: center;
-    height: 84px;
+    height: 68px;
     align-content: center;
     align-items: baseline;
     position: relative;
+    box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
+border-radius: 8px;
     
 }
 .lista img {
@@ -2327,15 +2486,34 @@ a.btn.btn-danger.remover i {
     cursor: pointer;
 }
 .lista p {
-    width: 285px;
+    /*width: 261px; */
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #212529;
     margin-top: 34px;
-    margin-left: -150px;
-    margin-right: 95px;
+    margin-left: -165px;
+    margin-right: 307px;
+   
 }
 .arquivos i {
     font-size: 47px;
     color: #4AA3E5;
+}
+.lista .gray {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #495057;
 }
 .col-md-2.minbusca input {
     box-sizing: border-box;
@@ -2460,6 +2638,11 @@ flex-grow: 0;
     margin-left: 242px !important;
     margin-bottom: 106px !important;
 }
+.col-md-7.indice i {
+    margin-left: 15px;
+    color: #CED4DA;
+    margin-right: 15px;
+}
 .titulosecao, .titulosecaod {
     
     height: 24px;
@@ -2480,9 +2663,33 @@ flex-grow: 0;
     background: #fff;
     border-radius: 7px;
     margin-left: 161px;
-    width: 100%;
+    width: 97%;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     padding: 24px;
+}
+button.btn.btn-light {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    /* identical to box height, or 173% */
+    
+    
+    /* Secundária / Main */
+    
+    color: #74C83C;
 }
 .col.col-md-10.completarCadastro {
     margin-left: 284px;
@@ -2574,16 +2781,14 @@ a.btn.btn-primary {
 }
 .titulo1{
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-/* Cinza / 800 */
-
-color: #495057;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin-top: 22px;
+    margin-left: 21px;
+    width: 500px;
 }
 .reservap {
     width: 384px;

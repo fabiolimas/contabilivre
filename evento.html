@@ -293,16 +293,18 @@
 
                 </div>
             <div class="col col-md-10 addColaborador">
-                <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
+                <div class="col-md-11 tabelasect mb-5 mt-3" style="width: 96%;">
                     <div class="row formempresa">
 
-                        <div class="col col-md-6 mt-3">
-                            <select class="form-select">
+                        <div class="col col-md-6 mt-3" >
+                            <select class="form-select" style="width: 468px;
+                            margin-left: 11px;">
                                 <option value="">Funcionário</option>
                             </select>
                         </div>
-                        <div class="col col-md-6 mt-3">
-                            <select class="form-select" id="evento">
+                        <div class="col col-md-6 mt-3" >
+                            <select class="form-select" id="evento" style="width: 464px;
+                            margin-left: 11px;">
                                 <option value="1" >Atestado Médico</option>
                                 <option value="2" >Redução/Suspensão temporária</option>
                                 <option value="3" >Relatório de férias</option>
@@ -328,15 +330,17 @@
 
                             
                             <div class="row">
-                                <p><b>Anexar arquivo</b></p>
+                                <p class="tituloevento"><b>Anexar arquivo</b></p>
                             </div>
                             <div class="row">
-
-                                <div class="upload">
-                                    <img src="img/uploadico.png" alt="">
-                                    <p><b>Selecionar arquivo</b></p>
-                                    <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                                </div>
+                                <input type="file" name="" id="arquivo" class="d-none">
+                                <label for="arquivo">
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                    </div>
+                                </label>
                             </div>
                             <div class="row mt-3">
                                 <p><b>Arquivos enviados</b></p>
@@ -344,16 +348,20 @@
                             <div class="row table-responsive">
 
                                 <div class="row anexos">
+                                    <div class="col col-md-1">
+                                        <img src="img/pdficon.png" alt="">
+                                    </div>
                                     <div class="col col-md-5">
                                         <p>Campo para a descrição do documento</p>
                                     </div>
-                                    <div class="col col-md-2">
+                                    <div class="col col-md-2"></div>
+                                    <div class="col col-md-1 me-2">
                                         <p class="gray">01/02/2020</p>
                                     </div>
-                                    <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                    <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
                                     </div>
-
-                                    <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+    
+                                    <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                 </div>
 
                             </div>

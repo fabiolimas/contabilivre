@@ -271,7 +271,7 @@
             </div>
         <div class="col col-md-10 addColaborador ">
           
-        <div class="col-md-11 tabelasect  mb-5 mt-3 p-3">
+        <div class="col-md-11 tabelasect  mb-5 mt-3">
             <form action="">
             <div class="row mt-3">
                 <p><b>Informações básicas</b></p>
@@ -282,10 +282,10 @@
 
                 </div>
                 <div class="col col-md-4 ">
-                    <input type="text" class="form-control mt-2" placeholder="CPF">
+                    <input type="text" class="form-control mt-2" placeholder="CPF" id="cpf">
                 </div>
                 <div class="col col-md-3 mt-2">
-                    <input type="text" class="form-control mt-2" placeholder="Valor">
+                    <input type="text" class="form-control mt-2" placeholder="Valor" id="valor">
                 </div>
                 <div class="col col-md-3 mt-2">
                     <input type="text" class="form-control mt-2" placeholder="PIS/NIT">
@@ -295,7 +295,7 @@
 
                 </div>
                 <div class="col col-md-3 mt-2">
-                    <input type="text" class="form-control mt-2" placeholder="INSS(R$)">
+                    <input type="text" class="form-control mt-2" placeholder="INSS(R$)" id="valinss">
                 </div>
                 <div class="col col-md-3 mt-3">
                     <label for="CLT">Possui vinculo CLT?</label><label class="switch">
@@ -309,13 +309,13 @@
                 </div>
                 <div class="row socio">
                     <div class="col col-md-3 mt-2">
-                        <input type="text" class="form-control mt-2" placeholder="CNPJ">
+                        <input type="text" class="form-control mt-2" placeholder="CNPJ" id="cnpj">
                     </div>
                     <div class="col col-md-9 mt-2">
                         <input type="text" class="form-control mt-2" placeholder="Razão social">
                     </div>
                     <div class="col col-md-3 mt-2">
-                        <input type="text" class="form-control mt-2" placeholder="CEP">
+                        <input type="text" class="form-control mt-2" placeholder="CEP" id="cep">
                     </div>
                     <div class="col col-md-6 mt-2">
                         <input type="text" class="form-control mt-2" placeholder="Logradouro">
@@ -342,7 +342,7 @@
                 </div>
                 <div class="row socio">
                     <div class="col col-md-6">
-                        <input type="text" class="form-control mt-2" placeholder="Salário bruto/Base INSS">
+                        <input type="text" class="form-control mt-2" placeholder="Salário bruto/Base INSS" id="salbruto">
                     </div>
                     <div class="col col-md-6">
                         <input type="text" class="form-control mt-2" placeholder="Holerite">
@@ -360,13 +360,13 @@
                     </div>
                     <div class="row socio">
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control " placeholder="CNPJ">
+                            <input type="text" class="form-control " placeholder="CNPJ" id="cnpj2">
                         </div>
                         <div class="col col-md-9 mt-2">
                             <input type="text" class="form-control " placeholder="Razão social">
                         </div>
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control " placeholder="CEP">
+                            <input type="text" class="form-control " placeholder="CEP" id="cep2">
                         </div>
                         <div class="col col-md-6 mt-2">
                             <input type="text" class="form-control " placeholder="Logradouro">
@@ -393,7 +393,7 @@
                     </div>
                     <div class="row socio">
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control mt-2" placeholder="Valor gasto com o plano (R$)">
+                            <input type="text" class="form-control mt-2" placeholder="Valor gasto com o plano (R$)" id="valorgasto">
                         </div>
                     </div>
                     <hr class="mt-4">
@@ -405,13 +405,13 @@
                     </div>
                     <div class="row dependentes socio">
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control" placeholder="CPF">
+                            <input type="text" class="form-control" placeholder="CPF" id="cpf">
                         </div>
                         <div class="col col-md-3 mt-2">
                             <input type="text" class="form-control" placeholder="Nome">
                         </div>
                         <div class="col col-md-2 mt-2">
-                            <input type="text" class="form-control" placeholder="Data de nascimento">
+                            <input type="text" class="form-control" placeholder="Data de nascimento" id="data">
                         </div>
                         <div class="col col-md-2 mt-2">
                             <input type="text" class="form-control" placeholder="Ded IR">
@@ -427,20 +427,20 @@
                     <div class="row table-responsive">
                         <table class="table resumo">
                         <tr>
-                            <td class="gray">CPF do dependente </td>
-                            <td class="gray">Nome do dependente </td>
-                            <td class="gray">Data de nascimento do dependente</td>
-                            <td class="gray">Ded IR</td>
+                            <td class="gray titresumo">CPF do dependente </td>
+                            <td class="gray titresumo" >Nome do dependente </td>
+                            <td class="gray titresumo">Data de nascimento do dependente</td>
+                            <td class="gray titresumo">Ded IR</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>000.000.000-00</td>
-                            <td>Nome completo do sócio</td>
-                            <td>000%</td>
-                            <td>R$0.000,00</td>
-                            <td><td><a href="#"><i class="far fa-edit"></i></a></td></td>
-                            <td><td><a href="#" style="color:red;"><i class="fas fa-trash-alt"></i></a></td></td>
+                            <td class="contentresumo">000.000.000-00</td>
+                            <td class="contentresumo">Nome completo do sócio</td>
+                            <td class="contentresumo">000%</td>
+                            <td class="contentresumo">R$0.000,00</td>
+                            <td class="contentresumo"><td><a href="#"><i class="far fa-edit"></i></a></td></td>
+                            <td ><td><a href="#" style="color:red;"><i class="fas fa-trash-alt"></i></a></td></td>
                         </tr>
                     </table>
                     </div>
@@ -457,13 +457,13 @@
                     </div>
                     <div class="row alimentado socio">
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control" placeholder="CPF">
+                            <input type="text" class="form-control" placeholder="CPF" id="cpf3">
                         </div>
                         <div class="col col-md-3 mt-2">
                             <input type="text" class="form-control" placeholder="Nome">
                         </div>
                         <div class="col col-md-2 mt-2">
-                            <input type="text" class="form-control" placeholder="Data de nascimento">
+                            <input type="text" class="form-control" placeholder="Data de nascimento" id="data2">
                         </div>
                         <div class="col col-md-2 mt-2">
                             <input type="text" class="form-control" placeholder="Ofício do juíz">
@@ -492,24 +492,24 @@
                     <div class="row table-responsive">
                         <table class="table resumo">
                         <tr>
-                            <td class="gray">CPF </td>
-                            <td class="gray">Nome</td>
-                            <td class="gray">Data de nascimento</td>
-                            <td class="gray">Ofício do Juiz</td>
-                            <td class="gray">Valor Mínimo</td>
-                            <td class="gray">Percentual a abater</td>
+                            <td class="gray titresumo">CPF </td>
+                            <td class="gray titresumo">Nome</td>
+                            <td class="gray titresumo">Data de nascimento</td>
+                            <td class="gray titresumo">Ofício do Juiz</td>
+                            <td class="gray titresumo">Valor Mínimo</td>
+                            <td class="gray titresumo">Percentual a abater</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>000.000.000-00</td>
-                            <td>Nome completo do sócio</td>
-                            <td>000%</td>
-                            <td>----</td>
-                            <td>R$0,00</td>
-                            <td>000%</td>
-                            <td><td><a href="#"><i class="far fa-edit"></i></a></td></td>
-                            <td><td><a href="#" style="color:red;"><i class="fas fa-trash-alt"></i></a></td></td>
+                            <td class="contentresumo">000.000.000-00</td>
+                            <td class="contentresumo">Nome completo do sócio</td>
+                            <td class="contentresumo">000%</td>
+                            <td class="contentresumo">----</td>
+                            <td class="contentresumo">R$0,00</td>
+                            <td class="contentresumo">000%</td>
+                            <td><td><a href="#"><img src="img/edit.png" alt=""></a></td></td>
+                            <td><td><a href="#" style="color:red;"><img src="img/lixeirared.png" alt=""></a></td></td>
                         </tr>
                     </table>
                 </div>
