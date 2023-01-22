@@ -106,7 +106,7 @@ p, li {
 }
 .row.btnsfluxoimposto {
     display: flex;
-    right: 0px;
+    right: -67px;
 }
 form.filtrosf {
     left: 333px;
@@ -213,45 +213,67 @@ color: #4FCE66;
     color: #21ab1f;
     display: none;
 }
-.btncadproduto{
-    margin-left: 180px;
-    border: 1px solid #74c83c;
-    width: max-content;
-    border-radius: 5px;
-   
+.btncadproduto {
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 194px;
+    height: 38px;
+    border: 1px solid #74C83C !important;
+    border-radius: 4px;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 18px;
-/* identical to box height, or 129% */
-
-height: 46px;
-    background: #f2fcf3;
-/* Secundária / Main */
-
-color: #74C83C;
-
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #74C83C;
+    margin-right: 10px;
 }
-.importarcsv{
-    margin-left: 19px;
-    border: 1px solid #38ABFF;
-    width: max-content;
-    border-radius: 5px;
+.importarcsv {
    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 235px;
+    height: 38px;
+    border: 1px solid #4AA3E5 !important;
+    border-radius: 4px;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 18px;
-/* identical to box height, or 129% */
-
-height: 46px;
-    background: #f2fcf3;
-/* Secundária / Main */
-
-color: #38ABFF;
-
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #38ABFF;
+}
+.col-md-6.btnsnfe {
+    position: absolute;
+    right: 75px;
+    display: flex;
+}
+.col-md-2.minbusca.buscaprodutos input.form-control {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 286px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    position: absolute;
+    left: -91px;
+    top: -4px;
 }
 li.nav-item {
         /* padding: 7px; */
@@ -287,15 +309,22 @@ span.x {
     text-align: center;
     line-height: normal;
 }
+.col-md-4.menu {
+    margin-left: 130px;
+    margin-top: 18px;
+}
 ul.nav.flex-row {
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 0px;
     gap: 16px;
-    width: 872px;
+    position: absolute;
+    width: 186px;
     height: 34px;
+    left: 280px;
+    /* top: 232px; */
 }
 nav.navbar.navbar-expand.eventos {
     background: none;
@@ -473,7 +502,7 @@ border-radius: 8px;
 .btnacoes {
     display: flex;
     position: absolute;
-    right: 61px;
+    right: 25px;
     align-items: center;
 }
 .btnacoes a{
@@ -577,7 +606,7 @@ border-radius: 4px;
 }
 nav.navbar.navbar-expand.nfs {
     margin-bottom: -35px;
-    background: #fff;
+    background: none;
     box-shadow: none;
 }
 .entradasCompras{
@@ -607,19 +636,17 @@ border-radius: 4px;
     margin-left: 97px;
 }
 li.nav-item.nfitem {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 12px;
+    padding: 12px;
     gap: 10px;
     width: 43px;
     height: 34px;
     background: #4AA3E5;
     border-radius: 100px;
-    margin-left: 20px;
-    border-radius: 7px;
-    
 }
 .nfitem a{
     color: #fff !important;
@@ -1255,7 +1282,7 @@ thead.table-dark tr {
 }
 .row.btnsimposto {
     display: flex;
-    right: 0px;
+    right: -65px;
 }
 input.btn.btn-success.gerenciabtn {
     height: 55px;
@@ -1268,9 +1295,42 @@ input.btn.btn-success.gerenciabtn {
 .dropdown.addnovo {
     width: 106px;
 }
-table.table.recisaotable.text-center td img {
-    margin: 24px;
+a.btn.btn-primary.addmovimentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 77px;
+    height: 38px;
+    background: #4AA3E5;
+    border-radius: 4px;
+}
+button.btn.gerenciarContas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 133px;
+    height: 38px;
+    border: 1px solid #004578;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #004578;
+}
+
+table.table.recisaotable td img {
+    margin: 19px;
     cursor: pointer;
+
 }
 a.btn.btn-success.addmovimentacao {
     position: absolute;
@@ -1286,6 +1346,7 @@ a.btn.btn-success.addmovimentacao {
     height: 38px;
     background: #74C83C;
     border-radius: 4px;
+    right: -67px;
 }
 p.titulosecaoc {
     position: absolute;
@@ -1469,7 +1530,19 @@ font-size: 13px;
     border-radius: 4px;
     margin-left: 100px;
     position: absolute;
-    right: 410px;
+    right: 344px;
+}
+input.btn.btn-success.gerenciabtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 118px;
+    height: 56px;
+    background: #74C83C;
+    border-radius: 4px;
 }
 .addnovo:hover{
     background: #004579;
@@ -1613,6 +1686,7 @@ a.btn.btn-success.adddpendente {
 }
 th {
     padding-left: 21px !important;
+    
 }
 table.table {
     font-size: 14px;
@@ -2531,15 +2605,31 @@ a.btn.btn-danger.remover i {
     order: 0;
     flex-grow: 0;
 }
+.importarNota {
+    padding: 17px;
+}
 .col-md-2.minbusca {
     position: absolute;
     top: 13px;
     right: 35px;
 }
+.col-md-9.nfe.p-3.mb-5.mt-5 .importarcsv {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 261px;
+    height: 50px;
+    margin-left: 11px;
+}
 .minbusca i, .busca i {
     color: #4AA3E5;
     margin-top: 18px !important;
-    left: 142px;
+    left: 149px;
+    z-index: 99;
 }
 .col-md-10.busca {
     top: 13px;
@@ -2912,13 +3002,35 @@ a.btn.btn-success.btnres {
     margin-left: 171px;
     
 }
+a.btn.btn-primary.btnparcelamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 182px;
+    height: 38px;
+    background: #4AA3E5;
+    border-radius: 4px;
+}
+.contentalimenta{
+  
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #212529;
+    
+}
 .row.bts {
     /*position: absolute;*/
     bottom: 23px;
     right: 0px;
 }
 div#cartao .col-md-2 {
-    width: 121px;
+    width: 125px;
 }
 .plan1 {
    
@@ -2939,6 +3051,10 @@ padding: 32px;
     border-radius: 8px;
     transition: .3s;
 }
+.col-md-9.btsnfe {
+    position: absolute;
+    right: 0;
+}
 .tabprodutos.container img {
     margin-right: 38px;
 }.maisprodutos{
@@ -2947,11 +3063,26 @@ padding: 32px;
     text-decoration: none;
     margin-bottom: 20px;
 }
+.row.mb-3.con {
+    width: 100%;
+}
+input.btn.btn-success.successnf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 213px;
+    height: 50px;
+    background: #74C83C;
+    border-radius: 4px;
+}
 .informefrete.container {
     margin-top: 250px;
 }
 p.titulosecao.titimport {
-    margin-left: 29px;
+    position: absolute;
 }
 .row.formempresa {
     width: 100%;

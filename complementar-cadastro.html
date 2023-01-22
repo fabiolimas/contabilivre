@@ -363,7 +363,7 @@
                             <input type="text" class="form-control " placeholder="CNPJ" id="cnpj2">
                         </div>
                         <div class="col col-md-9 mt-2">
-                            <input type="text" class="form-control " placeholder="Razão social">
+                            <input type="text" class="form-control" placeholder="Razão social">
                         </div>
                         <div class="col col-md-3 mt-2">
                             <input type="text" class="form-control " placeholder="CEP" id="cep2">
@@ -405,7 +405,7 @@
                     </div>
                     <div class="row dependentes socio">
                         <div class="col col-md-3 mt-2">
-                            <input type="text" class="form-control" placeholder="CPF" id="cpf">
+                            <input type="text" class="form-control" placeholder="CPF" id="cpf2">
                         </div>
                         <div class="col col-md-3 mt-2">
                             <input type="text" class="form-control" placeholder="Nome">
@@ -435,12 +435,12 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="contentresumo">000.000.000-00</td>
-                            <td class="contentresumo">Nome completo do sócio</td>
-                            <td class="contentresumo">000%</td>
-                            <td class="contentresumo">R$0.000,00</td>
-                            <td class="contentresumo"><td><a href="#"><i class="far fa-edit"></i></a></td></td>
-                            <td ><td><a href="#" style="color:red;"><i class="fas fa-trash-alt"></i></a></td></td>
+                            <td class="contentalimenta">000.000.000-00</td>
+                            <td class="contentalimenta">Nome completo do sócio</td>
+                            <td class="contentalimenta">000%</td>
+                            <td class="contentalimenta">R$0.000,00</td>
+                            <td><td><a href="#"><img src="img/edit.png" alt=""></a></td></td>
+                            <td><td><a href="#" style="color:red;"><img src="img/lixeirared.png" alt=""></a></td></td>
                         </tr>
                     </table>
                     </div>
@@ -502,21 +502,21 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="contentresumo">000.000.000-00</td>
-                            <td class="contentresumo">Nome completo do sócio</td>
-                            <td class="contentresumo">000%</td>
-                            <td class="contentresumo">----</td>
-                            <td class="contentresumo">R$0,00</td>
-                            <td class="contentresumo">000%</td>
+                            <td class="contentalimenta">000.000.000-00</td>
+                            <td class="contentalimenta">Nome completo do sócio</td>
+                            <td class="contentalimenta">000%</td>
+                            <td class="contentalimenta">----</td>
+                            <td class="contentalimenta">R$0,00</td>
+                            <td class="contentalimenta">000%</td>
                             <td><td><a href="#"><img src="img/edit.png" alt=""></a></td></td>
                             <td><td><a href="#" style="color:red;"><img src="img/lixeirared.png" alt=""></a></td></td>
                         </tr>
                     </table>
                 </div>
-                <div class="row bts mt-3">
-                    <div class="col-md-12 d-flex justify-content-end ms-5">
+                <div class="row bts mt-3" style="margin-left: 0px;">
+                    <div class="col-md-12 d-flex justify-content-end">
                         <div class="col-md-2"><a href="socios.html" class="ms-3">Cancelar</a></div>
-                        <div class="col-md-2"><a href="#" class="btn btn-primary">Criar</a>
+                        <div class="col-md-3"><a href="#" class="btn btn-primary">Criar</a>
                         </div>
 
                     </div>
@@ -548,25 +548,49 @@
             </div>
         </div>
     </div>
-    <!--Rodapé
-    <footer >
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-            </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
-        </div>
-
-    </footer>-->
+  
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+    var cpf=document.querySelector('#cpf');
+    var cpf2=document.querySelector('#cpf2');
+    var cpf3=document.querySelector('#cpf3');
+    var cep=document.querySelector('#cep');
+    var cep2=document.querySelector('#cep2');
+    var cnpj=document.querySelector('#cnpj');
+    var cnpj2=document.querySelector('#cnpj2');
+  
+    var data2=document.querySelector('#data2');
 
+ 
+
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+var masccpf={
+    mask:'000.000.000-00'
+}
+var masccep={
+    mask:'00000-000'
+}
+var masccnpj ={
+    mask:'00.000.000/000-00'
+}
+
+var mask=IMask(cep2, masccep);
+var mask =IMask(cnpj, masccnpj);
+var mask =IMask(cnpj2, masccnpj);
+var mask =IMask(cep, masccep);
+var mask =IMask(cpf, masccpf);
+var mask =IMask(cpf2, masccpf);
+var mask =IMask(cpf3, masccpf);
+var mask = IMask(data, maskOptions);
+var mask = IMask(data2, maskOptions);
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
