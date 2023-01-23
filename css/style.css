@@ -185,7 +185,7 @@ a#btndownload {
 }
 img.helpdmd {
     position: absolute;
-    right: 25px;
+    right: 35px;
     top: 18px;
 }
 .impostocheck {
@@ -560,6 +560,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 10px;
 line-height: 100%;
+cursor: pointer;
 /* identical to box height, or 10px */
 
 
@@ -666,6 +667,17 @@ li.nav-item.nfitem {
     font-size: 12px;
     line-height: 15px;
     color: #343A40;
+    cursor: pointer;
+}
+.switchs{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 161.6px;
+height: 43px;
 }
 .listaEmails .titulosecao {
 
@@ -3107,13 +3119,14 @@ padding: 32px;
     width: 100%;
 }
 input.btn.btn-success.successnf {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
     gap: 8px;
-    width: 213px;
+    width: 143px;
     height: 50px;
     background: #74C83C;
     border-radius: 4px;

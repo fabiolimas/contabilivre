@@ -323,10 +323,10 @@
                                     <input type="email" placeholder="E-mail" class="form-control">
                                 </div>
                                 <div class="col col-md-4 mt-3">
-                                    <input type="text" placeholder="CPF" class="form-control">
+                                    <input type="text" placeholder="CPF" class="form-control" id="cpf">
                                 </div>
                                 <div class="col col-md-4 mt-3">
-                                    <input type="text" placeholder="Data de Nascimento" class="form-control">
+                                    <input type="text" placeholder="Data de Nascimento" class="form-control" id="data">
                                 </div>
                                 <div class="col col-md-4 mt-3">
                                     <select class="form-select">
@@ -354,7 +354,7 @@
                                 <hr class="mt-3">
                                 <p class="mt-1"><b>Endereço</b></p>
                                 <div class="col col-md-2 mt-3">
-                                    <input type="text" placeholder="CEP" class="form-control">
+                                    <input type="text" placeholder="CEP" class="form-control" id="cep">
                                 </div>
                                 <div class="col col-md-8 mt-3">
                                     <input type="text" placeholder="Endereço" class="form-control">
@@ -384,10 +384,10 @@
                                     <input type="text" placeholder="Nome" class="form-control">
                                 </div>
                                 <div class="col col-md-3 mt-3">
-                                    <input type="text" placeholder="CPF" class="form-control">
+                                    <input type="text" placeholder="CPF" class="form-control" id="cpf2">
                                 </div>
                                 <div class="col col-md-3 mt-3">
-                                    <input type="text" placeholder="Data de Nascimento" class="form-control">
+                                    <input type="text" placeholder="Data de Nascimento" class="form-control" id="data2">
                                 </div>
                                 <div class="col col-md-3 mt-3">
                                     <select class="form-select">
@@ -435,11 +435,11 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="row bts mt-3">
-                                <div class="col-md-12 d-flex justify-content-end ms-3">
+                            <div class="row bts mt-3" style="margin-left:0px;">
+                                <div class="col-md-12 d-flex justify-content-end">
                                     <div class="col-md-2"><a href="colaboradores.html" class="ms-3">Cancelar</a>
                                     </div>
-                                    <div class="col-md-4"><a href="adicionar-colaborador-2.html"
+                                    <div class="col-md-3"><a href="adicionar-colaborador-2.html"
                                             class="btn btn-primary">Continuar cadastro</a></div>
 
                                 </div>
@@ -558,7 +558,46 @@
 
     </footer>-->
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+    var cpf=document.querySelector('#cpf');
+    var cpf2=document.querySelector('#cpf2');
+    
+    var cep=document.querySelector('#cep');
+   
+ 
+    
+  
+    var data2=document.querySelector('#data2');
 
+ 
+
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+var masccpf={
+    mask:'000.000.000-00'
+}
+var masccep={
+    mask:'00000-000'
+}
+var masccnpj ={
+    mask:'00.000.000/000-00'
+}
+
+
+
+var mask =IMask(cep, masccep);
+var mask =IMask(cpf, masccpf);
+var mask =IMask(cpf2, masccpf);
+
+var mask = IMask(data, maskOptions);
+var mask = IMask(data2, maskOptions);
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

@@ -250,111 +250,115 @@
                     </ul>
 
                 </div>
-                <div class="row">
-                    <div class="titulosecao">
-                        <p><b>Informações básicas</b></p>
+              
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="titulotela">
+                            <div class="titulosecao">
+                                <p><b>Informações básicas</b></p>
+                            </div>
+                            
+                        </div>
+                    <div class="col col-md-10 dados-empresa perfil">
+                        <div class="col-md-11 tabelasect mb-5">
+                            <div class="row formempresa">
+
+                                <form action="">
+                                    <div class="row">
+
+                                        <div class="col col-md-12 text-center">
+                                            <input type="file" id="file" style="display:none;"><label for="file">
+                                                <img src="img/camera.png">
+                                                <p>Clique para adicionar uma foto/logo da empresa</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col col-md-12 mt-2">
+                                            <input type="text" class="form-control" placeholder="Nome">
+                                        </div>
+                                        <div class="col col-md-12 mt-2">
+                                            <input type="email" class="form-control" placeholder="E-mail">
+                                        </div>
+                                        <div class="col col-md-10 mt-2">
+                                            <input type="password" class="form-control" placeholder="Senha">
+                                        </div>
+                                        <div class="col col-md-2 mt-2">
+                                            <input type="submit" class="btn btn-success successnf"
+                                                style="font-size:13px;" value="Trocar senha">
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <hr class="mt-3">
+                                <div class="row bts mt-3" style="margin-left: 0px;">
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
+                                        <div class="col-md-3"><a href="#" class="btn btn-primary">Salvar</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-
-
-
                 </div>
-                <div class="col col-md-10 dados-empresa perfil">
-                    <div class="col-md-11 tabelasect p-4 mb-5 mt-3">
-                        <div class="row formempresa">
 
-                            <form action="">
-                                <div class="row">
 
-                                    <div class="col col-md-12 text-center">
-                                        <input type="file" id="file" style="display:none;"><label for="file">
-                                            <img src="img/camera.png">
-                                            <p>Clique para adicionar uma foto/logo da empresa</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col col-md-12 mt-2">
-                                        <input type="text" class="form-control" placeholder="Nome">
-                                    </div>
-                                    <div class="col col-md-12 mt-2">
-                                        <input type="email" class="form-control" placeholder="E-mail">
-                                    </div>
-                                    <div class="col col-md-10 mt-2">
-                                        <input type="password" class="form-control" placeholder="Senha">
-                                    </div>
-                                    <div class="col col-md-2 mt-2">
-                                        <input type="submit" class="btn btn-success successnf" style="font-size:13px;"
-                                            value="Trocar senha">
-                                    </div>
 
-                                </div>
-                            </form>
-                            <hr class="mt-3">
-                            <div class="row bts mt-3">
-                                <div class="col-md-12 d-flex justify-content-end ms-5">
-                                    <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
-                                    <div class="col-md-2"><a href="#" class="btn btn-primary">Salvar</a></div>
 
-                                </div>
+                <!--Modal ajuda-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Ajuda</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <!--Modal ajuda-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Ajuda</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                            <div class="modal-body">
+                                <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
+                                    aproveitar
+                                    todas
+                                    as funcionalidades e serviços que a Contabilivre fornece.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="position-absolute bottom-2 start-0">
+                                    <p><b>4/5</b></p>
                                 </div>
-                                <div class="modal-body">
-                                    <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
-                                        aproveitar
-                                        todas
-                                        as funcionalidades e serviços que a Contabilivre fornece.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="position-absolute bottom-2 start-0">
-                                        <p><b>4/5</b></p>
-                                    </div>
-                                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Pular tour</a>
-                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                        aria-label="Close">Entendi</button>
-                                </div>
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Pular tour</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Entendi</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!--Modal avaliaçao 1-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-center">
-                                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                                        atendê-lo
-                                        melhor.
-                                    </p>
-                                    <img src="img/avaliações.png" alt="Avaliacoes">
-                                </div>
-                                <div class="modal-footer text-center">
-                                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                        aria-label="Close">Continuar</button>
-                                </div>
+                <!--Modal avaliaçao 1-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                                    atendê-lo
+                                    melhor.
+                                </p>
+                                <img src="img/avaliações.png" alt="Avaliacoes">
+                            </div>
+                            <div class="modal-footer text-center">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Continuar</button>
                             </div>
                         </div>
                     </div>
-                    <!--Rodapé
+                </div>
+                <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">
