@@ -224,13 +224,13 @@
                         </div>
                         <div class="periodo1">
                             <img src="img/calendar.png" alt="">
-                            <input type="text" class="form-control" placeholder="Pesquisar">
+                            <input type="text" class="form-control" placeholder="Período" id="data">
                         </div>
                         <span class="gray"> Até</span>
                        
                         <div class="periodo2">
                             <img src="img/calendar.png" alt="">
-                            <input type="text" class="form-control" placeholder="Pesquisar">
+                            <input type="text" class="form-control" placeholder="Período" id="data2">
                         </div>
                         <button class="btn btn-primary headbusca">Buscar</button>
                         
@@ -712,7 +712,28 @@
     </div>
    
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cep = document.getElementById('cep');
+    var data=document.querySelector('#data');
+    var data2=document.querySelector('#data2');
+ 
 
+var maskOptions = {
+  mask: '00000-000',
+  
+};
+var mascdata={
+    mask: '00/00/000'
+}
+
+
+var mask = IMask(data, mascdata);
+var mask= IMask(data2, mascdata);
+var mask = IMask(cep, maskOptions);
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

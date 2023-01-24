@@ -2245,6 +2245,7 @@ aside {
     align-content: center;
     flex-wrap: nowrap;
     height: 176%;
+    z-index: 99;
    
 }
 .nav-link:hover{
@@ -3778,6 +3779,7 @@ background-color: #fff;
 .container, .container-lg, .container-md, .container-sm {
     
     margin-top: 74px;
+    z-index: 1;
     
 }
 .col-md-7.indice {
