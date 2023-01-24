@@ -469,39 +469,44 @@
                     <h5 class="modal-title greentitle">Importar cadastro de colaboradores</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center">
+                <div class="modal-body ">
 
 
                     <div class="row formempresa">
 
                         <p class="text-start"><b>Selecione o arquivo formato CSV</b></p>
-                        <a href="#" class="btn btn-primary reshorario position-absolute end-0"> <i
+                        <a href="#" class="btn visualizarmod position-absolute end-0"> <i
                                 class="fa fa-copy"></i> Visualizar Modelo</a>
-                        <div class="row">
-
-                            <div class="upload">
-                                <img src="img/uploadico.png" alt="">
-                                <p><b>Selecionar arquivo</b></p>
-                                <p class="gray">Ou arraste o arquivo e solte aqui</p>
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <input type="file" name="" id="arquivo" class="d-none">
+                                    <label for="arquivo">
+                                        <div class="upload">
+                                            <img src="img/uploadico.png" alt="">
+                                            <p><b>Selecionar arquivo</b></p>
+                                            <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                        </div>
+                                    </label>
+                                </div>
                         <div class="row mt-3">
                             <p><b>Arquivos enviados</b></p>
                         </div>
                         <div class="row table-responsive">
 
                             <div class="row anexos">
-                                <div class="col col-md-5">
-                                    <p><i class="fa fa-file-csv iconcsv"></i> Campo para a descrição do
-                                        documento</p>
+                                <div class="col col-md-1">
+                                    <img src="img/pdficon.png" alt="">
                                 </div>
-                                <div class="col col-md-2">
+                                <div class="col col-md-5">
+                                    <p>Campo para a descrição do documento</p>
+                                </div>
+                                <div class="col col-md-2"></div>
+                                <div class="col col-md-1 me-2">
                                     <p class="gray">01/02/2020</p>
                                 </div>
-                                <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
                                 </div>
 
-                                <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                             </div>
 
                         </div>

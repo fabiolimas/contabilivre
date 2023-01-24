@@ -1781,6 +1781,26 @@ label.gray {
     align-items: center;
     color: #212529;
 }
+a.btn.visualizarmod.position-absolute.end-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: max-content;
+    height: 38px;
+    background: #004578;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F8F9FA;
+    top: 16px;
+    right: 5px !important;
+}
 .botoesdoc .btn {
     margin-left: -97px !important;
     font-size: 12px;
@@ -1793,7 +1813,7 @@ i.fa.fa-file-csv.iconcsv {
     color: #6cb6eb;
 }
 a.btn.btn-success.adddpendente {
-    width: 181px;
+    width: max-content;
     float: right;
     margin-top: -47px;
     font-size: 13px;
@@ -3503,6 +3523,7 @@ p.titulosecao.titimport {
 .row.formempresa {
     width: 100%;
     margin-top: 16px;
+    margin-left: -10px;
 }
 #importarBtn, #mensalidadeBtn{
     border-bottom:1px solid #4aa3e5;
@@ -3678,6 +3699,14 @@ nav.col-md-2.d-md-block.bg-light.mt-5.sidebar {
 .card-body {
     border: 1px solid #E9ECEF;
 }
+.row.colabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
 li.nav-item img {
    
     left: 20.83%;
@@ -3700,6 +3729,7 @@ footer{
     background: linear-gradient(260.35deg, #74C83C -6.12%, #9AFF56 102.54%);
     margin-top: 277px;
     position: fixed;
+    z-index: 100;
 
 }
 textarea.form-control{
@@ -3779,7 +3809,7 @@ background-color: #fff;
 .container, .container-lg, .container-md, .container-sm {
     
     margin-top: 74px;
-    z-index: 1;
+    
     
 }
 .col-md-7.indice {
