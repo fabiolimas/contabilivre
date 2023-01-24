@@ -222,7 +222,7 @@ color: #4FCE66;
     align-items: center;
     padding: 10px 20px;
     gap: 8px;
-    width: 155px;
+    width: max-content;
     height: 38px;
     border: 1px solid #74C83C !important;
     border-radius: 4px;
@@ -451,7 +451,7 @@ transition:.3s;
 cursor: pointer;
 }
 .upload:hover{
-    background: #157bc669;
+    background: #acd6f569;
 }
 .modal h5 {
     font-family: 'Poppins';
@@ -1039,7 +1039,7 @@ p.titulosecao.titnf {
     display: block;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding: 20px;
     gap: 24px;
     position: absolute;
     /* width: 1128px; */
@@ -1820,9 +1820,12 @@ table.table {
     font-size: 14px;
 }
 .row.inputsr {
-    border-top: 1px solid rgba(74, 163, 229, 0.2);
+    
     padding: 17px;
     border-bottom: 1px solid rgba(74, 163, 229, 0.2);
+}
+nav.paginacao.investhora li {
+    text-align: center;
 }
 .rlocal{
     display: flex;
@@ -2842,8 +2845,9 @@ button.btncadproduto.entendabtn {
 }
 .col-md-2.minbusca {
     position: absolute;
-    top: 13px;
-    right: 35px;
+    top: 15px;
+    right: -14px;
+
 }
 .col-md-9.nfe.p-3.mb-5.mt-5 .importarcsv {
     box-sizing: border-box;
@@ -2860,7 +2864,7 @@ button.btncadproduto.entendabtn {
 .minbusca i, .busca i {
     color: #4AA3E5;
     margin-top: 18px !important;
-    left: 149px;
+    left: 141px;
     z-index: 99;
 }
 button.btn.ticket{
@@ -3399,6 +3403,7 @@ width: 779px;
 height: 56px;
 margin-left: -803px;
 margin-top: -22px;
+justify-content: flex-end;
 }
 a.btn.btn-success.btnres {
     /* float: right; */
@@ -3483,7 +3488,7 @@ input.btn.btn-success.successnf {
     align-items: center;
     padding: 12px 24px;
     gap: 8px;
-    width: 143px;
+    width: max-content;
     height: 50px;
     background: #74C83C;
     border-radius: 4px;

@@ -303,7 +303,7 @@
 
                     <div class="row">
                         <div class="col col-md-6">
-                            <input type="text" class="form-control" placeholder="Data">
+                            <input type="text" class="form-control" placeholder="Data" id="data">
                         </div>
                         <div class="col col-md-6">
                             <select name="" id="" class="form-select">
@@ -379,7 +379,37 @@
     </div>
 
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+    
+    
+    
 
+   
+ 
+    
+
+
+ 
+
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+
+
+
+
+
+
+
+var mask = IMask(data, maskOptions);
+
+
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

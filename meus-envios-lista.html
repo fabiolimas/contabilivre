@@ -205,28 +205,31 @@
                 <main class="col-md-9 titlesection">
                     <div class="row">
 
-                        <div class="col-md-4">
+                        <div class="col">
                             <p><img src="img/star.png"><b>Central de documentos</b></p>
                         </div>
-
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
-
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
+    
+    
+    
+                    </div>
+                    <div class="formbusca">
+                        <div class="pesquisar">
+                            <img src="img/lupa.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
                         </div>
+                       
+                        <div class="periodo1">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Periodo" id="data">
+                        </div>
+                        <span class="gray"> Até</span>
+                       
+                        <div class="periodo2">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Periodo" id="data2">
+                        </div>
+                        <button class="btn btn-primary headbusca">Buscar</button>
+                        
                     </div>
                 </main>
 
@@ -488,25 +491,39 @@
                     </div>
                 </div>
             </div>
-            <!--Rodapé
-    <footer>
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-            </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
-        </div>
-
-    </footer>-->
+        
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+    var data2=document.querySelector('#data2');
+    
+    
 
+   
+ 
+    
+
+
+ 
+
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+
+
+
+
+
+
+
+var mask = IMask(data, maskOptions);
+var mask = IMask(data2, maskOptions);
+
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
