@@ -222,7 +222,7 @@ color: #4FCE66;
     align-items: center;
     padding: 10px 20px;
     gap: 8px;
-    width: 194px;
+    width: 155px;
     height: 38px;
     border: 1px solid #74C83C !important;
     border-radius: 4px;
@@ -813,8 +813,8 @@ border-radius: 4px;
 button.btncadproduto.entendabtn {
     float: right !important;
     position: absolute;
-    right: 24px;
-    top: 21px;
+    right: 88px;
+    top: 12px;
 }
 label.form-check-label {
     font-family: 'Inter';
@@ -831,26 +831,142 @@ p.titulosecao.u.cartoescad {
     margin-bottom: -54px;
     margin-left: 0px;
 }
-.saldoCreditos{
+.saldoCreditos {
     width: 147px;
-height: 24px;
-
-/* Title / Title-7 */
-
-font-family: 'Poppins';
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #868E96;
+    /* margin-top: 55px; */
+    /* margin-left: 17px; */
+    position: absolute;
+    display: none;
+}
+.promocao h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #4AA3E5;
+}
+.infob p {
+    margin-top: 18px;
+    margin-left: -42px;
+}
+.row.promoform {
+    margin-top: 18px;
+}
+.promoform .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 165px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F8F9FA;
+    margin-top: 11px;
+}
+.infob {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    gap: 16px;
+    width: 1064px;
+    height: 52px;
+    background: #B4DFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 8px;
+    font-family: 'Inter';
 font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
 /* identical to box height */
 
 
-/* Cinza / 700 */
+/* Cinza / 800 */
 
-color: #868E96;
-margin-top: -43px;
-display:none;
+color: #495057;
 
+}
+#promocao .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 161px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F8F9FA;
+}
+#promocao h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4AA3E5;
+}
+.poupe p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #212529;
+    margin-top: 13px;
+}
+.info img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    /* width: 56px; */
+    /* height: 63px; */
+}
+.info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px 0px 0px;
+    gap: 16px;
+    width: 840px;
+    height: 63px;
+    background: #FFF4BB;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #495057;
 }
 .val{
     font-family: 'Poppins';
@@ -877,7 +993,7 @@ a.btn.btn-danger.mensalidadesa {
 nav.navbar.navbar-expand.financeiro {
     margin-top: 64px;
     border-radius: 9px;
-    margin-left: -305px;
+    margin-left: -358px;
 }
 form.w-100.novolembreteform img, .novolembreteform i {
     margin-top: 16px !important;
@@ -1772,7 +1888,36 @@ p.tituloevento {
     font-size: 16px;
     line-height: 150%;
     color: #343A40;
-    line-height: 0;
+    line-height: 1;
+}
+button.btn.gerenciarContas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 241px;
+    height: 38px;
+    border: 1px solid #004578;
+    border-radius: 4px;
+}
+.indique .gray {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    color: #868E96;
+}
+.indique .mt-3 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #212529;
 }
 
 .diastrabalhados{
@@ -2395,7 +2540,37 @@ input.form-control.periodo {
     align-content: center;
     margin-top: -63px;
     margin-left: 58px;
+    position: absolute;
+    top: 70px;
   
+}
+a.btn.btn-danger.mensalidadesa {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 291px;
+    height: 38px;
+    border: 1px solid #FFB5B5;
+    border-radius: 4px;
+}
+.btnsfinanceiro .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 276px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+}
+main.col-md-9.titlesection .col-md-4 {
+    width: 100%;
 }
 .searchbar .btn {
     display: flex;
@@ -2616,6 +2791,11 @@ a.btn.btn-danger.remover i {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+a.btn.addnovo.lembrete {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 13px;
 }
 .col-md-9.plan1.mb-5.mt-5.p-4.servicosa p.gray {
     font-family: 'Inter';

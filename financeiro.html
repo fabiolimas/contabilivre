@@ -218,7 +218,7 @@
                     </div>
                     <div class="row">
 
-                        <div class="row btnsclientec position-relative">
+                        <div class="row btnsclientec position-relative" style="margin-top: 69px;">
 
                             <div class=" col col-md-3">
                                 <p class="titulosecao u"><b>Pagamentos</b></p>
@@ -229,7 +229,7 @@
 
 
                                     <button class="btn btn-success" data-bs-toggle="modal"
-                                        data-bs-target="#corrigirSaldo"> Plano anual com 3,5% de desconto</button>
+                                        data-bs-target="#promocao"> Plano anual com 3,5% de desconto</button>
                                     <a href="#" class="btn btn-danger mensalidadesa"><img
                                             src="img/notifyred.png">Existem mensalidades em aberto</a>
 
@@ -237,7 +237,7 @@
                                 <div class="row menufinanceiro">
                                     <div class="col-md-9">
 
-                                        <nav class="navbar navbar-expand financeiro">
+                                        <nav class="navbar navbar-expand financeiro" id="menuFinanceiro">
                                             <ul class="metodospag navbar-nav me-auto mb-2 mb-lg-0">
 
                                                 <li class="nav-item"><a href="#" class="nav-link"
@@ -252,17 +252,17 @@
                                                 <li class="nav-item"><a href="#" class="nav-link"
                                                         id="creditosBtn">Créditos</a>
                                                 </li>
-                                                
-                                                
+
+
 
                                             </ul>
-                                           
                                             <div class="row saldoCreditos">
                                                 <p>Saldo em créditos</p>
                                                 <span class="val">R$ 0,00</span>
                                             </div>
+
                                         </nav>
-                                       
+
                                     </div>
                                 </div>
 
@@ -301,20 +301,26 @@
     </div>
     <div class="container mensalidades">
         <div class="col col-md-10 addColaborador financeiro">
-            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Vencimento</th>
-                                <th scope="col">Data do pagamento</th>
-                                <th scope="col">Valor pago</th>
-                                <th scope="col">Situação</th>
-                                <th scope="col">Ação</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Vencimento</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Data do pagamento</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Valor pago</th>
+                                <th scope="col" style="width: 204px;
+                                height: 52px;">Situação</th>
+                                <th scope="col" style="width: 88px;
+                                height: 52px;
+                                ">Ação</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
                                 <td>00/00/0000</td>
@@ -332,7 +338,8 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                                data-bs-target="#verDetalhes" style="border: none;"><img
+                                                    src="img/detalhes.png">Ver detalhes
                                             </a>
 
 
@@ -343,7 +350,7 @@
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
                                 <td>R$0.000,00</td>
-                                <td><span class="finalizado">Pagamento  Realizado</span></td>
+                                <td><span class="finalizado">Pagamento Realizado</span></td>
 
                                 <td>
                                     <div class="dropdown  detalhesrecisao">
@@ -355,7 +362,8 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                                data-bs-target="#verDetalhes" style="border: none;"><img
+                                                    src="img/detalhes.png">Ver detalhes
                                             </a>
 
 
@@ -366,7 +374,7 @@
                                 <td>00/00/0000</td>
                                 <td>00/00/0000</td>
                                 <td>R$0.000,00</td>
-                                <td><span class="finalizado">Pagamento  Realizado</span></td>
+                                <td><span class="finalizado">Pagamento Realizado</span></td>
 
                                 <td>
                                     <div class="dropdown  detalhesrecisao">
@@ -378,7 +386,8 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                                data-bs-target="#verDetalhes" style="border: none;"><img
+                                                    src="img/detalhes.png">Ver detalhes
                                             </a>
 
 
@@ -401,41 +410,62 @@
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#verDetalhes"><img src="img/detalhes.png">Ver detalhes
+                                                data-bs-target="#verDetalhes" style="border: none;"><img
+                                                    src="img/detalhes.png">Ver detalhes
                                             </a>
 
 
                                         </div>
                                 </td>
                             </tr>
-                            
+
 
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
     <div class="container historicoM">
         <div class="col col-md-10 addColaborador financeiro">
-            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Competência</th>
-                                <th scope="col">Período referente</th>
-                                <th scope="col">Situação</th>
-                                <th scope="col">Motivo</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;">Competência</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;">Período referente</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;" style="width: 226px;
+height: 52px;">Situação</th>
+                                <th scope="col" style="width: 226px;
+                                height: 52px;">Motivo</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider">
 
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000 à 00/00/0000</td>
-                              
+
                                 <td><span class="finalizado">Desconto concedido</span></td>
 
                                 <td>
@@ -445,7 +475,7 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000 à 00/00/0000</td>
-                               
+
                                 <td><span class="rcorreio">Desconto não concedido</span></td>
 
                                 <td>
@@ -455,7 +485,7 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000 à 00/00/0000</td>
-                               
+
                                 <td><span class="rcorreio">Desconto não concedido</span></td>
 
                                 <td>
@@ -465,97 +495,138 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>00/00/0000 à 00/00/0000</td>
-                               
+
                                 <td><span class="rcorreio">Desconto não concedido</span></td>
 
                                 <td>
                                     Empresa com funcionário (1)
                                 </td>
                             </tr>
-                           
-                            
+
+
 
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
 
     <div class="container avulsos ">
         <div class="col col-md-10 addColaborador financeiro">
-            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Contratação</th>
-                                <th scope="col">Nome do serviço</th>
-                                <th scope="col">Valor</th>
-                                
+                                <th scope="col" style="width: 190px;
+                                height: 52px;
+                                ">Contratação</th>
+                                <th scope="col" style="width: 534px;
+                                height: 52px;">Nome do serviço</th>
+                                <th scope="col" style="width: 180px;
+                                height: 52px;">Valor</th>
+
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider ">
 
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Nome completo do serviço avulso contratado</td>
-                              
+
                                 <td>R$0,00</td>
 
                             </tr>
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Nome completo do serviço avulso contratado</td>
-                              
+
                                 <td>R$0,00</td>
 
                             </tr>
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Nome completo do serviço avulso contratado</td>
-                              
+
                                 <td>R$0,00</td>
 
                             </tr>
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Nome completo do serviço avulso contratado</td>
-                              
+
                                 <td>R$0,00</td>
 
                             </tr>
-                           
-                            
+
+
 
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
 
     <div class="container creditost">
         <div class="col col-md-10 addColaborador financeiro">
-            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+            <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Data</th>
-                                <th scope="col">Descrição</th>
-                                <th scope="col">Movimentação</th>
-                                <th scope="col">Valor do crédito</th>
+                                <th scope="col" style="width: 190px;
+                                height: 52px;">Data</th>
+                                <th scope="col" style="width: 238px;
+                                height: 52px;
+                                ">Descrição</th>
+                                <th scope="col" style="width: 238px;
+                                height: 52px;
+                                ">Movimentação</th>
+                                <th scope="col" style="width: 238px;
+                                height: 52px;
+                                ">Valor do crédito</th>
 
                             </tr>
                         </thead>
-                        <tbody class="table-group-divider text-center">
+                        <tbody class="table-group-divider ">
 
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Descrição do crédito</td>
-                              
+
                                 <td>R$100,00</td>
                                 <td>R$0.000,00</td>
 
@@ -563,7 +634,7 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Descrição do crédito</td>
-                              
+
                                 <td>R$100,00</td>
                                 <td>R$0.000,00</td>
 
@@ -571,7 +642,7 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Descrição do crédito</td>
-                              
+
                                 <td>R$100,00</td>
                                 <td>R$0.000,00</td>
 
@@ -579,107 +650,151 @@
                             <tr>
                                 <td>00/00/0000</td>
                                 <td>Descrição do crédito</td>
-                              
+
                                 <td>R$100,00</td>
                                 <td>R$0.000,00</td>
 
                             </tr>
-                            
-                           
-                            
+
+
+
 
 
                     </table>
                 </div>
+                <nav aria-label="Page navigation" class="paginacao">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
     <!--Modal Detalhes-->
-   
+
     <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="verDetalhes" style="--bs-modal-width: 888px;
     --bs-modal-height: 214px;">
- <div class="modal-dialog">
-     <div class="modal-content">
-         <div class="modal-header">
-             <h5 class="modal-title greentitle">Detalhes da mensalidade</h5>
-             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body ">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Detalhes da mensalidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
 
-             <div class="row">
-                 <div class="col col-md-6">
-                     <span class="gray">Valor mensal</span>
-                     <p><b>R$0,00</b></p>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <span class="gray">Valor mensal</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                     <span class="gray">Adic. funcionário(s) plano antigo</span>
-                     <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Adic. funcionário(s) plano antigo</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                     <span class="gray">Loc. endereço fiscal</span>
-                     <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Loc. endereço fiscal</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                     <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal (Últimos 12 meses)</span>
-                     <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal (Últimos 12
+                                meses)</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                     <span class="gray">Reemissão DAS - PGMEI REF. Competência  04/2020</span>
-                     <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Reemissão DAS - PGMEI REF. Competência 04/2020</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                     <span class="gray">Adi. Plano PRO</span>
-                     <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Adi. Plano PRO</span>
+                            <p><b>R$0,00</b></p>
 
-                 </div>
-                 <div class="col col-md-6">
-                    <span class="gray">Valor Total</span>
-                    <p><b>R$0,00</b></p>
+                        </div>
+                        <div class="col col-md-6">
+                            <span class="gray">Valor Total</span>
+                            <p><b>R$0,00</b></p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Entendi</button>
+                    </div>
 
                 </div>
-             </div>
-             <div class="modal-footer text-center">
-                
-                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                    aria-label="Close">Entendi</button>
+
             </div>
 
-         </div>
+        </div>
+    </div>
+<!--Promoção-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="promocao" style="--bs-modal-width: 888px;
+    --bs-modal-height: 557px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Promoção</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
 
-     </div>
+                    <div class="row">
+                        <h1>Ganhe 3.5% de desconto em suas próximas mensalidades!</h1>
+                    </div>
+                    <div class="row">
+                        <div class="info">
+                          <div class="col-md-1">
+                            <img src="img/info.png" alt="">
+                          </div>
+                           <div class="col-md-10">
+                            <p style="    padding-top: 12px;">Se durante o período do crédito houver adicionais de faturamento, sócios, funcionários e correspondências, fora da situação atual da empresa no ato do pagamento antecipado, também serão abatidos. Assim como na contratação de serviços avulsos, se o cliente optar pela utilização do crédito, ou seja, os créditos podem finalizar antes de 12 meses.</p>
+                           </div>
+                           <div class="col-md-1">
+                            <img src="img/excluir.png" alt="">
+                           </div>
+                        </div>
+                        <div class="row poupe">
+                            <p>Poupe seu dinheiro e tempo, optando pelo pagamento antecipado de 12 mensalidades com 3.5% de desconto!</p>
+                        </div>
+                        <div class="row">
+                            <p><b>Como funciona:</b></p>
+                            <p class="gray">O valor total será utilizado como crédito para abatimento de seus débitos com a Contabilivre (Mensalidades, adicionais de sócios, funcionários, faturamento e serviços avulsos - neste caso, se optado no ato da contratação destes serviços avulsos).</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="modal-footer text-center">
 
- </div>
-</div>
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Ignorar oferta</a>
+                                <a href="desconto.html" class="btn btn-success"> 
+                                    Quero o desconto</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     </div>
 
 
 
-
-
-
-
-    <!--Rodapé
-    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-            </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
-        </div>
-
-    </footer>-->
 </body>
 
 

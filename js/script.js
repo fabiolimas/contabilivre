@@ -625,6 +625,8 @@ $(document).ready(function(){
     var avulsos=document.querySelector('.avulsos');
     var credito=document.querySelector('.creditost');
     var saldoc=document.querySelector('.saldoCreditos');
+    var menuFinanceiro=document.querySelector('#menuFinanceiro');
+    var metodosPagamento=document.querySelector('.metodospag');
     
    
 
@@ -640,6 +642,8 @@ $(document).ready(function(){
         btncredito.style.border='none';
         btnhistorico.style.border='none';
         btnmensalidade.style.borderBottom='1px solid #4aa3e5';
+        menuFinanceiro.style.height='auto';
+        metodosPagamento.style.marginTop='0px';
        
       
         
@@ -657,6 +661,8 @@ $(document).ready(function(){
         btncredito.style.border='none';
         btnhistorico.style.borderBottom='1px solid #4aa3e5';
         btnmensalidade.style.borderBottom='none';
+        menuFinanceiro.style.height='auto';
+        metodosPagamento.style.marginTop='0px';
        
       
         
@@ -674,6 +680,8 @@ $(document).ready(function(){
         btncredito.style.border='none';
         btnhistorico.style.border='none';
         btnmensalidade.style.borderBottom='none';
+        menuFinanceiro.style.height='auto';
+        metodosPagamento.style.marginTop='0px';
        
       
         
@@ -691,7 +699,9 @@ $(document).ready(function(){
         btncredito.style.borderBottom='1px solid #4aa3e5';
         btnhistorico.style.border='none';
         btnmensalidade.style.border='none';
-       
+       menuFinanceiro.style.height='188px';
+       metodosPagamento.style.marginTop='-76px';
+
       
         
     });

@@ -218,7 +218,7 @@
                     </div>
                     <div class="row">
 
-                        <div class="row btnsclientec position-relative">
+                        <div class="row btnsclientec position-relative" style="    margin-top: 69px;">
 
                             <div class=" col col-md-3">
                                 <p class="titulosecao u"><b><a href="metodo-de-pagamento.html"><i
@@ -269,24 +269,24 @@
                 <form action="#">
                 <div class="row">
                     <div class="col col-md-12 mt-2">
-                        <input type="text" name="" id="" class="form-control" placeholder="Número do cartão">
+                        <input type="text" name="" id="cartaoCredito" class="form-control" placeholder="Número do cartão">
                     </div>
                     <div class="col col-md-12 mt-2">
                         <input type="text" name="" id="" class="form-control" placeholder="Títular do cartão">
                     </div>
                     <div class="col col-md-6 mt-2">
-                        <input type="text" name="" id="" class="form-control" placeholder="Validade">
+                        <input type="text" name="" id="validade" class="form-control" placeholder="Validade">
                     </div>
                     <div class="col col-md-6 mt-2">
-                        <input type="text" name="" id="" class="form-control" placeholder="CVV">
+                        <input type="text" name="" id="cvv" class="form-control" placeholder="CVV">
                     </div>
                     
                 </div>
                 <hr class="mt-3">
-                <div class="row bts mt-3">
+                <div class="row bts mt-3" style="margin-left: 0px;">
                     
                                           
-                    <div class="col-md-12 d-flex justify-content-end ms-5">
+                    <div class="col-md-12 d-flex justify-content-end">
                        
                         <div class="col-md-3"><a href="#" class="btn btn-primary">Cadastrar</a></div>
 
@@ -368,30 +368,31 @@
 
 
 
-
-
-
-
-    <!--Rodapé
-    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-            </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
-        </div>
-
-    </footer>-->
 </body>
 
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cartaon = document.getElementById('cartaoCredito');
+    var inputcvv= document.getElementById('cvv');
+    var inputvalidade= document.getElementById('validade');
 
+var maskOptions = {
+  mask: '0000-0000-0000-0000',
+  
+};
+
+var mascaracvv={
+    mask: '000'
+};
+var mascaravalidade={
+    mask:'00/00'
+};
+
+var mask = IMask(cartaon, maskOptions);
+var cvv=IMask(inputcvv, mascaracvv);
+var validade=IMask(inputvalidade, mascaravalidade);
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
