@@ -2863,10 +2863,187 @@ button.btncadproduto.entendabtn {
     left: 149px;
     z-index: 99;
 }
+button.btn.ticket{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+
+width: 168px;
+height: 50px;
+
+/* Info / Darker */
+
+border: 1px solid #004578;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+
+/* Info / Darker */
+
+color: #004578;
+position: absolute;
+    right: 27px;
+    top: 18px;
+}
+.frame{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 101px;
+height: 24px;
+
+}
+span.ticketatualizacao {
+    width: 286px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #495057;
+    position: absolute;
+    right: 0;
+}
+.dadosmsg button.btn.btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 192px;
+    height: 38px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F8F9FA;
+    position: absolute;
+    right: 18px;
+    bottom: 13px;
+}
+.dadosmsg h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4AA3E5;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+span.nticket {
+    width: 112px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #495057;
+}
+span.contadormsg {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1C6A00;
+}
+button.btn.categoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 106px;
+    height: 34px;
+    background: #FFCF25;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212529;
+}
+button.btn.categoriar {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 12px;
+gap: 10px;
+
+width: 104px;
+height: 34px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212529;
+}
+.row.categorias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 824px;
+    height: 34px;
+}
+.row.corpoticket {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    /* width: 872px; */
+    height: 288px;
+    background: #FFFFFF;
+    border: 1px solid rgba(26, 222, 22, 0.08);
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 26px;
+}
 .col-md-10.busca {
-    top: 13px;
+    top: 6px;
     position: absolute;
     left: -520px;
+}
+#nav-container .fa-search {
+    color: #4AA3E5;
+    left: 441px;
+    position: absolute;
+    cursor: pointer;
 }
 .grafico1{
     box-sizing: border-box;
@@ -3668,6 +3845,9 @@ button.navbar-toggler.collapsed {
         /* align-items: center; */
         flex-direction: row;
         background: #fff;
+    }
+    canvas#barChart {
+        width: 100% !important;
     }
     .addmovimentacao{
         position: relative !important;

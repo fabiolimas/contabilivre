@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Ticket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--scripts-->
+    <!--Fulcallendar-->
+    <link rel="stylesheet" href="js/fullcalendar-5.11.3/lib/main.css">
+
+    <script src="js/fullcalendar-5.11.3/lib/main.js"></script>
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/cd1b9a04c6.js" crossorigin="anonymous"></script>
+    <!--progressbar-->
+    <script src="js/progressbar.min.js"></script>
+    <!--parallax-->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body class="position-relative">
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    area-controls="#navbar-links" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
+                        <div class="dropdown m-3">
+
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="thumb">
+                                    <img src="img/thumb.png" alt="Usuario thumb">
+                                </div> Nome do Cliente
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="editar-perfil.html"><img
+                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                                <a class="dropdown-item" href="lembretes.html"><img
+                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                                <a class="dropdown-item" href="financeiro.html"><img
+                                        src="img/dropdown/icons/24/financeiro.png">
+                                    Financeiro</a>
+                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            </div>
+                        </div>
+                        <div class="ticket m-2">
+                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                        </div>
+                        <div class="help"><img src="img/help.png" alt=""></div>
+
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!--Menu lateral-->
+        <aside>
+            <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">
+
+                                <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicosa.html">
+
+                                <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="endereco-fiscal.html">
+
+                                <img src="img/menu/icons/24/endereco.png"> Endereço fiscal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dados-da-empresa.html">
+
+                                <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-clientes.html">
+
+                                <img src="img/menu/icons/24/clientes.png">Meus clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="central-de-documentos.html">
+
+                                <img src="img/menu/icons/24/centraldoc.png">Central de documentos
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-colaboradores.html">
+
+                                <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="socios.html">
+
+                                <img src="img/menu/icons/24/socios.png">Sócios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impostos.html">
+
+                                <img src="img/menu/icons/24/impostos.png">Impostos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="declaracoes.html">
+
+                                <img src="img/menu/icons/24/declaracoes.png">Declarações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movimentacoes.html">
+
+                                <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas-fiscais.html">
+
+                                <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recibos.html">
+
+                                <img src="img/menu/icons/24/recibos.png">Recibos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relatorios-contabies.html">
+
+                                <img src="img/menu/icons/24/relatoriosc.png">Relatórios contábeis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="distribuicao-de-lucros.html">
+
+                                <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dmed.html">
+
+                                <img src="img/menu/icons/24/dmed.png"> DMED
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dimob.html">
+
+                                <img src="img/menu/icons/24/dimod.png"> DIMOB
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </nav>
+
+        </aside>
+        <div class="row">
+            <!--planos-->
+
+            <div class="col col-md-12">
+                <main class="col-md-9 titlesection">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <p><b>Ticket</b></p>
+                        </div>
+
+
+
+                        <button class="btn ticket" data-bs-toggle="modal" data-bs-target="#novoTicket">Criar novo ticket</button>
+
+                    </div>
+                </main>
+
+
+                <div class="row">
+                    <div class="col-md-7 indice">
+                        <a href="ticket.html">Tickets</a> <i class="fa fa-chevron-right"></i>Em Aberto
+                    </div>
+                </div>
+                <div class="row position-relative tit">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-7">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-2 submenu">
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="ticket.html">
+
+                                Todos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ticket-em-aberto.html">
+
+                                Em aberto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ticket-respondido.html">
+
+                                Respondidos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="ticket-resolvido.html">
+
+                                Resolvidos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="row btnsclientec" style="margin-left: 0px; ">
+
+                            <div class="col-md-3">
+                                <p class="titulosecaos"><b>Tickets em aberto</b></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-10 dados-empresa indique" style="margin-top: 75px !important;">
+                    <div class="col-md-11 tabelasect  mb-5 ">
+
+
+                        <div class="row corpoticket">
+                            <div class="row categorias">
+                                <button class="btn categoria">EM ABERTO</button>
+                                <button class="btn categoria">EM ABERTO</button>
+                                <div class="frame">
+                                    <img src="img/balao.png" alt=""> <span class="contadormsg">2 respostas</span>
+                                </div>
+                                <div class="row dadosmsg">
+                                    <div class="row">
+                                        <span class="nticket">Ticket #0000000</span>
+                                        <span class="ticketatualizacao">Última modificação em: 00/00/0000 às 00:00</span>
+                                        <h4>Assunto: [Nome do assunto]</h4>
+                                        <p><b>Última mensagem:</b></p>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has...</p>
+                                    </div>
+                                    
+                                    <button class="btn btn-success">Ver detalhes do Ticket</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!--Modal detalhes-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="novoTicket" style="--bs-modal-width: 888px;
+                --bs-modal-height: 750px;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Criar novo ticket</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col col-md-6 mt-2">
+                                    <input type="text" class="form-control" placeholder="Assunto">
+                                </div>
+                                <div class="col col-md-6 mt-2">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Tipo</option>
+                                    </select>
+                                </div>
+                                <div class="col col-md-12 mt-2">
+                                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Mensagem"></textarea>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <p class="mt-3"><b>Você pode adicionar um anexo (Não é obrigatório)</b></p>
+                            </div>
+                            <form action="">
+                                <div class="row formempresa">
+
+
+                                    <div class="row">
+
+                                        <input type="file" name="" id="arquivo" class="d-none">
+                                        <label for="arquivo">
+                                            <div class="upload">
+                                                <img src="img/uploadico.png" alt="">
+                                                <p><b>Selecionar arquivo</b></p>
+                                                <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <p><b>Arquivos enviados</b></p>
+                                    </div>
+                                    <div class="row table-responsive">
+
+                                        <div class="row anexos">
+                                            <div class="col col-md-1">
+                                                <img src="img/pdficon.png" alt="">
+                                            </div>
+                                            <div class="col col-md-5">
+                                                <p>Campo para a descrição do documento</p>
+                                            </div>
+                                            <div class="col col-md-2"></div>
+                                            <div class="col col-md-1 me-2">
+                                                <p class="gray">01/02/2020</p>
+                                            </div>
+                                            <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                            </div>
+            
+                                            <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Criar ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal avaliaçao 1-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                                atendê-lo
+                                melhor.
+                            </p>
+                            <img src="img/avaliações.png" alt="Avaliacoes">
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Rodapé
+            <footer>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+                    </div>
+                    <div class="col col-md-2 btns">
+                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
+                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
+                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+                    </div>
+
+
+
+                </div>
+
+            </footer>-->
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
