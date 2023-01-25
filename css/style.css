@@ -3970,8 +3970,43 @@ margin-bottom: 13px;
 button.navbar-toggler.collapsed {
     margin-right: 25px;
 }
+@media screen and (min-width: 1580px){
+    .tabelasect {
+      
+    
+        width: 99%;
+        
+}
 
-
+@media screen and (max-width: 1560px){
+    .tabelasect {
+        margin-left: 215px;
+        width: 93%;
+    }
+    .titulosecao, .titulosecaod {
+  
+        margin-left: 380px;
+      
+    }
+    .col-md-2.minbusca {
+     
+        right: 13px;
+    }
+}
+@media screen and (max-width: 1288px){
+    .col-md-2.minbusca {
+        right: 25px;
+    }
+    .titlesection {
+      
+        width: 82%;
+    }
+}
+@media screen and (max-width: 1088px){
+    .col-md-2.minbusca {
+        right: 59px;
+    }
+}
 @media screen and (max-width: 600px) {
     .navbar-nav {
         display: flex;
