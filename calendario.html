@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="css/calendario.css">
+    <script src="js/calendario.js"></script>
+    <style>
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        .wraper{
+            display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 424px;
+height: 311px;
+
+/* Shadow / XL */
+
+box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
+border-radius: 8px;
+position: relative;
+        }
+        .prev {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 9px;
+    top: 17px;
+}
+.next {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 9px;
+    top: 17px;
+}
+        .days-week{
+            display: flex;
+            width: 100%;
+            
+            flex-wrap: wrap;
+
+
+/* Caption / Caption-2 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Cinza/09 */
+
+color: #343A40;
+
+        }
+        .number-days{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+        .days-week span{
+            color: black;
+            display: inline-block;
+            width: 14.2%;
+        }
+        .number-days span{
+            color: #ccc;
+            display: inline-block;
+            width: 14.2%;
+            margin:8px 0;
+            cursor: pointer;
+        }
+        .month{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 14px;
+        }
+        .month pre{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="month">
+            <pre class="prev"><</pre>
+            <span>Janeiro</span>
+            
+            <pre class="next">></pre>
+        </div>
+        <div class="days-week">
+            <span>DOM</span>
+            <span>SEG</span>
+            <span>TER</span>
+            <span>QUA</span>
+            <span>QUI</span>
+            <span>SEX</span>
+            <span>SAB</span>
+        </div>
+        <div class="number-days">
+           
+        </div>
+    </div>
+    <script>
+        let el=document.querySelector('.number-days');
+        for (let i = 1 ;i <= 31; i++){
+           
+            el.innerHTML+='<span id="day'+i+'">'+i+'</span>';
+        }
+        
+    </script>
+</body>
+</html>

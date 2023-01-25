@@ -1,0 +1,111 @@
+.wraper{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 424px;
+height: 311px;
+
+/* Shadow / XL */
+
+
+border-radius: 8px;
+position: relative;
+}
+.prev {
+display: flex;
+justify-content: space-between;
+position: absolute;
+left: 9px;
+top: 17px;
+cursor: pointer;
+}
+.next {
+display: flex;
+justify-content: space-between;
+position: absolute;
+right: 9px;
+top: 17px;
+cursor: pointer;
+}
+.mes{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+/* identical to box height, or 32px */
+
+
+/* Cinza/09 */
+
+color: #343A40;
+
+}
+.days-week{
+    display: flex;
+    width: 100%;
+    
+    flex-wrap: wrap;
+
+
+/* Caption / Caption-2 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Cinza/09 */
+
+color: #343A40;
+
+}
+.number-days{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Cinza / 600 */
+    
+    color: #ADB5BD;
+    margin-left: 20px;
+    
+}
+.days-week span{
+    color: black;
+    display: inline-block;
+    width: 14.2%;
+}
+.number-days span{
+    color: #ccc;
+    display: inline-block;
+    width: 14.2%;
+    margin:8px 0;
+    cursor: pointer;
+}
+.month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.month pre{
+    display: flex;
+    justify-content: space-between;
+}
