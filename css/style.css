@@ -310,7 +310,7 @@ span.x {
     line-height: normal;
 }
 .col-md-4.menu {
-    margin-left: 130px;
+    margin-left: 82px;
     margin-top: 18px;
 }
 ul.nav.flex-row {
@@ -607,7 +607,7 @@ border-radius: 8px;
 .btnacoes {
     display: flex;
     position: absolute;
-    right: 25px;
+    right: 36px;
     align-items: center;
 }
 .btnacoes a{
@@ -3230,6 +3230,7 @@ flex: none;
 order: 1;
 align-self: stretch;
 flex-grow: 0;
+
 }
 .grafico2{
     box-sizing: border-box;
@@ -3263,6 +3264,7 @@ flex: none;
 order: 2;
 align-self: stretch;
 flex-grow: 0;
+
 }
 .grafico2 h4{
     width: 100%;
@@ -4079,49 +4081,7 @@ margin-bottom: 13px;
 button.navbar-toggler.collapsed {
     margin-right: 25px;
 }
-@media screen and (min-width: 1580px){
-    .tabelasect {
-      
-    
-        width: 99%;
-        
-}
 
-@media screen and (max-width: 1560px){
-    .tabelasect {
-        margin-left: 215px;
-        width: 93%;
-    }
-    .titulosecao, .titulosecaod {
-  
-        margin-left: 380px;
-      
-    }
-    .col-md-2.minbusca {
-     
-        right: 13px;
-    }
-}
-@media screen and (max-width: 1288px){
-    .col-md-2.minbusca {
-        right: 25px;
-    }
-    .titlesection {
-      
-        width: 82%;
-    }
-   
-}
-@media screen and (max-width: 1088px){
-    .col-md-2.minbusca {
-        right: 59px;
-    }
-}
-@media screen and (min-width: 1319){
-    .col-md-2.minbusca {
-        right: 22px;
-    }
-}
 
 @media screen and (max-width: 600px) {
     .navbar-nav {
@@ -4132,6 +4092,10 @@ button.navbar-toggler.collapsed {
         /* align-items: center; */
         flex-direction: row;
         background: #fff;
+        margin-left: -54px;
+    }
+    div#cartao .col-md-2 {
+        width: auto;
     }
     aside{
         background: #ffffff00;
@@ -4221,18 +4185,18 @@ button.navbar-toggler.collapsed {
         margin-left: 5px;
     }
     .grafico2 h4 {
-        margin-top: 133px;
-        margin-left: -27px;
+        margin-top: -26px;
+    margin-left: 2px;
     }
     .anografico {
         position: absolute;
-        margin-top: 182px;
-        margin-left: -17px;
+        margin-top: -10px;
+    margin-left: -107px;
     }
     .titlesection {
      
-        left: 13px;
-        width: 405px;
+        left: 0;
+        width: 100%;
     }
     .col-md-2.minbusca input {
        
@@ -4263,6 +4227,7 @@ button.navbar-toggler.collapsed {
     .card.card-primary {
         margin-left: 0px; 
         margin-top: 26px;
+        overflow-x: scroll;
      
     }
     p.mt-2 {
@@ -4276,9 +4241,8 @@ button.navbar-toggler.collapsed {
         font-size: 17px;
     }
     aside {
-        /*display: none;*/
-        z-index: 100;
-        margin-top: 44px;
+        z-index: 99999;
+    margin-top: 435px;
     background: none;
     }
     .plan11, .plan2, .plan1 {
@@ -4331,12 +4295,22 @@ button.navbar-toggler.collapsed {
         width: 306px;
     }
     main{
-        left: -2px;
-        padding: 21px;
+        left: 0px;
+        padding: 16px;
         width: 100%;
     }
     .grafico1, .grafico2 {
         width: 100%;
+        overflow-x: scroll;
+    }
+    .row.chartdon {
+        
+        margin-left: 104px;
+    }
+    .dadosgrafico {
+        
+        left: -13px;
+       
     }
     .sidebar-sticky {
         background: #ffffff;
@@ -4359,7 +4333,7 @@ button.navbar-toggler.collapsed {
         height: auto;
     }
     .col-md-5.right-side {
-        margin-top: 1143px;
+        margin-top: 952px;
        /* margin-left: 153px;*/
     }
     nav.col-md-2.d-md-block.bg-light.mt-5.sidebar {
@@ -4369,10 +4343,26 @@ button.navbar-toggler.collapsed {
         margin-left: -17px;
     }
     .col-md-7.indice {
-         margin-left: 0px !important;
+         left: 0px;
         
     }
-   
+    td.contentresumo {
+        line-height: 1;
+    }
+    nav.navbar.navbar-expand.pagamentos {
+     
+        margin-bottom: 45px;
+    }
+    table.table.resumo {
+        margin-left: -31px;
+    }
+    .metodospag .nav-item {
+        line-height: 1;
+        width: max-content;
+    }
+    .metodospag a {
+        font-size: 10px;
+    }
     .col.col-md-2.submenu {
         left: 11px !important;
         text-align: center;
@@ -4627,7 +4617,57 @@ button.navbar-toggler.collapsed {
     p.titulosecaos{
         display: none;
     }
+    .minbusca i, .busca i {
+      
+        left: 130px;
+  
+    }
     
   
      
 }
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and  (max-width: 1200px){
+   
+
+    a.btn.btn-danger.close {
+     
+        right: 9px;
+    }
+ 
+   
+}
+@media only screen and (min-width: 1319){
+    .minbusca {
+        right: 22px;
+    }
+}
+@media only screen and (max-width: 1560px){
+    .tabelasect {
+        margin-left: 215px;
+        width: 93%;
+    }
+    .titulosecao, .titulosecaod {
+  
+        margin-left: 380px;
+      
+    }
+   
+}
+
+@media only screen and (min-width: 1580px){
+    .tabelasect {
+      
+    
+        width: 99%;
+        
+}
+
+
+
+
+
+
+
