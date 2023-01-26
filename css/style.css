@@ -29,7 +29,7 @@ body{
 a.btn.btn-danger.close {
     position: absolute;
     top: 1px;
-    right: 47px;
+    right: 34px;
 }
 .avaliaServ{
     display: flex;
@@ -439,6 +439,39 @@ nav.navbar.navbar-expand.pagamentos {
     border: 1px dashed #4AA3E5;
     border-radius: 16px;
     cursor: pointer;
+}
+h4.titleChartDon {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+}
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 108px;
+    height: 112px;
+}
+.row.chartdon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 280px;
+    height: 170px;
+    margin-left: -88px;
+}
+.chart2 {
+    margin-top: 15px;
+    margin-left: -54px;
+    position: absolute;
+}
+.chart {
+    margin-left: -13px;
 }
 .upload {
     box-sizing: border-box;
@@ -3655,10 +3688,79 @@ span.ano.gray {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.6);
 }
-.anografico {
+span.legenda {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 24px;
+    
+}
+span.porcentagem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FF9800;
+}
+span.porcentagem2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #3B00ED;
+}
+.row.valfat {
+    margin-bottom: 28px;
+}
+
+.dadosgrafico {
     position: absolute;
-    margin-top: 139px;
-    margin-left: -109px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    left: -51px;
+    top: 50px;
+}
+::-webkit-progress-value .progress-bar1 {
+    background-color: #ff9800;
+  }
+  ::-webkit-progress-value .progress-bar2{
+    background-color: #3B00ED;
+  }
+
+
+
+.row.valfat , .valdisp  {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+.anografico {
+    position: absolute; 
+     margin-top: 37px; 
+     margin-left: -109px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px 0px;
+    width: 96px;
+    height: 64px;
 }
 span.mei {
     font-family: 'Poppins';
@@ -3694,17 +3796,24 @@ span.year {
  
 }
 .grafico2 h4 {
-    margin-top: 96px;
+    top: 28px;
+    
+    
+        position: absolute;
+        left: -111px;
+        width: 108px;
+        height: 48px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212529;
+}
+.legendas {
     position: absolute;
-    left: 116px;
-    width: 108px;
-    height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #212529;
+    left: 204px;
+    width: max-content;
 }
 .col-md-5.right-side {
     width: 456px;
@@ -4001,12 +4110,19 @@ button.navbar-toggler.collapsed {
       
         width: 82%;
     }
+   
 }
 @media screen and (max-width: 1088px){
     .col-md-2.minbusca {
         right: 59px;
     }
 }
+@media screen and (min-width: 1319){
+    .col-md-2.minbusca {
+        right: 22px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .navbar-nav {
         display: flex;
@@ -4016,6 +4132,9 @@ button.navbar-toggler.collapsed {
         /* align-items: center; */
         flex-direction: row;
         background: #fff;
+    }
+    aside{
+        background: #ffffff00;
     }
     canvas#barChart {
         width: 100% !important;

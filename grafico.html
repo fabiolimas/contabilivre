@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+ 
+   </head>
+<body>
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart', 'bar']});
+          google.charts.setOnLoadCallback(drawVisualization);
+    
+          function drawVisualization() {
+            // Some raw data (not necessarily accurate)
+            var data = google.visualization.arrayToDataTable([
+              ['Month', 'Despesa', 'Receita', ],
+              ['Jan',  5,      3,         ],
+              ['Fev',  3,      3.75,        ],
+              ['Mar',  2.5,      3,       ],
+              ['Abr',  7,      5,        ],
+              ['Mai',  5,      7.5,         ],
+              ['Jun',  10,      3.5,         ],
+              ['Jul',  2.5,      6,         ],
+              ['Ago',  3.7,      6.25,         ],
+              ['Set',  7.7,      6.25,         ],
+              ['Out',  10,      3.75,         ],
+              ['Nov',  6,      2.5,         ],
+              ['Dez',  8,      2,         ],
+            ]);
+    
+            var options = {
+    
+    chartArea: { width:'80%', height:'76%'},
+    title: '',
+    chart:{
+        subtitle: 'Gráfico de 2022'},
+
+  vAxis: {title: ''},
+  hAxis: {title: ''},
+  seriesType: 'bars',
+  legend: {position: 'bottom', alignment:'start'
+
+   
+},
+backgroundColor:'rgb(116 200 60 / 0%)',
+backgroundColor: { fill: "transparent" } ,
+boxStyle: {
+  // Color of the box outline.
+ 
+  // x-radius of the corner curvature.
+  rx: 10,
+  // y-radius of the corner curvature.
+  ry: 50,},
+colors: ['#FF452C', '#4FCE66'],
+
+  
+  
+};
+          
+          
+    
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+          }
+        </script>
+      </head>
+      <body>
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+      </body>
+    
+
+
+
+</html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Valor faturado',     100],
+          ['Disponível para faturamento',      800],
+         
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.9,
+          colors: ['#FF9800', '#3B00ED'],
+          pieSliceText: 'percentage',
+          backgroundColor: { fill: "transparent" } ,
+          
+                };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body >
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
+
+
+
