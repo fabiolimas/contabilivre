@@ -2416,6 +2416,7 @@ a {
 .row.bts .col-md-2 {
     width: 112px;
     margin-top: 5px;
+    margin-right: 29px;
 }
 .row.bts .col-md-3 {
     width: auto;
@@ -2972,7 +2973,7 @@ button.btncadproduto.entendabtn {
 .col-md-2.minbusca {
     position: absolute;
     top: 15px;
-    right: -14px;
+    right: 19px;
 
 }
 .col-md-9.nfe.p-3.mb-5.mt-5 .importarcsv {
@@ -4117,7 +4118,7 @@ button.navbar-toggler.collapsed {
     }
     
     .row.btnsimposto {
-       
+       @
         right: -11px;
         /* width: max-content; */
     }
@@ -4626,7 +4627,11 @@ button.navbar-toggler.collapsed {
   
      
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1080px){
+    .col-md-2.minbusca {
+     
+        right: 63px;
+    }
 
 }
 @media only screen and  (max-width: 1200px){
@@ -4646,7 +4651,7 @@ button.navbar-toggler.collapsed {
 }
 @media only screen and (max-width: 1560px){
     .tabelasect {
-        margin-left: 215px;
+        margin-left: 188px;
         width: 93%;
     }
     .titulosecao, .titulosecaod {
