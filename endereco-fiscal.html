@@ -30,7 +30,7 @@
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -48,7 +48,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,11 +64,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -226,7 +226,9 @@
 
                     </div>
                     <div class="formbusca">
-                        <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                id="iconfiltros" style="right: 14px;
+                            top: 25px;"></a>
                         <div class="pesquisar">
                             <img src="img/lupa.png" alt="">
                             <input type="text" class="form-control" placeholder="Pesquisar">
@@ -241,13 +243,13 @@
                             <input type="text" class="form-control" placeholder="Período" id="data">
                         </div>
                         <span class="gray"> Até</span>
-                       
+
                         <div class="periodo2">
                             <img src="img/calendar.png" alt="">
                             <input type="text" class="form-control" placeholder="Período" id="data2">
                         </div>
                         <button class="btn btn-primary headbusca">Buscar</button>
-                        
+
                     </div>
 
                 </main>
@@ -279,14 +281,82 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile">
 
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="titsubmenu">Correspondências</span>
+                         <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       
+                        <a class="dropdown-item" href="endereco-fiscal.html">Correspondênicas</a>
+                        <a class="dropdown-item" href="sala-de-reuniao.html" style="border: none;">Sala de Reunião</a>
+                       
+                    </div>
+                </div>
+                <div class="row countpage">
+                    <div class="basetitle">
+                        <div class="itemlabel">
+                            <p>1 - 5 de 16 resultados</p>
+                        </div>
+                    </div>
+                    <div class="selectpage">
+                        <div class="basetitlepage">
+                            <p>Página</p>
+                        </div>
+                        <select class="basetitleselect">
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tablemobile">
+                    <div class="lineinfo">
+                        <div class="baseinfo"><p>Arquivo</p></div>
+                        <div class="baseitem"><p>000</p></div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo"><p>Data</p></div>
+                        <div class="baseitem"><p>Campo para a descrição do serviço</p></div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo"><p>Situação</p></div>
+                        <div class="baseitem"><span class='rcorreio'>Enviado por correio</span></div>
+                    </div>
+                    <div class="botaomobile">
+                        <button class="btnopcoes" data-bs-toggle="modal"
+                        data-bs-target="#opcoes">Opções</button>
+                    </div>
 
+                    
+                </div>
+                <div class="tablemobile">
+                    <div class="lineinfo">
+                        <div class="baseinfo"><p>Arquivo</p></div>
+                        <div class="baseitem"><p>000</p></div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo"><p>Data</p></div>
+                        <div class="baseitem"><p>Campo para a descrição do serviço</p></div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo"><p>Situação</p></div>
+                        <div class="baseitem"><span class='remail'>Enviado por E-mail</span></div>
+                    </div>
+                    <div class="botaomobile">
+                        <button class="btnopcoes" data-bs-toggle="modal"
+                        data-bs-target="#opcoes">Opções</button>
+                    </div>
+
+                    
+                </div>
                 <div class="container">
                     <div class="titulotela">
                         <div class="titulosecao">
                             <p><b>Correspondências</b></p>
                         </div>
                     </div>
+                   
                     <div class="col col-md-10 addColaborador enderecofiscal">
                         <div class="col-md-11 tabelasect mb-5 p-0 pb-2">
                             <div class="row table-responsive">
@@ -351,17 +421,19 @@
                                 </table>
                                 <nav aria-label="Page navigation" class="paginacao">
                                     <ul class="pagination">
-                                      <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                      <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">></a></li>
-                                      
+                                        <li class="page-item"><a class="page-link" href="#">
+                                                <</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">></a></li>
+
                                     </ul>
-                                  </nav>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -382,8 +454,7 @@
                                         <div class="col col-md-4">
                                             <input type="radio" value="" name="envio" id="encaminharfoto">
                                             <div class="titleinput"><b>Encaminhar foto</b></div>
-                                             <label
-                                                for="encaminharfoto" class="gray">Iremos abrir a correspondência e
+                                            <label for="encaminharfoto" class="gray">Iremos abrir a correspondência e
                                                 encaminhar
                                                 para você uma foto do conteúdo da mesma.</label>
 
@@ -391,8 +462,8 @@
                                         <div class="col col-md-4">
                                             <input type="radio" value="" name="envio" id="recebcorreio">
                                             <div class="titleinput"><b>Receber pelo correio</b></div>
-                                             <label
-                                                for="recebcorreio" class="gray"><b>Atenção:</b> Valores pagos em taxas
+                                            <label for="recebcorreio" class="gray"><b>Atenção:</b> Valores pagos em
+                                                taxas
                                                 de
                                                 Correio serão inseridos em sua próxima mensalidade.</label>
 
@@ -400,8 +471,7 @@
                                         <div class="col col-md-4">
                                             <input type="radio" value="" name="envio" id="retiralocal">
                                             <div class="titleinput"><b>Retirada no local</b></div>
-                                             <label
-                                                for="retiralocal" class="gray">Verifique o local de retirada</label>
+                                            <label for="retiralocal" class="gray">Verifique o local de retirada</label>
 
                                         </div>
                                     </div>
@@ -410,7 +480,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 mt-3">
-                                            <input type="text" class="form-control" placeholder="CEP" name="cep" id="cep">
+                                            <input type="text" class="form-control" placeholder="CEP" name="cep"
+                                                id="cep">
                                         </div>
                                         <div class="col-md-6 mt-3">
                                             <input type="text" class="form-control" placeholder="Endereço"
@@ -439,8 +510,8 @@
                             </div>
                             <div class="modal-footer">
 
-                                <a href="#" ata-bs-dismiss="modal" aria-label="Close" class="ms-3" data-bs-dismiss="modal"
-                                aria-label="Close">Cancelar</a>
+                                <a href="#" ata-bs-dismiss="modal" aria-label="Close" class="ms-3"
+                                    data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
                                 <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
                                     aria-label="Close">Salvar</button>
                                 </form>
@@ -449,48 +520,87 @@
                     </div>
                 </div>
 
+                <!--Modal filtro mobile-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+--bs-modal-height: 342px;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center">Filtro</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+
+                                <div class="row inputs">
 
 
+                                    <div class="col mt-2">
+                                        <div class="pesquisar">
+                                            <img src="img/lupa.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Pesquisar">
+                                        </div>
+                                    </div>
 
-                
-                <!--Rodapé
-        <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-            <div class="row">
-                <div class="col col-md-12">
-                    <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+                                    <div class="col mt-2">
+                                        <div class="situacao">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Situação</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row periodos">
+                                        <div class=" col col-md-5 periodo1 mt-2">
+                                            <img src="img/calendar.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                        </div>
+                                        <span class="gray col col-md-2"> Até</span>
+    
+                                        <div class="periodo2 mt-2 col col-md-5">
+                                            <img src="img/calendar.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="modal-footer filtro">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Filtrar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-md-2 btns">
-                    <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                        data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                    <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                </div>
 
 
 
-            </div>
 
-        </footer>-->
 </body>
 
 <script src="https://unpkg.com/imask"></script>
 <script>
     var cep = document.getElementById('cep');
-    var data=document.querySelector('#data');
-    var data2=document.querySelector('#data2');
- 
-
-var maskOptions = {
-  mask: '00000-000',
-  
-};
-var mascdata={
-    mask: '00/00/000'
-}
+    var data = document.querySelector('#data');
+    var data2 = document.querySelector('#data2');
+    var datamob=document.querySelector('#datamob');
+    var datamob2=document.querySelector('#datamob2');
 
 
-var mask = IMask(data, mascdata);
-var mask= IMask(data2, mascdata);
-var mask = IMask(cep, maskOptions);
+    var maskOptions = {
+        mask: '00000-000',
+
+    };
+    var mascdata = {
+        mask: '00/00/000'
+    }
+
+
+    var mask = IMask(data, mascdata);
+    var mask = IMask(data2, mascdata);
+    var mask = IMask(cep, maskOptions);
+    var mask= IMask(datamob, mascdata);
+    var mask= IMask(datamob2, mascdata);
 
 
 </script>
