@@ -22,10 +22,26 @@ body{
     width: 105%;
 
 }
+img.setabaixo {
+    
+    display: none;
+}
 .row>* {
    
      padding-right: 0px; 
 } 
+.righthead{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 625px;
+height: 40px;
+position: absolute;
+    right: 33px;
+}
 a.btn.btn-danger.close {
     position: absolute;
     top: 1px;
@@ -471,7 +487,7 @@ h4.titleChartDon {
     position: absolute;
 }
 .chart {
-    margin-left: -13px;
+    margin-left: -48px;
 }
 .upload {
     box-sizing: border-box;
@@ -1805,6 +1821,11 @@ flex-grow: 0;
 font-size: 13px;
 position: absolute;
     right: 298px;
+}
+.legendas {
+    position: absolute;
+    left: 184px;
+    width: max-content;
 }
 
 .row.position-relative.tit {
@@ -3145,6 +3166,12 @@ button.btn.categoria {
     line-height: 18px;
     color: #212529;
 }
+img#logomin {
+    display: none;
+}
+#iconfiltros{
+    display:none;
+}
 button.btn.categoriar {
     display: flex;
 flex-direction: row;
@@ -3757,7 +3784,7 @@ span.porcentagem2 {
 .anografico {
     position: absolute; 
      margin-top: 37px; 
-     margin-left: -109px; 
+     margin-left: -96px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -3791,8 +3818,11 @@ span.year {
     color: #38ABFF;
     color: #38ABFF;
 }
+.planosmobile{
+    display: none;
+}
 .help {
-    margin-top: 18px;
+    margin-top: 0px;
     margin-left: 21px;
     color: #4aa3e5;
     cursor: pointer;
@@ -3803,7 +3833,7 @@ span.year {
     
     
         position: absolute;
-        left: -111px;
+        left: -95px;
         width: 108px;
         height: 48px;
         font-family: 'Poppins';
@@ -3813,11 +3843,7 @@ span.year {
         line-height: 24px;
         color: #212529;
 }
-.legendas {
-    position: absolute;
-    left: 204px;
-    width: max-content;
-}
+
 .col-md-5.right-side {
     width: 456px;
     margin-top: -75px;
@@ -4079,9 +4105,7 @@ margin-bottom: 13px;
     margin-top: 31px;
     
 }
-button.navbar-toggler.collapsed {
-    margin-right: 25px;
-}
+
 
 
 @media screen and (max-width: 600px) {
@@ -4095,11 +4119,78 @@ button.navbar-toggler.collapsed {
         background: #fff;
         margin-left: -54px;
     }
+    nav#navbar-links {
+        position: absolute;
+        right: -148px;
+        top: 80px;
+    }
+    .planosmobile{
+        display: block;
+    }
+    .planosbtn, .help, .ticket{
+        display:none;
+    }
+    .col-md-2.minbusca input, .col-md-2.minbusca i, .formbusca input, .formbusca select, .formbusca img, .formbusca .gray {
+        display: none;
+    }
+    button.btn.btn-primary.headbusca {
+        display: none;
+    }
+    .righthead {
+     
+        left: 249px;
+        width: 27px;
+    }
+    .righthead span {
+        display: none;
+    }
+    .dropdown-menu.show {
+        margin-left: -244px;
+    }
+    button.navbar-toggler {
+        margin-top: 1px;
+      
+        position: absolute;
+        right: 7px;
+    }
+    a.btn.btn-success.m-3.planosmobile {
+        color: #fff;
+        line-height: 1;
+    }
+ 
+    a.dropdown-item {
+       
+        width: auto; 
+       
+    }
+    main.col-md-9.titlesection p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        
+        
+        /* Cinza/09 */
+        
+        color: #343A40;
+    }
+   
+    #iconfiltros{
+        display: block;
+        position: absolute;
+        right: -36px;
+        top: 9px;
+        width: 24px;
+
+    }
     div#cartao .col-md-2 {
         width: auto;
     }
     aside{
         background: #ffffff00;
+       
     }
     canvas#barChart {
         width: 100% !important;
@@ -4118,7 +4209,7 @@ button.navbar-toggler.collapsed {
     }
     
     .row.btnsimposto {
-       @
+      
         right: -11px;
         /* width: max-content; */
     }
@@ -4194,11 +4285,29 @@ button.navbar-toggler.collapsed {
         margin-top: -10px;
     margin-left: -107px;
     }
-    .titlesection {
-     
-        left: 0;
-        width: 100%;
+    i.fa.fa-search.position-absolute.end-0.m-2 {
+        color: #4AA3E5;
+        margin-top: 18px !important;
+        left: 267px;
+        z-index: 99;
     }
+    .titlesection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*padding: 16px;*/
+        gap: 16px;
+        position: absolute;
+        width: 327px !important;
+        height: 72px;
+        left: 24px;
+        top: 120px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 16px
+    }
+    
     .col-md-2.minbusca input {
        
         width: 136px;
@@ -4242,9 +4351,12 @@ button.navbar-toggler.collapsed {
         font-size: 17px;
     }
     aside {
-        z-index: 99999;
-    margin-top: 435px;
-    background: none;
+        
+        margin-top: 31px;
+        background: none;
+        margin-left: -26px;
+        
+    
     }
     .plan11, .plan2, .plan1 {
     
@@ -4591,6 +4703,9 @@ button.navbar-toggler.collapsed {
         margin-top: 22px;
         margin-left: 25px;
     }
+    .modal-footer.filtro {
+        justify-content: center;
+    }
     .col.data {
         margin-left: -34px;
         margin-top: 7px;
@@ -4623,8 +4738,20 @@ button.navbar-toggler.collapsed {
         left: 130px;
   
     }
-    
-  
+    #logo {
+       
+        display: none;
+    }    
+    img#logomin {
+        display: block;
+        position: absolute;
+    left: 30px;
+    top: 31px;
+    }
+    img.setabaixo {
+        margin-left: 6px;
+        display: initial;
+    }
      
 }
 @media only screen and (max-width: 1080px){
@@ -4644,16 +4771,25 @@ button.navbar-toggler.collapsed {
  
    
 }
-@media only screen and (min-width: 1319){
+@media only screen and (min-width: 1319px){
     .minbusca {
         right: 22px;
     }
 }
-@media only screen and (max-width: 1560px){
-    .tabelasect {
-        margin-left: 188px;
-        width: 93%;
+@media only screen and (max-width: 1499px){
+    .col-md-9.btnreservah {
+       
+        right: -122px;
+       
     }
+    a.btn.btn-danger.close {
+       
+        right: 22px;
+    }
+
+}
+@media only screen and (max-width: 1560px){
+  
     .titulosecao, .titulosecaod {
   
         margin-left: 380px;
