@@ -109,6 +109,10 @@ $(document).ready(function(){
         e.preventDefault();
        modCartao.style.display='block';
        cartaobt.style.borderBottom='1px solid #4aa3e5';
+       cartaobt.style.fontWeight='600';
+       boletobt.style.fontWeight='100';
+       pixbt.style.fontWeight='100';
+       saldobt.style.fontWeight='100';
        boletobt.style.borderBottom='none';
        pixbt.style.borderBottom='none';
        saldobt.style.borderBottom='none';
@@ -122,12 +126,16 @@ $(document).ready(function(){
         e.preventDefault();
        modCartao.style.display='none';
        boletobt.style.borderBottom='1px solid #4aa3e5';
+       boletobt.style.fontWeight='600';
        pixbt.style.borderBottom='none';
        saldobt.style.borderBottom='none';
        cartaobt.style.borderBottom='none';
        modBoleto.style.display='block';
        modPix.style.display='none';
        modSaldo.style.display='none';
+       cartaobt.style.fontWeight='100';
+       pixbt.style.fontWeight='100';
+       saldobt.style.fontWeight='100';
         
     });
     
@@ -135,24 +143,32 @@ $(document).ready(function(){
         e.preventDefault();
        modCartao.style.display='none';
        pixbt.style.borderBottom='1px solid #4aa3e5';
+       pixbt.style.fontWeight='600';
        cartaobt.style.borderBottom='none';
        boletobt.style.borderBottom='none';
        saldobt.style.borderBottom='none';
        modBoleto.style.display='none';
        modPix.style.display='block';
        modSaldo.style.display='none';
+       boletobt.style.fontWeight='100';
+       cartaobt.style.fontWeight='100';
+       saldobt.style.fontWeight='100';
         
     });
     saldobt.addEventListener('click', function(e){
         e.preventDefault();
        modCartao.style.display='none';
        saldobt.style.borderBottom='1px solid #4aa3e5';
+       saldobt.style.fontWeight='600';
        pixbt.style.borderBottom='none';
        cartaobt.style.borderBottom='none';
        boletobt.style.borderBottom='none';
        modBoleto.style.display='none';
        modPix.style.display='none';
        modSaldo.style.display='block';
+       boletobt.style.fontWeight='100';
+       pixbt.style.fontWeight='100';
+       cartaobt.style.fontWeight='100';
         
     });
 });
@@ -171,6 +187,8 @@ investimentohora.addEventListener('click', function(e){
     e.preventDefault();
     tabinvesthora.style.display='inline-table';
      investimentohora.style.borderBottom='1px solid #4aa3e5';
+     investimentohora.style.fontWeight='600';
+     outroprod.style.fontWeight='100';
    taboutroprod.style.display='none';
    outroprod.style.border='none';
    
@@ -182,6 +200,8 @@ outroprod.addEventListener('click', function(e){
     e.preventDefault();
     tabinvesthora.style.display='none';
    outroprod.style.borderBottom='1px solid #4aa3e5';
+   outroprod.style.fontWeight='600';
+   investimentohora.style.fontWeight='100';
    taboutroprod.style.display='inline-table';
      investimentohora.style.border='none';
    
@@ -205,6 +225,8 @@ $(document).ready(function(){
         formempresa.style.display='flex';
         formcert.style.display='none';
         btnacessos.style.borderBottom='1px solid #4aa3e5';
+        btnacessos.style.fontWeight='600';
+        btncert.style.fontWeight='100';
         btncert.style.border='none';
        
        
@@ -216,6 +238,8 @@ $(document).ready(function(){
         formempresa.style.display='none';
         formcert.style.display='block';
         btncert.style.borderBottom='1px solid #4aa3e5';
+        btncert.style.fontWeight='600';
+        btnacessos.style.fontWeight='100';
         btnacessos.style.border='none';
        
        
@@ -252,6 +276,12 @@ $(document).ready(function(){
         descontos.style.display='none';
 
         btnDadosCadastrais.style.borderBottom='1px solid #4aa3e5';
+        btnDadosCadastrais.style.fontWeight='600';
+        btnSalarios.style.fontWeight='100';
+        btnHorarios.style.fontWeight='100';
+        btnSindicato.style.fontWeight='100';
+        btnPis.style.fontWeight='100';
+        btnDesconto.style.fontWeight='100';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
         btnSindicato.style.border='none';
@@ -271,10 +301,16 @@ $(document).ready(function(){
 
         btnDadosCadastrais.style.border='none';
         btnSalarios.style.borderBottom='1px solid #4aa3e5';
+        btnSalarios.style.fontWeight='600';
         btnHorarios.style.border='none';
         btnSindicato.style.border='none';
         btnPis.style.border='none';
         btnDesconto.style.border='none';
+       
+        btnHorarios.style.fontWeight='100';
+        btnSindicato.style.fontWeight='100';
+        btnPis.style.fontWeight='100';
+        btnDesconto.style.fontWeight='100';
         
     });
     btnHorarios.addEventListener('click', function(e){
@@ -288,10 +324,16 @@ $(document).ready(function(){
 
         btnDadosCadastrais.style.border='none';
         btnHorarios.style.borderBottom='1px solid #4aa3e5';
+        btnHorarios.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnSindicato.style.border='none';
         btnPis.style.border='none';
         btnDesconto.style.border='none';
+        btnSalarios.style.fontWeight='100';
+       
+        btnSindicato.style.fontWeight='100';
+        btnPis.style.fontWeight='100';
+        btnDesconto.style.fontWeight='100';
         
     });
 
@@ -306,10 +348,16 @@ $(document).ready(function(){
 
         btnDadosCadastrais.style.border='none';
         btnSindicato.style.borderBottom='1px solid #4aa3e5';
+        btnSindicato.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
         btnPis.style.border='none';
         btnDesconto.style.border='none';
+        btnSalarios.style.fontWeight='100';
+        btnHorarios.style.fontWeight='100';
+     
+        btnPis.style.fontWeight='100';
+        btnDesconto.style.fontWeight='100';
         
     });
 
@@ -324,10 +372,16 @@ $(document).ready(function(){
 
         btnDadosCadastrais.style.border='none';
         btnPis.style.borderBottom='1px solid #4aa3e5';
+        btnPis.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
         btnSindicato.style.border='none';
         btnDesconto.style.border='none';
+        btnSalarios.style.fontWeight='100';
+        btnHorarios.style.fontWeight='100';
+        btnSindicato.style.fontWeight='100';
+       
+        btnDesconto.style.fontWeight='100';
         
     });
     btnDesconto.addEventListener('click', function(e){
@@ -341,10 +395,16 @@ $(document).ready(function(){
 
         btnDadosCadastrais.style.border='none';
         btnDesconto.style.borderBottom='1px solid #4aa3e5';
+        btnDesconto.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
         btnPis.style.border='none';
         btnSindicato.style.border='none';
+        btnSalarios.style.fontWeight='100';
+        btnHorarios.style.fontWeight='100';
+        btnSindicato.style.fontWeight='100';
+        btnPis.style.fontWeight='100';
+       
         
     });
 
@@ -368,6 +428,9 @@ $(document).ready(function(){
 
         atestadobtn.style.border='none';
         btneventos.style.borderBottom='1px solid #4aa3e5';
+        btneventos.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
         consultabtn.style.border='none';
       
         
@@ -381,8 +444,11 @@ $(document).ready(function(){
        
 
         atestadobtn.style.borderBottom='1px solid #4aa3e5';
+        atestadobtn.style.fontWeight='600';
         btneventos.style.borderBottom='none';
         consultabtn.style.border='none';
+        btneventos.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
       
         
     });
@@ -397,6 +463,9 @@ $(document).ready(function(){
         atestadobtn.style.border='none';
         btneventos.style.borderBottom='none';
         consultabtn.style.borderBottom='1px solid #4aa3e5';
+        consultabtn.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        btneventos.style.fontWeight='100';
       
         
     });
@@ -551,6 +620,8 @@ $(document).ready(function(){
 
         btnEntradas.style.border='none';
         btnSaidas.style.borderBottom='1px solid #4aa3e5';
+        btnSaidas.style.fontWeight='600';
+        btnEntradas.style.fontWeight='100';
        
       
         
@@ -564,6 +635,8 @@ $(document).ready(function(){
        
 
         btnEntradas.style.borderBottom='1px solid #4aa3e5';
+        btnEntradas.style.fontWeight='600';
+        btnSaidas.style.fontWeight='100';
         btnSaidas.style.borderBottom='none';
        
       
@@ -591,6 +664,8 @@ $(document).ready(function(){
 
         btnUltimasEm.style.border='none';
         btnImportar.style.borderBottom='1px solid #4aa3e5';
+        btnImportar.style.fontWeight='600';
+        btnUltimasEm.style.fontWeight='100';
        
       
         
@@ -604,6 +679,8 @@ $(document).ready(function(){
        
 
         btnUltimasEm.style.borderBottom='1px solid #4aa3e5';
+        btnUltimasEm.style.fontWeight='600';
+        btnImportar.style.fontWeight='100';
         btnImportar.style.borderBottom='none';
        
       
@@ -642,8 +719,12 @@ $(document).ready(function(){
         btncredito.style.border='none';
         btnhistorico.style.border='none';
         btnmensalidade.style.borderBottom='1px solid #4aa3e5';
+        btnmensalidade.style.fontWeight='600';
         menuFinanceiro.style.height='auto';
         metodosPagamento.style.marginTop='0px';
+        btncredito.style.fontWeight='100';
+        btnhistorico.style.fontWeight='100';
+        
        
       
         
@@ -660,9 +741,13 @@ $(document).ready(function(){
         btnavulsos.style.border='none';
         btncredito.style.border='none';
         btnhistorico.style.borderBottom='1px solid #4aa3e5';
+        btnhistorico.style.fontWeight='600';
         btnmensalidade.style.borderBottom='none';
         menuFinanceiro.style.height='auto';
         metodosPagamento.style.marginTop='0px';
+        btncredito.style.fontWeight='100';
+        
+        btnmensalidade.style.fontWeight='100';
        
       
         
@@ -677,6 +762,10 @@ $(document).ready(function(){
         saldoc.style.display='none';
        
         btnavulsos.style.borderBottom='1px solid #4aa3e5';
+        btnavulsos.style.fontWeight='600';
+        btncredito.style.fontWeight='100';
+        btnhistorico.style.fontWeight='100';
+        btnmensalidade.style.fontWeight='100';
         btncredito.style.border='none';
         btnhistorico.style.border='none';
         btnmensalidade.style.borderBottom='none';
@@ -697,10 +786,16 @@ $(document).ready(function(){
        
         btnavulsos.style.border='none';
         btncredito.style.borderBottom='1px solid #4aa3e5';
+        btncredito.style.fontWeight='600';
+        btnavulsos.style.fontWeight='100';
+
         btnhistorico.style.border='none';
         btnmensalidade.style.border='none';
        menuFinanceiro.style.height='188px';
        metodosPagamento.style.marginTop='-76px';
+       
+       btnhistorico.style.fontWeight='100';
+       btnmensalidade.style.fontWeight='100';
 
       
         
@@ -766,6 +861,8 @@ $(document).ready(function(){
        
         btnLocacao.style.border='none';
         btnVendas.style.borderBottom='1px solid #4aa3e5';
+        btnVendas.style.fontWeight='600';
+        btnLocacao.style.fontWeight='100';
        
           
       
@@ -777,6 +874,8 @@ $(document).ready(function(){
         venda.style.display='none';
         aluguel.style.display='block';
         btnLocacao.style.borderBottom='1px solid #4aa3e5';
+        btnLocacao.style.fontWeight='600';
+        btnVendas.style.fontWeight='100';
         btnVendas.style.borderBottom='none';
        
 
