@@ -143,22 +143,20 @@
 
 <script src="https://unpkg.com/imask"></script>
 <script>
-    var cpf = document.getElementById('cpf');
+    var cep = document.getElementById('cep');
     var telefone= document.getElementById('telefone');
    
 
 var maskOptions = {
-  mask: '000.000.000-00',
+  mask: '00000-000',
   
 };
 
-var masctelefone={
-    mask: '(00) 0000-0000'
-};
 
 
-var cpfm = IMask(cpf, maskOptions);
-var telefone=IMask(telefone, masctelefone);
+
+var cepm = IMask(cep, maskOptions);
+
 
 
 </script>
