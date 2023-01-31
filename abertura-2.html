@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/empresa.css">
+  
+    
+
+</head>
+
+<body>
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar fixed-top abertura-empresa">
+                <a href="abertura-de-empresa.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
+
+                </a>
+
+            </nav>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 40%"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Menu lateral-->
+
+        <div class="row">
+            <div class="interface" style="height: 834px;">
+                <div class="row stepscontainer">
+                    <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">2</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">3</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">4</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">5</span></span></div>
+
+                </div>
+                <div class="row title">
+                    <h4>Seus dados pessoais</h4>
+                    <p>Cadastre suas informações de endereço.</p>
+                </div>
+                <div class="contentab2">
+                    <div class="row">
+                    <form action="#">
+                        <p class="tituloform">Suas informações de endereço:</p>
+                        <div class="row">
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" name="" id="cep" class="form-control" placeholder="CEP">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                               <select class="form-select">
+                                <option value="">Estado</option>    
+                            </select>
+                            </div>
+                      
+                       
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" name="" id="" class="form-control" placeholder="Cidade">
+                            </div>
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" name="" id="" class="form-control" placeholder="Bairro">
+                            </div>
+                            <div class="col col-md-8 mt-3">
+                                <input type="text" name="" id="" class="form-control" placeholder="Logradouro">
+                            </div>
+                            <div class="col col-md-4 mt-3">
+                                <input type="text" name="" id="" class="form-control" placeholder="Número">
+                            </div>
+                            <div class="col col-md-12 mt-3">
+                                <input type="text" name="" id="" class="form-control" placeholder="Complemento">
+                            </div>
+                           
+                                <p class="tituloform mt-3">Suas informações de endereço:</p>
+                                <div class="selecaoradios">
+                                    <input type="radio" name="info" id="sim"><label for="sim">Sim</label>
+                                    <input type="radio" name="info" id="nao"><label for="nao">Não</label>
+                                </div>
+                             
+                       
+
+                            <div class="footercontent">
+                                <hr>
+                                <div class="buttons">
+                                    <a href="abertura-de-empresa.html" class="voltar">Voltar</a>
+                                    <a href="abertura-3.html" class="avancar">Avançar</a>
+                                </div>
+                            </div>
+                            
+
+                            
+                           
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal boas vindas-->
+        <div class="modal fade" tabindex="-1" id="boasvindass">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bem-vindo a Contabilivre</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/previewvideo.png" alt="VideoPreviw" class="d-block w-100">
+                    </div>
+                    <div class="modal-footer">
+                        <div class="naomostrar position-absolute bottom-2 start-0">
+                            <input type="checkbox" name="naomostrar" id="naomostrar"> <label for="naomostrar"> Não
+                                exibir
+                                novamente</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Entendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cpf = document.getElementById('cpf');
+    var telefone= document.getElementById('telefone');
+   
+
+var maskOptions = {
+  mask: '000.000.000-00',
+  
+};
+
+var masctelefone={
+    mask: '(00) 0000-0000'
+};
+
+
+var cpfm = IMask(cpf, maskOptions);
+var telefone=IMask(telefone, masctelefone);
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
