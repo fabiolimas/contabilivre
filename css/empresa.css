@@ -1065,10 +1065,9 @@ flex-direction: column;
 align-items: flex-start;
 padding: 0px;
 
-width: 120px;
+width: auto;
 height: 28px;
-width: 120px;
-height: 18px;
+
 
 /* Subtitle / Subtitle-2 */
 
@@ -1086,7 +1085,7 @@ color: #74C83C;
 margin-top: 19px;
 }
 .comentario{
-    width: 112px;
+    width: auto;
 height: 10px;
 
 /* Input/Label */
@@ -1106,11 +1105,123 @@ color: #868E96;
 }
 .lineform{
     display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 17px;
+    width: 480px;
+    height: 56px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+input#cvv, input#validade {
+    width: 48%;
+}
+.lab{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 150%;
+/* or 15px */
+
+
+/* Cinza / 700 */
+
+color: #868E96;
+}
+.val{
+    /* Body/Regular/14 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+/* identical to box height, or 21px */
+
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.campor{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 212.8px;
+height: 36px;
+margin-top: 12px;
+
+}
+.addcupom{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+
+width: 286px;
+height: 38px;
+
+background: #FFFFFF;
+/* Cinza / 300 */
+
+border: 1px solid #DEE2E6;
+border-radius: 8px;
+
+}
+.addcupombtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+border: none;
+width: 105px;
+height: 38px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+margin-left: 12px;
+
+
+}
+.cuponsr {
+    width: auto;
+    position: absolute;
+    right: 154px;
+    display: flex;
+    bottom: -76px;
+}
+.checkab5{
+    display: flex;
 flex-direction: row;
 align-items: center;
 padding: 0px;
-gap: 16px;
-margin-top: 17px;
-width: 480px;
-height: 56px;
+
+width: 819px;
+height: 36px;
+
 }

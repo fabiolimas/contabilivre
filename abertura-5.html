@@ -43,7 +43,7 @@
         <!--Menu lateral-->
 
         <div class="row">
-            <div class="interface" style="height: 815px;">
+            <div class="interface" style="height: 1188px;">
                 <div class="row stepscontainer">
                     <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
                     <div class="step"><span class="menuitem ativo"><span class="label">2</span></span></div>
@@ -56,59 +56,106 @@
                     <h4>Informe os dados de pagamento</h4>
                     <p>Confira o resumo do plano escolhido e escolha o melhor meio de pagamento:</p>
                 </div>
-                <div class="content">
+                <div class="content" style="width:1128px;">
                     <div class="row">
                         <form action="#">
                             <p class="tituloform">Meios de pagamento:</p>
                             <div class="row radiosselect">
                                 <div class="radiocustom">
-                                    <input type="radio" name="metodo" id="cartao"><label for="cartao" class="campos">Cartão de crédito <span class="comentario">Aprovação instantânea</span></label>
+                                    <input type="radio" name="metodo" id="cartao"><label for="cartao"
+                                        class="campos">Cartão de crédito <span class="comentario">Aprovação
+                                            instantânea</span></label>
                                 </div>
 
 
                             </div>
                             <div class="row lineform">
-                               
-                                    <input type="text" id="cartaoCredito" class="form-control" placeholder="Número do cartão">
-                                
+
+                                <input type="text" id="cartaoCredito" class="form-control"
+                                    placeholder="Número do cartão">
+
                             </div>
                             <div class="row lineform">
-                               
+
                                 <input type="text" id="" class="form-control" placeholder="Titular do cartão">
-                            
-                        </div>
-                        <div class="row " style="margin-left: -26px;     margin-top: 17px;">
-                               <div class="col col-md-6">
-                                <input type="text" id="cvv" class="form-control" placeholder="CVV">
+
                             </div>
-                            <div class="col col-md-6">
-                                <input type="text" id="validade" class="form-control" placeholder="Validade">
+                            <div class="row lineform">
+                             
+                                    <input type="text" id="cvv" class="form-control" placeholder="CVV">
+                              
+                               
+                                    <input type="text" id="validade" class="form-control" placeholder="Validade">
+                           
+
+
                             </div>
-                            
-                        
-                    </div>
-                    <div class="row radiosselect">
-                        <div class="radiocustom">
-                            <input type="radio" name="metodo" id="pix"><label for="pix" class="campos">Pagamento por PIX <span class="comentario">Aprovação instantânea</span></label>
-                        </div>
+                            <div class="row radiosselect">
+                                <div class="radiocustom">
+                                    <input type="radio" name="metodo" id="pix"><label for="pix" class="campos">Pagamento
+                                        por PIX <span class="comentario">Aprovação instantânea</span></label>
+                                </div>
 
 
-                    </div>
-                    <div class="row radiosselect">
-                        <div class="radiocustom">
-                            <input type="radio" name="metodo" id="boleto"><label for="boleto" class="campos">Boleto bancário <span class="comentario">Aprovação em até 2 dias úteis após o pagamento</span></label>
-                        </div>
+                            </div>
+                            <div class="row radiosselect">
+                                <div class="radiocustom">
+                                    <input type="radio" name="metodo" id="boleto"><label for="boleto"
+                                        class="campos">Boleto bancário <span class="comentario">Aprovação em até 2 dias
+                                            úteis após o pagamento</span></label>
+                                </div>
 
 
-                    </div>
-                    <hr>
+                            </div>
+                            <hr>
 
 
+                            <div class="row">
+                                <p class="tituloform">Resumo:</p>
+                                <div class="row">
+                                    <div class="campor">
+                                        <div class="lab">Valor do plano básico</div>
+                                        <div class="val">R$0,00</div>
+                                    </div>
+                                    <div class="campor">
+                                        <div class="lab">Taxas obrigatórias do governo</div>
+                                        <div class="val">R$0,00</div>
+                                    </div>
+                                    <div class="campor">
+                                        <div class="lab">Adicional por sócio</div>
+                                        <div class="val">R$0,00</div>
+                                    </div>
+                                    <div class="campor">
+                                        <div class="lab">Valor da mensalidade (Após emissão do CNPJ)</div>
+                                        <div class="val">R$0,00</div>
+                                    </div>
+                                    <div class="campor">
+                                        <div class="lab">Desconto</div>
+                                        <div class="val">R$0,00</div>
+                                    </div>
+                                    <div class="campor">
+                                        <div class="lab">Valor total do pagamento antecipado</div>
+                                        <div class="val">R$0,00</div>
+
+                                    </div>
+                                    <div class="cuponsr"><input type="text" class="form-control addcupom" placeholder="Adicionar cupom">
+                                        <button class="addcupombtn">Adicionar</button></div>
+                                    
+                                       
+                                </div>
+                                <div class="check" style="width: auto; margin-top: 26px;" >
+                                    <input type="checkbox" id="li" class="form-check-input" checked style="width: 18px;"><label
+                                        for="li">
+                                        <p style="width: auto;">Eu li e aceito o contrato de prestação de serviço da contabilivre, os termos e condições de uso e a política de privacidade e segurança.</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
                             <div class=" row footercontent">
                                 <hr>
                                 <div class="buttons">
-                                    <a href="abertura-2.html" class="voltar">Voltar</a>
-                                    <a href="abertura-4.html" class="avancar">Avançar</a>
+                                    <a href="abertura-4.html" class="voltar">Voltar</a>
+                                    <a href="#" class="avancar">Avançar</a>
                                 </div>
                             </div>
 
@@ -262,24 +309,24 @@
 <script src="https://unpkg.com/imask"></script>
 <script>
     var cartaon = document.getElementById('cartaoCredito');
-    var inputcvv= document.getElementById('cvv');
-    var inputvalidade= document.getElementById('validade');
+    var inputcvv = document.getElementById('cvv');
+    var inputvalidade = document.getElementById('validade');
 
-var maskOptions = {
-  mask: '0000-0000-0000-0000',
-  
-};
+    var maskOptions = {
+        mask: '0000-0000-0000-0000',
 
-var mascaracvv={
-    mask: '000'
-};
-var mascaravalidade={
-    mask:'00/00'
-};
+    };
 
-var mask = IMask(cartaon, maskOptions);
-var cvv=IMask(inputcvv, mascaracvv);
-var validade=IMask(inputvalidade, mascaravalidade);
+    var mascaracvv = {
+        mask: '000'
+    };
+    var mascaravalidade = {
+        mask: '00/00'
+    };
+
+    var mask = IMask(cartaon, maskOptions);
+    var cvv = IMask(inputcvv, mascaracvv);
+    var validade = IMask(inputvalidade, mascaravalidade);
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
