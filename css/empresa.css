@@ -1225,3 +1225,42 @@ width: 819px;
 height: 36px;
 
 }
+.conteudomod{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 840px;
+height: 220px;
+}
+.texto{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.valorcont{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 115%;
+/* or 64px */
+
+letter-spacing: -0.01em;
+
+/* Secundária / Light */
+
+color: #A7EF4B;
+
+}
