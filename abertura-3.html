@@ -65,7 +65,8 @@
                                     <div class="carda">
                                         <div class="cardconteudo">
                                             <div class="title">Atividade principal</div>
-                                            <img src="img/help.png" alt="" class="help">
+                                            <img src="img/help.png" alt="" class="help" data-bs-toggle="modal"
+                                            data-bs-target="#dica">
                                             <button class="btAtividade" data-bs-toggle="modal"
                                                 data-bs-target="#atividadePrincipal">Selecionar a atividade
                                                 principal</button>
@@ -79,7 +80,8 @@
                                     <div class="carda">
                                         <div class="cardconteudo">
                                             <div class="title">Atividade secundária</div>
-                                            <img src="img/help.png" alt="" class="help">
+                                            <img src="img/help.png" alt="" class="help" data-bs-toggle="modal"
+                                            data-bs-target="#dica">
                                             <button class="btnSecundaria" data-bs-toggle="modal"
                                                 data-bs-target="#atividadeSecundaria">Selecionar a atividade
                                                 principal</button>
@@ -94,6 +96,13 @@
                                 <div class="col col-md-6">
                                     <select name="" id="" class="form-select">
                                         <option value="">Sua empresa vai ter quantos sócios?</option>
+                                        <option value="">Somente eu</option>
+                                        <option value="">Eu e + 1</option>
+                                        <option value="">Eu e + 2</option>
+                                        <option value="">Eu e + 3</option>
+                                        <option value="">Eu e + 4</option>
+                                        <option value="">Eu e + 5</option>
+
                                     </select>
                                 </div>
                             </div>
@@ -247,7 +256,29 @@
             </div>
         </div>
     </div>
+ <!--Modal Dica rapida-->
+ <div class="modal fade" tabindex="-1" id="dica" style="--bs-modal-width: 424px;
+ --bs-modal-height: 286px;">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Dicas rápidas!</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p class="inform">O CNAE (Código Nacional de Atividades Econômicas), é uma classificação padronizada das atividades das empresas. É através deles que são determinados os impostos que sua empresa irá pagar, bem como os registros que deverá se submeter (CREA, CRC, CRECI, SUSE).</p>
+             </div>
+             <div class="modal-footer" style="width: auto;">
 
+                 <div class="buttons" style="width: auto;">
+                    
+                     <a href="#" class="entendi" data-bs-dismiss="modal"
+                     aria-label="Close">Entendi</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 
 
 </body>

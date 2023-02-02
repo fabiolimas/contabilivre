@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/empresa.css">
+    <script src="js/script.js"></script>
 
 
 
@@ -69,6 +70,7 @@
 
 
                             </div>
+                            <div class="metodocartao">
                             <div class="row lineform">
 
                                 <input type="text" id="cartaoCredito" class="form-control"
@@ -81,21 +83,22 @@
 
                             </div>
                             <div class="row lineform">
-                             
-                                    <input type="text" id="cvv" class="form-control" placeholder="CVV">
-                              
-                               
-                                    <input type="text" id="validade" class="form-control" placeholder="Validade">
-                           
+
+                                <input type="text" id="cvv" class="form-control" placeholder="CVV">
+
+
+                                <input type="text" id="validade" class="form-control" placeholder="Validade">
+
 
 
                             </div>
+                        </div>
                             <div class="row radiosselect">
                                 <div class="radiocustom">
                                     <input type="radio" name="metodo" id="pix"><label for="pix" class="campos">Pagamento
                                         por PIX <span class="comentario">Aprovação instantânea</span></label>
                                 </div>
-
+                                <span class="metodoPix">Para visualizar o QR Code que será gerado, clique em Pagar e concluir</span>
 
                             </div>
                             <div class="row radiosselect">
@@ -105,7 +108,7 @@
                                             úteis após o pagamento</span></label>
                                 </div>
 
-
+                                <span class="metodoBoleto">Para visualizar o boleto que será gerado, clique em Pagar e concluir</span>
                             </div>
                             <hr>
 
@@ -138,15 +141,19 @@
                                         <div class="val">R$0,00</div>
 
                                     </div>
-                                    <div class="cuponsr"><input type="text" class="form-control addcupom" placeholder="Adicionar cupom">
-                                        <button class="addcupombtn">Adicionar</button></div>
-                                    
-                                       
+                                    <div class="cuponsr"><input type="text" class="form-control addcupom"
+                                            placeholder="Adicionar cupom">
+                                        <button class="addcupombtn">Adicionar</button>
+                                    </div>
+
+
                                 </div>
-                                <div class="check" style="width: auto; margin-top: 26px;" >
-                                    <input type="checkbox" id="li" class="form-check-input" checked style="width: 18px;"><label
-                                        for="li">
-                                        <p style="width: auto;">Eu li e aceito o contrato de prestação de serviço da contabilivre, os termos e condições de uso e a política de privacidade e segurança.</p>
+                                <div class="check" style="width: auto; margin-top: 26px;">
+                                    <input type="checkbox" id="li" class="form-check-input" checked
+                                        style="width: 18px;"><label for="li">
+                                        <p style="width: auto;">Eu li e aceito o <span class="verde">contrato de prestação de serviço</span> da
+                                            contabilivre, os <span class="verde">termos e condições de uso </span>e a <span class="verde">política de privacidade e
+                                            segurança</span>.</p>
                                     </label>
                                 </div>
                             </div>
@@ -155,8 +162,13 @@
                                 <hr>
                                 <div class="buttons" style="width: 243px;">
                                     <a href="abertura-4.html" class="voltar">Voltar</a>
-                                    <a href="#" class="avancar" style="width: 149px;" data-bs-toggle="modal"
-                                    data-bs-target="#contrateTambem">Pagar e concluir</a>
+
+                                    <a href="#" class="avancar Cartaopag" style="width: 149px;" data-bs-toggle="modal"
+                                        data-bs-target="#contrateTambem">Pagar e concluir</a>
+                                        <a href="#" class="avancar Pixpag" style="width: 149px;" data-bs-toggle="modal"
+                                        data-bs-target="#contrateTambemPix">Pagar e concluir</a>
+                                    <a href="#" class="avancar Boletopag" style="width: 149px;" data-bs-toggle="modal"
+                                        data-bs-target="#contrateTambemBoleto">Pagar e concluir</a>
                                 </div>
                             </div>
 
@@ -173,7 +185,7 @@
         </div>
         <!--Modal Contrate tambem-->
         <div class="modal fade" tabindex="-1" id="contrateTambem" style="--bs-modal-width: 888px;
-    --bs-modal-height: 432px;">
+    --bs-modal-height: 300px;">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -185,31 +197,169 @@
                             <div class="col col-md-6">
                                 <div class="valorcontrate">
                                     <span class="texto">Por apenas</span>
-                                    <span class="valorcont">R$169,00</span>
+                                    <span class="valorcont">R$<span class="valcont2">169,00</span></span>
                                 </div>
 
-                            </div>
 
-                            <div class="infocontrate">
-                                <p class="tituloform">Como funciona:</p>
-                                <p class="inform">
-                                    Nossa equipe de especialistas irá te orientar sobre as questões de Constituição da sua empresa como, por exemplo, os melhores CNAES e Alíquotas para as atividades que serão exercidas.
+
+                                <div class="infocontrate">
+                                    <p class="tituloform">Como funciona:</p>
+                                    <p class="inform">
+                                        Nossa equipe de especialistas irá te orientar sobre as questões de Constituição
+                                        da
+                                        sua empresa como, por exemplo, os melhores CNAES e Alíquotas para as atividades
+                                        que
+                                        serão exercidas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-md-6 rightg">
+                                <p class="tituloform" style="color:#1c6a00;">Vantagens de contratar o serviço adicional:
                                 </p>
+                                <ul>
+                                    <li>Agilize o seu processo</li>
+                                    <li>Evite impostos elevados</li>
+                                    <li>Evite alterações contratuais</li>
+                                    <li>Receba orientação sobre a composição da empresa</li>
+                                    <li>Fale direto com especialista</li>
+                                    <li>Você pode economizar centenas ou até milhares de reais de impostos por ano</li>
+                                    <li>Evite gastos futuros com alterações contratuais</li>
+                                </ul>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
+                        <div class="modal-footer">
 
-                        <div class="buttons">
-                            <a href="abertura-4.html" class="voltar" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <a href="#" class="avancar" data-bs-dismiss="modal" aria-label="Close" >Salvar</a>
+                            <div class="buttons" style="width: 346px;">
+                                <a href="abertura-4.html" class="naoPerciso" data-bs-dismiss="modal"
+                                    aria-label="Close">Não preciso de ajuda</a>
+                                <a href="pagamento-abertura.html" class="queroContratar" >Quero
+                                    contratar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+        <!--Modal Contrate tambem Pix-->
+        <div class="modal fade" tabindex="-1" id="contrateTambemPix" style="--bs-modal-width: 888px;
+    --bs-modal-height: 300px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contrate também</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row conteudomod">
+                            <div class="col col-md-6">
+                                <div class="valorcontrate">
+                                    <span class="texto">Por apenas</span>
+                                    <span class="valorcont">R$<span class="valcont2">169,00</span></span>
+                                </div>
+
+
+
+                                <div class="infocontrate">
+                                    <p class="tituloform">Como funciona:</p>
+                                    <p class="inform">
+                                        Nossa equipe de especialistas irá te orientar sobre as questões de Constituição
+                                        da
+                                        sua empresa como, por exemplo, os melhores CNAES e Alíquotas para as atividades
+                                        que
+                                        serão exercidas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-md-6 rightg">
+                                <p class="tituloform" style="color:#1c6a00;">Vantagens de contratar o serviço adicional:
+                                </p>
+                                <ul>
+                                    <li>Agilize o seu processo</li>
+                                    <li>Evite impostos elevados</li>
+                                    <li>Evite alterações contratuais</li>
+                                    <li>Receba orientação sobre a composição da empresa</li>
+                                    <li>Fale direto com especialista</li>
+                                    <li>Você pode economizar centenas ou até milhares de reais de impostos por ano</li>
+                                    <li>Evite gastos futuros com alterações contratuais</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <div class="buttons" style="width: 346px;">
+                                <a href="abertura-4.html" class="naoPerciso" data-bs-dismiss="modal"
+                                    aria-label="Close">Não preciso de ajuda</a>
+                                <a href="pagamento-abertura-pix.html" class="queroContratar" >Quero
+                                    contratar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--Modal Contrate tambem-->
+<div class="modal fade" tabindex="-1" id="contrateTambemBoleto" style="--bs-modal-width: 888px;
+--bs-modal-height: 300px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contrate também</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row conteudomod">
+                        <div class="col col-md-6">
+                            <div class="valorcontrate">
+                                <span class="texto">Por apenas</span>
+                                <span class="valorcont">R$<span class="valcont2">169,00</span></span>
+                            </div>
+
+
+
+                            <div class="infocontrate">
+                                <p class="tituloform">Como funciona:</p>
+                                <p class="inform">
+                                    Nossa equipe de especialistas irá te orientar sobre as questões de Constituição
+                                    da
+                                    sua empresa como, por exemplo, os melhores CNAES e Alíquotas para as atividades
+                                    que
+                                    serão exercidas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 rightg">
+                            <p class="tituloform" style="color:#1c6a00;">Vantagens de contratar o serviço adicional:
+                            </p>
+                            <ul>
+                                <li>Agilize o seu processo</li>
+                                <li>Evite impostos elevados</li>
+                                <li>Evite alterações contratuais</li>
+                                <li>Receba orientação sobre a composição da empresa</li>
+                                <li>Fale direto com especialista</li>
+                                <li>Você pode economizar centenas ou até milhares de reais de impostos por ano</li>
+                                <li>Evite gastos futuros com alterações contratuais</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <div class="buttons" style="width: 346px;">
+                            <a href="abertura-4.html" class="naoPerciso" data-bs-dismiss="modal"
+                                aria-label="Close">Não preciso de ajuda</a>
+                            <a href="pagamento-abertura-boleto.html" class="queroContratar" >Quero
+                                contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

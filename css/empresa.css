@@ -703,9 +703,199 @@ height: 36px;
         margin-top: 16px;
    
 }
-.modal-content {
- 
-    height: 566px;
+.entendi{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+
+width: 76px;
+height: 40px;
+
+/* Cinza/09 */
+
+background: #343A40;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Cinza/03 */
+
+color: #E9ECEF;
+}
+span.verde {
+    font-weight: 700;
+    color: #74c83c;
+}
+.metodoPix, .metodoBoleto{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+margin-top: 5px;
+    margin-left: 4px;
+/* Info / Main */
+
+color: #38ABFF;
+display: none;
+
+}
+.salvarboleto{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 129px;
+height: 38px;
+
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+background: #fff;
+    border: none;
+
+/* Info / Darker */
+
+color: #004578;
+
+}
+.botoes {
+    display: flex;
+}
+.anexos{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 98%;
+height: 68px;
+
+background: #FFFFFF;
+/* Shadow / L */
+
+box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
+border-radius: 8px;
+}
+.codigodebarras{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 157px;
+height: 38px;
+/* Button / Medium */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+border: none;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 4px;
+}
+.upload {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 12px;
+    
+    width: 1077px;
+    height: 172px;
+    
+    /* Primária / 8% */
+    
+    background: rgba(74, 163, 229, 0.08);
+    /* Primária / Main */
+    
+    border: 1px dashed #4AA3E5;
+    border-radius: 16px;
+    
+    cursor: pointer;
+}
+.copiacodigo{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+margin-top: 12px;
+
+width: 219px;
+height: 38px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+border: none;
+
+
+}
+.qrcode {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 179%;
+    /* margin-right: 50%; */
+}
+.qrcode img{
+    width: 140px;
+height: 140px;
+
+}
+.Pixpag, .Boletopag{
+    display: none;
 }
 .row.radios {
     display: flex;
@@ -746,6 +936,41 @@ width: 200px;
 height: 38px;
 margin-bottom: 15px;
 
+}
+.row.formempresa {
+    width: -webkit-fill-available;
+}
+.row.anexos .btn-success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    width: 129px;
+    height: 30px;
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+}
+.anexos{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 98%;
+height: 68px;
+
+background: #FFFFFF;
+/* Shadow / L */
+
+box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
+border-radius: 8px;
 }
 .planos{
     display: flex;
@@ -1085,7 +1310,7 @@ color: #74C83C;
 margin-top: 19px;
 }
 .comentario{
-    width: auto;
+    width: 235px;
 height: 10px;
 
 /* Input/Label */
@@ -1210,10 +1435,10 @@ margin-left: 12px;
 }
 .cuponsr {
     width: auto;
-    position: absolute;
-    right: 154px;
+    /* position: absolute; */
+    margin-left: 460px;
     display: flex;
-    bottom: -76px;
+    margin-top: 15px;
 }
 .checkab5{
     display: flex;
@@ -1227,13 +1452,13 @@ height: 36px;
 }
 .conteudomod{
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-width: 840px;
-height: 220px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 840px;
+    height: 220px;
+    flex-wrap: nowrap;
 }
 .texto{
     font-family: 'Inter';
@@ -1262,5 +1487,121 @@ letter-spacing: -0.01em;
 /* Secundária / Light */
 
 color: #A7EF4B;
+
+}
+.valorcontrate{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 247px;
+height: 90px;
+}
+.inform{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+/* Cinza / 700 */
+
+color: #868E96;
+
+}
+.valcont2{
+    color:#74c83c;
+}
+.rightg{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+
+width: 412px;
+height: 220px;
+
+/* Secundária / 8% */
+
+background: rgba(116, 200, 60, 0.08);
+/* Cinza/03 */
+
+border: 1px solid #E9ECEF;
+border-radius: 4px;
+
+}
+.rightg ul{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+padding: 0px 18px;
+width: 380px;
+height: 144px;
+}
+.rightg li{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.queroContratar{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 148px;
+height: 38px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+}
+.naoPreciso{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Info / Darker */
+
+color: #004578;
 
 }
