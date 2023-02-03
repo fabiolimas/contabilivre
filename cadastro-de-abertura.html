@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/empresa.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar fixed-top abertura-empresa">
+                <a href="abertura-de-empresa.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
+
+                </a>
+
+            </nav>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Menu lateral-->
+
+        <div class="row">
+            <div class="interface">
+                <div class="row stepscontainer">
+                    <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">2</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">3</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">4</span></span></div>
+                    
+
+                </div>
+                <div class="row title">
+                    <h4>[Nome da pessoa], leia atentamente o aviso abaixo</h4>
+                    <p>Antes de continuar, precisamos finalizar seu cadastro com informações mais detalhadas. Na etapa
+                        final insira a imagem digitalizada dos seguintes documentos: CPF, RG, CNH (Se houver) do(s)
+                        sócio(s), e o espelho do IPTU do local da empresa.</p>
+                </div>
+                <div class="contentab1">
+                    <div class="row">
+                        <p>Conforme nosso <span class="verde">contrato de prestação de serviço</span>, para termos
+                            sucesso na abertura de sua empresa, é necessário que todos cumpram com os prazos estipulados
+                            quando ficarem responsáveis pela execução de alguma tarefa.</p>
+                    </div>
+                    <div class="row form">
+                        <div class="titlecheck">Etapa atual:</div>
+                        <div class="acoes">
+                            <div class="iconcontainer">
+                                <img src="img/infob.png" alt="">
+
+                            </div>
+
+                            <div class="conteudoacao">
+                                <p class="prazoconteudo">Prazo máximo de <b>8 dias </b>*</p>
+                                <p class="conteudo">Preenchimento das informações detalhadas do cadastro de abertura da
+                                    empresa. Quanto mais rápido for executada a tarefa, mais rápido sua empresa estará
+                                    funcionando!</p>
+                            </div>
+                         
+                        </div>
+                        <p class="contagem">*Contagem iniciada a partir da data de contratação</p>
+                        <div class="footercontent">
+                            <hr>
+                            <div class="buttons" style="width: 96px;">
+                             
+                                <a href="#" class="avancar" data-bs-toggle="modal"
+                                data-bs-target="#contratacaoRealizada">Avançar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!--Modal Contratação realizada-->
+  <div class="modal fade" tabindex="-1" id="contratacaoRealizada" style="--bs-modal-width: 888px;
+  --bs-modal-height: 300px;">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Sua contratação foi realizada com sucesso!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                          <h3 class="titulocheckout">Quero minha empresa na Avenida Paulista/SP</h3>
+                      </div>
+                      <div class="row"><p>Mesmo que você resida em outro lugar, sua empresa pode ser registrada e divulgada no endereço mais cobiçado do Brasil.</p></div>
+                      
+                        <div class="contRealizada">
+                            <div class="frame130">
+                                <div class="titleframe130">Vantagens</div>
+                                <ul>
+                                    <li>Receber correspondências</li>
+                                    <li>Fazer reuniões com clientes</li>
+                                    <li>Divuldar a sua empresa utilizando o endereço fiscal contratado</li>
+                                </ul>
+                            </div>
+                            <div class="frame131">
+                                <div class="titleframe131">Requisitos</div>
+                                <ul>
+                                    <li>Ser cliente Contabilivre</li>
+                                    <li>Ser prestador de serviços</li>
+                                    <li>Realizar as atividades em casa, pela internet ou no contratante</li>
+                                </ul>
+    
+                            </div>
+                        </div>
+                        
+                      <div class="valorcontrate" style="width: 362px;">
+                          <span class="texto">Por apenas</span>
+                          <span class="valorcont">R$<span class="valcont2">79,90</span> <span style="font-size: 19px; color: #1c6a00;">por mês</span></span>
+                      </div>
+                      <p class="contagem">**Ao contratar nosso endereço fiscal na cidade de São Paulo todas as atribuições e taxas da sua empresa serão geradas conforme a legislação desta cidade. A primeira reunião é gratuita e deve ser pré-agendada. Haverá taxas adicionais para reservar a sala de reunião do endereço fiscal.</p>
+                      <div class="check">
+                        <input type="checkbox" id="permissao" class=".form-check-input" checked><label
+                            for="permissao">
+                            <p>Eu li e aceito o <span class="verde">contrato de prestação de serviço e outras avenças</span></p>
+                        </label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+
+                      <div class="buttons" style="width: 340px;">
+                          <a href="#" class="naoPerciso" data-bs-dismiss="modal" aria-label="Close">Não tenho interesse</a>
+                          <a href="cadastro-de-abertura-2.html" class="queroContratar">Quero contratar</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cpf = document.getElementById('cpf');
+    var telefone = document.getElementById('telefone');
+
+
+    var maskOptions = {
+        mask: '000.000.000-00',
+
+    };
+
+    var masctelefone = {
+        mask: '(00) 0000-0000'
+    };
+
+
+    var cpfm = IMask(cpf, maskOptions);
+    var telefone = IMask(telefone, masctelefone);
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
