@@ -117,8 +117,8 @@
                     <div class="infosocio">
                         <p class="tituloform">Informações do endereço do sócio:</p>
                         <div class="row">
-                            <div class="col col-md-4 mt-3">
-                                <input type="text" class="form-control" placeholder="CEP *">
+                            <div class="col col-md-6 mt-3">
+                                <input type="text" class="form-control" id="cep" placeholder="CEP *">
                             </div>
                             <div class="col col-md-6 mt-3">
                                 <input type="text" class="form-control" placeholder="Logradouro *">
@@ -128,17 +128,17 @@
                             </div>
                     </div>
                 </div>
-
-            </div>
-
-            <div class="footercontent">
-                <hr>
-                <div class="buttons" style="width: 96px;">
-
-                    <a href="#" class="avancar" data-bs-toggle="modal"
-                        data-bs-target="#contratacaoRealizada">Avançar</a>
+                <div class="footercontent">
+                    <hr>
+                    <div class="buttons" style="width: 96px;">
+    
+                        <a href="#" class="avancar" data-bs-toggle="modal"
+                            data-bs-target="#contratacaoRealizada">Avançar</a>
+                    </div>
                 </div>
             </div>
+
+            
         </div>
     </div>
     </div>
@@ -219,6 +219,7 @@
     var cpf = document.getElementById('cpfconj');
     var data = document.getElementById('data');
     var dirf=document.getElementById('dirf');
+    var cep=document.getElementById('cep');
 
 
     var maskOptions = {
@@ -233,11 +234,14 @@
     var mascdirf={
         mask:'00.00.00.00-00'
     }
-
+    var masccep={
+        mask:'00000-000'
+    }
 
     var cpfm = IMask(cpf, maskOptions);
     var telefone = IMask(data, mascdata);
     var dirfm=IMask(dirf, mascdirf)
+    var cepm=IMask(cep, masccep)
 
 
 </script>
