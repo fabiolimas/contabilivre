@@ -346,7 +346,7 @@ align-items: flex-end;
 padding: 0px;
 gap: 24px;
 
-width: 1081px;
+width: auto;
 height: 62px;
 flex: none;
 order: 3;
@@ -936,10 +936,338 @@ gap: 16px;
 width: 200px;
 height: 38px;
 margin-bottom: 15px;
+line-height: 2;
+
+}
+.exclude{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.cardContrato{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 528px;
+    margin-top: 40px;
+}
+
+.cardsContrato{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 64px 32px;
+gap: 32px;
+isolation: isolate;
+
+width: auto;
+height: 528px;
+
+background: #FFFFFF;
+/* Secundária / Main */
+
+border: 4px solid #74C83C;
+border-radius: 24px;
+position: relative;
+}
+.cardsContrato2{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 64px 32px;
+gap: 32px;
+
+width: auto;
+height: 528px;
+
+background: #FFFFFF;
+/* Shadow / XL */
+
+box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
+border-radius: 24px;
+margin-left: 40px;
+
+}
+.titleCard{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 512px;
+height: 30px;
+}
+.titleCard p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+/* Info / Dark */
+
+color: #157BC6;
+
+}
+.vantagensCard{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 484px;
+height: 186px;
+}
+.textoCard{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+/* Cinza / 700 */
+
+color: #868E96;
+}
+.valorCard{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 484px;
+height: 50px;
+}
+.valorCardTitulo{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Cinza / 800 */
+
+color: #495057;
+
+}
+.valorCardv{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.cardButton{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 512px;
+height: 38px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+border: none;
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+
+}
+.recomendadoCard{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 32px;
+gap: 16px;
+
+position: absolute;
+width: 163px;
+height: 50px;
+right: -2px;
+    top: -2px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 0px 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
 
 }
 .row.formempresa {
     width: -webkit-fill-available;
+}
+.stepsocios{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: auto;
+height: 56px;
+
+}
+.stepsocio{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+gap: 16px;
+
+display: none;
+width: 360px;
+height: 74px;
+
+/* Cinza / 01 */
+
+background: #FFFFFF;
+border-radius: 12px;
+}
+.stepsocio p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.uploadmini {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 12px;
+    width: 412px;
+    height: 172px;
+    background: rgba(74, 163, 229, 0.08);
+    border: 1px dashed #4AA3E5;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.row.anexosmini {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px 24px;
+    width: 412px;
+    height: 99.5px;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+    border-radius: 8px;
+}
+.col.col-md-6.secao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 412px;
+    height: 352.5px;
+}
+span.subtitulo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+}
+.framet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 353px;
+    height: 27.5px;
+    margin-bottom: 10px;
+}
+.botoest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 380px;
+    height: 32px;
+}
+.stepsocio input{
+    box-sizing: border-box;
+
+width: 24px;
+height: 24px;
+
+background: #FFFFFF;
+/* Cinza/500 */
+
+border: 1px solid #CED4DA;
 }
 .row.anexos .btn-success {
     display: flex;
@@ -1760,6 +2088,7 @@ gap: 16px;
 
 width: 100%;
 height: 52px;
+position: relative;
 
 /* Info / Ligher */
 
@@ -1778,6 +2107,9 @@ gap: 8px;
 
 width: 1056px;
 height: 33px;
+}
+.contentab1 {
+    width: -webkit-fill-available;
 }
 .alertacontudo p{
     width: 1056px;
@@ -1806,7 +2138,7 @@ height: 33px;
     align-content: flex-end;
     justify-content: flex-end;
 }
-.iconcontainer{
+.iconcontainertipoempresa{
     display: flex;
 flex-direction: row;
 justify-content: center;
@@ -1815,7 +2147,7 @@ padding: 10px;
 gap: 10px;
 
 width: 56px;
-height: 52px;
+height: 51px;
 
 }
 .prazoconteudo{
