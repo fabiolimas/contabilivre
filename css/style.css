@@ -121,8 +121,10 @@ main h4 {
     width: -webkit-fill-available;
 }
 main.col-md-9.titlesection img {
-    width: 18px;
+    width: 22px;
+    height: 22px;
     margin-right: 7px;
+    margin-bottom: 4px;
     cursor: pointer;
 }
 p, li {
@@ -885,7 +887,7 @@ border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 18px;
     color: #212529;
 }
@@ -3533,6 +3535,7 @@ padding-left: 32px;
 }
 .situacao select{
     box-sizing: border-box;
+    color: #6C757D;
 
 /* Auto layout */
 
