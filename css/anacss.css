@@ -1,0 +1,31 @@
+/* Gradiente Tabela */
+
+.gradient{
+    background: radial-gradient(circle at right top, #32313a , #616161);
+    color: white;
+    border-bottom: none;
+}
+
+
+/* Alinhamento da Páginação */
+.pag-item-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste Titulo Planos */
+.plans-title-align{
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste Tam Titulo OBS: Está declarado no style css */
+/* .row p b {
+    font-size: 18px !important;
+} */
+
+/* Ajuste Imagem do Titulo de Planos OBS: Está declarado no style css */
+/* main.col-md-9.titlesection img {
+    margin-bottom: 4px;
+} */
