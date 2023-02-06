@@ -1174,7 +1174,7 @@ align-items: center;
 padding: 16px;
 gap: 16px;
 
-width: 552px;
+width: 533px;
 height: 56px;
 
 /* Cinza / 01 */
@@ -1189,6 +1189,144 @@ border-radius: 12px;
 .row.colaboradordocs {
     margin-top: 18px;
 }
+.checkpointer {
+ 
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    display: flex;
+    border-radius: 100px;
+    margin-top: -36px;
+    cursor: pointer;
+    margin-top: -23px;
+}
+.contentcheckbox:hover input ~ .checkpointer{
+    
+    background: rgba(26, 222, 22, 0.08);
+    border-radius: 12px;
+
+}
+.contentcheckbox input:checked ~ .checkpointer{
+    background: #4FCE66;
+
+}
+.contentcheckbox input:checked ~ .stepsocio{
+    background: #4FCE66 !important;
+
+}
+.contentcheckbox .checkpointer:after{
+    content:"";
+    
+    display: none;
+
+    height: 10px;
+    border: solid #edfcec;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deb);
+    -ms-transform: rotate(45deg);
+    transform:rotate(45deg);
+    margin-left: 4px;
+    margin-top: 4px;
+    width: 14px;
+
+}
+.contentcheckbox input:checked ~ .checkpointer:after{
+    display: block;
+    
+    
+}
+.finalizar{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 98px;
+height: 38px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+margin-left: 113px;
+
+
+}
+.secaocontrato{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: auto;
+height: 96px;
+flex-wrap: nowrap;
+
+
+}
+.secaocontrato p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #495057;
+    /* text-align: center; */
+    flex-direction: row;
+    justify-content: center;
+
+}
+.contratobtn{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+border: none;
+width: 342px;
+height: 50px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+}
+
+
 .stepsocio p{
     font-family: 'Inter';
     font-style: normal;
@@ -1201,6 +1339,7 @@ border-radius: 12px;
     /* Cinza / 1000 */
     
     color: #212529;
+    margin-top: 13px;
 
 }
 .uploadmini {
@@ -1410,7 +1549,7 @@ height: 24px;
 
 background: #FFFFFF;
 /* Cinza/500 */
-
+visibility: hidden;
 border: 1px solid #CED4DA;
 }
 .row.anexos .btn-success {
