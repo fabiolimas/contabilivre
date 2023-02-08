@@ -2725,12 +2725,13 @@ height: 36px;
     }
     .row.inputs {
         display: block;
-        width: 279px;
+        width: 360px;
+        height: auto;
     }
     .interface {
      
         width: 100%;
-        height: 706px;
+        height: auto !important;
        
     }
     .check p {
@@ -2740,8 +2741,12 @@ height: 36px;
         text-align: left;
     }
     .footercontent {
+     
+        width: 360px;
        
-        justify-content: space-between;
-        align-items: center;
     }
+    form {
+        height: auto;
+    }
+  
 }
