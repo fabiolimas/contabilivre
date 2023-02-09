@@ -37,8 +37,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,33 +84,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -200,6 +212,7 @@
         </nav>
 
     </aside>
+
     <div class="row">
 
 
@@ -244,7 +257,7 @@
                 </ul>
 
             </div>
-            <div class="submenumobile" style="top: 248px;">
+            <div class="submenumobile" style="top: 274px;">
 
                 <p class="titsubmenu"><a href="reservar-horario.html"><i class="fa fa-chevron-left"></i></a> Reservar
                     sala de reunião</p>
@@ -261,24 +274,21 @@
                     </div>
 
             <div class="col col-md-10 correspondencia">
-                <div class="col-md-11 tabelasect mb-5 mt-3 reservarhorariomb" style="     width: 334px !important;
-                height: 1161px;
-                left: -175px;;
-                top: 287px;">
+                <div class="col-md-11 tabelasect mb-5 mt-3 reservarhorariomb" >
                     <form action="#" class="">
                     <div class="row steps">
 
-                        <div class="col col-md-4 marcadorativo">
-                            <a href="reservar-sala-de-reuniao.html" class="numero btn btn-primary">1</a>
+                        <div class=" step">
+                            <div class="stepitem ativo"> 1</div>
                             <p>Data</p>
                         </div>
 
-                        <div class="col col-md-4 marcadorinativo ">
-                            <a href="reservar-sala-hora.html" class="numero btn btn-primary inativo">2</a>
+                        <div class="stepinativo ">
+                            <div class="stepitem">  2</div>
                             <p>Horário</p>
                         </div>
-                        <div class="col col-md-4 marcadorinativo">
-                            <a href="reservar-sala-fim.html" class="numero btn btn-primary inativo">3</a>
+                        <div class="stepinativo">
+                            <div class="stepitem"> 3</div>
                             <p>Confirmar agendamento</p>
                         </div>
                     </div>
@@ -328,15 +338,15 @@
                                     <span class="day16">16</span>
                                     <span class="day17">17</span>
                                     <span class="day18">18</span>
-                                    <span class="day19 agendado">19</span>
-                                    <span class="day20 agendado">20</span>
-                                    <span class="day21 agendado">21</span>
-                                    <span class="day22 agendado">22</span>
-                                    <span class="day23 agendado">23</span>
-                                    <span class="day24 agendado">24</span>
+                                    <span class="day19 ">19</span>
+                                    <span class="day20 ">20</span>
+                                    <span class="day21 ">21</span>
+                                    <span class="day22 ">22</span>
+                                    <span class="day23 ">23</span>
+                                    <span class="day24 ">24</span>
                                     <span class="day25 agendado">25</span>
-                                    <span class="day26 agendado">26</span>
-                                    <span class="day27 agendado">27</span>
+                                    <span class="day26 ">26</span>
+                                    <span class="day27 ">27</span>
                                     <span class="day28 agendado">28</span>
                                     <span class="day29 agendado">29</span>
                                     <span class="day30 agendado">30</span>

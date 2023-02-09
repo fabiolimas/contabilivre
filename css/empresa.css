@@ -22,18 +22,17 @@ height: 16px;
 }
 .abertura-empresa{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 48px;
-gap: 8px;
-
-position: absolute;
-width: 100%;
-height: 64px;
-left: 0px;
-top: 0px;
-
-background: #FFFFFF;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 48px;
+    gap: 8px;
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    justify-content: center;
 }
 
 .progress{
@@ -2696,6 +2695,10 @@ height: 36px;
 .row.infoendereco {
     margin-top: 59px;
 }
+.suaempresa {
+    width: 100%;
+    /* margin: 0 auto; */
+}
 @media screen and (max-width: 600px) {
     .title{
         width:auto;
@@ -2777,7 +2780,7 @@ height: 36px;
         margin-top: 8px;
     margin-bottom: 33px;
 }
-    }
+    
     .cuponsr {
         width: auto;
         /* position: absolute; */
