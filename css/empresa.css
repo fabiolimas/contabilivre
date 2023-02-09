@@ -481,7 +481,7 @@ flex-direction: column;
 align-items: flex-start;
 padding: 32px;
 gap: 16px;
-
+position: relative;
 width: auto;
 height: 178px;
 
@@ -2725,12 +2725,22 @@ height: 36px;
     }
     .row.inputs {
         display: block;
-        width: 279px;
+        width: -webkit-fill-available;
+        height: auto;
     }
     .interface {
      
-        width: 100%;
-        height: 706px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 24px;
+        width: auto;
+        height: 250px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+        height: auto !important;
        
     }
     .check p {
@@ -2740,8 +2750,214 @@ height: 36px;
         text-align: left;
     }
     .footercontent {
+     
+        width: 360px !important;
        
-        justify-content: space-between;
-        align-items: center;
     }
+    form {
+        height: auto;
+    }
+    .content{
+        margin-top: -30px;
+        height: auto;
+
+    }
+    .carda {
+         /* width: 365px; */
+    /* margin-left: 355px; */
+    margin-bottom: 15px;
+}
+.cardconteudo {
+   
+    width: -webkit-fill-available;
+    
+}
+.suaempresa {
+  
+    width: auto;
+    
+    margin: 0 auto;
+}
+textarea.form-control {
+  
+    margin: 0 auto;
+    
+}
+.servicosemp {
+    
+    width: auto;
+    margin-bottom: 20px;
+   
+}
+.search {
+   
+
+    width: 297px;
+  
+}
+.search input {
+   
+    width: 297px;
+  
+}
+.row.radios {
+ 
+    width: 295px;
+    height: auto;
+
+  
+}
+.horizontal {
+    
+    margin-bottom: 39px;
+}
+form.formModal {
+    height: auto;
+}
+.modal-content {
+    height: auto !important;
+}
+.vantagens {
+    width: auto;
+    text-align: center;
+    margin-top: -9px;
+}
+.vantagens ul li{
+    font-size: 10px;
+}
+.vantagens ul {
+  
+    width: auto; 
+  
+}
+.escolherPlano {
+    width: 295px;
+    margin-top: -31px;
+    font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+}
+.plano .titulo p {
+    display: none;
+}
+.plano .titulo{
+    
+        margin-bottom: -14px;
+   
+}
+.plano .titulo h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 295px;
+    height: 18px;
+    font-size: 14px;
+}
+.plano h2 {
+    font-size: 16px;
+    width: 295px;
+height: 24px;
+
+/* Title / Title-7 */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: center;
+
+}
+span.mes {
+    
+    font-size: 12px;
+    text-align: center;
+}
+.chamada h5 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+}
+.row.chamada p {
+    font-size: 10px;
+    text-align: center;
+    line-height: 0;
+}
+.row.chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 295px;
+    height:29px;
+    flex-wrap: nowrap;
+    margin-top: -12px;
+}
+p.taxasgov {
+    font-size: 10px;
+    margin: -5px;
+}
+.plano {
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 16px;
+margin-bottom: 16px;
+
+width: auto;
+height: 309px;
+
+background: #FFFFFF;
+/* Shadow / XL */
+
+box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
+border-radius: 24px;
+}
+.aberturaEmpresa {
+    padding: 16px;
+    gap: 8px;
+    width: auto;
+    height: 153px;
+    flex-direction: column;
+    margin-top: -83px;
+    align-items: center;
+    justify-content: center;
+}
+span.tituloabe {
+    font-size: 12px;
+    text-align: center;
+}
+.precoabe {
+    align-items: center;
+}
+.precoabe h5 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -9px;
+}
+.campor {
+   
+    width: -webkit-fill-available;
+   
+}
+span.avisocli {
+    font-size: 10px;
+    width: auto;
+    margin-top: -10px;
+}
+  
 }
