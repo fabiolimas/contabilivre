@@ -934,3 +934,62 @@ $(document).ready(function(){
         avaliacao.style.display='none';
     });
 });
+$(document).ready(function(){
+
+    var btncartao=document.querySelector('#cartao');
+    var btnpix=document.querySelector('#pix');
+    var btnboleto=document.querySelector('#boleto');
+
+    var metodocartao=document.querySelector('.metodocartao');
+    var metodopix=document.querySelector('.metodoPix');
+    var metodoboleto=document.querySelector('.metodoBoleto');
+    var boletopag=document.querySelector('.Boletopag');
+    var pixpag=document.querySelector('.Pixpag');
+    var cartaopag=document.querySelector('.Cartaopag');
+    
+
+    btncartao.addEventListener('click', function(e){
+        e.preventDefault();
+        metodocartao.style.display="block";
+        metodopix.style.display="none";
+        metodoboleto.style.display="none";
+        boletopag.style.display="none";
+        pixpag.style.display="none";
+        cartaopag.style.display="block";
+        
+       
+       
+        
+    });
+    btnpix.addEventListener('click', function(e){
+        e.preventDefault();
+        metodocartao.style.display="none";
+        metodopix.style.display="flex";
+        metodoboleto.style.display="none";
+        boletopag.style.display="none";
+        pixpag.style.display="block";
+        cartaopag.style.display="none";
+       
+       
+        
+    });
+    btnboleto.addEventListener('click', function(e){
+        e.preventDefault();
+        metodocartao.style.display="none";
+        metodopix.style.display="none";
+        metodoboleto.style.display="flex";
+        boletopag.style.display="block";
+        pixpag.style.display="none";
+        cartaopag.style.display="none";
+       
+       
+        
+    });
+
+    
+
+
+});
+
+
+

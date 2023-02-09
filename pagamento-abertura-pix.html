@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/empresa.css">
+    <script src="js/script.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar fixed-top abertura-empresa">
+                <a href="abertura-de-empresa.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
+
+                </a>
+
+            </nav>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Menu lateral-->
+
+        <div class="row">
+            <div class="interface" style="height: 614px;">
+                <div class="row stepscontainer">
+                    <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">2</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">3</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">4</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">5</span></span></div>
+
+                </div>
+                <div class="row title">
+                    <h4>[Nome da pessoa], obrigado por confiar na contabilivre</h4>
+                    <p>Deu tudo certo! Agora você já pode dar continuidade no seu cadastro de abertura. </p>
+                </div>  
+                
+                <div class="row">
+                    <div class="qrcode">
+                    <img src="img/qrcodepag.png" alt="">
+                    <button class="copiacodigo">Copiar código do QR Code</button>
+                </div>
+                </div>
+                        
+                            <div class=" row footercontent">
+                                <hr>
+                                <div class="buttons" style="width: 243px;">
+                                    
+                                    <a href="anexa.html" class="avancar" style="width: 149px;" >Avançar</a>
+                                </div>
+                            </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!--Modal Contrate tambem-->
+        <div class="modal fade" tabindex="-1" id="contrateTambem" style="--bs-modal-width: 888px;
+    --bs-modal-height: 300px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contrate também</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row conteudomod">
+                            <div class="col col-md-6">
+                                <div class="valorcontrate">
+                                    <span class="texto">Por apenas</span>
+                                    <span class="valorcont">R$<span class="valcont2">169,00</span></span>
+                                </div>
+
+
+
+                                <div class="infocontrate">
+                                    <p class="tituloform">Como funciona:</p>
+                                    <p class="inform">
+                                        Nossa equipe de especialistas irá te orientar sobre as questões de Constituição
+                                        da
+                                        sua empresa como, por exemplo, os melhores CNAES e Alíquotas para as atividades
+                                        que
+                                        serão exercidas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-md-6 rightg">
+                                <p class="tituloform" style="color:#1c6a00;">Vantagens de contratar o serviço adicional:
+                                </p>
+                                <ul>
+                                    <li>Agilize o seu processo</li>
+                                    <li>Evite impostos elevados</li>
+                                    <li>Evite alterações contratuais</li>
+                                    <li>Receba orientação sobre a composição da empresa</li>
+                                    <li>Fale direto com especialista</li>
+                                    <li>Você pode economizar centenas ou até milhares de reais de impostos por ano</li>
+                                    <li>Evite gastos futuros com alterações contratuais</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <div class="buttons" style="width: 346px;">
+                                <a href="abertura-4.html" class="naoPerciso" data-bs-dismiss="modal"
+                                    aria-label="Close">Não preciso de ajuda</a>
+                                <a href="#" class="queroContratar" data-bs-dismiss="modal" aria-label="Close">Quero
+                                    contratar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  <!--Modal Checkout-->
+  <div class="modal fade" tabindex="-1" id="checkout" style="--bs-modal-width: 888px;
+  --bs-modal-height: 300px;">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Sua contratação foi realizada com sucesso!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row">
+                          <h3 class="titulocheckout">[Nome], aproveite essa oferta!</h3>
+                      </div>
+                      <div class="valorcontrate" style="width: 362px;">
+                          <span class="texto">Ganhe mais</span>
+                          <span class="valorcont">R$<span class="valcont2">30,00</span> <span style="font-size: 19px; color: #1c6a00;">de crédito</span></span>
+                      </div>
+                      <div class="row infochekout">
+                          <div class="titlecheck">Como funciona:</div>
+                          <div class="checkmsg">Após pagar seu boleto, envie o comprovante para nossa equipe. Se estiver tudo correto, seu bônus de R$30,00 aparecerá como desconto em sua 1ª mensalidade. </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+
+                      <div class="buttons" style="width: 370px;">
+                          <a href="#" class="naoPerciso" data-bs-dismiss="modal" aria-label="Close">Ignorar oferta e concluir</a>
+                          <a href="informacoes-pessoais" class="queroContratar">Contratar oferta</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cartaon = document.getElementById('cartaoCredito');
+    var inputcvv = document.getElementById('cvv');
+    var inputvalidade = document.getElementById('validade');
+
+    var maskOptions = {
+        mask: '0000-0000-0000-0000',
+
+    };
+
+    var mascaracvv = {
+        mask: '000'
+    };
+    var mascaravalidade = {
+        mask: '00/00'
+    };
+
+    var mask = IMask(cartaon, maskOptions);
+    var cvv = IMask(inputcvv, mascaracvv);
+    var validade = IMask(inputvalidade, mascaravalidade);
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>
