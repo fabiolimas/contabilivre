@@ -22,6 +22,48 @@ body{
     width: 105%;
 
 }
+.iconeanexo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 44px;
+    height: 48px;
+}
+.botaoanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 169px;
+    height: 32px;
+    margin-left: -60px;
+
+}
+.closeanexo {
+    margin-left: -40px;
+}
+p.gray.dataanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* padding: 16px; */
+    width: 98px;
+    height: 47px;
+    margin-left: -106px;
+    margin-top: -7px;
+}
+.infoanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* padding: 16px; */
+    width: 529px;
+    height: 52px;
+}
 
 .metodospag .nav-link {
     line-height: 6;
@@ -1028,7 +1070,7 @@ p.titulosecao.u.cartoescad {
     align-items: center;
     padding: 0px 16px 0px 0px;
     gap: 16px;
-    width: 1064px;
+    width: -webkit-fill-available;
     height: 52px;
     background: #B4DFFF;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -1135,7 +1177,8 @@ a.btn.btn-danger.mensalidadesa {
 nav.navbar.navbar-expand.financeiro {
     margin-top: 64px;
     border-radius: 9px;
-    margin-left: -358px;
+    margin-left: -282px;
+    width: 146%;
 }
 form.w-100.novolembreteform img, .novolembreteform i {
     margin-top: 16px !important;
@@ -1367,7 +1410,7 @@ align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #FF8541;
-width: fit-content;
+width: max-content;
 height: 26px;
 font-weight: bold;
 background: rgba(255, 133, 65, 0.2);
@@ -1834,7 +1877,7 @@ align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #21AB1F;
-width: fit-content;
+width: max-content;
 height: 26px;
 text-align: center;
 font-weight: bold;
@@ -1941,7 +1984,7 @@ text-align: center;
 padding: 4px 8px;
 gap: 8px;
 color: #4AA3E5;
-width: fit-content;
+width: max-content;
 height: 26px;
 font-weight: bold;
 background: rgba(74, 163, 229, 0.2);
@@ -3509,7 +3552,7 @@ background: #FFFFFF;
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 16px;
-width: 81%;
+width: 78%;
 }
 .planoatual{
     display: flex;
@@ -4217,6 +4260,45 @@ margin-bottom: 13px;
         background: #fff;
         margin-left: -54px;
     }
+    a.exportarmobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 231px;
+        height: 38px;
+        background: #74C83C;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F8F9FA;
+    }
+    a.btn.addnovomobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 231px;
+        height: 38px;
+        background: #004578;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F8F9FA;
+    }
+    .dropdown-menu.clientes.show {
+        height: auto;
+    }
     .row.agendamento2 {
         margin-top: 27px;
         margin-left: -21px;
@@ -4338,6 +4420,7 @@ color: #58C0ED;
     }
     ul.metodospag.navbar-nav.me-auto.mb-2.mb-lg-0 {
         background: none;
+        margin-left: -33px;
     }
     nav#navbar-links {
         position: absolute;
@@ -4358,7 +4441,7 @@ color: #58C0ED;
     }
     .righthead {
      
-        left: 249px;
+        right: 82px;
         width: 27px;
     }
     .righthead span {
@@ -4557,7 +4640,7 @@ color: #58C0ED;
         /*padding: 16px;*/
         gap: 16px;
         position: absolute;
-        width: 327px !important;
+        width: -webkit-fill-available;
         height: 72px;
         left: 24px;
         top: 120px;
@@ -4688,6 +4771,8 @@ color: #58C0ED;
         margin-top: -35px;
         padding-top: 9px;
         margin-left: 6px;
+        position: absolute;
+        right: -55px;
     }
     .red {
        
@@ -4723,11 +4808,22 @@ color: #58C0ED;
     nav.navbar.navbar-expand.pagamentos {
         /* margin-bottom: -22px; */
         /* margin-top: 33px; */
-        margin-left: 29px;
+       /* margin-left: 29px;*/
         background: none;
     }
     table.table.resumo {
         margin-left: -31px;
+    }
+    .row.anexos p {
+    
+     
+        line-height: 24px;
+     
+    }
+    .row p b {
+      
+        font-size: 16px;
+       
     }
     .metodospag .nav-item {
         line-height: 1;
@@ -4795,12 +4891,15 @@ color: #58C0ED;
     .searchbar {
         display: none;
     }
-    .col.col-md-10.correspondencia, .dados-empresa{
+    .col.col-md-10.correspondencia{
         margin-top: 80px;
-        margin-left: 0px;
-        margin-left: -207px;
+        margin-left: -208px;
+        
 
     }  
+    .reservarhorariomb form {
+        width: -webkit-fill-available;
+    }
     .row.table-responsive {
         border-radius: 8px;
         width:356px;
@@ -4844,7 +4943,7 @@ border-radius: 24px;
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
-        width: 279px;
+        width: -webkit-fill-available;
         height: 74px;
     }
     .reservap{
@@ -4989,10 +5088,7 @@ border-radius: 24px;
         margin-left: -31px;
     }
     .row.agendamento, .formempresa, .formAddColaborador {
-        display: flex;
-        flex-direction: column;
-        /* width: auto; */
-        /* margin-top: 59px; */
+      
         margin-left: -16px;
         display: flex;
         flex-direction: column;
@@ -5001,13 +5097,14 @@ border-radius: 24px;
         padding: 0px;
         gap: 24px;
         width: auto;
-        height: 359px;
-        background: #F8F9FA;
+        height: auto;
+        
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
         border-radius: 8px;
     }
     .col.col-md-10.dados-empresa {
-        margin-top: 341px !important;
+        margin-top: 0px !important;
+        margin-left: -196px;
     }
     .row.position-relative.tit {
          width: 100%; 
@@ -5034,6 +5131,7 @@ border-radius: 24px;
         margin-left: 0px;
         margin-bottom: -31px;
         margin-top: 127px;
+        display: none;
     
        
     }
@@ -5082,7 +5180,7 @@ border-radius: 24px;
         align-items: center;
         padding: 8px 24px;
         gap: 40px;
-        width: max-content;
+        width: -webkit-fill-available;
         height: 48px;
         background: linear-gradient(248.85deg, #1C2731 -1.77%, #66717A 104.39%);
         box-shadow: 0px 1px 2px rgb(28 39 49 / 8%);
@@ -5119,13 +5217,14 @@ border-radius: 24px;
         padding: 8px 16px;
         gap: 16px;
         position: absolute;
-        width: 327px;
+        width: -webkit-fill-available;
         height: 46px;
         left: 24px;
         top: 232px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
         border-radius: 16px;
+        z-index: 77;
     }
     .modal-footer.filtro .btn-primary {
         display: flex;
@@ -5144,10 +5243,62 @@ border-radius: 24px;
         margin-top: 7px;
     }
     .anexos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px 24px;
+        width: 279px;
+        height: 168px;
+        background: #FFFFFF;
+        box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+        border-radius: 8px;
+        width: fit-content;
+        position: relative;
+    }
+    .iconeanexo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 8px;
+        width: 44px;
+        height: 48px;
+    }
+    .closeanexo {
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        width: auto;
+    }
+    .botaoanexo {
+        display: flex;
+        padding: 0px;
+        gap: 8px;
+        width: 247px;
+        height: 32px;
+        margin-left: -262px;
+        position: absolute;
+        bottom: 25px;
+        right: 6px;
+    }
+    .row.clientes {
+        display: none;
+    }
+    p.gray.dataanexo {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px;
+        position: absolute;
+        width: 98px;
+        height: 47px;
+        right: 0px;
+        top: 0px;
+    }
+    .titulotela {
+        margin-bottom: 67px;
         
-     
-        margin-left: -21px;
-    width: fit-content;
     }
     .row.pisctps, .row.descontosProventos, .row.horarios, .row.proventos {
         display: block;
@@ -5227,6 +5378,9 @@ height: 30px;
         bottom: 16.73%;
         /* border: 1.75px solid #4AA3E5;*/
     }
+    .row.formempresa form {
+        display: block !important;
+    }
     .submenumobile .dropdown-menu.show {
         box-sizing: border-box;
         display: flex;
@@ -5235,14 +5389,14 @@ height: 30px;
         padding: 13px 8px;
         gap: 4px;
         position: relative;
-        width: 327px;
-        height: 150px;
+        width: -webkit-fill-available;
+        height: auto;
         background: #FFFFFF;
         border: 1px solid #E9ECEF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
         border-radius: 8px;
         top: 7px !important;
-    left: -16px !important;
+    left: 15px !important;
     }
     .submenumobile a.dropdown-item {
         display: flex;
@@ -5360,7 +5514,7 @@ flex-direction: column;
 align-items: flex-start;
 padding: 24px 24px 0px;
 
-width: max-content;
+width: -webkit-fill-available;
 height: auto;
 
 background: #FFFFFF;
@@ -5381,7 +5535,7 @@ align-items: center;
 padding: 0px 8px;
 gap: 64px;
 
-width: 327px;
+width: -webkit-fill-available;
 height: 52px;
 
 /* Primária / 8% */
@@ -5596,12 +5750,11 @@ z-index: 999;
         margin-top: -25px;
     }
     .modal-footer {
-        justify-content: space-between;
+        justify-content: end;
     }
     .tabelasect {
-       
-        width: auto;
-       
+        width: -webkit-fill-available !important;
+        /*margin-left: 0px;*/
     }
     a.btn.btn-primary.reservarreuniaobtn {
         display: flex;
@@ -5616,6 +5769,118 @@ z-index: 999;
         border-radius: 4px;
     }
      
+}
+@media only screen and (max-width: 1024px){
+    .dados-empresa, .addColaborador, .holeritediv, .addSocio {
+        margin-left: 198px;
+    }
+    button.btn.btn-primary.headbusca {
+        display: none;
+    }
+    nav.navbar.navbar-expand.eventos {
+       
+        margin-left: 349px;
+    }
+    .dropdown.addevento.eventos {
+    right: -168px;
+}
+.col-md-11.tabelasect.mb-5.p-0.pb-2.recisao {
+    width: 93%;
+}
+.dropdown.m-3.addrecisao.recisao {
+    right: -183px;
+}
+.col-md-11.tabelasect.mb-5.recisao {
+    width: 93%;
+}
+.col-md-11.tabelasect.mb-5.p-0.pb-2.folhapagamento {
+    width: 93%;
+}
+.col-md-11.tabelasect.mt-2.mb-5.p-0.pb-2.holerite {
+    width: 93%;
+}
+.dropdown.m-3.addevento.holeritswitch {
+    right: -228px;
+}
+.col-md-11.tabelasect.mb-5.folhaponto {
+    width: 93%;
+}
+.col-md-11.tabelasect.mb-5.meuscolaboradores {
+    width: 93%;
+}
+li.nav-item.filter {
+ 
+    font-size: 9px;
+}
+li.nav-item.filtera {
+  
+    width: auto;
+
+}
+    #iconfiltros{
+        display: block;
+        position: absolute;
+        right: -36px;
+        top: 9px;
+        width: 24px;
+       
+    }
+    .col-md-11.tabelasect.p-0.pb-2.mb-5.eventos {
+        width: 93%;
+    }
+    .row.filtros.d-flex.justify-content-center {
+        width: max-content;
+    }
+    .tabelasect {
+   
+        width: 81%;
+       
+    }
+    .titlesection {
+ 
+        width: 87%;
+        height: 77px;
+    }
+    .visualizacao {
+      
+        right: 30px;
+       
+    }
+    .col-md-11.tabelasect.mb-5.documentos {
+        width: 94%;
+    }
+    .col-md-11.tabelasect.mb-5.colaboradores {
+        width: 93%;
+    }
+    .row.btnscliente {
+        position: absolute;
+        width: -webkit-fill-available;
+        right: -127px;
+    }
+    p.gray.dataanexo {
+       
+       
+        margin-left: -248px;
+        margin-top: -3px;
+        
+    }
+    .botaoanexo {
+       
+        margin-left: -205px;
+        
+    }
+    .closeanexo {
+        margin-left: -88px;
+    }
+    .row.anexos p {
+        
+      
+        font-size: 13px;
+       
+    }
+    .col-md-2.minbusca input, .col-md-2.minbusca i, .formbusca input, .formbusca select, .formbusca img, .formbusca .gray {
+        display: none;
+    }
 }
 @media only screen and (max-width: 1080px){
     .col-md-2.minbusca {

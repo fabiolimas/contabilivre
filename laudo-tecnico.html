@@ -37,8 +37,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                                    <a class="dropdown-item" href="ticket.html"><img
+                                        src="img/envelopecinza.png">Tickets</a>
+                                        <a class="dropdown-item" href="#"><img
+                                            src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,33 +84,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -268,6 +280,25 @@
                 </ul>
 
             </div>
+            <div class="submenumobile">
+
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="titsubmenu">Laudo técnico </span>
+                     <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   
+                    <a class="dropdown-item" href="dados-da-empresa.html">Contrato social</a>
+                    <a class="dropdown-item" href="dados-gerais.html">Dados gerais</a>
+                    <a class="dropdown-item" href="dados-de-acesso.html">Dados de acesso</a>
+                    <a class="dropdown-item" href="dados-cadastrais.html">Dados cadastrais</a>
+                    <a class="dropdown-item" href="laudo-tecnico.html">Laudo técnico</a>
+                    
+                    <a class="dropdown-item" href="contador-anterior.html" style="border: none;">Contador anterior</a>
+                   
+                </div>
+            </div>
            
             <div class="container">
                 <div class="row">
@@ -301,41 +332,26 @@
                     <div class="row mt-3">
                         <p><b>Arquivos enviados</b></p>
                     </div>
-                    <div class="row table-responsive">
+                    <div class="row">
 
                         
                         <div class="row anexos">
-                            <div class="col col-md-1">
+                            <div class="iconeanexo">
                                 <img src="img/pdficon.png" alt="">
                             </div>
-                            <div class="col col-md-5">
+                            <div class="infoanexo">
                                 <p>Campo para a descrição do documento</p>
                             </div>
-                            <div class="col col-md-2"></div>
+                            
                             <div class="col col-md-1 me-2">
-                                <p class="gray">01/02/2020</p>
+                                <p class="gray dataanexo">01/02/2020</p>
                             </div>
-                            <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
+                            <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
                             </div>
 
-                            <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                            <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                         </div>
-                        <div class="row anexos">
-                            <div class="col col-md-1">
-                                <img src="img/pdficon.png" alt="">
-                            </div>
-                            <div class="col col-md-5">
-                                <p>Campo para a descrição do documento</p>
-                            </div>
-                            <div class="col col-md-2"></div>
-                            <div class="col col-md-1 me-2">
-                                <p class="gray">01/02/2020</p>
-                            </div>
-                            <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
-                            </div>
-
-                            <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
-                        </div>
+                        
                     </div>
                     <hr>
                     <div class="row bts mt-3">
