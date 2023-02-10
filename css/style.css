@@ -22,6 +22,7 @@ body{
     width: 105%;
 
 }
+
 .metodospag .nav-link {
     line-height: 6;
 }
@@ -45,6 +46,9 @@ img.setabaixo {
    
      padding-right: 0px; 
 } 
+img.imgreuniao2, img.imgreuniao1 {
+    width: 100%;
+}
 .righthead{
     display: flex;
 flex-direction: row;
@@ -121,8 +125,10 @@ main h4 {
     width: -webkit-fill-available;
 }
 main.col-md-9.titlesection img {
-    width: 18px;
+    width: 22px;
+    height: 22px;
     margin-right: 7px;
+    margin-bottom: 4px;
     cursor: pointer;
 }
 p, li {
@@ -885,7 +891,7 @@ border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 18px;
     color: #212529;
 }
@@ -1706,8 +1712,86 @@ span.numero.btn.btn-primary.inativo {
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    width: auto;
+    width: max-content;
     height: 74px;
+}
+.reservarhorariomb {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    position: absolute;
+    width: auto !important;
+    height: auto;
+     top: 304px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 24px;
+}
+.step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 274.67px;
+    height: 74px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 12px;
+}
+.stepitem.ativo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 42px;
+    height: 42px;
+    background: #4AA3E5;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #F8F9FA;
+}
+.step p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #868E96;
+}
+.stepinativo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 274.67px;
+    height: 74px;
+    background: #FFFFFF;
+    border: 1px solid rgba(74, 163, 229, 0.2);
+    border-radius: 12px;
+}
+.stepitem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(74, 163, 229, 0.2);
+    border-radius: 8px;
 }
 .marcadorinativo{
     box-sizing: border-box;
@@ -3364,7 +3448,7 @@ flex-grow: 0;
     background: #fff;
     border-radius: 7px;
     margin-left: 193px;
-    width: 92% !important;
+    width: 92%;
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     padding: 24px;
 }
@@ -3425,7 +3509,7 @@ background: #FFFFFF;
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 16px;
-width: 79%;
+width: 81%;
 }
 .planoatual{
     display: flex;
@@ -3533,6 +3617,7 @@ padding-left: 32px;
 }
 .situacao select{
     box-sizing: border-box;
+    color: #6C757D;
 
 /* Auto layout */
 
@@ -4050,7 +4135,7 @@ height: 56px;
 
 border: 1px solid #DEE2E6;
 border-radius: 8px;
-background-color: #fff;
+
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
@@ -4132,7 +4217,87 @@ margin-bottom: 13px;
         background: #fff;
         margin-left: -54px;
     }
-    .col.col-md-4.marcadorinativo {
+    .row.agendamento2 {
+        margin-top: 27px;
+        margin-left: -21px;
+        display: flex;
+        flex-direction: column;
+    }
+    .stepitem.ativo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+        width: 42px;
+        height: 42px;
+        background: #4AA3E5;
+        border-radius: 8px;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* Cinza/02 */
+
+color: #F8F9FA;
+    }
+    .stepitem {
+        box-sizing: border-box;
+
+        /* Auto layout */
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+        
+        width: 42px;
+        height: 42px;
+        
+        /* Primária / 20% */
+        
+        border: 1px solid rgba(74, 163, 229, 0.2);
+        border-radius: 8px;
+        background: #FFFFFF;
+        border: 1px solid rgba(74, 163, 229, 0.2);
+        border-radius: 12px;
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* Primária / Light */
+
+color: #58C0ED;
+
+    }
+    .step p, .stepinativo p {
+        display: none;
+    }
+    .stepinativo {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        width: 74px;
+        height: 74px;
+        background: #FFFFFF;
+        border: 1px solid rgba(74, 163, 229, 0.2);
+        border-radius: 12px;
+    }
+    .step {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -4144,7 +4309,31 @@ margin-bottom: 13px;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
         border-radius: 12px;
     }
-    .col.col-md-4.marcadorativo p, .marcadorinativo p {
+    .agendamento .wraper {
+        width: 348px;
+        margin-left: -16px;
+    }
+    .titulo1 {
+       
+        width: auto;
+        margin-top: 15px;
+        margin-bottom: -29px;
+        margin-left: 2px;
+    }
+    .marcadorinativo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        width: 74px;
+        height: 74px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 12px;
+        margin-right: 0px;
+    }
+    .marcadorativo p, .marcadorinativo p {
         display: none;
     }
     ul.metodospag.navbar-nav.me-auto.mb-2.mb-lg-0 {
@@ -4245,14 +4434,24 @@ margin-bottom: 13px;
         border-radius: 8px;
     }
     div#cartao .col-md-2 {
-        width: auto;
+        width: auto !important;
     }
     aside{
         background: #ffffff00;
        
     }
+    #cartao {
+        
+        margin-left: 0;
+    }
     canvas#barChart {
         width: 100% !important;
+    }
+    .row.permissao.text-left {
+        margin-bottom: 30px;
+    }
+    .row.agendamento3 {
+        margin-bottom: -100px;
     }
     .addmovimentacao{
         position: relative !important;
@@ -4522,9 +4721,8 @@ margin-bottom: 13px;
         line-height: 1;
     }
     nav.navbar.navbar-expand.pagamentos {
-     
-        margin-bottom: -22px;
-        margin-top: 33px;
+        /* margin-bottom: -22px; */
+        /* margin-top: 33px; */
         margin-left: 29px;
         background: none;
     }
@@ -4598,9 +4796,9 @@ margin-bottom: 13px;
         display: none;
     }
     .col.col-md-10.correspondencia, .dados-empresa{
-        margin-top: 210px !important;
+        margin-top: 80px;
         margin-left: 0px;
-        margin-left: -166px;
+        margin-left: -207px;
 
     }  
     .row.table-responsive {
@@ -4623,34 +4821,42 @@ padding: 32px 24px;
 gap: 32px;
 
 position: absolute;
-width: 327px !important;
-height: 1161px;
-left: -143px;
-top: 59px;
+width: 354px !important;
+    height: auto;
+
+    left: -180px;
+    top: 323px;
 
 background: #FFFFFF;
 /* Shadow / XL */
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 24px;
+
+
+    
+    }
+
+    .row.steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 279px;
+        height: 74px;
     }
     .reservap{
-        width: 279px;
-height: 90px;
-
-/* Subtitle / Subtitle-2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 18px;
-/* or 129% */
-
-
-/* Cinza/09 */
-
-color: #343A40;
+        width: auto;
+        height: 90px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #343A40;
+        margin-bottom: 53px;
     }
     .col.col-md-4.itensinfra p {
         display: none;
@@ -4659,7 +4865,26 @@ color: #343A40;
         margin: 7px;
     }
     .row.mt-4.infraestrutura {
-        margin-top: -25px !important;
+        margin-top: 2px !important;
+    }
+    .reservarhorariomb .btn-primary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+        width: 42px;
+        height: 42px;
+        background: #4AA3E5;
+        border-radius: 8px;
+    }
+    .row.agendamento h3, .agendamento p {
+        display: none;
+    }
+    img.imgreuniao1, img.imgreuniao2 {
+        width: 276px;
+        margin-top: 15px;
     }
     .reservarhorariomb .btn-primary {
         display: flex;
@@ -4672,7 +4897,35 @@ color: #343A40;
         height: 50px;
         background: #4AA3E5;
         border-radius: 4px;
-        margin-bottom: 16px;
+    }
+    .col-md-11.tabelasect.p-4.mb-2.mt-3.reservarhorariomb {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 24px;
+        gap: 32px;
+        position: absolute;
+        width: 327px;
+        height: 1161px;
+        left: -207px;
+        top: 63px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+    }
+    .marcadorativo {
+     
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        width: 74px;
+        height: 74px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 12px;
+        margin-right: 0;
     }
     .colaboradoresf, .addEvento{
         margin-left: -459px;
@@ -4738,7 +4991,20 @@ color: #343A40;
     .row.agendamento, .formempresa, .formAddColaborador {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /* width: auto; */
+        /* margin-top: 59px; */
+        margin-left: -16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        width: auto;
+        height: 359px;
+        background: #F8F9FA;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 8px;
     }
     .col.col-md-10.dados-empresa {
         margin-top: 341px !important;
@@ -4816,7 +5082,7 @@ color: #343A40;
         align-items: center;
         padding: 8px 24px;
         gap: 40px;
-        width: 375px;
+        width: max-content;
         height: 48px;
         background: linear-gradient(248.85deg, #1C2731 -1.77%, #66717A 104.39%);
         box-shadow: 0px 1px 2px rgb(28 39 49 / 8%);
@@ -5094,7 +5360,7 @@ flex-direction: column;
 align-items: flex-start;
 padding: 24px 24px 0px;
 
-width: 375px;
+width: max-content;
 height: auto;
 
 background: #FFFFFF;
@@ -5331,6 +5597,23 @@ z-index: 999;
     }
     .modal-footer {
         justify-content: space-between;
+    }
+    .tabelasect {
+       
+        width: auto;
+       
+    }
+    a.btn.btn-primary.reservarreuniaobtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        gap: 8px;
+        width: auto;
+        height: 50px;
+        background: #4AA3E5;
+        border-radius: 4px;
     }
      
 }

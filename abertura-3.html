@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilivre - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/empresa.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <!--Header-->
+        <div class="container" id="nav-container">
+            <nav class="navbar fixed-top abertura-empresa">
+                <a href="abertura-de-empresa.html" class="navbar-brand ms-3">
+                    <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
+
+                </a>
+
+            </nav>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%"
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="container">
+        <!--Menu lateral-->
+
+        <div class="row">
+            <div class="interface" style="height: 815px;">
+                <div class="row stepscontainer">
+                    <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">2</span></span></div>
+                    <div class="step"><span class="menuitem ativo"><span class="label">3</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">4</span></span></div>
+                    <div class="step"><span class="menuitem"><span class="label">5</span></span></div>
+
+                </div>
+                <div class="row title">
+                    <h4>Estamos quase lá [Nome da pessoa]</h4>
+                    <p>Chegou a hora de cadastrar os dados da sua futura empresa. Selecione os CNAEs que correspondem as
+                        atividades que serão exercidas pelo seu negócio.</p>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <form action="#">
+                            <div class="row ">
+                                <div class="col col-md-6">
+                                    <div class="carda">
+                                        <div class="cardconteudo">
+                                            <div class="title">Atividade principal</div>
+                                            <img src="img/help.png" alt="" class="help" data-bs-toggle="modal"
+                                            data-bs-target="#dica">
+                                            <button class="btAtividade" data-bs-toggle="modal"
+                                                data-bs-target="#atividadePrincipal">Selecionar a atividade
+                                                principal</button>
+                                        </div>
+                                        <div class="obs">Selecione o CNAE da principal atividade da sua empresa.</div>
+
+                                    </div>
+
+                                </div>
+                                <div class=" col col-md-6">
+                                    <div class="carda">
+                                        <div class="cardconteudo">
+                                            <div class="title">Atividade secundária</div>
+                                            <img src="img/help.png" alt="" class="help" data-bs-toggle="modal"
+                                            data-bs-target="#dica">
+                                            <button class="btnSecundaria" data-bs-toggle="modal"
+                                                data-bs-target="#atividadeSecundaria">Selecionar a atividade
+                                                principal</button>
+                                        </div>
+                                        <div class="obs">Selecione o CNAE da principal atividade da sua empresa.
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row suaempresa">
+                                <div class="col col-md-6">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Sua empresa vai ter quantos sócios?</option>
+                                        <option value="">Somente eu</option>
+                                        <option value="">Eu e + 1</option>
+                                        <option value="">Eu e + 2</option>
+                                        <option value="">Eu e + 3</option>
+                                        <option value="">Eu e + 4</option>
+                                        <option value="">Eu e + 5</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row servicosemp">
+                                <div class="col col-md-12">
+                                    <textarea name="" id="" cols="30" rows="5" class="form-control"
+                                        placeholder="Descreva, resumidamente, quais atividades de serviço ou comércio serão oferecidas por sua empresa."></textarea>
+                                </div>
+                                <div class="msgserv">Exemplo: Minha empresa prestará serviços de cabeleireiro e
+                                    manicure. Não venderemos nenhum produto.</div>
+                            </div>
+                            <div class=" row footercontent">
+                                <hr>
+                                <div class="buttons">
+                                    <a href="abertura-2.html" class="voltar">Voltar</a>
+                                    <a href="abertura-4.html" class="avancar">Avançar</a>
+                                </div>
+                            </div>
+
+                    
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal atividade primaria-->
+    <div class="modal fade" tabindex="-1" id="atividadePrincipal" style="--bs-modal-width: 888px;
+    --bs-modal-height: 566px;">
+        <div class="modal-dialog">
+            <div class="modal-content" style="height: 523px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Selecione sua atividade principal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="formModal">
+                        <div class="row search">
+                            <div class="col col-md-12">
+                                <img src="img/lupapreta.png" alt="">
+                                <input type="text" class="form-control" placeholder="Mínimo de 5 caracteres">
+                                <div class="msgserv">Apenas 01(uma) atividade pode ser selecionada</div>
+                            </div>
+                           
+
+                        </div>
+                        <hr>
+                        <div class="row radios">
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="1"><label for="1">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="2"><label for="2">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="3"><label for="3">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="4"><label for="4">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="5"><label for="5">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="6"><label for="6">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <div class="buttons">
+                        <a href="$" class="voltar" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</a>
+                        <a href="#" class="avancar" data-bs-dismiss="modal"
+                        aria-label="Close">Salvar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal atividade secundaria-->
+    <div class="modal fade" tabindex="-1" id="atividadeSecundaria" style="--bs-modal-width: 888px;
+    --bs-modal-height: 566px;">
+        <div class="modal-dialog">
+            <div class="modal-content" style="height: 523px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Selecione sua atividade secundária</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="formModal">
+                        <div class="row search">
+                            <div class="col col-md-12">
+                                <img src="img/lupapreta.png" alt="">
+                                <input type="text" class="form-control" placeholder="Mínimo de 5 caracteres">
+                                <div class="msgserv">Apenas 01(uma) atividade pode ser selecionada</div>
+                            </div>
+                           
+
+                        </div>
+                        <hr>
+                        <div class="row radios">
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="1"><label for="1">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="2"><label for="2">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="3"><label for="3">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="4"><label for="4">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="5"><label for="5">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                            <div class="horizontal">
+                                <input type="radio" name="atividade" id="6"><label for="6">0000000 - Nome da atividade
+                                    que poderá ser selecionada - Alíquota 0,00%</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <div class="buttons">
+                        <a href="$" class="voltar" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</a>
+                        <a href="#" class="avancar" data-bs-dismiss="modal"
+                        aria-label="Close">Salvar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--Modal Dica rapida-->
+ <div class="modal fade" tabindex="-1" id="dica" style="--bs-modal-width: 424px;
+ --bs-modal-height: 286px;">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Dicas rápidas!</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p class="inform">O CNAE (Código Nacional de Atividades Econômicas), é uma classificação padronizada das atividades das empresas. É através deles que são determinados os impostos que sua empresa irá pagar, bem como os registros que deverá se submeter (CREA, CRC, CRECI, SUSE).</p>
+             </div>
+             <div class="modal-footer" style="width: auto;">
+
+                 <div class="buttons" style="width: auto;">
+                    
+                     <a href="#" class="entendi" data-bs-dismiss="modal"
+                     aria-label="Close">Entendi</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var cpf = document.getElementById('cpf');
+    var telefone = document.getElementById('telefone');
+
+
+    var maskOptions = {
+        mask: '000.000.000-00',
+
+    };
+
+    var masctelefone = {
+        mask: '(00) 0000-0000'
+    };
+
+
+    var cpfm = IMask(cpf, maskOptions);
+    var telefone = IMask(telefone, masctelefone);
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+</html>

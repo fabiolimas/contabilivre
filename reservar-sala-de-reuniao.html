@@ -37,8 +37,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,33 +84,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -82,287 +94,290 @@
         </div>
     </header>
     <div class="container">
-    <!--Menu lateral-->
-    <aside>
-        <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">
+        <!--Menu lateral-->
+        <aside>
+            <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">
 
-                           <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicosa.html">
+                                <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicosa.html">
 
-                            <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="endereco-fiscal.html">
+                                <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="endereco-fiscal.html">
 
-                            <img src="img/menu/icons/24/enderecoc.png"> Endereço fiscal
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dados-da-empresa.html">
+                                <img src="img/menu/icons/24/enderecoc.png"> Endereço fiscal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dados-da-empresa.html">
 
-                            <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="meus-clientes.html">
+                                <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-clientes.html">
 
-                            <img src="img/menu/icons/24/clientes.png">Meus clientes
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="central-de-documentos.html">
+                                <img src="img/menu/icons/24/clientes.png">Meus clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="central-de-documentos.html">
 
-                            <img src="img/menu/icons/24/centraldoc.png">Central de documentos
-                        </a>
-                    </li>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="meus-colaboradores.html">
+                                <img src="img/menu/icons/24/centraldoc.png">Central de documentos
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-colaboradores.html">
 
-                            <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
-                        </a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="socios.html">
+                                <img src="img/menu/icons/24/colaboradores.png"> Meus colaboradores
+                            </a>
+                        </li>
 
-                            <img src="img/menu/icons/24/socios.png">Sócios
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="impostos.html">
+                        <li class="nav-item">
+                            <a class="nav-link" href="socios.html">
 
-                            <img src="img/menu/icons/24/impostos.png">Impostos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="declaracoes.html">
+                                <img src="img/menu/icons/24/socios.png">Sócios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impostos.html">
 
-                            <img src="img/menu/icons/24/declaracoes.png">Declarações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movimentacoes.html">
+                                <img src="img/menu/icons/24/impostos.png">Impostos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="declaracoes.html">
 
-                            <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas-fiscais.html">
+                                <img src="img/menu/icons/24/declaracoes.png">Declarações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movimentacoes.html">
 
-                            <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="recibos.html">
+                                <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas-fiscais.html">
 
-                            <img src="img/menu/icons/24/recibos.png">Recibos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="relatorios-contabies.html">
+                                <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recibos.html">
 
-                            <img src="img/menu/icons/24/relatorios.png">Relatórios contábeis
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="distribuicao-de-lucros.html">
+                                <img src="img/menu/icons/24/recibos.png">Recibos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relatorios-contabies.html">
 
-                            <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dmed.html">
+                                <img src="img/menu/icons/24/relatorios.png">Relatórios contábeis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="distribuicao-de-lucros.html">
 
-                            <img src="img/menu/icons/24/dmed.png"> DMED
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dimob.html">
+                                <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dmed.html">
 
-                            <img src="img/menu/icons/24/dimod.png"> DIMOB
-                        </a>
-                    </li>
+                                <img src="img/menu/icons/24/dmed.png"> DMED
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dimob.html">
 
-                </ul>
+                                <img src="img/menu/icons/24/dimod.png"> DIMOB
+                            </a>
+                        </li>
+
+                    </ul>
 
 
+
+                </div>
+            </nav>
+
+        </aside>
+
+        <div class="row">
+
+
+            <div class="col col-md-12">
+                <main class="col-md-9 titlesection">
+                    <p><img src="img/star.png"><b>Endereço Fiscal</b></p>
+
+                    <div class="col-md-2 minbusca">
+                        <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
+                    </div>
+
+                </main>
+
+                <div class="row">
+                    <div class="col-md-7 indice">
+                        <a href="endereco-fiscal.html">Endereço Fiscal</a> <i class="fa fa-chevron-right"></i><a
+                            href="sala-de-reuniao.html">Salas de
+                            Reunião</a> <i class="fa fa-chevron-right"></i> <a href="reservar-horario.html">Reservar um
+                            horário</a> <i class="fa fa-chevron-right"></i> Reservar sala de reunião
+                    </div>
+                </div>
 
             </div>
-        </nav>
-
-    </aside>
-    <div class="row">
-
-
-        <div class="col col-md-12">
-            <main class="col-md-9 titlesection">
-                <p><img src="img/star.png"><b>Endereço Fiscal</b></p>
-
-                <div class="col-md-2 minbusca">
-                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
-                    <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa" class="form-control" placeholder="Pesquisar">
-                </div>
-                
-            </main>
 
             <div class="row">
-                <div class="col-md-7 indice">
-                    <a href="endereco-fiscal.html">Endereço Fiscal</a> <i class="fa fa-chevron-right"></i><a
-                        href="sala-de-reuniao.html">Salas de
-                        Reunião</a> <i class="fa fa-chevron-right"></i> <a href="reservar-horario.html">Reservar um
-                        horário</a> <i class="fa fa-chevron-right"></i> Reservar sala de reunião
+                <div class="col col-md-2 submenu">
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="endereco-fiscal.html">
+
+                                Correspondênicas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sala-de-reuniao.html">
+
+                                Sala de Reunião
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
-            </div>
+                <div class="submenumobile" style="top: 274px;">
 
-        </div>
-        
-        <div class="row">
-            <div class="col col-md-2 submenu">
-
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="endereco-fiscal.html">
-
-                            Correspondênicas
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="sala-de-reuniao.html">
-
-                            Sala de Reunião
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="submenumobile" style="top: 248px;">
-
-                <p class="titsubmenu"><a href="reservar-horario.html"><i class="fa fa-chevron-left"></i></a> Reservar
-                    sala de reunião</p>
-            </div>
-            <div class="container">
-                <div class="titulotela">
-
-
-
-
-                    <div class="titulosecao">
-                        <p><b><a href="reservar-horario.html"><i class="fa fa-chevron-left"></i></a> Reservar sala de reunião</b></p>
-                    </div>
-                    </div>
-
-            <div class="col col-md-10 correspondencia">
-                <div class="col-md-11 tabelasect mb-5 mt-3 reservarhorariomb" style="     width: 334px !important;
-                height: 1161px;
-                left: -175px;;
-                top: 287px;">
-                    <form action="#" class="">
-                    <div class="row steps">
-
-                        <div class="col col-md-4 marcadorativo">
-                            <a href="reservar-sala-de-reuniao.html" class="numero btn btn-primary">1</a>
-                            <p>Data</p>
-                        </div>
-
-                        <div class="col col-md-4 marcadorinativo ">
-                            <a href="reservar-sala-hora.html" class="numero btn btn-primary inativo">2</a>
-                            <p>Horário</p>
-                        </div>
-                        <div class="col col-md-4 marcadorinativo">
-                            <a href="reservar-sala-fim.html" class="numero btn btn-primary inativo">3</a>
-                            <p>Confirmar agendamento</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <p class="titulo1"><b>Selecione o dia</b></p>
-                    </div>
-                    <div class="row agendamento">
-                        <div class="col-md-6">
-                            <h3>Seja bem-vindo a página de agendamento.</h3>
-                            <p>Selecione o melhor dia e hora para realizar o agendamento.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p><b>Escolha uma data e horário</b></p>
-                            <div class="wraper">
-                                <div class="month">
-                                    <pre class="prev"><img src="img/left.png" alt=""></pre>
-                                    <span class="mes">Janeiro 2023</span>
-        
-                                    <pre class="next"><img src="img/right.png" alt=""></pre>
-                                </div>
-                                <div class="days-week">
-                                    <span>DOM</span>
-                                    <span>SEG</span>
-                                    <span>TER</span>
-                                    <span>QUA</span>
-                                    <span>QUI</span>
-                                    <span>SEX</span>
-                                    <span>SAB</span>
-                                </div>
-                                <div class="number-days">
-                                    <span class="day1">1</span>
-                                    <span class="day2">2</span>
-                                    <span class="day3">3</span>
-                                    <span class="day4">4</span>
-                                    <span class="day5">5</span>
-                                    <span class="day6">6</span>
-                                    <span class="day7">7</span>
-                                    <span class="day8">8</span>
-                                    <span class="day9">9</span>
-                                    <span class="day10">10</span>
-                                    <span class="day11">11</span>
-                                    <span class="day12">12</span>
-                                    <span class="day13">13</span>
-                                    <span class="day14">14</span>
-                                    <span class="day15">15</span>
-                                    <span class="day16">16</span>
-                                    <span class="day17">17</span>
-                                    <span class="day18">18</span>
-                                    <span class="day19 agendado">19</span>
-                                    <span class="day20 agendado">20</span>
-                                    <span class="day21 agendado">21</span>
-                                    <span class="day22 agendado">22</span>
-                                    <span class="day23 agendado">23</span>
-                                    <span class="day24 agendado">24</span>
-                                    <span class="day25 agendado">25</span>
-                                    <span class="day26 agendado">26</span>
-                                    <span class="day27 agendado">27</span>
-                                    <span class="day28 agendado">28</span>
-                                    <span class="day29 agendado">29</span>
-                                    <span class="day30 agendado">30</span>
-                                    <span class="day31">31</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr>
-                    <div class="row bts mt-3">
-                        <div class="col-md-12 d-flex justify-content-end">
-                            <div class="col-md-2"><a href="reservar-horario.html" class="ms-3">Cancelar</a></div>
-                            <div class="col-md-3"><a href="reservar-sala-hora.html" class="btn btn-primary">Continuar</a></div>
-    
-                        </div>
-                    </div>
-                    </form>
+                    <p class="titsubmenu"><a href="reservar-horario.html"><i class="fa fa-chevron-left"></i></a>
+                        Reservar
+                        sala de reunião</p>
                 </div>
-              
+                <div class="container">
+                    <div class="titulotela">
+
+
+
+
+                        <div class="titulosecao">
+                            <p><b><a href="reservar-horario.html"><i class="fa fa-chevron-left"></i></a> Reservar sala
+                                    de reunião</b></p>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-10 correspondencia">
+                        <div class="col-md-11 tabelasect mb-5 mt-3 reservarhorariomb">
+                            <form action="#" class="">
+                                <div class="row steps">
+
+                                    <div class=" step">
+                                        <div class="stepitem ativo"> 1</div>
+                                        <p>Data</p>
+                                    </div>
+
+                                    <div class="stepinativo ">
+                                        <div class="stepitem"> 2</div>
+                                        <p>Horário</p>
+                                    </div>
+                                    <div class="stepinativo">
+                                        <div class="stepitem"> 3</div>
+                                        <p>Confirmar agendamento</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <p class="titulo1"><b>Selecione o dia</b></p>
+                                </div>
+                                <div class="row agendamento">
+                                    <div class="col-md-6">
+                                        <h3>Seja bem-vindo a página de agendamento.</h3>
+                                        <p>Selecione o melhor dia e hora para realizar o agendamento.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><b>Escolha uma data e horário</b></p>
+                                        <div class="wraper">
+                                            <div class="month">
+                                                <pre class="prev"><img src="img/left.png" alt=""></pre>
+                                                <span class="mes">Janeiro 2023</span>
+
+                                                <pre class="next"><img src="img/right.png" alt=""></pre>
+                                            </div>
+                                            <div class="days-week">
+                                                <span>DOM</span>
+                                                <span>SEG</span>
+                                                <span>TER</span>
+                                                <span>QUA</span>
+                                                <span>QUI</span>
+                                                <span>SEX</span>
+                                                <span>SAB</span>
+                                            </div>
+                                            <div class="number-days">
+                                                <span class="day1">1</span>
+                                                <span class="day2">2</span>
+                                                <span class="day3">3</span>
+                                                <span class="day4">4</span>
+                                                <span class="day5">5</span>
+                                                <span class="day6">6</span>
+                                                <span class="day7">7</span>
+                                                <span class="day8">8</span>
+                                                <span class="day9">9</span>
+                                                <span class="day10">10</span>
+                                                <span class="day11">11</span>
+                                                <span class="day12">12</span>
+                                                <span class="day13">13</span>
+                                                <span class="day14">14</span>
+                                                <span class="day15">15</span>
+                                                <span class="day16">16</span>
+                                                <span class="day17">17</span>
+                                                <span class="day18">18</span>
+                                                <span class="day19 ">19</span>
+                                                <span class="day20 ">20</span>
+                                                <span class="day21 ">21</span>
+                                                <span class="day22 ">22</span>
+                                                <span class="day23 ">23</span>
+                                                <span class="day24 ">24</span>
+                                                <span class="day25 agendado">25</span>
+                                                <span class="day26 ">26</span>
+                                                <span class="day27 ">27</span>
+                                                <span class="day28 agendado">28</span>
+                                                <span class="day29 agendado">29</span>
+                                                <span class="day30 agendado">30</span>
+                                                <span class="day31">31</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="row bts mt-3">
+                                    <div class="col-md-12 d-flex justify-content-end">
+                                        <div class="col-md-2"><a href="reservar-horario.html" class="ms-3">Cancelar</a>
+                                        </div>
+                                        <div class="col-md-3"><a href="reservar-sala-hora.html"
+                                                class="btn btn-primary">Continuar</a></div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
-
-        </div>
-    </div>
 
     </div>
     <!--Modal atenção 1-->
@@ -568,7 +583,7 @@
                 }
                 calendar.unselect()
             },
-           
+
             eventClick: function (arg) {
                 if (confirm('Você quer remover esse evento?')) {
                     arg.event.remove()
