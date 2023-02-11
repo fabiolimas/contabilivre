@@ -108,7 +108,7 @@ $(document).ready(function(){
     cartaobt.addEventListener('click', function(e){
         e.preventDefault();
        modCartao.style.display='block';
-       cartaobt.style.borderBottom='1px solid #4aa3e5';
+       cartaobt.style.borderBottom='2px solid #4aa3e5';
        cartaobt.style.fontWeight='600';
        boletobt.style.fontWeight='100';
        pixbt.style.fontWeight='100';
@@ -125,7 +125,7 @@ $(document).ready(function(){
     boletobt.addEventListener('click', function(e){
         e.preventDefault();
        modCartao.style.display='none';
-       boletobt.style.borderBottom='1px solid #4aa3e5';
+       boletobt.style.borderBottom='2px solid #4aa3e5';
        boletobt.style.fontWeight='600';
        pixbt.style.borderBottom='none';
        saldobt.style.borderBottom='none';
@@ -142,7 +142,7 @@ $(document).ready(function(){
     pixbt.addEventListener('click', function(e){
         e.preventDefault();
        modCartao.style.display='none';
-       pixbt.style.borderBottom='1px solid #4aa3e5';
+       pixbt.style.borderBottom='2px solid #4aa3e5';
        pixbt.style.fontWeight='600';
        cartaobt.style.borderBottom='none';
        boletobt.style.borderBottom='none';
@@ -158,7 +158,7 @@ $(document).ready(function(){
     saldobt.addEventListener('click', function(e){
         e.preventDefault();
        modCartao.style.display='none';
-       saldobt.style.borderBottom='1px solid #4aa3e5';
+       saldobt.style.borderBottom='2px solid #4aa3e5';
        saldobt.style.fontWeight='600';
        pixbt.style.borderBottom='none';
        cartaobt.style.borderBottom='none';
@@ -186,7 +186,7 @@ var taboutroprod=document.querySelector("#tboutrosp");
 investimentohora.addEventListener('click', function(e){
     e.preventDefault();
     tabinvesthora.style.display='inline-table';
-     investimentohora.style.borderBottom='1px solid #4aa3e5';
+     investimentohora.style.borderBottom='2px solid #4aa3e5';
      investimentohora.style.fontWeight='600';
      outroprod.style.fontWeight='100';
    taboutroprod.style.display='none';
@@ -199,7 +199,7 @@ investimentohora.addEventListener('click', function(e){
 outroprod.addEventListener('click', function(e){
     e.preventDefault();
     tabinvesthora.style.display='none';
-   outroprod.style.borderBottom='1px solid #4aa3e5';
+   outroprod.style.borderBottom='2px solid #4aa3e5';
    outroprod.style.fontWeight='600';
    investimentohora.style.fontWeight='100';
    taboutroprod.style.display='inline-table';
@@ -224,7 +224,7 @@ $(document).ready(function(){
         e.preventDefault();
         formempresa.style.display='flex';
         formcert.style.display='none';
-        btnacessos.style.borderBottom='1px solid #4aa3e5';
+        btnacessos.style.borderBottom='2px solid #4aa3e5';
         btnacessos.style.fontWeight='600';
         btncert.style.fontWeight='100';
         btncert.style.border='none';
@@ -237,7 +237,7 @@ $(document).ready(function(){
         e.preventDefault();
         formempresa.style.display='none';
         formcert.style.display='block';
-        btncert.style.borderBottom='1px solid #4aa3e5';
+        btncert.style.borderBottom='2px solid #4aa3e5';
         btncert.style.fontWeight='600';
         btnacessos.style.fontWeight='100';
         btnacessos.style.border='none';
@@ -275,7 +275,7 @@ $(document).ready(function(){
         pisCtps.style.display='none';
         descontos.style.display='none';
 
-        btnDadosCadastrais.style.borderBottom='1px solid #4aa3e5';
+        btnDadosCadastrais.style.borderBottom='2px solid #4aa3e5';
         btnDadosCadastrais.style.fontWeight='600';
         btnSalarios.style.fontWeight='100';
         btnHorarios.style.fontWeight='100';
@@ -300,7 +300,7 @@ $(document).ready(function(){
         descontos.style.display='none';
 
         btnDadosCadastrais.style.border='none';
-        btnSalarios.style.borderBottom='1px solid #4aa3e5';
+        btnSalarios.style.borderBottom='2px solid #4aa3e5';
         btnSalarios.style.fontWeight='600';
         btnHorarios.style.border='none';
         btnSindicato.style.border='none';
@@ -323,7 +323,7 @@ $(document).ready(function(){
         descontos.style.display='none';
 
         btnDadosCadastrais.style.border='none';
-        btnHorarios.style.borderBottom='1px solid #4aa3e5';
+        btnHorarios.style.borderBottom='2px solid #4aa3e5';
         btnHorarios.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnSindicato.style.border='none';
@@ -347,7 +347,7 @@ $(document).ready(function(){
         descontos.style.display='none';
 
         btnDadosCadastrais.style.border='none';
-        btnSindicato.style.borderBottom='1px solid #4aa3e5';
+        btnSindicato.style.borderBottom='2px solid #4aa3e5';
         btnSindicato.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
@@ -371,7 +371,7 @@ $(document).ready(function(){
         descontos.style.display='none';
 
         btnDadosCadastrais.style.border='none';
-        btnPis.style.borderBottom='1px solid #4aa3e5';
+        btnPis.style.borderBottom='2px solid #4aa3e5';
         btnPis.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
@@ -394,7 +394,7 @@ $(document).ready(function(){
         descontos.style.display='flex';
 
         btnDadosCadastrais.style.border='none';
-        btnDesconto.style.borderBottom='1px solid #4aa3e5';
+        btnDesconto.style.borderBottom='2px solid #4aa3e5';
         btnDesconto.style.fontWeight='600';
         btnSalarios.style.border='none';
         btnHorarios.style.border='none';
@@ -427,7 +427,7 @@ $(document).ready(function(){
        
 
         atestadobtn.style.border='none';
-        btneventos.style.borderBottom='1px solid #4aa3e5';
+        btneventos.style.borderBottom='2px solid #4aa3e5';
         btneventos.style.fontWeight='600';
         atestadobtn.style.fontWeight='100';
         consultabtn.style.fontWeight='100';
@@ -443,7 +443,7 @@ $(document).ready(function(){
         tabelaconsultaf.style.display='none';
        
 
-        atestadobtn.style.borderBottom='1px solid #4aa3e5';
+        atestadobtn.style.borderBottom='2px solid #4aa3e5';
         atestadobtn.style.fontWeight='600';
         btneventos.style.borderBottom='none';
         consultabtn.style.border='none';
@@ -462,7 +462,7 @@ $(document).ready(function(){
 
         atestadobtn.style.border='none';
         btneventos.style.borderBottom='none';
-        consultabtn.style.borderBottom='1px solid #4aa3e5';
+        consultabtn.style.borderBottom='2px solid #4aa3e5';
         consultabtn.style.fontWeight='600';
         atestadobtn.style.fontWeight='100';
         btneventos.style.fontWeight='100';
@@ -619,7 +619,7 @@ $(document).ready(function(){
        
 
         btnEntradas.style.border='none';
-        btnSaidas.style.borderBottom='1px solid #4aa3e5';
+        btnSaidas.style.borderBottom='2px solid #4aa3e5';
         btnSaidas.style.fontWeight='600';
         btnEntradas.style.fontWeight='100';
        
@@ -634,7 +634,7 @@ $(document).ready(function(){
        
        
 
-        btnEntradas.style.borderBottom='1px solid #4aa3e5';
+        btnEntradas.style.borderBottom='2px solid #4aa3e5';
         btnEntradas.style.fontWeight='600';
         btnSaidas.style.fontWeight='100';
         btnSaidas.style.borderBottom='none';
@@ -663,7 +663,7 @@ $(document).ready(function(){
        
 
         btnUltimasEm.style.border='none';
-        btnImportar.style.borderBottom='1px solid #4aa3e5';
+        btnImportar.style.borderBottom='2px solid #4aa3e5';
         btnImportar.style.fontWeight='600';
         btnUltimasEm.style.fontWeight='100';
        
@@ -678,7 +678,7 @@ $(document).ready(function(){
        
        
 
-        btnUltimasEm.style.borderBottom='1px solid #4aa3e5';
+        btnUltimasEm.style.borderBottom='2px solid #4aa3e5';
         btnUltimasEm.style.fontWeight='600';
         btnImportar.style.fontWeight='100';
         btnImportar.style.borderBottom='none';
@@ -718,7 +718,7 @@ $(document).ready(function(){
         btnavulsos.style.border='none';
         btncredito.style.border='none';
         btnhistorico.style.border='none';
-        btnmensalidade.style.borderBottom='1px solid #4aa3e5';
+        btnmensalidade.style.borderBottom='2px solid #4aa3e5';
         btnmensalidade.style.fontWeight='600';
         menuFinanceiro.style.height='auto';
         metodosPagamento.style.marginTop='0px';
@@ -740,7 +740,7 @@ $(document).ready(function(){
        
         btnavulsos.style.border='none';
         btncredito.style.border='none';
-        btnhistorico.style.borderBottom='1px solid #4aa3e5';
+        btnhistorico.style.borderBottom='2px solid #4aa3e5';
         btnhistorico.style.fontWeight='600';
         btnmensalidade.style.borderBottom='none';
         menuFinanceiro.style.height='auto';
@@ -761,7 +761,7 @@ $(document).ready(function(){
         credito.style.display='none';
         saldoc.style.display='none';
        
-        btnavulsos.style.borderBottom='1px solid #4aa3e5';
+        btnavulsos.style.borderBottom='2px solid #4aa3e5';
         btnavulsos.style.fontWeight='600';
         btncredito.style.fontWeight='100';
         btnhistorico.style.fontWeight='100';
@@ -785,7 +785,7 @@ $(document).ready(function(){
         saldoc.style.display='block';
        
         btnavulsos.style.border='none';
-        btncredito.style.borderBottom='1px solid #4aa3e5';
+        btncredito.style.borderBottom='2px solid #4aa3e5';
         btncredito.style.fontWeight='600';
         btnavulsos.style.fontWeight='100';
 
@@ -860,7 +860,7 @@ $(document).ready(function(){
         aluguel.style.display='none';
        
         btnLocacao.style.border='none';
-        btnVendas.style.borderBottom='1px solid #4aa3e5';
+        btnVendas.style.borderBottom='2px solid #4aa3e5';
         btnVendas.style.fontWeight='600';
         btnLocacao.style.fontWeight='100';
        
@@ -873,7 +873,7 @@ $(document).ready(function(){
         e.preventDefault();
         venda.style.display='none';
         aluguel.style.display='block';
-        btnLocacao.style.borderBottom='1px solid #4aa3e5';
+        btnLocacao.style.borderBottom='2px solid #4aa3e5';
         btnLocacao.style.fontWeight='600';
         btnVendas.style.fontWeight='100';
         btnVendas.style.borderBottom='none';

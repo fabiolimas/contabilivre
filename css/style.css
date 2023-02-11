@@ -5,6 +5,7 @@ body{
     font-family:'Poppins', sans-serif;
     background: #f2fcf3;
     height: 128vh;
+  
 }
 
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
@@ -21,6 +22,9 @@ body{
     
     width: 105%;
 
+}
+.col.col-md-10.enderecofiscal {
+    margin-left: 13%;
 }
 .iconeanexo {
     display: flex;
@@ -45,6 +49,7 @@ body{
 }
 .closeanexo {
     margin-left: -40px;
+    width: auto;
 }
 p.gray.dataanexo {
     display: flex;
@@ -324,7 +329,7 @@ color: #4FCE66;
     gap: 8px;
     width: 235px;
     height: 38px;
-    border: 1px solid #4AA3E5 !important;
+    border: 2px solid #4aa3e5 !important;
     border-radius: 4px;
     font-family: 'Inter';
     font-style: normal;
@@ -461,6 +466,7 @@ header, .navbar{
 nav.navbar.navbar-expand.pagamentos {
     background: #fff;
     box-shadow: none;
+   
 }
 .gray{
     color: #868E96;
@@ -487,7 +493,7 @@ nav.navbar.navbar-expand.pagamentos {
     margin-left: 18px;
 }
 #linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn{
-    border-bottom: 1px solid #4aa3e5;
+    border-bottom: 2px solid #4aa3e5;
 }
 #salario, #horarios, #sindicato, #descontosProventos, #pisctps{
     display: none;
@@ -776,7 +782,7 @@ height: 30px;
 
 /* Primária / Main */
 
-border: 1px solid #4AA3E5;
+border: 2px solid #4aa3e5;
 border-radius: 4px;
 
 }.aluguel{
@@ -786,7 +792,7 @@ border-radius: 4px;
     margin-top: 0;
 }
 #saidasBtn, #vendasBtn{
-    border-bottom:1px solid #4aa3e5;
+    border-bottom:2px solid #4aa3e5;
 
 }
 nav.navbar.navbar-expand.nfs {
@@ -936,6 +942,9 @@ border-radius: 8px;
     font-size: 18px;
     line-height: 18px;
     color: #212529;
+}
+.row.filtros.d-flex.justify-content-center {
+    margin-bottom: 19px;
 }
 .arquivos .gray, .arquivosm .gray{
     font-size: 10px;
@@ -1280,6 +1289,9 @@ p.titulosecaos {
     position: absolute;
     left: 499px;
 }
+.col.col-md-10.centraldocumentos {
+    margin-left: 15%;
+}
 button.btn.btn-success.successnf {
     display: flex;
     flex-direction: row;
@@ -1316,7 +1328,7 @@ color: #fff;
     /* float: right; */
     top: -19px;
     color: #fff;
-    right: -61px;
+    right: -36px;
     position: absolute;
 }
 a.btn.btn-primary.btaddrecisao {
@@ -1765,7 +1777,7 @@ span.numero.btn.btn-primary.inativo {
     padding: 32px;
     gap: 32px;
     position: absolute;
-    width: auto !important;
+    width: auto ;
     height: auto;
      top: 304px;
     background: #FFFFFF;
@@ -2106,6 +2118,7 @@ th {
 }
 table.table {
     font-size: 14px;
+   
 }
 .row.inputsr {
     
@@ -2432,9 +2445,9 @@ a.dropdown-item {
     border-bottom: 1px solid rgba(74, 163, 229, 0.2);
     color: #868E96;
     font-size: 12px;
-    margin: 5px;
-    width:inherit;
-    margin-left: 6px;
+    /* margin: 5px; */
+    /* width: inherit; */
+    /* margin-left: 6px; */
     transition: .3s;
 }
 a.dropdown-item img {
@@ -2675,7 +2688,7 @@ color: #1C6A00;
 }
 .col-md-9.btnreservah {
     position: absolute;
-    right: 96px;
+    right: -137px;
     /*top: 258px;*/
 }
 
@@ -2933,7 +2946,7 @@ gap: 32px;
 }
 .visualizacao {
     position: absolute;
-    right: 166px;
+    right: 199px;
     font-size: 12px;
 }
 .arquivosm{
@@ -3481,7 +3494,7 @@ flex-grow: 0;
     line-height: 24px;
     color: #343A40 !important;
     left: 440px;
-    margin-left: 334px;
+    margin-left: 367px;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: -31px;
@@ -3552,7 +3565,7 @@ background: #FFFFFF;
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 16px;
-width: 78%;
+width: 81%;
 }
 .planoatual{
     display: flex;
@@ -3780,7 +3793,7 @@ padding: 32px;
     
     gap: 24px;
     position: absolute;
-    width: 79%;
+    width: 81%;
     height: auto;
     left: 280px;
     top: 232px;
@@ -3829,7 +3842,7 @@ p.titulosecao.titimport {
     margin-left: -10px;
 }
 #importarBtn, #mensalidadeBtn{
-    border-bottom:1px solid #4aa3e5;
+    border-bottom:2px solid #4aa3e5;
 }
 table.table.ultimasEmissoes {
     margin-top: 54px;
@@ -4083,7 +4096,7 @@ nav.col-md-2.d-md-block.bg-light.mt-5.sidebar {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 24px;
+    
 }
 li.nav-item img {
    
@@ -5790,104 +5803,111 @@ z-index: 999;
     }
     .dropdown.addevento.eventos {
     right: -168px;
-}
-.col-md-11.tabelasect.mb-5.p-0.pb-2.recisao {
-    width: 93%;
-}
-.dropdown.m-3.addrecisao.recisao {
-    right: -183px;
-}
-.col-md-11.tabelasect.mb-5.recisao {
-    width: 93%;
-}
-.col-md-11.tabelasect.mb-5.p-0.pb-2.folhapagamento {
-    width: 93%;
-}
-.col-md-11.tabelasect.mt-2.mb-5.p-0.pb-2.holerite {
-    width: 93%;
-}
-.dropdown.m-3.addevento.holeritswitch {
-    right: -228px;
-}
-.col-md-11.tabelasect.mb-5.folhaponto {
-    width: 93%;
-}
-.col-md-11.tabelasect.mb-5.meuscolaboradores {
-    width: 93%;
-}
-li.nav-item.filter {
- 
-    font-size: 9px;
-}
-li.nav-item.filtera {
-  
-    width: auto;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.recisao {
+        width: 93%;
+    }
+    .dropdown.m-3.addrecisao.recisao {
+        right: -183px;
+    }
+    .col-md-11.tabelasect.mb-5.recisao {
+        width: 93%;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.folhapagamento {
+        width: 93%;
+    }
+    .col-md-11.tabelasect.mt-2.mb-5.p-0.pb-2.holerite {
+        width: 93%;
+    }
+    .dropdown.m-3.addevento.holeritswitch {
+        right: -228px;
+    }
+    .col-md-11.tabelasect.mb-5.folhaponto {
+        width: 93%;
+    }
+    .col-md-11.tabelasect.mb-5.meuscolaboradores {
+        width: 93%;
+    }
+    li.nav-item.filter {
+    
+        font-size: 9px;
+    }
+    li.nav-item.filtera {
+    
+        width: auto;
 
-}
-    #iconfiltros{
-        display: block;
-        position: absolute;
-        right: -36px;
-        top: 9px;
-        width: 24px;
-       
     }
-    .col-md-11.tabelasect.p-0.pb-2.mb-5.eventos {
-        width: 93%;
-    }
-    .row.filtros.d-flex.justify-content-center {
-        width: max-content;
-    }
-    .tabelasect {
-   
-        width: 81%;
-       
-    }
-    .titlesection {
- 
-        width: 87%;
-        height: 77px;
-    }
-    .visualizacao {
-      
-        right: 30px;
-       
-    }
-    .col-md-11.tabelasect.mb-5.documentos {
-        width: 94%;
-    }
-    .col-md-11.tabelasect.mb-5.colaboradores {
-        width: 93%;
-    }
-    .row.btnscliente {
-        position: absolute;
-        width: -webkit-fill-available;
-        right: -127px;
-    }
-    p.gray.dataanexo {
-       
-       
-        margin-left: -248px;
-        margin-top: -3px;
+        #iconfiltros{
+            display: block;
+            position: absolute;
+            right: -36px;
+            top: 9px;
+            width: 24px;
         
-    }
-    .botaoanexo {
-       
-        margin-left: -205px;
+        }
+        .col-md-11.tabelasect.p-0.pb-2.mb-5.eventos {
+            width: 93%;
+        }
+        .row.filtros.d-flex.justify-content-center {
+            width: max-content;
+        }
+        .tabelasect {
+    
+            width: 83% !important;
         
-    }
-    .closeanexo {
-        margin-left: -88px;
-    }
-    .row.anexos p {
+        }
+        .titlesection {
+    
+            width: 78% !important;
+            height: 77px;
+        }
+        .col.col-md-10.centraldocumentos {
+            margin-left: 21%;
+        }
+        .plan1 {
+            width: 69% !important;
+        }
+        .col.col-md-10.enderecofiscal {
+            margin-left: 20%;
+        }
+        .visualizacao {
+            right: 132px;
+        }
+        .col-md-11.tabelasect.mb-5.documentos {
+            width: 94%;
+        }
+        .col-md-11.tabelasect.mb-5.colaboradores {
+            width: 93%;
+        }
+        .row.btnscliente {
+            position: absolute;
+            width: -webkit-fill-available;
+            right: -127px;
+        }
+        p.gray.dataanexo {
         
-      
-        font-size: 13px;
-       
-    }
-    .col-md-2.minbusca input, .col-md-2.minbusca i, .formbusca input, .formbusca select, .formbusca img, .formbusca .gray {
-        display: none;
-    }
+        
+            margin-left: -248px;
+            margin-top: -3px;
+            
+        }
+        .botaoanexo {
+        
+            margin-left: -205px;
+            
+        }
+        .closeanexo {
+            margin-left: -88px;
+        }
+        .row.anexos p {
+            
+        
+            font-size: 13px;
+        
+        }
+        .col-md-2.minbusca input, .col-md-2.minbusca i, .formbusca input, .formbusca select, .formbusca img, .formbusca .gray {
+            display: none;
+        }
 }
 @media only screen and (max-width: 1080px){
     .col-md-2.minbusca {
@@ -5911,15 +5931,70 @@ li.nav-item.filtera {
         right: 22px;
     }
 }
-@media only screen and (max-width: 1499px){
+@media only screen and (max-width: 1440px){
     .col-md-9.btnreservah {
        
-        right: -58px;
+        right: -47px;
        
+    }
+    .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
+        width: 65%;
+    }
+    a.btn.btn-success.addmovimentacao {
+     
+        right: -17px;
+    }
+    .gerenciarconta {
+       
+        right: 391px;
+    }
+    .row.btnsfluxoimposto {
+       
+        right: -20px;
+    }
+    p.titulosecao.titnf {
+        margin-left: -144px !important;
+    }
+    .row.btnsimposto {
+        display: flex;
+        right: -14px;
+    }
+    .dropdown.addevento {
+        position: absolute;
+        right: -68px;
+    }
+    .dropdown.addevento.eventos {
+        right: -20px;
+    }
+    .row.btnscliente {
+        right: -23px;
+    }
+    .col-md-11.tabelasect.mb-5.centraldocumentos {
+        width: 88%;
     }
     a.btn.btn-danger.close {
        
         right: 22px;
+    }
+    .titlesection {
+  
+        width: 78%;
+    }
+    .titulosecao, .titulosecaod {
+        margin-left: 392px !important;
+    }
+    .tabelasect {
+       
+        width: 89%;
+        
+    }
+    main.col-md-9.titlesection.full {
+        width: 79%;
+    }
+    .plan1 {
+       
+        width: 79%;
+       
     }
 
 }
