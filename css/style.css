@@ -1632,6 +1632,9 @@ a.btn.btn-primary.addmovimentacao {
     background: #4AA3E5;
     border-radius: 4px;
 }
+table.table.resumo {
+    margin-left: -30px;
+}
 button.btn.gerenciarContas {
     box-sizing: border-box;
     display: flex;
@@ -3565,7 +3568,7 @@ background: #FFFFFF;
 
 box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
 border-radius: 16px;
-width: 81%;
+width: 79%;
 }
 .planoatual{
     display: flex;
@@ -5926,10 +5929,40 @@ z-index: 999;
  
    
 }
-@media only screen and (min-width: 1319px){
+@media only screen and (max-width: 1366px){
     .minbusca {
-        right: 22px;
+        right: 34px !important;
     }
+    .plan1 {
+        width: 77% !important;
+    }
+    main.col-md-9.titlesection.full {
+        width: 77% !important;
+    }
+    main.col-md-9.titlesection {
+        width: 76% !important;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
+        width: 92% !important;
+    }
+    .tabelasect {
+        width:90%  !important;
+    }
+    .titulosecao, .titulosecaod {
+        margin-left: 33% !important;
+    }
+    .col-md-9.btnreservah {
+        right: -81px !important;
+    }
+    .col-md-11.tabelasect.mb-5.centraldocumentos {
+        width: 90% !important;
+    }
+    .dropdown.addrecisao {
+      
+        right: -86px;
+      
+    }
+   
 }
 @media only screen and (max-width: 1440px){
     .col-md-9.btnreservah {
@@ -5981,7 +6014,7 @@ z-index: 999;
         width: 78%;
     }
     .titulosecao, .titulosecaod {
-        margin-left: 392px !important;
+        margin-left: 392px;
     }
     .tabelasect {
        
@@ -6014,6 +6047,7 @@ z-index: 999;
     
         width: 99%;
         
+}
 }
 
 
