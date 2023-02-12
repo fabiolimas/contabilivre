@@ -48,7 +48,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,11 +64,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -290,6 +290,10 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile" style="top: 248px;">
+
+                    <p class="titsubmenu"><a href="eventos.html"><i class="fa fa-chevron-left"></i></a> Adicionar novo atestado médico</p>
+                </div>
                 <div class="container position-relative">
                     <div class="row">
                         <div class="titulotela">
@@ -299,8 +303,8 @@
                             </div>
 
                         </div>
-                        <div class="col col-md-10 addColaborador">
-                            <div class="col-md-11 tabelasect mb-5 " style="width: 97%;">
+                        <div class="col col-md-10 atmobile">
+                            <div class="col-md-11 tabelasect mb-5  colaboradores" >
                                 <form action="#">
                                     <div class="row formempresa">
 
@@ -316,7 +320,7 @@
                                         </div>
 
                                         <div class="col col-md-4 mt-3">
-                                            <input type="text" class="form-control" placeholder="Data">
+                                            <input type="text" class="form-control" placeholder="Data" id="data">
                                         </div>
 
                                         <div class="col col-md-4 mt-3">
@@ -326,7 +330,7 @@
                                             <input type="text" class="form-control" placeholder="CID">
                                         </div>
                                         <div class="col col-md-4 mt-3">
-                                            <input type="text" class="form-control" placeholder="Data">
+                                            <input type="text" class="form-control" placeholder="Data" id="data2">
                                         </div>
 
                                 </form>
@@ -348,23 +352,23 @@
                             <div class="row mt-3">
                                 <p><b>Arquivos enviados</b></p>
                             </div>
-                            <div class="row table-responsive">
+                            <div class="row ">
 
                                 <div class="row anexos">
-                                    <div class="col col-md-1">
+                                    <div class="iconeanexo">
                                         <img src="img/pdficon.png" alt="">
                                     </div>
-                                    <div class="col col-md-5">
+                                    <div class="infoanexo">
                                         <p>Campo para a descrição do documento</p>
                                     </div>
-                                    <div class="col col-md-2"></div>
+                                    
                                     <div class="col col-md-1 me-2">
-                                        <p class="gray">01/02/2020</p>
+                                        <p class="gray dataanexo">01/02/2020</p>
                                     </div>
-                                    <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                    <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
                                     </div>
     
-                                    <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                    <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                 </div>
 
                             </div>
@@ -441,7 +445,24 @@
   
 </body>
 
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+    var data2= document.getElementById('data2');
+    
 
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+
+
+
+var datam = IMask(data, maskOptions);
+var data2m=IMask(data2, maskOptions);
+
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>

@@ -16,12 +16,36 @@ body{
 .dropdown.detalhesrecisao i {
     color: #4aa3e5;
 }
+.col-md-11.tabelasect.mb-5.recisao.add {
+    margin-left: 41% !important;
+    width: 86%;
+}
 .container.slide {
     margin-top: -12px;
     margin-left: -15px;
     
     width: 105%;
 
+}
+.col-md-11.tabelasect.mb-5.recisao {
+    margin-left: 19%;
+    width: 90%;
+}
+.col.col-md-10.evmobile {
+    margin-left: 17%;
+    width: 80%;
+}
+.eventosmobile {
+    display: none;
+}
+.consultaferiasmobile, .atestadomedicomobile{
+    display: none;
+}
+/*.col-md-11.tabelasect.mb-5.colaboradores {
+    width: 91%;
+}*/
+.col.col-md-10.meuscolaboradores {
+    margin-left: 14%;
 }
 .col.col-md-10.enderecofiscal {
     margin-left: 13%;
@@ -492,8 +516,9 @@ nav.navbar.navbar-expand.pagamentos {
     display:block;
     margin-left: 18px;
 }
-#linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn{
+#linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn, #eventosbtnm{
     border-bottom: 2px solid #4aa3e5;
+    font-weight: 600;
 }
 #salario, #horarios, #sindicato, #descontosProventos, #pisctps{
     display: none;
@@ -737,6 +762,9 @@ background: #4AA3E5;
 box-shadow: 0px 25px 60px -10px rgba(28, 39, 49, 0.12);
 border-radius: 100px;
 
+}
+.row.formAddColaborador .switch {
+    width: 268px;
 }
 .mesbtn{
     display: flex;
@@ -2234,7 +2262,7 @@ align-items: center;
 padding: 4px 8px;
 gap: 8px;
 color: #FF8541;
-width: fit-content;
+width: max-content;
 height: 26px;
 font-weight: bold;
 background: rgba(255, 133, 65, 0.2);
@@ -2964,7 +2992,7 @@ padding: 16px;
 gap: 8px;
 
 width: 168px;
-height: 228px;
+height: 238px;
 
 /* Cinza / 100 */
 
@@ -3031,7 +3059,7 @@ a.btn.btn-danger.remover {
     margin-left: -16px;
     position: absolute;
     right: 22px;
-    top: 28px;
+    
 }
 table.table.resumo.dependentes {
  
@@ -3100,6 +3128,47 @@ a.btn.btn-danger.remover i {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+.subtitulomodal {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+}
+.visualizarmodal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    
+    width: 279px;
+    height: 38px;
+    
+    /* Info / Darker */
+    
+    background: #004578 !important;
+    border-radius: 4px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+margin-left: 23px;
+margin-top: 12px;
+}
+
+
+
 }
 a.btn.addnovo.lembrete {
     position: relative;
@@ -4276,6 +4345,33 @@ margin-bottom: 13px;
         background: #fff;
         margin-left: -54px;
     }
+    .col-md-11.tabelasect.mb-5.recisao.add {
+        margin-left: -3% !important;
+        
+    }
+    .chart2 {
+       
+        margin-left: -12px;
+        
+    }
+    .col.col-md-10.evmobile {
+        margin-left: 0; 
+        width: auto;
+        margin-top: 82px !important;
+    }
+    .filters{
+        overflow-x: auto;
+    }
+    .col-md-11.tabelasect.mb-5.colaboradores.car.doc {
+        margin-top: -61px !important;
+    }
+    .col-md-11.tabelasect.p-4.mb-2.mt-3.reservarhorario {
+        margin-left: 193px;
+    }
+    main.col-md-9.titlesection.full {
+    width: -webkit-fill-available !important;
+        margin-left: -21px;
+}
     a.exportarmobile {
         display: flex;
         flex-direction: row;
@@ -4594,6 +4690,8 @@ color: #58C0ED;
     .form-control, .form-select {
        
         width: -webkit-fill-available;
+            font-size: initial;
+            margin-top: 10px;
        
     }
     .produtostabs {
@@ -4648,6 +4746,9 @@ color: #58C0ED;
         left: 267px;
         z-index: 99;
     }
+    .col.col-md-10.enderecofiscal {
+    display: none;
+}
     .titlesection {
         display: flex;
         flex-direction: row;
@@ -4656,9 +4757,9 @@ color: #58C0ED;
         /*padding: 16px;*/
         gap: 16px;
         position: absolute;
-        width: -webkit-fill-available;
+        width: -webkit-fill-available !important;
         height: 72px;
-        left: 24px;
+        left: 2px;
         top: 120px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -4788,7 +4889,7 @@ color: #58C0ED;
         padding-top: 9px;
         margin-left: 6px;
         position: absolute;
-        right: -18px;
+        right: 16px;
     }
     .red {
        
@@ -5050,9 +5151,27 @@ border-radius: 24px;
     .dropdown.addevento {
         right: -39px !important;
         width: 100%;
+        display: none;
     }
     .addColaborador{
         margin-left: 0px;
+    }
+    table.table.eventostable {
+        display: none;
+    }
+    .col-md-11.tabelasect.p-0.pb-2.mb-5.eventos {
+        display: none;
+    }
+    nav.navbar.navbar-expand.eventos {
+        margin-left: 0px !important;
+        margin-top: -28px;
+        display: none;
+    }
+    nav.navbar.navbar-expand.eventosmobile {
+        background: none;
+        box-shadow: none;
+        margin-top: -25px;
+        display: flex;
     }
     .btnscliente{
         margin-top: -12px;
@@ -5094,12 +5213,13 @@ border-radius: 24px;
     }
     
     .row.bts.mt-3 .col-md-12 {
-        margin-left: -16px !important;
+        margin-left: 2px !important;
     }
-    p.titulosecaoc {
+    p.titulosecaoc, .recisaotable {
         
        display: none;
     }
+   
     p.titulosecao {
         
         margin-left: -31px;
@@ -5116,7 +5236,7 @@ border-radius: 24px;
         width: auto;
         height: auto;
         
-        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        
         border-radius: 8px;
     }
     .col.col-md-10.dados-empresa {
@@ -5219,6 +5339,7 @@ border-radius: 24px;
      
         left: 0px !important;
         height: auto !important;
+            width: -webkit-fill-available !important;
     }
     .col-md-9.btnreservah {
         margin-top: 22px;
@@ -5242,7 +5363,7 @@ border-radius: 24px;
         position: absolute;
         width: -webkit-fill-available;
         height: 46px;
-        left: 24px;
+        left: 2px;
         top: 232px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -5303,11 +5424,40 @@ border-radius: 24px;
         margin-left: -262px;
         position: absolute;
         bottom: 25px;
-        right: 6px;
+        right: 10px;
     }
     .row.clientes {
         display: none;
     }
+    .col-md-11.tabelasect.mb-5.centraldocumentos.car {
+        left: -175px;
+        position: absolute;
+        top: 123px;
+        width: -webkit-fill-available;
+    }
+    .col-md-11.tabelasect.mb-5.colaboradores.car {
+        width: -webkit-fill-available !important;
+        left: -34%;
+        position: absolute;
+        top: 123px;
+    }
+    .row.anexosmini {
+       
+        width: 337px;
+       
+    }
+    .uploadmini {
+    
+        width: 318px;
+    
+    }
+    .col-md-11.tabelasect.mb-5.meuscolaboradores.car {
+        width: -webkit-fill-available !important;
+         left: -188px; 
+        position: absolute;
+        top: 290px;
+    }
+    
     p.gray.dataanexo {
         display: flex;
         flex-direction: row;
@@ -5535,7 +5685,7 @@ border-radius: 8px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-padding: 24px 24px 0px;
+padding: 24px 24px 18px;
 
 width: -webkit-fill-available;
 height: auto;
@@ -5549,6 +5699,19 @@ border: 1px solid #DEE2E6;
 box-shadow: 0px 2px 6px rgba(28, 39, 49, 0.08);
 margin-top: 8px;
 
+    }
+    .novoEventoMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 231px;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+        color:  #fff !important;
     }
     .lineinfo{
         display: flex;
@@ -5603,8 +5766,35 @@ justify-content: flex-end;
 align-items: center;
 padding: 0px;
 
-width: 175px;
-height: 52px;
+width: 229px;
+    height: 52px;
+    margin-left: -49px;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.recisao {
+        display: none;
+    }
+    a.dropdown-item.btaddrecisao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 231px;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F8F9FA;
+    }
+    .col-md-11.tabelasect.mb-5.recisao {
+        width: -webkit-fill-available !important;
+        margin-left: -12px;
+        margin-top: 8px;
     }
     .baseitem p{
         font-family: 'Inter';
@@ -5712,7 +5902,7 @@ color: #F8F9FA;
         align-items: center;
         padding: 10px 20px;
         gap: 8px;
-        width: 131.5px;
+        width: auto;
         height: 38px;
         background: #4AA3E5;
         border-radius: 4px;
@@ -5775,9 +5965,18 @@ z-index: 999;
     .modal-footer {
         justify-content: end;
     }
-    .tabelasect {
+    /*.tabelasect {
         width: -webkit-fill-available !important;
+       
       
+    }*/
+    .col-md-11.tabelasect.mb-5.colaboradores {
+        margin-left: -22px;
+        width: -webkit-fill-available !important;
+        margin-top: -4px !important;
+    }
+    .col.col-md-10.atmobile {
+        margin-top: 14px;
     }
     a.btn.btn-primary.reservarreuniaobtn {
         display: flex;
@@ -5800,6 +5999,14 @@ z-index: 999;
     button.btn.btn-primary.headbusca {
         display: none;
     }
+    .col-md-11.tabelasect.mb-5.colaboradores.car {
+        width: 78%;
+        margin-left: 34%;
+    }
+    .titulosecao, .titulosecaod {
+        margin-left: 43% !important;
+        width: auto;
+    }
     nav.navbar.navbar-expand.eventos {
        
         margin-left: 349px;
@@ -5812,6 +6019,7 @@ z-index: 999;
     }
     .dropdown.m-3.addrecisao.recisao {
         right: -183px;
+        display:none;
     }
     .col-md-11.tabelasect.mb-5.recisao {
         width: 93%;
@@ -5841,11 +6049,11 @@ z-index: 999;
 
     }
         #iconfiltros{
-            display: block;
-            position: absolute;
-            right: -36px;
-            top: 9px;
-            width: 24px;
+          display: block;
+    position: absolute;
+    right: -8px;
+    top: 9px;
+    width: 24px;
         
         }
         .col-md-11.tabelasect.p-0.pb-2.mb-5.eventos {
@@ -5856,12 +6064,12 @@ z-index: 999;
         }
         .tabelasect {
     
-            width: 83% !important;
+            width: 83% ;
         
         }
         .titlesection {
     
-            width: 78% !important;
+            width: 78%;
             height: 77px;
         }
         .col.col-md-10.centraldocumentos {
@@ -5937,22 +6145,28 @@ z-index: 999;
         width: 77% !important;
     }
     main.col-md-9.titlesection.full {
-        width: 77% !important;
+        width: 77% ;
     }
     main.col-md-9.titlesection {
-        width: 76% !important;
+        width: 76%;
     }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
-        width: 92% !important;
+        width: 91% !important;
     }
     .tabelasect {
-        width:90%  !important;
+        width:90% ;
     }
     .titulosecao, .titulosecaod {
-        margin-left: 33% !important;
+        margin-left: 33% ;
+        width: auto;
     }
     .col-md-9.btnreservah {
-        right: -81px !important;
+       
+        right: -49px !important;
+        /* top: 258px; */
+    }
+    .col-md-9.btnreservah {
+        right: -66px !important;
     }
     .col-md-11.tabelasect.mb-5.centraldocumentos {
         width: 90% !important;
@@ -5961,6 +6175,9 @@ z-index: 999;
       
         right: -86px;
       
+    }
+    div#cartao .col-md-2 {
+        width: 105px;
     }
    
 }

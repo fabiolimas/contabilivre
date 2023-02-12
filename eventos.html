@@ -31,7 +31,7 @@
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -49,7 +49,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -64,11 +65,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -221,7 +221,7 @@
 
 
                     <div class="col-md-2 minbusca">
-                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                        <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
                         <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
                             class="form-control" placeholder="Pesquisar">
                     </div>
@@ -232,7 +232,7 @@
                         <a href="meus-colaboradores.html">Meus colaboradaores</a> <i
                             class="fa fa-chevron-right"></i>Eventos
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -297,6 +297,66 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu">Eventos </span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+            <a class="dropdown-item" href="meus-colaboradores.html">
+
+                Agenda
+            </a>
+
+
+            <a class="dropdown-item" href="colaboradores.html">
+
+                Colaboradores
+            </a>
+
+
+            <a class="dropdown-item" href="documentos.html">
+
+                Documentos
+            </a>
+
+            <a class="dropdown-item" href="eventos.html">
+
+                Eventos
+            </a>
+
+            <a class="dropdown-item" href="recisao.html">
+
+                Rescisão
+            </a>
+
+            <a class="dropdown-item" href="folha-de-pagamento.html">
+
+                Folha de pagamento
+            </a>
+
+            <a class="dropdown-item" href="holerite.html">
+
+                Holerite
+            </a>
+
+            <a class="dropdown-item" href="folha-de-ponto.html" style="border:none">
+
+                Folha de ponto
+            </a>
+
+
+
+
+
+        </div>
+
+    </div>
+    
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
@@ -304,19 +364,29 @@
                     <p><b>Eventos</b></p>
                 </div>
                 <div class="col-md-9">
+                    <div class="dropdown  botoesmobile">
 
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            <img src="img/botoesmobile.png" alt="">
+                        </button>
+                        <div class="dropdown-menu clientes" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="evento.html"><i class="fa fa-volume-down"></i>Evento</a>
+                            <a class="dropdown-item" href="atestado.html"><i class="fa fa-desktop"></i>Atestado
+                                Médico</a>
+                           
+
+                        </div>
+                    </div>
                     <div class="dropdown addevento eventos">
 
-                        <button class="btn btn-primary dropdown-toggle" type="button"
-                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Adicionar novos
                         </button>
                         <div class="dropdown-menu eventosdrop" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="evento.html"><i
-                                    class="fa fa-volume-down"></i>Evento</a>
-                            <a class="dropdown-item" href="atestado.html"><i
-                                    class="fa fa-desktop"></i>Atestado
+                            <a class="dropdown-item" href="evento.html"><i class="fa fa-volume-down"></i>Evento</a>
+                            <a class="dropdown-item" href="atestado.html"><i class="fa fa-desktop"></i>Atestado
                                 Médico</a>
 
                         </div>
@@ -342,465 +412,789 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-        <div class="col col-md-10 addColaborador eventos">
-            <div class="col-md-11 tabelasect p-0 pb-2 mb-5  eventos">
+                <div class="col-md-12">
 
-           
-                <div class="row table-responsive">
-                    <table class="table eventostable">
-                        <thead class="">
-                            <tr class="gradient">
-                                <th scope="col" style="width: 272px;
-                                height: 52px;" >Funcionário</th>
-                                <th scope="col" style="width: 272px;
+                    <nav class="navbar navbar-expand eventosmobile">
+                        <ul class="metodospag navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item"><a href="#" class="nav-link" id="eventosbtnm">Eventos em geral</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="atestadobtnm">Atestado médico</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="consultabtnm">Consulta de
+                                    férias</a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row countpage" style="        margin-top: -7px;
+                margin-bottom: -14px;">
+                    <div class="basetitle">
+                        <div class="itemlabel">
+                            <p>1 - 5 de 16 resultados</p>
+                        </div>
+                    </div>
+                    <div class="selectpage">
+                        <div class="basetitlepage">
+                            <p>Página</p>
+                        </div>
+                        <select class="basetitleselect">
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="eventosgeralmobile">
+
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Evento</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="finalizado">Adiantamento salarial</span>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <div class="dropdown  detalhesrecisao">
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detalhes"
+                                        style="border:none;"><img src="img/detalhes.png">Ver detalhes</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Evento</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="rlocal">Comissão</span>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <div class="dropdown  detalhesrecisao">
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detalhes"
+                                        style="border:none;"><img src="img/detalhes.png">Ver detalhes</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="atestadomedicomobile">
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Tipo</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="rcorreio">Acidente</span>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Qtd. de horas</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00:00:0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <div class="dropdown  detalhesrecisao">
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detalhes"
+                                        style="border:none;"><img src="img/detalhes.png">Ver detalhes</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Tipo</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="rcorreio">Acidente</span>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Qtd. de horas</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00:00:0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <div class="dropdown  detalhesrecisao">
+
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detalhes"
+                                        style="border:none;"><img src="img/detalhes.png">Ver detalhes</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="consultaferiasmobile">
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>CPF</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>000.000.000.-0</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Vencimento</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Situação</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="finalizado">Em dia</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tablemobile ">
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>CPF</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>000.000.000.-0</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Funcionário</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>Nome completo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Vencimento</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Situação</p>
+                        </div>
+                        <div class="baseitem">
+                            <span class="rcorreio">Atrasada</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-md-10 addColaborador eventos">
+                <div class="col-md-11 tabelasect p-0 pb-2 mb-5  eventos">
+
+
+                    <div class="row table-responsive">
+                        <table class="table eventostable">
+                            <thead class="">
+                                <tr class="gradient">
+                                    <th scope="col" style="width: 272px;
+                                height: 52px;">Funcionário</th>
+                                    <th scope="col" style="width: 272px;
                                 height: 52px;">Evento</th>
-                                <th scope="col" style="width: 272px;
+                                    <th scope="col" style="width: 272px;
                                 height: 52px;">Data</th>
-                                <th scope="col" style="width: 88px;
+                                    <th scope="col" style="width: 88px;
                                 height: 52px;
                                 ">Ação</th>
 
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
 
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='finalizado'>Adiantamento salarial</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='finalizado'>Adiantamento salarial</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rlocal'>Comissão</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rlocal'>Comissão</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='remail'>Plano de saúde</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='remail'>Plano de saúde</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='reembolso'>Reembolso</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='reembolso'>Reembolso</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='plr'>PLR</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='plr'>PLR</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='diastrabalhados'>Dias trabalhados intermitente</span></td>
-                                <td>00/00/0000</td>
-                                <td>
-                                    <div class="dropdown m-3 detalhesrecisao">
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='diastrabalhados'>Dias trabalhados intermitente</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>
+                                        <div class="dropdown m-3 detalhesrecisao">
 
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="true">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" style="border:none;" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#detalhes"><img src="img/detalhes.png">Ver
-                                                Detalhes</a>
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" style="border:none;" href="#"
+                                                    data-bs-toggle="modal" data-bs-target="#detalhes"><img
+                                                        src="img/detalhes.png">Ver
+                                                    Detalhes</a>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
+                                    </td>
 
-                            </tr>
-                          
-        
+                                </tr>
 
 
-                    </table>
 
-                    <!--tabela atestado medico-->
 
-                    <table class="table atestadoTable">
-                        <thead class="">
-                            <tr class="gradient">
-                                <th scope="col" style="width: 240px;
+                        </table>
+
+                        <!--tabela atestado medico-->
+
+                        <table class="table atestadoTable">
+                            <thead class="">
+                                <tr class="gradient">
+                                    <th scope="col" style="width: 240px;
                                 height: 52px;">Funcionário</th>
-                                <th scope="col" style="width: 102px;
+                                    <th scope="col" style="width: 102px;
                                 height: 52px;">Tipo</th>
-                                <th scope="col" style="width: 112px;
+                                    <th scope="col" style="width: 112px;
                                 height: 52px;">Data</th>
-                                <th scope="col" style="width: 144px;
+                                    <th scope="col" style="width: 144px;
                                 height: 52px;">Qtd. de horas</th>
-                                <th scope="col" style="width: 88px;
+                                    <th scope="col" style="width: 88px;
                                 height: 52px;">Ação</th>
 
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
 
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                        title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>00/00/0000</td>
+                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
+                                            title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                        title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>00/00/0000</td>
+                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
+                                            title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                        title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>00/00/0000</td>
+                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
+                                            title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                        title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>00/00/0000</td>
+                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
+                                            title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">Nome completo</td>
-                                <td><span class='rcorreio'>Férias</span></td>
-                                <td>00/00/0000</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
-                                        title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Nome completo</td>
+                                    <td><span class='rcorreio'>Férias</span></td>
+                                    <td>00/00/0000</td>
+                                    <td>00/00/0000</td>
+                                    <td><a href="#" data-bs-toggle="modal" data-bs-target="#detalhesAtestado"
+                                            title="Detalhes"><i class="fas fa-ellipsis-v"></i></a></td>
 
-                            </tr>
+                                </tr>
 
 
 
-                    </table>
+                        </table>
 
-                    <!--tabela consulta de ferias-->
+                        <!--tabela consulta de ferias-->
 
-                    <table class="table consultaFerias">
-                        <thead class="">
-                            <tr class="gradient">
-                                <th scope="col" style="width: 226px;
+                        <table class="table consultaFerias">
+                            <thead class="">
+                                <tr class="gradient">
+                                    <th scope="col" style="width: 226px;
                                 height: 52px;">CPF</th>
-                                <th scope="col" style="width: 226px;
+                                    <th scope="col" style="width: 226px;
                                 height: 52px;
                                 ">Funcionário</th>
-                                <th scope="col" style="width: 226px;
+                                    <th scope="col" style="width: 226px;
                                 height: 52px;
                                 ">Vencimento</th>
-                                <th scope="col" style="width: 226px;
+                                    <th scope="col" style="width: 226px;
                                 height: 52px;
                                 ">Situação</th>
 
 
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
 
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='finalizado'>Em dia</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='finalizado'>Em dia</span></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='finalizado'>Em dia</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='finalizado'>Em dia</span></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='finalizado'>Em dia</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='finalizado'>Em dia</span></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='rcorreio'>Atrasada</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='rcorreio'>Atrasada</span></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='rcorreio'>Atrasada</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='rcorreio'>Atrasada</span></td>
 
-                            </tr>
-                            <tr>
-                                <td class="ps-3">000.000.000-00</td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">000.000.000-00</td>
 
-                                <td>Nome completo</td>
-                                <td>00/00/0000</td>
-                                <td><span class='rcorreio'>Atrasada</span></td>
+                                    <td>Nome completo</td>
+                                    <td>00/00/0000</td>
+                                    <td><span class='rcorreio'>Atrasada</span></td>
 
-                            </tr>
-
-
+                                </tr>
 
 
-                    </table>
-                    <nav aria-label="Page navigation" class="paginacao mt-5">
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link pag-item-align" href="#"><</a></li>
-                          <li class="page-item active"><a class="page-link pag-item-align" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align disabled" href="#">...</a></li>
-                          <li class="page-item"><a class="page-link pag-item-align" href="#">></a></li>
-                          
-                        </ul>
-                      </nav>
+
+
+                        </table>
+                        <nav aria-label="Page navigation" class="paginacao mt-5">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">
+                                        <</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link pag-item-align" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align disabled" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link pag-item-align" href="#">></a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
-               
             </div>
-        </div>
 
 
 
 
-        <!--Modal detalhes-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes"
-            data-bs-backdrop="static" style="--bs-modal-width: 888px;
+            <!--Modal detalhes-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes"
+                data-bs-backdrop="static" style="--bs-modal-width: 888px;
     --bs-modal-height: 360px;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nome do funcionário</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Nome do funcionário</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
 
-                        <p><b>Informações pessoais</b></p>
+                            <p><b>Informações pessoais</b></p>
 
-                        <div class="row">
+                            <div class="row">
 
-                            <table class="table resumo">
-                                <tr>
-                                    <td class="titresumo">Evento</td>
-                                    <td class="titresumo">Data</td>
-                                </tr>
-                                <tr>
-                                    <td class="contentresumo">Nome do evento</td>
-                                    <td class="contentresumo"> 00/00/0000</td>
-                                </tr>
-                            </table>
+                                <table class="table resumo">
+                                    <tr>
+                                        <td class="titresumo">Evento</td>
+                                        <td class="titresumo">Data</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contentresumo">Nome do evento</td>
+                                        <td class="contentresumo"> 00/00/0000</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="row">
+                                <p class="gray titresumo">Observações</p>
+                                <p class="contentresumo">Campo para observações caso houver</p>
+                            </div>
 
                         </div>
-                        <div class="row">
-                            <p class="gray titresumo">Observações</p>
-                            <p class="contentresumo">Campo para observações caso houver</p>
-                        </div>
 
                     </div>
-
                 </div>
             </div>
-        </div>
 
-        <!--Modal detalhes Atestado-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhesAtestado"
-            data-bs-backdrop="static" style="--bs-modal-width: 888px;
+            <!--Modal detalhes Atestado-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhesAtestado"
+                data-bs-backdrop="static" style="--bs-modal-width: 888px;
             --bs-modal-height: 242px;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nome do funcionário</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Nome do funcionário</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
 
-                        <p><b>Informações pessoais</b></p>
+                            <p><b>Informações pessoais</b></p>
 
-                        <div class="row">
+                            <div class="row">
 
-                            <table class="table resumo">
-                                <tr class="gradient">
-                                    <td class="gray titresumo">Tipo</td>
-                                    <td class="gray titresumo">Data</td>
-                                    <td class="gray titresumo">Quantidade de horas</td>
-                                    <td class="gray titresumo">CID</td>
-                                </tr>
-                                <tr>
-                                    <td class="contentresumo">Tipo de atestado</td>
-                                    <td class="contentresumo"> 00/00/0000</td>
-                                    <td class="contentresumo"> 00:00</td>
-                                    <td class="contentresumo"> 000</td>
-                                </tr>
-                            </table>
+                                <table class="table resumo">
+                                    <tr class="gradient">
+                                        <td class="gray titresumo">Tipo</td>
+                                        <td class="gray titresumo">Data</td>
+                                        <td class="gray titresumo">Quantidade de horas</td>
+                                        <td class="gray titresumo">CID</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contentresumo">Tipo de atestado</td>
+                                        <td class="contentresumo"> 00/00/0000</td>
+                                        <td class="contentresumo"> 00:00</td>
+                                        <td class="contentresumo"> 000</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <div class="row">
+                                <p class="gray titresumo">Observações</p>
+                                <p class="contentresumo">Campo para observações caso houver</p>
+                            </div>
 
                         </div>
-                        <div class="row">
-                            <p class="gray titresumo">Observações</p>
-                            <p class="contentresumo">Campo para observações caso houver</p>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Continuar</button>
                         </div>
-
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <!--Modal avaliaçao 1-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                            melhor.
-                        </p>
-                        <img src="img/avaliações.png" alt="Avaliacoes">
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
+            <!--Modal avaliaçao 1-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
+                                melhor.
+                            </p>
+                            <img src="img/avaliações.png" alt="Avaliacoes">
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Continuar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 </body>
 

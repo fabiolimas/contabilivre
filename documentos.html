@@ -293,9 +293,81 @@
 
             </div>
         </div>
+        <div class="submenumobile">
+
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="titsubmenu">Documentos </span>
+                 <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                
+                    <a class="dropdown-item" href="meus-colaboradores.html">
+    
+                        Agenda
+                    </a>
+                
+                
+                    <a class="dropdown-item" href="colaboradores.html">
+    
+                        Colaboradores
+                    </a>
+                
+                
+                    <a class="dropdown-item" href="documentos.html">
+    
+                        Documentos
+                    </a>
+               
+                    <a class="dropdown-item" href="eventos.html">
+    
+                        Eventos
+                    </a>
+            
+                    <a class="dropdown-item" href="recisao.html">
+    
+                        Rescisão
+                    </a>
+              
+                    <a class="dropdown-item" href="folha-de-pagamento.html">
+    
+                        Folha de pagamento
+                    </a>
+            
+                    <a class="dropdown-item" href="holerite.html">
+    
+                        Holerite
+                    </a>
+          
+                    <a class="dropdown-item" href="folha-de-ponto.html" style="border:none">
+    
+                        Folha de ponto
+                    </a>
+                
+                
+                
+              
+               
+            </div>
+           
+        </div>
         <div class="container position-relative">
             <div class="row">
                 <div class="titulotela">
+                    <div class="dropdown  botoesmobile">
+
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            <img src="img/botoesmobile.png" alt="">
+                        </button>
+                        <div class="dropdown-menu clientes" aria-labelledby="dropdownMenuButton">
+                            <a href="#" class="exportarmobile" data-bs-toggle="modal"
+                                data-bs-target="#enviarDocumentos"><i class="fa fa-upload"></i> Enviar documento </a>
+
+
+                        </div>
+                    </div>
                     <div class="titulosecao">
                         <p><b>Documentos</b></p>
                     </div>
@@ -308,8 +380,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-10 addColaborador ">
-                    <div class="col-md-11 tabelasect mb-5 documentos">
+                <div class="col col-md-10 meuscolaboradores ">
+                    <div class="col-md-11 tabelasect mb-5 colaboradores car doc">
+                        <div class="filters">
                         <div class="row filtros d-flex justify-content-center">
                             <ul class="nav" style="    margin-left: 21px;">
                                 <li class="nav-item filtera">MANUAL <span class="x">X</span></li>
@@ -322,6 +395,7 @@
 
                             </ul>
                         </div>
+                    </div>
                         <div class="row colabs">
 
                             <div class="col col-md-3 ms-2 mt-2 arquivos">
@@ -491,20 +565,23 @@
                                 <div class="row mt-3">
                                     <p><b>Arquivos enviados</b></p>
                                 </div>
-                                <div class="row table-responsive">
+                                <div class="row ">
 
                                     <div class="row anexos">
-                                        <div class="col col-md-5">
-                                            <p><i class="fa fa-file-csv iconcsv"></i> Campo para a descrição do
-                                                documento</p>
+                                        <div class="iconeanexo">
+                                            <img src="img/pdficon.png" alt="">
                                         </div>
-                                        <div class="col col-md-2">
-                                            <p class="gray">01/02/2020</p>
+                                        <div class="infoanexo">
+                                            <p>Campo para a descrição do documento</p>
                                         </div>
-                                        <div class="col col-md-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                        
+                                        <div class="col col-md-1 me-2">
+                                            <p class="gray dataanexo">01/02/2020</p>
                                         </div>
-
-                                        <div class="col col-md-2"><a href="#" class="btn btn-danger">X</a></div>
+                                        <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
+                                        </div>
+        
+                                        <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                     </div>
 
 

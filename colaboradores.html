@@ -221,7 +221,7 @@
 
 
                     <div class="col-md-2 minbusca">
-                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros" data-bs-toggle="modal" data-bs-target="#filtrom"></a>
                         <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
                             class="form-control" placeholder="Pesquisar">
                     </div>
@@ -301,16 +301,89 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="titsubmenu">Colaboradores </span>
+             <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           
+            
+                <a class="dropdown-item" href="meus-colaboradores.html">
+
+                    Agenda
+                </a>
+            
+            
+                <a class="dropdown-item" href="colaboradores.html">
+
+                    Colaboradores
+                </a>
+            
+            
+                <a class="dropdown-item" href="documentos.html">
+
+                    Documentos
+                </a>
+           
+                <a class="dropdown-item" href="eventos.html">
+
+                    Eventos
+                </a>
+        
+                <a class="dropdown-item" href="recisao.html">
+
+                    Rescisão
+                </a>
+          
+                <a class="dropdown-item" href="folha-de-pagamento.html">
+
+                    Folha de pagamento
+                </a>
+        
+                <a class="dropdown-item" href="holerite.html">
+
+                    Holerite
+                </a>
+      
+                <a class="dropdown-item" href="folha-de-ponto.html" style="border:none">
+
+                    Folha de ponto
+                </a>
+            
+            
+            
+          
+           
+        </div>
+       
+    </div>
+   
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
                 <div class="titulosecao">
                     <p><b>Colaboradores</b></p>
                 </div>
+                <div class="dropdown  botoesmobile">
+
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="img/botoesmobile.png" alt="">
+                    </button>
+                    <div class="dropdown-menu clientes"  aria-labelledby="dropdownMenuButton">
+                       <a href="#" class="exportarmobile" data-bs-toggle="modal" data-bs-target="#importarCadastroMobile"><i class="fas fa-file" ></i> Importar </a>
+                    <a href="adicionar-colaborador.html" class="btn addnovomobile"  >Adicionar novo
+                        </a>
+
+                    </div>
+                </div>
                 <div class="row btnscliente">
 
 
-
+                    
                     <a href="#" class="btn btn-success exportar" data-bs-toggle="modal" data-bs-target="#importCadastro"
                         style="    right: 218px;"><i class="fas fa-file"></i> Importar </a>
                     <a href="adicionar-colaborador.html" class="btn addnovo"
@@ -319,8 +392,23 @@
                     </a>
                 </div>
             </div>
-            <div class="col col-md-10 addColaborador ">
-                <div class="col-md-11 tabelasect  mb-5 colaboradores">
+            <div class="row countpage" style="    margin-top: -6px;">
+                <div class="basetitle">
+                    <div class="itemlabel">
+                        <p>1 - 5 de 16 resultados</p>
+                    </div>
+                </div>
+                <div class="selectpage">
+                    <div class="basetitlepage">
+                        <p>Página</p>
+                    </div>
+                    <select class="basetitleselect">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col col-md-10 meuscolaboradores ">
+                <div class="col-md-11 tabelasect  mb-5 colaboradores car">
 
                     <div class="row colabs">
 
@@ -629,7 +717,7 @@
 
                             <hr class="mt-3">
                             <div class="row table-responsive">
-                                <table class="table resumo dependentes">
+                                <table class="table resumo dependentes position-relative">
                                     <tr>
                                         <td class="gray">Nome</td>
                                         <td class="gray">CPF</td>
@@ -892,23 +980,95 @@
                 </div>
             </div>
         </div>
-        <!--Rodapé
-    <footer>
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+        <!--Modal filtro mobile-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center">Filtro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+
+
+
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
+
+                    </div>
+                    <div class="modal-footer filtro">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Filtrar</button>
+                    </div>
+                </div>
             </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
         </div>
+    </div>
+    <!--Modal enviar arquivos mobile-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="importarCadastroMobile"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title greentitle">Importar cadastro de colaboradores</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="subtitulomodal">Selecione o arquivo formato CSV</div>
+                <button class="visualizarmodal"><img src="img/visualizaiconb.png">Visualizar o modelo</button>
+                <form action="">
+                    <div class="row formempresa">
 
-    </footer>-->
+
+                        <div class="row">
+
+                            <input type="file" name="" id="arquivo" class="d-none">
+                            <label for="arquivo">
+                                <div class="upload">
+                                    <img src="img/uploadico.png" alt="">
+                                    <p><b>Selecionar arquivo</b></p>
+                                    <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="row mt-3">
+                            <p><b>Arquivos enviados</b></p>
+                        </div>
+                        <div class="row table-responsive">
+
+                            <div class="row anexos">
+                                <div class="iconeanexo">
+                                    <img src="img/pdficon.png" alt="">
+                                </div>
+                                <div class="infoanexo">
+                                    <p>Campo para a descrição do documento</p>
+                                </div>
+                                
+                                <div class="col col-md-1 me-2">
+                                    <p class="gray dataanexo">01/02/2020</p>
+                                </div>
+                                <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
+                                </div>
+
+                                <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </div>
+            <div class="modal-footer text-center">
+                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                    aria-label="Close">Continuar</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+ 
 </body>
 
 

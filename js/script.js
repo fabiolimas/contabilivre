@@ -934,3 +934,67 @@ $(document).ready(function(){
         avaliacao.style.display='none';
     });
 });
+
+
+$(document).ready(function(){
+    var btneventos=document.querySelector("#eventosbtnm");
+    var atestadobtn=document.querySelector("#atestadobtnm");
+    var consultabtn=document.querySelector("#consultabtnm");
+
+    var tabelaeventos=document.querySelector('.eventosgeralmobile');
+    var tabelaatestados=document.querySelector('.atestadomedicomobile');
+    var tabelaconsultaf=document.querySelector('.consultaferiasmobile');
+
+    btneventos.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='flow-root';
+        tabelaatestados.style.display='none';
+        tabelaconsultaf.style.display='none';
+       
+
+        atestadobtn.style.border='none';
+        btneventos.style.borderBottom='2px solid #4aa3e5';
+        btneventos.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
+        consultabtn.style.border='none';
+      
+        
+    });
+
+    atestadobtn.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='none';
+        tabelaatestados.style.display='flow-root';
+        tabelaconsultaf.style.display='none';
+       
+
+        atestadobtn.style.borderBottom='2px solid #4aa3e5';
+        atestadobtn.style.fontWeight='600';
+        btneventos.style.borderBottom='none';
+        consultabtn.style.border='none';
+        btneventos.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
+      
+        
+    });
+
+    consultabtn.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='none';
+        tabelaatestados.style.display='none';
+        tabelaconsultaf.style.display='flow-root';
+       
+
+        atestadobtn.style.border='none';
+        btneventos.style.borderBottom='none';
+        consultabtn.style.borderBottom='2px solid #4aa3e5';
+        consultabtn.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        btneventos.style.fontWeight='100';
+      
+        
+    });
+
+
+});

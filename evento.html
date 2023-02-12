@@ -36,8 +36,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,33 +83,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -277,6 +289,10 @@
                 </ul>
 
             </div>
+            <div class="submenumobile" style="top: 248px;">
+
+                <p class="titsubmenu"><a href="eventos.html"><i class="fa fa-chevron-left"></i></a> Adicionar novo evento</p>
+            </div>
             <div class="container position-relative">
                 <div class="titulotela">
 
@@ -294,8 +310,8 @@
 
 
                 </div>
-            <div class="col col-md-10 addColaborador">
-                <div class="col-md-11 tabelasect mb-5 mt-3 folhaponto" >
+            <div class="col col-md-10 evmobile">
+                <div class="col-md-11 tabelasect mb-5 mt-3 colaboradores" >
                     <div class="row formempresa">
 
                         <div class="col col-md-6 mt-3" >
@@ -345,23 +361,23 @@
                             <div class="row mt-3">
                                 <p><b>Arquivos enviados</b></p>
                             </div>
-                            <div class="row table-responsive">
+                            <div class="row">
 
                                 <div class="row anexos">
-                                    <div class="col col-md-1">
+                                    <div class="iconeanexo">
                                         <img src="img/pdficon.png" alt="">
                                     </div>
-                                    <div class="col col-md-5">
+                                    <div class="infoanexo">
                                         <p>Campo para a descrição do documento</p>
                                     </div>
-                                    <div class="col col-md-2"></div>
+                                    
                                     <div class="col col-md-1 me-2">
-                                        <p class="gray">01/02/2020</p>
+                                        <p class="gray dataanexo">01/02/2020</p>
                                     </div>
-                                    <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                    <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
                                     </div>
     
-                                    <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                    <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                 </div>
 
                             </div>
@@ -397,7 +413,43 @@
 
                             </form>
 
-                           
+                            <div class="row">
+                                <p class="tituloevento"><b>Anexar arquivo</b></p>
+                            </div>
+                            <div class="row">
+                                <input type="file" name="" id="arquivo" class="d-none">
+                                <label for="arquivo">
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="row mt-3">
+                                <p><b>Arquivos enviados</b></p>
+                            </div>
+                            <div class="row">
+
+                                <div class="row anexos">
+                                    <div class="iconeanexo">
+                                        <img src="img/pdficon.png" alt="">
+                                    </div>
+                                    <div class="infoanexo">
+                                        <p>Campo para a descrição do documento</p>
+                                    </div>
+                                    
+                                    <div class="col col-md-1 me-2">
+                                        <p class="gray dataanexo">01/02/2020</p>
+                                    </div>
+                                    <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
+                                    </div>
+    
+                                    <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                </div>
+
+                            </div>
+                        </div>
 
                             
                         </div>
@@ -407,7 +459,7 @@
                          
 
                             <div class="col col-md-6 mt-3">
-                                <input type="text" class="form-control" placeholder="Data de início das férias">
+                                <input type="text" class="form-control" placeholder="Data de início das férias" id="data">
                             </div>
                             <div class="col col-md-6 mt-3">
                                 <input type="text" class="form-control" placeholder="Quantidade de dias de férias">
@@ -420,8 +472,42 @@
                             </form>
 
                            
+                            <div class="row">
+                                <p class="tituloevento"><b>Anexar arquivo</b></p>
+                            </div>
+                            <div class="row">
+                                <input type="file" name="" id="arquivo" class="d-none">
+                                <label for="arquivo">
+                                    <div class="upload">
+                                        <img src="img/uploadico.png" alt="">
+                                        <p><b>Selecionar arquivo</b></p>
+                                        <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="row mt-3">
+                                <p><b>Arquivos enviados</b></p>
+                            </div>
+                            <div class="row">
 
-                            
+                                <div class="row anexos">
+                                    <div class="iconeanexo">
+                                        <img src="img/pdficon.png" alt="">
+                                    </div>
+                                    <div class="infoanexo">
+                                        <p>Campo para a descrição do documento</p>
+                                    </div>
+                                    
+                                    <div class="col col-md-1 me-2">
+                                        <p class="gray dataanexo">01/02/2020</p>
+                                    </div>
+                                    <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
+                                    </div>
+    
+                                    <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                </div>
+
+                            </div>
                         </div>
                         <hr class="mt-3">
                         <div class="row bts mt-3">
@@ -432,6 +518,8 @@
 
                             </div>
                         </div>
+                        </div>
+                        
 
 
                     </div>
@@ -495,7 +583,24 @@
             </div>
         
 </body>
+<script src="https://unpkg.com/imask"></script>
+<script>
+    var data = document.getElementById('data');
+   
+    
 
+var maskOptions = {
+  mask: '00/00/0000',
+  
+};
+
+
+
+var datam = IMask(data, maskOptions);
+
+
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

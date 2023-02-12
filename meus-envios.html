@@ -226,6 +226,9 @@
     
     
                     </div>
+                    <div class="col-md-2 minbusca">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                    </div>
                     <div class="formbusca">
                         <div class="pesquisar">
                             <img src="img/lupa.png" alt="">
@@ -303,14 +306,29 @@
           
            
         </div>
+       
     </div>
+   
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
                 <div class="titulosecao">
                     <p><b>Meus Envios</b></p>
                 </div>
+
                 <div class="col-md-9">
+                    <div class="dropdown  botoesmobile">
+
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="img/botoesmobile.png" alt="">
+                        </button>
+                        <div class="dropdown-menu clientes"  aria-labelledby="dropdownMenuButton">
+                           
+                        <a href="#" class="btn addnovomobile" data-bs-toggle="modal" data-bs-target="#enviarArquivosMobile" style="right: 40px;">Enviar arquivos</a>
+    
+                        </div>
+                    </div>
                     <div class="visualizacao" > <span class="gray">Visualizar como:</span> <a
                             href="meus-envios.html"><img src="img/miniatura.png" alt=""></a>
                         <a href="meus-envios-lista.html"><img src="img/lista.png" alt=""></a>
@@ -319,8 +337,23 @@
                     </div>
                 </div>
             </div>
+            <div class="row countpage" style="margin-top: -5px;">
+                <div class="basetitle">
+                    <div class="itemlabel">
+                        <p>1 - 5 de 16 resultados</p>
+                    </div>
+                </div>
+                <div class="selectpage">
+                    <div class="basetitlepage">
+                        <p>Página</p>
+                    </div>
+                    <select class="basetitleselect">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
             <div class="col col-md-10  centraldocumentos">
-                <div class="col-md-11 tabelasect mb-5 centraldocumentos">
+                <div class="col-md-11 tabelasect mb-5 centraldocumentos car">
 
                     <div class="row colabs">
 
@@ -468,7 +501,58 @@
             </div>
 
 
+<!--Modal filtro mobile-->
+<div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+--bs-modal-height: 342px;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center">Filtro</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
 
+                                <div class="row inputs">
+
+
+                                    <div class="col mt-2">
+                                        <div class="pesquisar">
+                                            <img src="img/lupa.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Pesquisar">
+                                        </div>
+                                    </div>
+
+                                    <div class="col mt-2">
+                                        <div class="situacao">
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Situação</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row periodos">
+                                        <div class=" col col-md-5 periodo1 mt-2">
+                                            <img src="img/calendar.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                        </div>
+                                        <span class="gray col col-md-2"> Até</span>
+    
+                                        <div class="periodo2 mt-2 col col-md-5">
+                                            <img src="img/calendar.png" alt="">
+                                            <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="modal-footer filtro">
+                                <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Filtrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             <!--Modal enviar arquivos-->
             <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="enviarArquivos"
@@ -516,6 +600,68 @@
                                             </div>
             
                                             <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                aria-label="Close">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!--Modal enviar arquivos mobile-->
+            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="enviarArquivosMobile"
+                data-bs-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title greentitle">Enviar arquivos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+
+                            <form action="">
+                                <div class="row formempresa">
+
+
+                                    <div class="row">
+
+                                        <input type="file" name="" id="arquivo" class="d-none">
+                                        <label for="arquivo">
+                                            <div class="upload">
+                                                <img src="img/uploadico.png" alt="">
+                                                <p><b>Selecionar arquivo</b></p>
+                                                <p class="gray">Ou arraste o arquivo e solte aqui</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <p><b>Arquivos enviados</b></p>
+                                    </div>
+                                    <div class="row table-responsive">
+
+                                        <div class="row anexos">
+                                            <div class="iconeanexo">
+                                                <img src="img/pdficon.png" alt="">
+                                            </div>
+                                            <div class="infoanexo">
+                                                <p>Campo para a descrição do documento</p>
+                                            </div>
+                                            
+                                            <div class="col col-md-1 me-2">
+                                                <p class="gray dataanexo">01/02/2020</p>
+                                            </div>
+                                            <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
+                                            </div>
+            
+                                            <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                         </div>
 
                                     </div>
