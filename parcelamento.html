@@ -226,6 +226,10 @@
 
 
                     </div>
+                    <div class="col-md-2 minbusca">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                    </div>
+                    
                     <div class="formbusca">
                         <div class="pesquisar">
                             <img src="img/lupa.png" alt="">
@@ -295,9 +299,103 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu"> Parcelamento</span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+           
+                <a class="dropdown-item" href="impostos.html">
+
+                    Guias
+                </a>
+          
+                <a class="dropdown-item" href="parcelamento.html" style="border:none;">
+
+                    Parcelamento
+                </a>
+            
+                
+         
+        </div>
+
+    </div>
+    <div class="row countpage" style="    margin-top: 59px;">
+        <div class="basetitle">
+            <div class="itemlabel">
+                <p>1 - 5 de 16 resultados</p>
+            </div>
+        </div>
+        <div class="selectpage">
+            <div class="basetitlepage">
+                <p>Página</p>
+            </div>
+            <select class="basetitleselect">
+                <option value="">1</option>
+            </select>
+        </div>
+    </div>
+    <div class="tablemobile">
+        <div class="lineinfo">
+            <div class="baseinfo">
+                <p>Tipo de imposto</p>
+            </div>
+            <div class="baseitem">
+                <p>Nome da guia de parcelamento</p>
+            </div>
+        </div>
+        <div class="lineinfo" style="background: #fff;">
+            <div class="baseinfo">
+                <p>Situação</p>
+            </div>
+            <div class="baseitem">
+                <span class="rcorreio">Contabilivre</span>
+            </div>
+        </div>
+        
+     
+    </div>
+    <div class="tablemobile">
+        <div class="lineinfo">
+            <div class="baseinfo">
+                <p>Tipo de imposto</p>
+            </div>
+            <div class="baseitem">
+                <p>Nome da guia de parcelamento</p>
+            </div>
+        </div>
+        <div class="lineinfo" style="background: #fff;">
+            <div class="baseinfo">
+                <p>Situação</p>
+            </div>
+            <div class="baseitem">
+                <span class="remail">Contabilivre</span>
+            </div>
+        </div>
+        
+     
+    </div>
     <div class="container position-relative" style="margin-top: 3px">
         <div class="row">
             <div class="titulotela">
+                <div class="dropdown  botoesmobile">
+
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="img/botoesmobile.png" alt="">
+                    </button>
+                    <div class="dropdown-menu clientes"  aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="exportarmobile" data-bs-toggle="modal" data-bs-target="#solicitaParcelamento"> Solicitar parcelamento </a>
+                     <a href="#" class="btn addnovomobile"  data-bs-toggle="modal"
+                     data-bs-target="#meusParcelamentos">Meus parcelamentos
+                         </a>
+                    </div>
+                </div>
                 <div class="titulosecao">
                     <p><b>Parcelamento</b></p>
                 </div>
@@ -307,7 +405,7 @@
 
 
                 <a href="#" class="btn btn-success " data-bs-toggle="modal"
-                    data-bs-target="#solicitaParcelamento"> Solicitar Parcelamento </a>
+                    data-bs-target="#solicitaParcelamento" > Solicitar Parcelamento </a>
                 <a href="adicionar-colaborador.html" class="btn btn-primary btnparcelamento"
                     style="width: max-content;" data-bs-toggle="modal"
                     data-bs-target="#meusParcelamentos">Meus parcelamentos
@@ -400,6 +498,110 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <div class="row countpage" style="    margin-top: -7px;">
+                            <div class="basetitle">
+                                <div class="itemlabel">
+                                    <p>1 - 5 de 16 resultados</p>
+                                </div>
+                            </div>
+                            <div class="selectpage">
+                                <div class="basetitlepage">
+                                    <p>Página</p>
+                                </div>
+                                <select class="basetitleselect">
+                                    <option value="">1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tablemobile">
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>ID</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>0000000</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo" style="background: #fff;">
+                                <div class="baseinfo">
+                                    <p>Valor total</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>R$0.000,00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>Valor da parcela</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>R$0,00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo" style="background: #fff;">
+                                <div class="baseinfo">
+                                    <p>Nº de parcelas</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>Situação</p>
+                                </div>
+                                <div class="baseitem">
+                                    <span class="finalizado">Ativo</span>
+                                </div>
+                            </div>
+                            
+                         
+                        </div>
+                        <div class="tablemobile">
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>ID</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>0000000</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo" style="background: #fff;">
+                                <div class="baseinfo">
+                                    <p>Valor total</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>R$0.000,00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>Valor da parcela</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>R$0,00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo" style="background: #fff;">
+                                <div class="baseinfo">
+                                    <p>Nº de parcelas</p>
+                                </div>
+                                <div class="baseitem">
+                                    <p>00</p>
+                                </div>
+                            </div>
+                            <div class="lineinfo">
+                                <div class="baseinfo">
+                                    <p>Situação</p>
+                                </div>
+                                <div class="baseitem">
+                                    <span class="rcorreio">Cancelado</span>
+                                </div>
+                            </div>
+                            
+                         
+                        </div>
+                        <div class="tabelaparcelamentos">
                         <div class="row table-responsive">
                             <table class="table resumo">
                                 <thead class="table-dark">
@@ -439,6 +641,7 @@
                                 </tr>
                             </table>
                         </div>
+                    </div>
                         <div class="modal-footer text-center">
                             <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
@@ -543,45 +746,31 @@
             </div>
         </div>
     </div>
-    <!--Modal avaliaçao 1-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+    <!--Modal filtro mobile-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <h5 class="modal-title text-center">Filtro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                        melhor.
-                    </p>
-                    <img src="img/avaliações.png" alt="Avaliacoes">
+
+
+
+                    <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                        class="form-control" placeholder="Pesquisar">
+
                 </div>
-                <div class="modal-footer text-center">
+                <div class="modal-footer filtro">
                     <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                        aria-label="Close">Continuar</button>
+                        aria-label="Close">Filtrar</button>
                 </div>
             </div>
         </div>
     </div>
-    <!--Rodapé
-    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-            </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
-        </div>
-
-    </footer>-->
+</div>
 </body>
 <script src="https://unpkg.com/imask"></script>
 <script>

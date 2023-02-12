@@ -224,7 +224,11 @@
                         </div>
     
     
-    
+                        
+                    </div>
+                    <div class="col-md-2 minbusca">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                       
                     </div>
                     <div class="formbusca">
                         <div class="pesquisar">
@@ -294,6 +298,80 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu"> Folha de Pró-labore</span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+           
+                <a class="dropdown-item" href="socios.html">
+
+                    Sócios cadastrados
+                </a>
+          
+                <a class="dropdown-item" href="folha-de-prolabore.html">
+
+                    Folha de Pró-labore
+                </a>
+            
+                <a class="dropdown-item" href="recibo-de-prolabore.html" style="border:none;">
+
+                    Recibo de Pró-labore
+                </a>
+         
+        </div>
+
+    </div>
+    <div class="row countpage" style="    margin-top: 131px;">
+        <div class="basetitle">
+            <div class="itemlabel">
+                <p>1 - 5 de 16 resultados</p>
+            </div>
+        </div>
+        <div class="selectpage">
+            <div class="basetitlepage">
+                <p>Página</p>
+            </div>
+            <select class="basetitleselect">
+                <option value="">1</option>
+            </select>
+        </div>
+    </div>
+    <div class="tablemobile">
+        <div class="lineinfo">
+            <div class="baseinfo">
+                <p>Tipo</p>
+            </div>
+            <div class="baseitem">
+                <p>Sócio</p>
+            </div>
+        </div>
+        <div class="lineinfo" style="background: #fff;">
+            <div class="baseinfo">
+                <p>Competência</p>
+            </div>
+            <div class="baseitem">
+                <p>Funcionário</p>
+            </div>
+        </div>
+       
+        <div class="lineinfo" >
+            <div class="baseinfo">
+                <p>Ação</p>
+            </div>
+            <div class="baseitem">
+                <a href="#" class="btnVerFolha " data-bs-toggle="modal"
+                data-bs-target="#fPagamento">Ver folha de pagamento</a>
+            </div>
+        </div>
+        
+     
+    </div>
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
@@ -304,7 +382,7 @@
 
             </div>
         <div class="col col-md-10 addColaborador socios">
-            <div class="col-md-11 tabelasect mb-5 p-0 pb-2">
+            <div class="col-md-11 tabelasect mb-5 p-0 pb-2 socios">
                 <div class="row table-responsive">
                     <table class="table ">
                         <thead class="">
@@ -420,6 +498,57 @@
                 </div>
             </div>
         </div>
+         <!--Modal filtro mobile-->
+         <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+         --bs-modal-height: 342px;">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title text-center">Filtro</h5>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                         <div class="modal-body text-center">
+     
+                             <div class="row inputs">
+     
+     
+                                 <div class="col mt-2">
+                                     <div class="pesquisar">
+                                         <img src="img/lupa.png" alt="">
+                                         <input type="text" class="form-control" placeholder="Pesquisar">
+                                     </div>
+                                 </div>
+     
+                                 <div class="col mt-2">
+                                     <div class="situacao">
+                                         <select name="" id="" class="form-select">
+                                             <option value="">Situação</option>
+                                         </select>
+                                     </div>
+                                 </div>
+                                 <div class="row periodos">
+                                     <div class=" col col-md-5 periodo1 mt-2">
+                                         <img src="img/calendar.png" alt="">
+                                         <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                     </div>
+                                     <span class="gray col col-md-2"> Até</span>
+     
+                                     <div class="periodo2 mt-2 col col-md-5">
+                                         <img src="img/calendar.png" alt="">
+                                         <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                     </div>
+                                 </div>
+     
+                             </div>
+                         </div>
+                         <div class="modal-footer filtro">
+                             <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                 aria-label="Close">Filtrar</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
      
 </body>
 

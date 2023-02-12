@@ -37,8 +37,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,33 +84,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -82,175 +94,182 @@
         </div>
     </header>
     <div class="container">
-    <!--Menu lateral-->
-    <aside>
-        <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">
+        <!--Menu lateral-->
+        <aside>
+            <nav class="collapse navbar-collapse d-md-block sidebar" id="navbar-links">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">
 
-                           <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicosa.html">
+                                <img src="img/menu/icons/24/home.png">Início <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicosa.html">
 
-                            <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="endereco-fiscal.html">
+                                <img src="img/menu/icons/24/servicosa.png">Serviços avulsos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="endereco-fiscal.html">
 
-                            <img src="img/menu/icons/24/endereco.png"> Endereço fiscal
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dados-da-empresa.html">
+                                <img src="img/menu/icons/24/endereco.png"> Endereço fiscal
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dados-da-empresa.html">
 
-                            <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="meus-clientes.html">
+                                <img src="img/menu/icons/24/dadosemp.png">Dados da empresa
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meus-clientes.html">
 
-                            <img src="img/menu/icons/24/clientes.png">Meus clientes
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="central-de-documentos.html">
+                                <img src="img/menu/icons/24/clientes.png">Meus clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="central-de-documentos.html">
 
-                            <img src="img/menu/icons/24/centraldoc.png">Central de documentos
-                        </a>
-                    </li>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="meus-colaboradores.html">
+                                <img src="img/menu/icons/24/centraldoc.png">Central de documentos
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="meus-colaboradores.html">
 
-                            <img src="img/menu/icons/24/colaboradoresc.png"> Meus colaboradores
-                        </a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="socios.html">
+                                <img src="img/menu/icons/24/colaboradoresc.png"> Meus colaboradores
+                            </a>
+                        </li>
 
-                            <img src="img/menu/icons/24/socios.png">Sócios
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="impostos.html">
+                        <li class="nav-item">
+                            <a class="nav-link" href="socios.html">
 
-                            <img src="img/menu/icons/24/impostos.png">Impostos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="declaracoes.html">
+                                <img src="img/menu/icons/24/socios.png">Sócios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impostos.html">
 
-                            <img src="img/menu/icons/24/declaracoes.png">Declarações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movimentacoes.html">
+                                <img src="img/menu/icons/24/impostos.png">Impostos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="declaracoes.html">
 
-                            <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notas-fiscais.html">
+                                <img src="img/menu/icons/24/declaracoes.png">Declarações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movimentacoes.html">
 
-                            <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="recibos.html">
+                                <img src="img/menu/icons/24/movimentacoes.png"> Movimentações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="notas-fiscais.html">
 
-                            <img src="img/menu/icons/24/recibos.png">Recibos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="relatorios-contabies.html">
+                                <img src="img/menu/icons/24/notasfiscais.png"> Notas fiscais
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recibos.html">
 
-                            <img src="img/menu/icons/24/relatorios.png">Relatórios contábeis
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="distribuicao-de-lucros.html">
+                                <img src="img/menu/icons/24/recibos.png">Recibos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relatorios-contabies.html">
 
-                            <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dmed.html">
+                                <img src="img/menu/icons/24/relatorios.png">Relatórios contábeis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="distribuicao-de-lucros.html">
 
-                            <img src="img/menu/icons/24/dmed.png"> DMED
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dimob.html">
+                                <img src="img/menu/icons/24/distribuicaol.png">Distribuição de lucros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dmed.html">
 
-                            <img src="img/menu/icons/24/dimod.png"> DIMOB
-                        </a>
-                    </li>
+                                <img src="img/menu/icons/24/dmed.png"> DMED
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dimob.html">
 
-                </ul>
+                                <img src="img/menu/icons/24/dimod.png"> DIMOB
+                            </a>
+                        </li>
+
+                    </ul>
 
 
 
-            </div>
-        </nav>
+                </div>
+            </nav>
 
-    </aside>
-    <div class="row">
-        <!--planos-->
+        </aside>
+        <div class="row">
+            <!--planos-->
 
-        <div class="col col-md-12">
-            <main class="col-md-9 titlesection">
+            <div class="col col-md-12">
+                <main class="col-md-9 titlesection">
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="plans-title-align"><img src="img/star.png"><b>Meus Colaboradores</b></p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-md-2 minbusca">
+
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                id="iconfiltros"></a>
+
+                    </div>
+                    <div class="formbusca">
+                        <div class="pesquisar">
+                            <img src="img/lupa.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+
+                        <div class="periodo1">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Periodo" id="data">
+                        </div>
+                        <span class="gray"> Até</span>
+
+                        <div class="periodo2">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Periodo" id="data2">
+                        </div>
+                        <button class="btn btn-primary headbusca">Buscar</button>
+
+                    </div>
+                </main>
+
                 <div class="row">
-
-                    <div class="col">
-                        <p class="plans-title-align"><img src="img/star.png"><b>Meus Colaboradores</b></p>
+                    <div class="col-md-7 indice">
+                        <a href="meus-colaboradores.html">Meus colaboradaores</a> <i class="fa fa-chevron-right"></i>
+                        Folha
+                        de pagamento
                     </div>
-
-
 
                 </div>
-                <div class="formbusca">
-                    <div class="pesquisar">
-                        <img src="img/lupa.png" alt="">
-                        <input type="text" class="form-control" placeholder="Pesquisar">
-                    </div>
-                   
-                    <div class="periodo1">
-                        <img src="img/calendar.png" alt="">
-                        <input type="text" class="form-control" placeholder="Periodo" id="data">
-                    </div>
-                    <span class="gray"> Até</span>
-                   
-                    <div class="periodo2">
-                        <img src="img/calendar.png" alt="">
-                        <input type="text" class="form-control" placeholder="Periodo" id="data2">
-                    </div>
-                    <button class="btn btn-primary headbusca">Buscar</button>
-                    
-                </div>
-            </main>
-
-            <div class="row">
-                <div class="col-md-7 indice">
-                    <a href="meus-colaboradores.html">Meus colaboradaores</a> <i class="fa fa-chevron-right"></i> Folha
-                    de pagamento
-                </div>
-             
             </div>
+
+
+
+
+
+
+
         </div>
-
-
-
-
-
-
-
-    </div>
 
     </div>
     </div>
@@ -310,7 +329,67 @@
             </ul>
 
         </div>
+        <div class="submenumobile">
+
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="titsubmenu">Folha de pagamento </span>
+                <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+                <a class="dropdown-item" href="meus-colaboradores.html">
+
+                    Agenda
+                </a>
+
+
+                <a class="dropdown-item" href="colaboradores.html">
+
+                    Colaboradores
+                </a>
+
+
+                <a class="dropdown-item" href="documentos.html">
+
+                    Documentos
+                </a>
+
+                <a class="dropdown-item" href="eventos.html">
+
+                    Eventos
+                </a>
+
+                <a class="dropdown-item" href="recisao.html">
+
+                    Rescisão
+                </a>
+
+                <a class="dropdown-item" href="folha-de-pagamento.html">
+
+                    Folha de pagamento
+                </a>
+
+                <a class="dropdown-item" href="holerite.html">
+
+                    Holerite
+                </a>
+
+                <a class="dropdown-item" href="folha-de-ponto.html" style="border:none">
+
+                    Folha de ponto
+                </a>
+
+
+
+
+
+            </div>
+
+        </div>
     </div>
+
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
@@ -319,167 +398,235 @@
                 </div>
 
             </div>
-        <div class="col col-md-10 addColaborador eventos">
-            <div class="col-md-11 tabelasect  mb-5 p-0 pb-2 folhapagamento ">
+            <div class="row countpage" style="    margin-top: -7px;">
+                <div class="basetitle">
+                    <div class="itemlabel">
+                        <p>1 - 5 de 16 resultados</p>
+                    </div>
+                </div>
+                <div class="selectpage">
+                    <div class="basetitlepage">
+                        <p>Página</p>
+                    </div>
+                    <select class="basetitleselect">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tablemobile">
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Tipo</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>Funcionários</p>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Competência</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Ação</p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="#" class="btnVerFolha ">Ver folha de pagamento</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tablemobile">
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Tipo</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>Funcionários</p>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Competência</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Ação</p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="#" class="btnVerFolha ">Ver folha de pagamento</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-md-10 addColaborador eventos">
+                <div class="col-md-11 tabelasect  mb-5 p-0 pb-2 folhapagamento ">
 
 
 
-            <div class="row table-responsive">
+                    <div class="row table-responsive">
 
-                <table class="table recisaotable">
-                    <thead class="">
-                        <tr class="gradient">
-                            <th scope="col" style="width: 345px;
+                        <table class="table recisaotable">
+                            <thead class="">
+                                <tr class="gradient">
+                                    <th scope="col" style="width: 345px;
                             height: 52px;">Tipo</th>
-                            <th scope="col" style="width: 345px;
+                                    <th scope="col" style="width: 345px;
                             height: 52px;">Competência</th>
-                            <th scope="col" style="width: 214px;
+                                    <th scope="col" style="width: 214px;
                             height: 52px;">Ação</th>
 
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider ">
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider ">
 
-                        <tr>
-                            <td class="ps-3">Funcionários</td>
-                            <td>00/0000</td>
-                            <td><a href="#" class="btn btn-success">Ver folha de pagamento</a></td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3">Funcionários</td>
-                            <td>00/0000</td>
-                            <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3">Funcionários</td>
-                            <td>00/0000</td>
-                            <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3">Funcionários</td>
-                            <td >00/0000</td>
-                            <td><a href="#" class="btn btn-success">Ver folha de pagamento</a></td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3">Funcionários</td>
-                            <td>00/0000</td>
-                            <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
-                        </tr>
-
-
+                                <tr>
+                                    <td class="ps-3">Funcionários</td>
+                                    <td>00/0000</td>
+                                    <td><a href="#" class="btn btn-success">Ver folha de pagamento</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Funcionários</td>
+                                    <td>00/0000</td>
+                                    <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Funcionários</td>
+                                    <td>00/0000</td>
+                                    <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Funcionários</td>
+                                    <td>00/0000</td>
+                                    <td><a href="#" class="btn btn-success">Ver folha de pagamento</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="ps-3">Funcionários</td>
+                                    <td>00/0000</td>
+                                    <td><a href="#" class="btn btn-success ">Ver folha de pagamento</a></td>
+                                </tr>
 
 
 
-                </table>
 
 
-            </div>
-            <nav aria-label="Page navigation" class="paginacao mt-5">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">
-                            <</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link pag-item-align" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align disabled" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link pag-item-align" href="#">></a></li>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+                        </table>
 
 
-    <!--Modal detalhes recisao-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title greentitle">Atenção</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado junto
-                        com sua próxima mensalidade.
-                    </p>
+                    </div>
+                    <nav aria-label="Page navigation" class="paginacao mt-5">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">
+                                    << /a>
+                            </li>
+                            <li class="page-item active"><a class="page-link pag-item-align" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align disabled" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link pag-item-align" href="#">></a></li>
 
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                        aria-label="Close">Continuar</button>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
 
 
+        <!--Modal detalhes recisao-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="detalhes">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title greentitle">Atenção</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>O serviço de rescisão de funcionário tem um custo de <b>R$78,00</b>. O valor será cobrado
+                            junto
+                            com sua próxima mensalidade.
+                        </p>
 
-
-
-
-    <!--Modal avaliaçao 1-->
-    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e atendê-lo
-                        melhor.
-                    </p>
-                    <img src="img/avaliações.png" alt="Avaliacoes">
-                </div>
-                <div class="modal-footer text-center">
-                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                        aria-label="Close">Continuar</button>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Continuar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Rodapé
-    <footer class="position-absolute bottom-0 start-50 translate-middle-x">
-        <div class="row">
-            <div class="col col-md-12">
-                <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+
+
+
+
+
+
+        <!--Modal filtro mobile-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+    --bs-modal-height: 342px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center">Filtro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+
+                        <div class="row inputs">
+
+
+                            <div class="col mt-2">
+                                <div class="pesquisar">
+                                    <img src="img/lupa.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Pesquisar">
+                                </div>
+                            </div>
+
+                            <div class="col mt-2">
+                                <div class="situacao">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">Situação</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row periodos">
+                                <div class=" col col-md-5 periodo1 mt-2">
+                                    <img src="img/calendar.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                </div>
+                                <span class="gray col col-md-2"> Até</span>
+
+                                <div class="periodo2 mt-2 col col-md-5">
+                                    <img src="img/calendar.png" alt="">
+                                    <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer filtro">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Filtrar</button>
+                    </div>
+                </div>
             </div>
-            <div class="col col-md-2 btns">
-                <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                    data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-            </div>
-
-
-
         </div>
-
-    </footer>-->
 </body>
 <script src="https://unpkg.com/imask"></script>
 <script>
     var data = document.getElementById('data');
-    var data2=document.querySelector('#data2');
-    
-    
-
-   
- 
-    
-
-
- 
-
-var maskOptions = {
-  mask: '00/00/0000',
-  
-};
+    var data2 = document.querySelector('#data2');
 
 
 
@@ -487,8 +634,22 @@ var maskOptions = {
 
 
 
-var mask = IMask(data, maskOptions);
-var mask = IMask(data2, maskOptions);
+
+
+
+    var maskOptions = {
+        mask: '00/00/0000',
+
+    };
+
+
+
+
+
+
+
+    var mask = IMask(data, maskOptions);
+    var mask = IMask(data2, maskOptions);
 
 
 

@@ -37,8 +37,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                                    <a class="dropdown-item" href="ticket.html"><img
+                                        src="img/envelopecinza.png">Tickets</a>
+                                        <a class="dropdown-item" href="#"><img
+                                            src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,37 +83,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <div class="navbar-nav position-relative">
-                        <div class="col-md-10 busca">
-                            <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
-                                class="form-control" placeholder="Pesquisar">
-                        </div>
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
+                    <div class="navbar-nav">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
+
 
                     </div>
                 </div>
@@ -210,7 +219,7 @@
 
 
                 <div class="col-md-2 minbusca">
-                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
                     <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
                         class="form-control" placeholder="Pesquisar">
                 </div>
@@ -251,7 +260,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="recibo-de-prolabore.html">
+                    <a class="nav-link " href="recibo-de-prolabore.html" style="border:none">
 
                         Recibo de Pró-labore
                     </a>
@@ -261,18 +270,167 @@
 
         </div>
     </div>
-    <div class="container position-relative" style="margin-top: 143px;">
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu">Sócios cadastrados</span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+           
+                <a class="dropdown-item" href="socios.html">
+
+                    Sócios cadastrados
+                </a>
+          
+                <a class="dropdown-item" href="folha-de-prolabore.html">
+
+                    Folha de Pró-labore
+                </a>
+            
+                <a class="dropdown-item" href="recibo-de-prolabore.html" style="border:none;">
+
+                    Recibo de Pró-labore
+                </a>
+         
+        </div>
+
+    </div>
+    <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
-                <div class="titulosecao">
+                <div class="titulosecao socios">
                     <p><b>Sócios cadastrados</b></p>
                 </div>
 
 
             </div>
-            
-            <div class="col col-md-10 addColaborador ">
-                <div class="col-md-11 tabelasect  mb-5 p-0 pb-2">
+            <div class="row countpage" style="    margin-top: 64px;">
+                <div class="basetitle">
+                    <div class="itemlabel">
+                        <p>1 - 5 de 16 resultados</p>
+                    </div>
+                </div>
+                <div class="selectpage">
+                    <div class="basetitlepage">
+                        <p>Página</p>
+                    </div>
+                    <select class="basetitleselect">
+                        <option value="">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tablemobile">
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Nome do sócio</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>Nome completo</p>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Nascimento</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>CPF</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>000.000.000-00</p>
+
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Percentual</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>000%</p>
+
+                    </div>
+                </div>
+                <div class="lineinfo" >
+                    <div class="baseinfo">
+                        <p>Ação</p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="#" class="btnVerFolha ">Solicitar Pró-labore</a>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p></p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="complementar-cadastro.html"><img src="img/edit.png" alt=""></a>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="tablemobile">
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>Nome do sócio</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>Nome completo</p>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Nascimento</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lineinfo">
+                    <div class="baseinfo">
+                        <p>CPF</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>000.000.000-00</p>
+
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p>Percentual</p>
+                    </div>
+                    <div class="baseitem">
+                        <p>000%</p>
+
+                    </div>
+                </div>
+                <div class="lineinfo" >
+                    <div class="baseinfo">
+                        <p>Ação</p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="#" class="btnVerFolha ">Solicitar Pró-labore</a>
+                    </div>
+                </div>
+                <div class="lineinfo" style="background: #fff;">
+                    <div class="baseinfo">
+                        <p></p>
+                    </div>
+                    <div class="baseitem">
+                        <a href="complementar-cadastro.html"><img src="img/edit.png" alt=""></a>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="col col-md-10 addColaborador socios">
+                <div class="col-md-11 tabelasect  mb-5 p-0 pb-2 socios">
                     <div class="row table-responsive">
                         <table class="table">
                             <thead class="">
@@ -365,6 +523,31 @@
             </div>
         </div>
     </div>
+     <!--Modal filtro mobile-->
+     <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">Filtro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+
+
+
+                    <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                        class="form-control" placeholder="Pesquisar">
+
+                </div>
+                <div class="modal-footer filtro">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
  
 </body>
 
