@@ -262,9 +262,50 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu">Fluxo de caixa</span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+           
+                <a class="dropdown-item" href="movimentacoes.html">
+
+                    Últimas movimentações
+                </a>
+          
+                <a class="dropdown-item" href="fluxo-de-caixa.html" style="border:none">
+
+                    Fluxo de caixa
+                </a>
+            
+               
+         
+        </div>
+
+    </div>
     <div class="container position-relative">
         <div class="row">
             <div class="titulotela">
+                <div class="dropdown  botoesmobile">
+
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <img src="img/botoesmobile.png" alt="">
+                    </button>
+                    <div class="dropdown-menu clientes"  aria-labelledby="dropdownMenuButton">
+                        <button class="gerenciacontamobile" data-bs-toggle="modal"
+                        data-bs-target="#corrigirSaldo">Corrigir saldo</button>
+
+                        <button class="importarmobile" data-bs-toggle="modal" data-bs-target="#adicionarMovimentacao">Excel</button>
+                        <button class="addmovimentacaomobile" data-bs-toggle="modal"
+                        data-bs-target="#adicionarMovimentacao">PDF</button>
+                    </div>
+                </div>
                 <div class="titulosecao">
                     <p><b>Fluxo de caixa</b></p>
                 </div>
@@ -289,31 +330,24 @@
             <div class="row ">
                 <form action="#" class="filtrosf">
                     <div class="row">
-                        <div class="col col-md-1 filt mt-2 "> <select name="" id="" class="form-select">
+                       
+                            <select name="" id="" class="form-select">
                                 <option value="">Competência inicial</option>
-                            </select></div>
-                        <div class="col col-md-1 filt mt-2 ms-3">
+                            </select>
                             <select name="" id="" class="form-select">
                                 <option value="">Competência final</option>
                             </select>
-                        </div>
-                        <div class="col col-md-1 filt mt-2 ms-3">
-                            <select name="" id="" class="form-select">
+                            <select name="" id="" class="form-select tipoconta">
                                 <option value="">Tipo de conta</option>
                             </select>
-                        </div>
-                        <div class="col col-md-1 filt mt-2 ms-3">
-                            <button type="submit" class="btn addnovo" style=" width: max-content;
-                            height: 55px;
-                            /* margin-left: -38px; */
-                            
-                            left: 615px;">Buscar</button>
-                        </div>
+                   
+                            <button type="submit" class="btnBuscaFiltro" >Buscar</button>
+                      
                     </div>
                 </form>
             </div>
-        <div class="col col-md-10 addColaborador">
-            <div class="col-md-11 tabelasect mb-5 mt-5 p-4">
+        <div class="col col-md-10 fluxodecaixa">
+            <div class="col-md-11 tabelasect mb-5 fluxodecaixa">
                 <div class="row">
                     <p class="titulo"><b>Informações</b></p>
                     <div class="col col-md-3">

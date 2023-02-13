@@ -645,6 +645,49 @@ $(document).ready(function(){
 
 
 });
+$(document).ready(function(){
+    var btnSaidas=document.querySelector("#saidasBtnm");
+    var btnEntradas=document.querySelector("#entradasBtnm");
+   
+
+    var tabelaSaidas=document.querySelector('.saidaVendas');
+    var tabelaEntradas=document.querySelector('.nfentradas');
+   
+
+    btnSaidas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='flow-root';
+        tabelaEntradas.style.display='none';
+       
+       
+
+        btnEntradas.style.border='none';
+        btnSaidas.style.borderBottom='2px solid #4aa3e5';
+        btnSaidas.style.fontWeight='600';
+        btnEntradas.style.fontWeight='100';
+       
+      
+        
+    });
+
+    btnEntradas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='none';
+        tabelaEntradas.style.display='flow-root';
+       
+       
+
+        btnEntradas.style.borderBottom='2px solid #4aa3e5';
+        btnEntradas.style.fontWeight='600';
+        btnSaidas.style.fontWeight='100';
+        btnSaidas.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
 
 $(document).ready(function(){
     var btnImportar=document.querySelector("#importarBtn");
