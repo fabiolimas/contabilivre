@@ -222,7 +222,12 @@
                             <p><img src="img/star.png"><b>Indique e ganhe</b></p>
                         </div>
     
-    
+                        <div class="col-md-2 minbusca">
+
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                    id="iconfiltros"></a>
+                           
+                        </div>
                         <div class="searchbar">
                             <div class="col-md-2 position-relative mt-2 ms-3">
                                 <select name="" id="" class="form-select">
@@ -293,6 +298,40 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="titsubmenu">Minhas indicações </span>
+                        <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <a class="dropdown-item" href="indique-e-ganhe.html">
+
+                            Indique
+                        </a>
+                    
+                    
+                        <a class="dropdown-item" href="minhas-indicacoes.html">
+
+                            Minhas indicações
+                        </a>
+                   
+                        <a class="dropdown-item" href="extrato-financeiro.html">
+
+                            Extrato financeiro
+                        </a>
+                  
+                        <a class="dropdown-item" href="configuracoes-e-regulamentos.html">
+
+                            Configurações e regulamentos
+                        </a>
+
+
+
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
 
@@ -306,9 +345,101 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-10 dados-empresa indique" style="margin-top: 75px !important;">
-                    <div class="col-md-11 tabelasect  p-0 pb-2 mb-5">
-                        <div class="row table-responsive">
+                <div class="row countpage" style="    margin-top: 59px;">
+                    <div class="basetitle">
+                        <div class="itemlabel">
+                            <p>1 - 5 de 16 resultados</p>
+                        </div>
+                    </div>
+                    <div class="selectpage">
+                        <div class="basetitlepage">
+                            <p>Página</p>
+                        </div>
+                        <select class="basetitleselect">
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tablemobile">
+
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data/Hora</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>exemplo@email.com</p>
+                        </div>
+                    </div>
+
+
+                    <div class="lineinfo" style="background:#fff;">
+                        <div class="baseinfo">
+                            <p>Nome</p>
+                        </div>
+                        <div class="baseitem">
+                           <p>Tipo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>E-mail</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>exemplo@email.com</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background:#fff;">
+                        <div class="baseinfo">
+                            <p>Situação</p>
+                        </div>
+                        <div class="baseitem">
+                           <span class="finalizado">Autorizado</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tablemobile">
+
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Data/Hora</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>exemplo@email.com</p>
+                        </div>
+                    </div>
+
+
+                    <div class="lineinfo" style="background:#fff;">
+                        <div class="baseinfo">
+                            <p>Nome</p>
+                        </div>
+                        <div class="baseitem">
+                           <p>Tipo</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>E-mail</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>exemplo@email.com</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background:#fff;">
+                        <div class="baseinfo">
+                            <p>Situação</p>
+                        </div>
+                        <div class="baseitem">
+                           <span class="rcorreio">Não autorizado</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col col-md-10  minhasindicacoes" >
+                    <div class="col-md-11 tabelasect  p-0 pb-2 mb-5 indique">
+                        
+                        <div class="row table-responsive tabelaindicacoes">
                             <table class="table">
                                 <thead class="table-dark">
                                     <tr>
@@ -400,7 +531,53 @@
 
                 </div>
 
-
+ <!--Modal filtro mobile-->
+ <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+ --bs-modal-height: 342px;">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title text-center">Filtro</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                     aria-label="Close"></button>
+                             </div>
+                             <div class="modal-body text-center">
+ 
+                                 <div class="row inputs">
+ 
+ 
+                                
+ 
+                                     <div class="col mt-2">
+                                         <div class="situacao">
+                                             <select name="" id="" class="form-select">
+                                                 <option value="">Situação</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                     <div class="row periodos">
+                                         <div class=" col col-md-5 periodo1 mt-2">
+                                             <img src="img/calendar.png" alt="">
+                                             <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                         </div>
+                                         <span class="gray col col-md-2"> Até</span>
+     
+                                         <div class="periodo2 mt-2 col col-md-5">
+                                             <img src="img/calendar.png" alt="">
+                                             <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                         </div>
+                                     </div>
+                                     
+                                 </div>
+                             </div>
+                             <div class="modal-footer filtro">
+                                 <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                 <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                     aria-label="Close">Filtrar</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
 
                 <!--Modal ajuda-->
                 <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="menuPrincipal">

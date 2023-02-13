@@ -212,42 +212,7 @@ outroprod.addEventListener('click', function(e){
 
 });
 
-$(document).ready(function(){
 
-    var btnacessos=document.querySelector('#acessosbtn');
-    var btncert=document.querySelector('#certificadobtn');
-
-    var formempresa=document.querySelector('.formempresa');
-    var formcert=document.querySelector('.formcertificado');
-
-    btnacessos.addEventListener('click', function(e){
-        e.preventDefault();
-        formempresa.style.display='flex';
-        formcert.style.display='none';
-        btnacessos.style.borderBottom='2px solid #4aa3e5';
-        btnacessos.style.fontWeight='600';
-        btncert.style.fontWeight='100';
-        btncert.style.border='none';
-       
-       
-        
-    });
-
-    btncert.addEventListener('click', function(e){
-        e.preventDefault();
-        formempresa.style.display='none';
-        formcert.style.display='block';
-        btncert.style.borderBottom='2px solid #4aa3e5';
-        btncert.style.fontWeight='600';
-        btnacessos.style.fontWeight='100';
-        btnacessos.style.border='none';
-       
-       
-        
-    });
-
-
-});
 
 $(document).ready(function(){
 
@@ -714,10 +679,37 @@ $(document).ready(function(){
         
     });
 
+    
+
+$(document).ready(function(){
+    var btnImportar=document.querySelector("#importarBtnm");
+    var btnUltimasEm=document.querySelector("#ultimasemissoesBtnm");
+   
+
+    var importar=document.querySelector('.plan1');
+    var ultimasEmissoes=document.querySelector('.ultimasEmissoesmobile');
+   
+
+    btnImportar.addEventListener('click', function(e){
+        e.preventDefault();
+        importar.style.display='flow-root';
+        ultimasEmissoes.style.display='none';
+       
+       
+
+        btnUltimasEm.style.border='none';
+        btnImportar.style.borderBottom='2px solid #4aa3e5';
+        btnImportar.style.fontWeight='600';
+        btnUltimasEm.style.fontWeight='100';
+       
+      
+        
+    });
+
     btnUltimasEm.addEventListener('click', function(e){
         e.preventDefault();
         importar.style.display='none';
-        ultimasEmissoes.style.display='inline-table';
+        ultimasEmissoes.style.display='flow-root';
        
        
 
@@ -732,6 +724,8 @@ $(document).ready(function(){
 
 
 });
+
+
 
 $(document).ready(function(){
     var btnmensalidade=document.querySelector("#mensalidadeBtn");

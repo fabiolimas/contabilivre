@@ -227,7 +227,7 @@
                     </div>
                 </main>
             </div>
-
+           
             <div class="container " style="margin-top: -23px;">
                 <div class="row">
 
@@ -238,6 +238,10 @@
                             <p class="titulosecao titimport"><b><a href="notas-fiscais.html"><i
                                             class="fa fa-chevron-left"></i></a> Importar nota fiscal</b></p>
 
+                        </div>
+                        <div class="submenumobile" style="top: 229px;">
+
+                            <p class="titsubmenu"><a href="notas-fiscais.html"><i class="fa fa-chevron-left"></i></a> Importar nota fiscal</p>
                         </div>
                         <div class="col col-md-9">
                             <div class="btnacoes">
@@ -253,8 +257,22 @@
 
 
             <div class="container mt-5">
-                <div class="col-md-4 menu" style="margin-left: 166px;
-                margin-top: -26px;">
+                <div class="col-md-4 menu importnota">
+
+                    <nav class="navbar navbar-expand nfs">
+                        <ul class="metodospag navbar-nav me-auto">
+
+                            <li class="nav-item"><a href="#" class="nav-link" id="importarBtnm">Importar</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtnm">Ultimas
+                                    emissões</a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-4 menu">
 
                     <nav class="navbar navbar-expand nfs">
                         <ul class="metodospag navbar-nav me-auto">
@@ -307,23 +325,23 @@
                             <div class="row mt-3 ">
                                 <p><b>Arquivos enviados</b></p>
                             </div>
-                            <div class="row table-responsive">
+                            <div class="row ">
 
                                 <div class="row anexos">
-                                    <div class="col col-md-1">
+                                    <div class="iconeanexo">
                                         <img src="img/pdficon.png" alt="">
                                     </div>
-                                    <div class="col col-md-5">
+                                    <div class="infoanexo">
                                         <p>Campo para a descrição do documento</p>
                                     </div>
-                                    <div class="col col-md-2"></div>
+                                    
                                     <div class="col col-md-1 me-2">
-                                        <p class="gray">01/02/2020</p>
+                                        <p class="gray dataanexo">01/02/2020</p>
                                     </div>
-                                    <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
+                                    <div class="botaoanexo"><a href="#" class="btn btn-success">Ver documento</a>
                                     </div>
     
-                                    <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
+                                    <div class="closeanexo"><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                 </div>
 
                             </div>
@@ -338,6 +356,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        
 
                         <!--tabela ultimas emissões-->
                         <div class="row table-responsive w-100">
@@ -446,6 +466,111 @@
         
                             </ul>
                         </nav>
+                    </div>
+                </div>
+                <div class="ultimasEmissoesmobile">
+                    <div class="row countpage" style="margin-top: 38px;">
+                        <div class="basetitle">
+                            <div class="itemlabel">
+                                <p>1 - 5 de 16 resultados</p>
+                            </div>
+                        </div>
+                        <div class="selectpage">
+                            <div class="basetitlepage">
+                                <p>Página</p>
+                            </div>
+                            <select class="basetitleselect">
+                                <option value="">1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tablemobile">
+                        <div class="lineinfo">
+                            <div class="baseinfo">
+                                <p>Código</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>00</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo" style="background: #fff;">
+                            <div class="baseinfo">
+                                <p>Descrição</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>Descrição da nota</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo">
+                            <div class="baseinfo">
+                                <p>Competência</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>00/00/0000</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo" style="background: #fff;">
+                            <div class="baseinfo">
+                                <p>Situação</p>
+                            </div>
+                            <div class="baseitem">
+                                <span class="finaliado">Finalizado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="lineinfo" >
+                            <div class="baseinfo">
+                                <p>Ação</p>
+                            </div>
+                            <div class="baseitem">
+                                <a href="#" class="btnVerFolha ">Ver NF</a>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="tablemobile">
+                        <div class="lineinfo">
+                            <div class="baseinfo">
+                                <p>Código</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>00</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo" style="background: #fff;">
+                            <div class="baseinfo">
+                                <p>Descrição</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>Descrição da nota</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo">
+                            <div class="baseinfo">
+                                <p>Competência</p>
+                            </div>
+                            <div class="baseitem">
+                                <p>00/00/0000</p>
+                            </div>
+                        </div>
+                        <div class="lineinfo" style="background: #fff;">
+                            <div class="baseinfo">
+                                <p>Situação</p>
+                            </div>
+                            <div class="baseitem">
+                                <span class="rcorreio">Rejeitado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="lineinfo" >
+                            <div class="baseinfo">
+                                <p>Ação</p>
+                            </div>
+                            <div class="baseitem">
+                                <a href="#" class="btnVerFolha ">Ver NF</a>
+                            </div>
+                        </div>
+        
                     </div>
                 </div>
             </div>

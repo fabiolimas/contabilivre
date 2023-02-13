@@ -30,7 +30,7 @@
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -48,7 +48,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,11 +64,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -291,6 +291,40 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile" style="    margin-top: 16px;">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="titsubmenu"> Configurações e regulamentos</span>
+                        <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <a class="dropdown-item" href="indique-e-ganhe.html">
+
+                            Indique
+                        </a>
+
+
+                        <a class="dropdown-item" href="minhas-indicacoes.html">
+
+                            Minhas indicações
+                        </a>
+
+                        <a class="dropdown-item" href="extrato-financeiro.html">
+
+                            Extrato financeiro
+                        </a>
+
+                        <a class="dropdown-item" href="configuracoes-e-regulamentos.html">
+
+                            Configurações e regulamentos
+                        </a>
+
+
+
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
 
@@ -304,8 +338,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-10 dados-empresa indique" style="margin-top: 75px !important;">
-                    <div class="col-md-11 tabelasect  mb-5 ">
+                <div class="col col-md-10 configuracoes" style="margin-top: 75px !important;">
+                    <div class="col-md-11 tabelasect  mb-5  configuracoes">
                         <div class="row mt-4 mb-3">
                             <div class="col aviso pt-3">
                                 <i class="fa fa-info-circle icoinfo"></i>
@@ -313,11 +347,12 @@
                                     serviços de indique e ganhe.</p>
                             </div>
                         </div>
-                        <div class="row pt-4">
+                        <div class="row pt-4 botoesconfig">
                             <button class="btn gerenciarContas" style="background-color:#fff !important;"
                                 data-bs-toggle="modal" data-bs-target="#gerenciarContas"> Regulamento indique e ganhe
                             </button>
-                            <a href="#" class="btn addnovo" data-bs-toggle="modal" data-bs-target="#regulamento"style="width: max-content; right: 485px;">Clique para visualizar o
+                            <a href="#" class="btn addnovo" data-bs-toggle="modal" data-bs-target="#regulamento"
+                                style="width: max-content; right: 331px;">Clique para visualizar o
                                 regulamento</a>
                         </div>
                         <div class="row">
@@ -325,14 +360,19 @@
                                 <sub class="gray">Aceite regulamento</sub>
                                 <p>20/12/2019 18:42 via endereço de IP 201.76.70.115</p>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col col-md-4 mt-3">
                                 <sub class="gray">Participante des</sub>
                                 <p>00/00/0000</p>
                             </div>
+
                             <div class="col col-md-4 mt-3">
                                 <sub class="gray">Situação</sub>
                                 <p>Ativo</p>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col col-md-3 mt-2">
                                 <label for="CLT">Declaração postada</label><label class="switch">
                                     <input type="checkbox">
@@ -369,13 +409,14 @@
                             </div>
                             <div class="row bts mt-3">
                                 <div class="col-md-12 d-flex justify-content-end ms-5">
-    
-                                    <div class="col-md-4"><a href="#" class="btn btn-primary">Salvar configurações</a></div>
-    
+
+                                    <div class="col-md-4"><a href="#" class="btnConfiguracoes">Salvar configurações</a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                      
+
 
                     </div>
 
@@ -392,16 +433,31 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Antes de prosseguir é necessário estar de acordo com nossa <b>Política de Privacidade e Segurança</b></p>
-                                    <p class="gray">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                    <p>Antes de prosseguir é necessário estar de acordo com nossa <b>Política de
+                                            Privacidade e Segurança</b></p>
+                                    <p class="gray">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                        It has roots in a piece of classical Latin literature from 45 BC, making it over
+                                        2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
+                                        in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+                                        Lorem Ipsum passage, and going through the cites of the word in classical
+                                        literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+                                        Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+                                        ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+                                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                        <div class="row permissao text-left">
-                                            <input type="checkbox"  id="vincularRps" class=""><label for="vincularRps" ><p>Declaro que eu aceito os <b>termos e regulamentos</b></p></label>
-                                        </div>
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                                        those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                                        Malorum" by Cicero are also reproduced in their exact original form, accompanied
+                                        by English versions from the 1914 translation by H. Rackham.</p>
+                                    <div class="row permissao text-left">
+                                        <input type="checkbox" id="vincularRps" class=""><label for="vincularRps">
+                                            <p>Declaro que eu aceito os <b>termos e regulamentos</b></p>
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                    
+
 
                                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
                                         aria-label="Close">Aceito</button>

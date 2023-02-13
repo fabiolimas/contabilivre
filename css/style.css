@@ -4,8 +4,124 @@
 body{
     font-family:'Poppins', sans-serif;
     background: #f2fcf3;
-    height: 128vh;
+    height: 100vh;
   
+}
+.col-md-4.menu.nffaturamento {
+    display: none;
+}
+.ultimosRegistrosmobile{
+    display: none;
+}
+.listaEmails {
+    margin-left: 14%;
+    width: 88%;
+}
+.col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
+    display: flex;
+}
+.col-md-11.tabelasect.mb-5.mt-3.indique {
+    margin-left: 38%;
+    width: 95%;
+}
+.col.col-md-10.indique {
+    margin-top: 45px;
+}
+.col-md-11.tabelasect.mb-5.configuracoes {
+    margin-left: 37%;
+    width: 96%;
+}
+.configuracoes .row.bts.mt-3 {
+    margin-left: -47px;
+}
+.col.col-md-10.minhasindicacoes {
+    margin-left: 13%;
+    margin-top: 65px;
+    width: 90%;
+}
+.col.col-md-10.extratofinanceiro {
+    margin-left: 13%;
+    width: 90%;
+}
+.btnConfiguracoes{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: auto;
+height: 38px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+}
+.emaillogin, .senhalogin{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 568px;
+height: 56px;
+}
+.col-md-11.tabelasect.mb-5.editarperfil {
+    margin-left: 38%;
+    width: 95%;
+}
+.tituloemails {
+    margin-left: 37%;
+    width: 250px;
+}
+a.voltarlogin {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.btnLogin{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+
+width: 568px;
+height: 50px;
+margin-top: 16px;
+
+/* Secundária / Main */
+
+background: #74C83C !important;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+
 }
 
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
@@ -189,6 +305,9 @@ line-height: 18px;
 /* Cinza / 100 */
 
 color: #F8F9FA;
+}
+.ultimasEmissoesmobile{
+    display: none;
 }
 .sidebar-sticky li img {
     padding-right: 8px;
@@ -475,8 +594,11 @@ span.x {
     line-height: normal;
 }
 .col-md-4.menu {
-    margin-left: 151px;
-    margin-top: 18px;
+    margin-left: 100px;
+    margin-top: 14px;
+}
+.col-md-4.menu.importnota {
+    display: none;
 }
 ul.nav.flex-row {
 
@@ -1332,9 +1454,39 @@ p.titulosecao.titnf {
 }
 .produtos {
     
-    margin-top: 206px;
-    margin-left: 0;
-    width: 93%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: auto;
+        height: 56px;
+        left: 280px;
+        top: 653px;
+        flex-wrap: nowrap;
+        align-content: center;
+    
+}
+.tabprodutos {
+    margin-top: 451px;
+    width: 76%;
+    margin-left: 20%;
+}
+.row.table-responsive.w-100.tabprodutos {
+    margin-top: -156px;
+}
+.minbusca.buscaprodutos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 747px;
+    height: 56px;
+    margin-left: 155px;
+    margin-top: -19px;
 }
 .col-md-2.minbusca.buscaprodutos {
     right: 568px;
@@ -2470,6 +2622,8 @@ div#about-area {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 /*.btn-success{
     background-color: #74c83c !important;
@@ -3998,7 +4152,7 @@ left: 280px;
 background: #FFFFFF;
 box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
 border-radius: 8px;
-top:866px;
+top:962px;
 
 }
 .produtos p {
@@ -4008,6 +4162,26 @@ top:866px;
     font-size: 16px;
     line-height: 24px;
     color: #495057;
+    width: 114px;
+}
+i.fa.fa-search.position-absolute.iconelupap {
+    left: 364px;
+}
+.btnsnfe {
+    display: flex;
+}
+.minbusca.buscaprodutos input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 286px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
 }
 span.ano.gray {
     font-size: 14px;
@@ -4415,6 +4589,80 @@ margin-bottom: 13px;
        
         margin-left: -54px;
     }
+    .configuracoes a.btn.addnovo {
+        margin-top: 47px;
+        right: 47px !important;
+    }
+    .minhasindicacoes, nav.paginacao, .extratofinanceiro {
+        display: none;
+    }
+ 
+    .emaillogin, .senhalogin {
+      
+        width: -webkit-fill-available;
+       
+    }
+    .login-side form {
+        width: -webkit-fill-available;
+        padding: 5px;
+    margin-left: -7px;
+    }
+    .btnLogin {
+      
+        width: -webkit-fill-available;
+       
+    }
+    .col-md-6.login-side h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #212529;
+    }
+    .col-md-9.nfe.mb-5.mt-5.p-0.pb-2.nffaturamento {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        position: absolute;
+        width: auto !important;
+        height: 254px;
+        left: 24px;
+        top: 326px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+    }
+    .col-md-4.menu.nffaturamento {
+        display: flex;
+        margin-left: 23px;
+    }
+    .btnfsmobile, .col-md-4.menumobile {
+        display: flex;
+    }
+    .row.btnsclientec {
+        margin-left: 0px;
+        display: none;
+    
+    }
+    .col-md-9.nfe.p-3.mb-5.mt-5.nfse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        position: absolute;
+        width: 327px;
+        height: 854px;
+        left: 24px;
+        top: 242px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+    }
     .btnacoes{
         display: none;
     }
@@ -4615,7 +4863,38 @@ color: #F8F9FA;
         width: -webkit-fill-available !important;
     }
     .col-md-11.tabelasect.mb-5.dados-empresa {
+        width:-webkit-fill-available !important;
+    }
+    .col-md-11.tabelasect.mb-5.configuracoes {
+        margin-left: -21px;
         width: -webkit-fill-available;
+    }
+    .btnConfiguracoes{
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 279px;
+height: 38px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
     }
     main.col-md-9.titlesection.full, main.col-md-9.titleselection {
    
@@ -4724,16 +5003,11 @@ color: #F8F9FA;
         background: #4AA3E5;
         border-radius: 8px;
         font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 150%;
-/* identical to box height, or 24px */
-
-
-/* Cinza/02 */
-
-color: #F8F9FA;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #F8F9FA;
     }
     .stepitem {
         box-sizing: border-box;
@@ -4780,7 +5054,7 @@ color: #58C0ED;
         align-items: center;
         padding: 16px;
         gap: 16px;
-        width: 74px;
+        width: 74px !important;
         height: 74px;
         background: #FFFFFF;
         border: 1px solid rgba(74, 163, 229, 0.2);
@@ -4792,7 +5066,7 @@ color: #58C0ED;
         align-items: center;
         padding: 16px;
         gap: 16px;
-        width: 74px;
+        width: 74px !important;
         height: 74px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -4938,7 +5212,7 @@ color: #58C0ED;
         width: 100% !important;
     }
     .row.permissao.text-left {
-        margin-bottom: 30px;
+        margin-bottom: -4px;
     }
     .row.agendamento3 {
         margin-bottom: -100px;
@@ -5025,16 +5299,55 @@ color: #495057;
         width: 327px;
         height: 204px;
         left: 24px;
-        top: 850px;
+        top: 1087px;
     }
     .minbusca.buscaprodutos {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 0px;
         gap: 16px;
-        width: 327px;
+        width: -webkit-fill-available;
         height: 56px;
+        margin-left: -19px;
+        margin-top: -35px;
+    }
+    .col-md-4.menu.importnota {
+        display: block;
+        margin-top: -17px;
+    margin-left: 26px;
+    }
+    .col-md-9.plan1.nfe.mb-5 {
+       
+    width: -webkit-fill-available !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    position: absolute;
+    
+    height: 617px;
+    left: 24px !important;
+    top: 326px !important;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+    border-radius: 24px;
+    }
+    .importarNota {
+        margin-top: -59px;
+        margin-left: -27px;
+    }
+    .btnsnfe {
+        display: block;
+        width: inherit;
+    }
+    i.fa.fa-search.position-absolute.iconelupap {
+        left: 248px;
+        top: 106px;
+    }
+    .tabprodutos {
+        display: none;
     }
     button.btncadproduto {
         box-sizing: border-box;
@@ -5049,6 +5362,12 @@ color: #495057;
         border: 1px solid #74C83C;
         border-radius: 4px;
         margin-top: 16px;
+    }
+    .pessquisaproduto.position-reltive {
+        width: inherit;
+    }
+    .minbusca.buscaprodutos input {
+        width: -webkit-fill-available;
     }
     a.importarcsv {
         box-sizing: border-box;
@@ -5076,6 +5395,7 @@ line-height: 24px;
 /* Cinza / 800 */
 
 color: #495057;
+margin-top: -68px;
 
     }
     .col-md-3.btnf {
@@ -5098,7 +5418,7 @@ color: #495057;
         
         left: 0px;
       
-        top: 1783px;
+        top: 1822px;
     }
     .baseitem img {
         margin: 13px;
@@ -5134,6 +5454,36 @@ color: #495057;
         width: 100%;
         
     }
+    .btnEmitirRecibo{
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 231px;
+height: 38px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+
+
+
+    }
     div#boasvindas {
         padding-right: 0px !important;
         width: 382px;
@@ -5167,7 +5517,7 @@ color: #495057;
         position: absolute;
         width: -webkit-fill-available !important;
         height: 72px;
-        left: 2px;
+        left: 11px;
         top: 120px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -5218,11 +5568,16 @@ color: #495057;
     }
     aside {
         margin-top: -152px;
-        background: none;
-        margin-left: -26px;
-        height: 2px;
+    background: none;
+    margin-left: -42px;
+    height: 2px;
+    position: absolute;
+    left: 142px;
         
     
+    }
+    .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
+        display: none;
     }
     .plan11, .plan2, .plan1 {
     
@@ -5232,6 +5587,11 @@ color: #495057;
     left: -133px !important;
       
     }
+    .etAzul {
+      
+        left: 72%;
+     
+    }
     .row.menufinanceiro {
         width: max-content;
         margin-left: 102px;
@@ -5239,7 +5599,7 @@ color: #495057;
     }
     button.btn.gerenciarContas {
         margin-left: 26px;
-        margin-bottom: 10px;
+        margin-bottom: 41px;
     }
     .col.col-md-10.dados-empresa.indique {
         margin-top: 150px !important;
@@ -5270,9 +5630,7 @@ color: #495057;
         margin-top: 62px;
        
     }
-    .col-md-9.plan1 .row {
-        width: 306px;
-    }
+   
     main{
         left: 0px;
         padding: 16px;
@@ -5297,7 +5655,7 @@ color: #495057;
         padding-top: 9px;
         margin-left: 6px;
         position: absolute;
-        right: 16px;
+        right: 3px;
     }
     .red {
        
@@ -5408,9 +5766,13 @@ color: #495057;
         width: max-content;
         margin-left: 20px;
     }
-    .row.bts {
-        margin-left: 20px;
+    .nffaturamento .row.bts {
+        margin-left: -17px !important;
+        margin-top:44px !important;
         
+    }
+    .col-md-9.nfe.mb-5.mt-5.p-0.pb-2.nffaturamento input {
+        margin-bottom: -35px;
     }
     button.btn.addnovo {
         width: max-content;
@@ -5492,23 +5854,18 @@ position: absolute !important;
     }*/
     .reservarhorariomb{
         display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 32px 24px;
-gap: 32px;
-
-position: absolute;
-width: 354px !important;
-    height: auto;
-
-    left: -180px;
-    top: 323px;
-
-background: #FFFFFF;
-/* Shadow / XL */
-
-box-shadow: 0px 25px 40px -10px rgba(28, 39, 49, 0.08);
-border-radius: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 24px;
+        gap: 32px;
+        position: absolute;
+        width: 354px !important;
+        height: auto;
+        left: -108px !important;
+        top: 323px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
 
 
     
@@ -6018,11 +6375,115 @@ nav.navbar.navbar-expand.nfs {
     }
     p.titsubmenu {
         margin-top: 13px;
+        margin-left: 17px;
     }
     .iconrefresh{
         
 width: 30px;
 height: 30px;
+    }
+    .col-md-9.plan1.nfe.mb-5.mt-5.emitirrecibo {
+        margin-top: -31px !important;
+        height: auto;
+    }
+    .col-md-11.tabelasect.mb-5.editarperfil {
+        margin-left: -33px;
+        width: -webkit-fill-available;
+    }
+    .emitirrecibo .importarcsv {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        gap: 8px;
+        width: -webkit-fill-available;
+        height: 50px;
+        background: rgba(56, 171, 255, 0.08);
+        border: 1px solid #157BC6;
+        border-radius: 4px;
+    }
+    .col-md-11.tabelasect.mb-5.editarperfil .btn-primary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 131.5px;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+    }
+   .editarperfil .switchs {
+     
+        margin-left: 8px;
+    }
+    .listaEmails{
+        display: none;
+    }
+    .tituloemails {
+        margin-bottom: 20px;
+        margin-top: -23px;
+        
+        margin-left: -22px;
+    }
+    .tabelemailmobile {
+        margin-left: -24px;
+    }
+    .col-md-11.tabelasect.mb-5.mt-3.indique {
+        margin-top: 67px !important;
+        margin-left: -21px;
+        width: -webkit-fill-available;
+    }
+    .indique .btn-primary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: auto;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+    }
+    a.btnRegulamento {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 231px;
+        height: 38px;
+        background: #004578;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F8F9FA;
+    }
+    .editarperfil .btnnotificacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 279px;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #F8F9FA;
     }
     .btnreservah{
         display: none;
@@ -6491,6 +6952,38 @@ z-index: 999;
         margin-left: 51%;
         width: 80%;
     }
+    .col-md-9.btnreservah {
+        right: -29% !important;
+    }
+    .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
+        width: 81%;
+    }
+    .col-md-11.tabelasect.p-4.mb-2.mt-3.reservarhorario {
+        width: 108% !important;
+    }
+    .login-side form {
+        width: -webkit-fill-available;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .col-md-4.menu {
+        margin-left: 182px;
+        
+    }
+    p.titulosecao.titimport {
+        
+        left: -157px;
+    }
+    .btnLogin {
+       
+        width: 422px;
+     
+    }
+    .emaillogin, .senhalogin {
+       
+        width: 422px;
+    }
     a.btn.btn-light {
        
         width: 187px;
@@ -6571,12 +7064,15 @@ z-index: 999;
         }
         .tabelasect {
     
-            width: 83% ;
+            width: 81% ;
         
+        }
+        .stepinativo {
+            width: 234px;
         }
         .titlesection {
     
-            width: 78%;
+            width: 95% !important;
             height: 77px;
         }
         .col.col-md-10.centraldocumentos {
@@ -6584,6 +7080,12 @@ z-index: 999;
         }
         .plan1 {
             width: 69% !important;
+        }
+        .col-md-9.nfe.mb-5.mt-5.p-0.pb-2.nffaturamento {
+            width: 72%;
+        }
+        .row.bts.mt-3 {
+            margin-left: -11px;
         }
         .col.col-md-10.enderecofiscal {
             margin-left: 20%;
@@ -6644,7 +7146,7 @@ z-index: 999;
  
    
 }
-@media only screen and (max-width: 1366px){
+@media only screen and (max-width: 1380px){
     .minbusca {
         right: 34px !important;
     }
@@ -6654,6 +7156,9 @@ z-index: 999;
         margin-left: 137px;
         width: 87%;
     }
+    .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb .step {
+        width: 232px;
+    }
     .plan1 {
         width: 77% !important;
     }
@@ -6661,13 +7166,14 @@ z-index: 999;
         width: 77% ;
     }
     main.col-md-9.titlesection {
-        width: 76%;
+        width: 77%;
     }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
         width: 91% !important;
     }
-    .tabelasect {
-        width:90% ;
+    .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
+        width: 64%;
+        margin-left: 129px;
     }
     .titulosecao, .titulosecaod {
         margin-left: 33% ;
@@ -6700,21 +7206,66 @@ z-index: 999;
         right: -47px;
        
     }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
+        width: 95%;
+    }
     .col-md-11.tabelasect.mb-5.mt-3.socios {
       
         width: 83%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
-        width: 65%;
+        width: 61%;
+    }
+    .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb .step {
+        width: 200px;
     }
     a.btn.btn-success.addmovimentacao {
      
         right: -17px;
     }
+    .reservarhorariomb form {
+        width: -webkit-fill-available;
+    }
     .gerenciarconta {
        
         right: 391px;
     }
+    .col-md-11.tabelasect.mb-5.dados-empresa {
+        width: 96%;
+    }
+    table.table.resumo {
+        margin-left: -15px;
+    }
+    .col-md-11.tabelasect.mb-5.centraldocumentos.car {
+        width: 95%;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.recisao {
+        width: 96%;
+    }
+    .col-md-11.tabelasect.mt-2.mb-5.p-0.pb-2.holerite {
+        width: 94%;
+    }
+    .col-md-11.tabelasect.mb-5.folhaponto {
+        width: 94%;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.socios {
+        width: 94%;
+    }
+    .col-md-11.tabelasect.mb-5.recisao.add {
+        width: 92%;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.folhapagamento {
+        width: 94%;
+    }
+    .visualizacao {
+    right: 9%;
+}
+.col-md-11.tabelasect.mb-5.meuscolaboradores.car {
+    width: 95%;
+}
+.col-md-11.tabelasect.mb-5.colaboradores.car {
+    width: 95%;
+}
     .row.btnsfluxoimposto {
        
         right: -20px;
@@ -6745,7 +7296,7 @@ z-index: 999;
     }
     .titlesection {
   
-        width: 78%;
+        width: 79%;
     }
     .titulosecao, .titulosecaod {
         margin-left: 352px;
@@ -6767,9 +7318,7 @@ z-index: 999;
         margin-top: 64px;
       
     }
-    .titulosecao.socios {
-        margin-left: 29%;
-    }
+   
 
 }
 

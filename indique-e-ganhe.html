@@ -268,6 +268,40 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="titsubmenu"> Encaminhar e-mail </span>
+                        <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <a class="dropdown-item" href="indique-e-ganhe.html">
+
+                            Indique
+                        </a>
+                    
+                    
+                        <a class="dropdown-item" href="minhas-indicacoes.html">
+
+                            Minhas indicações
+                        </a>
+                   
+                        <a class="dropdown-item" href="extrato-financeiro.html">
+
+                            Extrato financeiro
+                        </a>
+                  
+                        <a class="dropdown-item" href="configuracoes-e-regulamentos.html">
+
+                            Configurações e regulamentos
+                        </a>
+
+
+
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
 
@@ -277,18 +311,29 @@
                                 <p class="titulosecaos"><b>Indique</b></p>
 
                             </div>
+                            <div class="dropdown  botoesmobile">
+
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/botoesmobile.png" alt="">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a href="#" class="btnRegulamento" data-bs-toggle="modal" data-bs-target="#filtrom">Ver regulamento</a>
+    
+                                </div>
+                            </div>
                             <div class="row btnscliente position-absolute" style="margin-top:-12px; margin-left:565px;">
 
 
 
 
-                                <a href="adicionar-colaborador.html" class="btn addnovo" style="right: 20px;">Ver regulamento</a>
+                                <a href="#" class="btn addnovo" style="right: 20px;">Ver regulamento</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-10 dados-empresa indique" style="margin-top: 75px !important;">
-                    <div class="col-md-11 tabelasect mb-5 mt-3">
+                <div class="col col-md-10 indique" >
+                    <div class="col-md-11 tabelasect mb-5 mt-3 indique">
                         <div class="row">
 
                             <nav class="navbar navbar-expand pagamentos">
@@ -372,16 +417,17 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Ajuda</h5>
+                                    <h5 class="modal-title">Termos e regulamentos - Indique e ganhe</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Sempre que precisar, acesse nossa área de ajuda e conte com dicas práticas para
-                                        aproveitar
-                                        todas
-                                        as funcionalidades e serviços que a Contabilivre fornece.</p>
+                                    <p>Antes de prosseguir é necessário estar de acordo com nossa <b>Política de Privacidade e Segurança</b></p>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
                                 </div>
+                                
                                 <div class="modal-footer">
                                     <div class="position-absolute bottom-2 start-0">
                                         <p><b>4/5</b></p>
@@ -394,49 +440,47 @@
                         </div>
                     </div>
 
-                    <!--Modal avaliaçao 1-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body text-center">
-                                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                                        atendê-lo
-                                        melhor.
-                                    </p>
-                                    <img src="img/avaliações.png" alt="Avaliacoes">
-                                </div>
-                                <div class="modal-footer text-center">
-                                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                        aria-label="Close">Continuar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-                    </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                    </div>
-
-
-
-                </div>
-
-            </footer>-->
+                    
+         
 </body>
+<script>
+    $(document).ready(function(){
 
+var btnacessos=document.querySelector('#acessosbtn');
+var btncert=document.querySelector('#certificadobtn');
+
+var formempresa=document.querySelector('.formempresa');
+var formcert=document.querySelector('.formcertificado');
+
+btnacessos.addEventListener('click', function(e){
+    e.preventDefault();
+    formempresa.style.display='flex';
+    formcert.style.display='none';
+    btnacessos.style.borderBottom='2px solid #4aa3e5';
+    btnacessos.style.fontWeight='600';
+    btncert.style.fontWeight='100';
+    btncert.style.border='none';
+   
+   
+    
+});
+
+btncert.addEventListener('click', function(e){
+    e.preventDefault();
+    formempresa.style.display='none';
+    formcert.style.display='block';
+    btncert.style.borderBottom='2px solid #4aa3e5';
+    btncert.style.fontWeight='600';
+    btnacessos.style.fontWeight='100';
+    btnacessos.style.border='none';
+   
+   
+    
+});
+
+
+});
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

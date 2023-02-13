@@ -247,8 +247,27 @@
                 </div>
             </div>
 
+            <div class="submenumobile" style="top: 229px;">
 
+                <p class="titsubmenu"><a href="notas-fiscais.html"><i class="fa fa-chevron-left"></i></a>Registrar faturamento sem nota fiscal</p>
+            </div>
             <div class="container mt-5">
+                <div class="col-md-4 menu nffaturamento" style="margin-top: -25px;">
+
+                    <nav class="navbar navbar-expand nfs">
+                        <ul class="metodospag navbar-nav me-auto">
+
+                            <li class="nav-item"><a href="#" class="nav-link" id="registrarbtn">Registrar</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="ultimosregistrosbtn">Últimos
+                                    Registros
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
                 <div class="col-md-4 menu" style="margin-top: -25px;">
 
                     <nav class="navbar navbar-expand nfs">
@@ -265,12 +284,12 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-9 nfe mb-5 mt-5 p-0 pb-2" style="top: 274px;">
+                <div class="col-md-9 nfe  mb-5 mt-5 p-0 pb-2 nffaturamento nffato" style="top: 274px;">
 
                     <div class="row mb-3">
 
                       
-                        <div class="importarNota">
+                        
                             <form action="">
                             <div class="row formempresa">
 
@@ -298,7 +317,7 @@
 
                                 </div>
                             </div>
-                        </div>
+                       
 
                         <!--tabela ultimas emissões-->
                         <div class="row table-responsive w-100">
@@ -370,7 +389,82 @@
                 </div>
             </div>
 
+            <div class="ultimasEmissoesmobile">
+                <div class="row countpage" style="margin-top: 38px;">
+                    <div class="basetitle">
+                        <div class="itemlabel">
+                            <p>1 - 5 de 16 resultados</p>
+                        </div>
+                    </div>
+                    <div class="selectpage">
+                        <div class="basetitlepage">
+                            <p>Página</p>
+                        </div>
+                        <select class="basetitleselect">
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tablemobile">
+                    
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Competência</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Valor</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>R$0.000,00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lineinfo" >
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <a href="#" class="btnVerFolha ">Ver NF</a>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="tablemobile">
+                    
+                    <div class="lineinfo">
+                        <div class="baseinfo">
+                            <p>Competência</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>00/00/0000</p>
+                        </div>
+                    </div>
+                    <div class="lineinfo" style="background: #fff;">
+                        <div class="baseinfo">
+                            <p>Valor</p>
+                        </div>
+                        <div class="baseitem">
+                            <p>R$0.000,00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lineinfo" >
+                        <div class="baseinfo">
+                            <p>Ação</p>
+                        </div>
+                        <div class="baseitem">
+                            <a href="#" class="btnVerFolha ">Ver NF</a>
+                        </div>
+                    </div>
+    
+                </div>
 
+            </div>
 
 
 
@@ -398,24 +492,53 @@
                     </div>
                 </div>
             </div>
-            <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
-                    </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
-                    </div>
-
-
-
-                </div>
-
-            </footer>-->
+          
 </body>
+<script>
+    $(document).ready(function(){
+    var btnImportar=document.querySelector("#registrarbtn");
+    var btnUltimasEm=document.querySelector("#ultimosregistrosbtn");
+   
+
+    var importar=document.querySelector('.nffato');
+    var ultimasEmissoes=document.querySelector('.ultimasEmissoesmobile');
+   
+
+    btnImportar.addEventListener('click', function(e){
+        e.preventDefault();
+        importar.style.display='flow-root';
+        ultimasEmissoes.style.display='none';
+       
+       
+
+        btnUltimasEm.style.border='none';
+        btnImportar.style.borderBottom='2px solid #4aa3e5';
+        btnImportar.style.fontWeight='600';
+        btnUltimasEm.style.fontWeight='100';
+       
+      
+        
+    });
+
+    btnUltimasEm.addEventListener('click', function(e){
+        e.preventDefault();
+        importar.style.display='none';
+        ultimasEmissoes.style.display='flow-root';
+       
+       
+
+        btnUltimasEm.style.borderBottom='2px solid #4aa3e5';
+        btnUltimasEm.style.fontWeight='600';
+        btnImportar.style.fontWeight='100';
+        btnImportar.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
