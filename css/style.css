@@ -4589,6 +4589,37 @@ margin-bottom: 13px;
        
         margin-left: -54px;
     }
+    .novolembreteform .btn-primary {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 131.5px;
+        height: 38px;
+        background: #4AA3E5;
+        border-radius: 4px;
+    }
+    form.w-100.novolembreteform img {
+        margin-top: 28px !important;
+    }
+    .col.col-md-1.radios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .col-md-9.plan1.mb-5.mt-5.criarlembrete {
+        width: -webkit-fill-available !important;
+        margin-left: 135px;
+    }
+    .col-md-11.tabelasect.p-4.mb-2.mt-3.reservarhorario.first {
+        /* margin-left: 216px; */
+        width: -webkit-fill-available !important;
+    }
     .configuracoes a.btn.addnovo {
         margin-top: 47px;
         right: 47px !important;
