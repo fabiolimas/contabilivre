@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Contabilivre - Financeiro</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
@@ -13,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anacss.css">
     <!--scripts-->
     <!--Fulcallendar-->
     <link rel="stylesheet" href="js/fullcalendar-5.11.3/lib/main.css">
@@ -30,7 +32,7 @@
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -48,7 +50,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,11 +66,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -220,7 +222,7 @@
 
 
                     <div class="col-md-2 minbusca">
-                    <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
+                        <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
                         <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
                             class="form-control" placeholder="Pesquisar">
                     </div>
@@ -242,8 +244,8 @@
                                 <div class="row btnsfinanceiro position-absolute">
 
 
-                                    <button class="btn btn-success" data-bs-toggle="modal"
-                                        data-bs-target="#promocao"> Plano anual com 3,5% de desconto</button>
+                                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#promocao">
+                                        Plano anual com 3,5% de desconto</button>
                                     <a href="#" class="btn btn-danger mensalidadesa"><img
                                             src="img/notifyred.png">Existem mensalidades em aberto</a>
 
@@ -280,6 +282,7 @@
                                     </div>
                                 </div>
 
+
                             </div>
                         </div>
                     </div>
@@ -313,13 +316,347 @@
 
         </div>
     </div>
+    <div class="submenumobile">
+
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="titsubmenu">Pagamentos </span>
+            <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+            <a class="dropdown-item" href="financeiro.html">
+
+                Pagamentos
+            </a>
+
+
+
+
+            <a class="dropdown-item" href="metodo-de-pagamento.html" style="border:none">
+
+                Método de pagamento
+            </a>
+
+
+
+
+
+        </div>
+
+    </div>
+    <div class="row menufinanceiromobile">
+        <div class="col-md-9">
+
+
+            <ul class="metodospag">
+                <div class="row">
+                    <li class="nav-item"><a href="#" class="nav-link" id="mensalidadeBtnm">Mensalidades</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="histBtnm">Histórico
+                            sem movimentação</a>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="nav-item"><a href="#" class="nav-link" id="avulsosBtnm">Serviços avulsos contratados</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="creditosBtnm">Créditos</a>
+                    </li>
+                </div>
+
+                
+            </ul>
+            
+            <div class="row saldoCreditosm">
+                <p>Saldo em créditos</p>
+                <span class="val">R$ 0,00</span>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row countpage" style="    margin-top: 297px;">
+        <div class="basetitle">
+            <div class="itemlabel">
+                <p>1 - 5 de 16 resultados</p>
+            </div>
+        </div>
+        <div class="selectpage">
+            <div class="basetitlepage">
+                <p>Página</p>
+            </div>
+            <select class="basetitleselect">
+                <option value="">1</option>
+            </select>
+        </div>
+    </div>
+    <div class="mensalidadesmobile">
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Vencimento</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Data do pagamento</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Valor pago</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0.000,00</p>
+
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Situação</p>
+                </div>
+                <div class="baseitem">
+                    <span class="finalizado">Pagamento realizado</span>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Ação</p>
+                </div>
+                <div class="baseitem">
+                    <div class="dropdown  detalhesrecisao">
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#verDetalhes"
+                                style="border: none;"><img src="img/detalhes.png">Ver detalhes
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Vencimento</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Data do pagamento</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Valor pago</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0.000,00</p>
+
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Situação</p>
+                </div>
+                <div class="baseitem">
+                    <span class="rcorreio">Aguardando págamento</span>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Ação</p>
+                </div>
+                <div class="baseitem">
+                    <div class="dropdown  detalhesrecisao">
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#verDetalhes"
+                                style="border: none;"><img src="img/detalhes.png">Ver detalhes
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="historicomobile">
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Competência</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Período referente</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000 à 00/00/0000</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Situação</p>
+                </div>
+                <div class="baseitem">
+                    <span class="finalizado">Desconto concedido</span>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Motivo</p>
+                </div>
+                <div class="baseitem">
+                    <p>Empresa com funcionários (1)</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Competência</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Período referente</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000 à 00/00/0000</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Situação</p>
+                </div>
+                <div class="baseitem">
+                    <span class="rcorreio">Desconto não concedido</span>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Motivo</p>
+                </div>
+                <div class="baseitem">
+                    <p>Empresa com funcionários (1)</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="servicosavulsosmotile">
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Contratação</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Nome do serviço</p>
+                </div>
+                <div class="baseitem">
+                    <p>Nome completo do serviço avulso prestado</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Valor</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0,00</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="tablemobile">
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Contratação</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Nome do serviço</p>
+                </div>
+                <div class="baseitem">
+                    <p>Nome completo do serviço avulso prestado</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Valor</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0,00</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
     <div class="container mensalidades">
         <div class="col col-md-10 addColaborador financeiro">
             <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
-                        <thead class="table-dark">
-                            <tr>
+                        <thead class="">
+                            <tr class="gradient">
                                 <th scope="col" style="width: 204px;
                                 height: 52px;">Vencimento</th>
                                 <th scope="col" style="width: 204px;
@@ -440,7 +777,7 @@
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                <</a>
+                                << /a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -460,8 +797,8 @@
             <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
-                        <thead class="table-dark">
-                            <tr>
+                        <thead class="">
+                            <tr class="gradient">
                                 <th scope="col" style="width: 226px;
                                 height: 52px;">Competência</th>
                                 <th scope="col" style="width: 226px;
@@ -525,7 +862,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                <</a>
+                                << /a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -546,8 +883,8 @@ height: 52px;">Situação</th>
             <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
-                        <thead class="table-dark">
-                            <tr>
+                        <thead class="">
+                            <tr class="gradient">
                                 <th scope="col" style="width: 190px;
                                 height: 52px;
                                 ">Contratação</th>
@@ -598,7 +935,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                <</a>
+                                << /a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -619,8 +956,8 @@ height: 52px;">Situação</th>
             <div class="col-md-11 tabelasect mb-5 mt-5 p-0 pb-2">
                 <div class="row table-responsive">
                     <table class="table">
-                        <thead class="table-dark">
-                            <tr>
+                        <thead class="">
+                            <tr class="gradient">
                                 <th scope="col" style="width: 190px;
                                 height: 52px;">Data</th>
                                 <th scope="col" style="width: 238px;
@@ -679,7 +1016,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                <</a>
+                                << /a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -723,7 +1060,8 @@ height: 52px;">Situação</th>
 
                         </div>
                         <div class="col col-md-6">
-                            <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal (Últimos 12
+                            <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal
+                                (Últimos 12
                                 meses)</span>
                             <p><b>R$0,00</b></p>
 
@@ -756,7 +1094,7 @@ height: 52px;">Situação</th>
 
         </div>
     </div>
-<!--Promoção-->
+    <!--Promoção-->
     <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="promocao" style="--bs-modal-width: 888px;
     --bs-modal-height: 557px;">
         <div class="modal-dialog">
@@ -772,31 +1110,46 @@ height: 52px;">Situação</th>
                     </div>
                     <div class="row">
                         <div class="info">
-                          <div class="col-md-1">
-                            <img src="img/info.png" alt="">
-                          </div>
-                           <div class="col-md-10">
-                            <p style="    padding-top: 12px;">Se durante o período do crédito houver adicionais de faturamento, sócios, funcionários e correspondências, fora da situação atual da empresa no ato do pagamento antecipado, também serão abatidos. Assim como na contratação de serviços avulsos, se o cliente optar pela utilização do crédito, ou seja, os créditos podem finalizar antes de 12 meses.</p>
-                           </div>
-                           <div class="col-md-1">
-                            <img src="img/excluir.png" alt="">
-                           </div>
+                            <div class="col-md-1">
+                                <img src="img/info.png" alt="">
+                            </div>
+                            <div class="col-md-10">
+                                <p style="    padding-top: 12px;">Se durante o período do crédito houver
+                                    adicionais de
+                                    faturamento, sócios, funcionários e correspondências, fora da situação atual
+                                    da
+                                    empresa no ato do pagamento antecipado, também serão abatidos. Assim como na
+                                    contratação de serviços avulsos, se o cliente optar pela utilização do
+                                    crédito, ou
+                                    seja, os créditos podem finalizar antes de 12 meses.</p>
+                            </div>
+                            <div class="col-md-1">
+                                <img src="img/excluir.png" alt="">
+                            </div>
                         </div>
                         <div class="row poupe">
-                            <p>Poupe seu dinheiro e tempo, optando pelo pagamento antecipado de 12 mensalidades com 3.5% de desconto!</p>
+                            <p>Poupe seu dinheiro e tempo, optando pelo pagamento antecipado de 12 mensalidades
+                                com 3.5%
+                                de desconto!</p>
                         </div>
                         <div class="row">
                             <p><b>Como funciona:</b></p>
-                            <p class="gray">O valor total será utilizado como crédito para abatimento de seus débitos com a Contabilivre (Mensalidades, adicionais de sócios, funcionários, faturamento e serviços avulsos - neste caso, se optado no ato da contratação destes serviços avulsos).</p>
+                            <p class="gray">O valor total será utilizado como crédito para abatimento de seus
+                                débitos
+                                com a Contabilivre (Mensalidades, adicionais de sócios, funcionários,
+                                faturamento e
+                                serviços avulsos - neste caso, se optado no ato da contratação destes serviços
+                                avulsos).
+                            </p>
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="modal-footer text-center">
 
                         <a href="#" data-bs-dismiss="modal" aria-label="Close">Ignorar oferta</a>
-                                <a href="desconto.html" class="btn btn-success"> 
-                                    Quero o desconto</a>
+                        <a href="desconto.html" class="btn btn-success">
+                            Quero o desconto</a>
                     </div>
 
                 </div>
@@ -810,6 +1163,244 @@ height: 52px;">Situação</th>
 
 
 </body>
+<script>
+    $(document).ready(function () {
+        var btnmensalidade = document.querySelector("#mensalidadeBtn");
+        var btnhistorico = document.querySelector("#histBtn");
+        var btnavulsos = document.querySelector("#avulsosBtn");
+        var btncredito = document.querySelector("#creditosBtn");
+
+
+        var mensalidade = document.querySelector('.mensalidadesmobile');
+        var historico = document.querySelector('.historicoM');
+        var avulsos = document.querySelector('.avulsos');
+        var credito = document.querySelector('.creditost');
+        var saldoc = document.querySelector('.saldoCreditos');
+        var menuFinanceiro = document.querySelector('#menuFinanceiro');
+        var metodosPagamento = document.querySelector('.metodospag');
+
+
+
+        btnmensalidade.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'block';
+            historico.style.display = 'none';
+            avulsos.style.display = 'none';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.border = 'none';
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.borderBottom = '2px solid #4aa3e5';
+            btnmensalidade.style.fontWeight = '600';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+            btncredito.style.fontWeight = '100';
+            btnhistorico.style.fontWeight = '100';
+
+
+
+
+        });
+
+        btnhistorico.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'block';
+            avulsos.style.display = 'none';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.border = 'none';
+            btnhistorico.style.borderBottom = '2px solid #4aa3e5';
+            btnhistorico.style.fontWeight = '600';
+            btnmensalidade.style.borderBottom = 'none';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+            btncredito.style.fontWeight = '100';
+
+            btnmensalidade.style.fontWeight = '100';
+
+
+
+        });
+
+        btnavulsos.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'none';
+            avulsos.style.display = 'block';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.borderBottom = '2px solid #4aa3e5';
+            btnavulsos.style.fontWeight = '600';
+            btncredito.style.fontWeight = '100';
+            btnhistorico.style.fontWeight = '100';
+            btnmensalidade.style.fontWeight = '100';
+            btncredito.style.border = 'none';
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.borderBottom = 'none';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+
+
+
+        });
+
+        btncredito.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'none';
+            avulsos.style.display = 'none';
+            credito.style.display = 'block';
+            saldoc.style.display = 'block';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.borderBottom = '2px solid #4aa3e5';
+            btncredito.style.fontWeight = '600';
+            btnavulsos.style.fontWeight = '100';
+
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.border = 'none';
+            menuFinanceiro.style.height = '188px';
+            metodosPagamento.style.marginTop = '-76px';
+
+            btnhistorico.style.fontWeight = '100';
+            btnmensalidade.style.fontWeight = '100';
+
+
+
+        });
+
+
+
+
+    });
+
+
+    $(document).ready(function () {
+        var btnmensalidade = document.querySelector("#mensalidadeBtnm");
+        var btnhistorico = document.querySelector("#histBtnm");
+        var btnavulsos = document.querySelector("#avulsosBtnm");
+        var btncredito = document.querySelector("#creditosBtnm");
+
+
+        var mensalidade = document.querySelector('.mensalidadesmobile');
+        var historico = document.querySelector('.historicomobile');
+        var avulsos = document.querySelector('.servicosavulsosmotile');
+        var credito = document.querySelector('.creditost');
+        var saldoc = document.querySelector('.saldoCreditosm');
+        var menuFinanceiro = document.querySelector('.menufinanceiromobile');
+        var metodosPagamento = document.querySelector('.metodospag');
+        var contadorpagina=document.querySelector('.countpage');
+
+
+
+        btnmensalidade.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'block';
+            historico.style.display = 'none';
+            avulsos.style.display = 'none';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.border = 'none';
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.borderBottom = '2px solid #4aa3e5';
+            btnmensalidade.style.fontWeight = '600';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+            btncredito.style.fontWeight = '100';
+            btnhistorico.style.fontWeight = '100';
+            contadorpagina.style.marginTop = '310px';
+
+
+
+
+        });
+
+        btnhistorico.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'block';
+            avulsos.style.display = 'none';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.border = 'none';
+            btnhistorico.style.borderBottom = '2px solid #4aa3e5';
+            btnhistorico.style.fontWeight = '600';
+            btnmensalidade.style.borderBottom = 'none';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+            btncredito.style.fontWeight = '100';
+            contadorpagina.style.marginTop = '310px';
+            btnmensalidade.style.fontWeight = '100';
+
+
+
+        });
+
+        btnavulsos.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'none';
+            avulsos.style.display = 'block';
+            credito.style.display = 'none';
+            saldoc.style.display = 'none';
+
+            btnavulsos.style.borderBottom = '2px solid #4aa3e5';
+            btnavulsos.style.fontWeight = '600';
+            btncredito.style.fontWeight = '100';
+            btnhistorico.style.fontWeight = '100';
+            btnmensalidade.style.fontWeight = '100';
+            btncredito.style.border = 'none';
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.borderBottom = 'none';
+            menuFinanceiro.style.height = 'auto';
+            metodosPagamento.style.marginTop = '0px';
+            contadorpagina.style.marginTop = '310px';
+
+
+
+        });
+
+        btncredito.addEventListener('click', function (e) {
+            e.preventDefault();
+            mensalidade.style.display = 'none';
+            historico.style.display = 'none';
+            avulsos.style.display = 'none';
+            credito.style.display = 'none';
+            saldoc.style.display = 'block';
+
+            btnavulsos.style.border = 'none';
+            btncredito.style.borderBottom = '2px solid #4aa3e5';
+            btncredito.style.fontWeight = '600';
+            btnavulsos.style.fontWeight = '100';
+
+            btnhistorico.style.border = 'none';
+            btnmensalidade.style.border = 'none';
+            menuFinanceiro.style.height = '229px';
+            contadorpagina.style.marginTop = '374px';
+
+            btnhistorico.style.fontWeight = '100';
+            btnmensalidade.style.fontWeight = '100';
+
+
+
+
+        });
+
+
+
+
+    });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

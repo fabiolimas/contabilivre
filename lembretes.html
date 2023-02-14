@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    
     <title>Contabilivre - Lembretes</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
@@ -12,7 +13,8 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anacss.css">
     <!--scripts-->
     <!--Fulcallendar-->
     <link rel="stylesheet" href="js/fullcalendar-5.11.3/lib/main.css">
@@ -215,395 +217,392 @@
             <!--planos-->
 
             <div class="col col-md-12">
-                <main class="col-md-9 titlesection">
+                <main class="col-md-9 titlesection full">
                     <div class="row">
 
-                        <div class="col-md-4">
-                            <p><img src="img/star.png"><b>Lembretes</b></p>
+                        <div class="col">
+                            <p class="plans-title-align"><img src="img/star.png"><b>Lembretes</b></p>
                         </div>
 
-                        <div class="col-md-2 minbusca">
 
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png"
-                                    alt="" id="iconfiltros"></a>
 
-                        </div>
-                        <div class="searchbar">
-                            <div class="col-md-2 position-relative mt-2 ms-3">
-                                <i class="fa fa-search position-absolute  m-2 inputbusca"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Pesquisar">
-                            </div>
-                            <div class="col-md-2 datain position-relative mt-2 ms-3">
-
-                                <i class="fas fa-calendar position-absolute m-2 inputdata1"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div><span class="gray ms-3"> Até </span>
-                            <div class="col-md-2 datafi position-relative mt-2 ms-3">
-                                <i class="fas fa-calendar position-absolute  m-2 inputdata2"></i><input type="text"
-                                    name="pesquisa" class="form-control" placeholder="Periodo">
-                            </div>
-                            <div class="col-md-2 datafi mt-2 ms-3">
-                                <button class="btn btn-primary headbusca">Buscar</button>
-                            </div>
-                        </div>
                     </div>
+                    <div class="formbusca">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                id="iconfiltros" style="right: 14px;
+                                top: 25px;"></a>
+                        <div class="pesquisar">
+                            <img src="img/lupa.png" alt="">
+                            <input type="text" class="form-control" placeholder="Pesquisar">
+                        </div>
+
+                        <div class="periodo1">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Período" id="data">
+                        </div>
+                        <span class="gray"> Até</span>
+
+                        <div class="periodo2">
+                            <img src="img/calendar.png" alt="">
+                            <input type="text" class="form-control" placeholder="Período" id="data2">
+                        </div>
+                        <button class="btn btn-primary headbusca">Buscar</button>
+
+                    </div>
+
                 </main>
-
-
-
             </div>
-            <div class="row countpage" style="    margin-top: 58px;">
-                <div class="basetitle">
-                    <div class="itemlabel">
-                        <p>1 - 5 de 16 resultados</p>
-                    </div>
-                </div>
-                <div class="selectpage">
-                    <div class="basetitlepage">
-                        <p>Página</p>
-                    </div>
-                    <select class="basetitleselect">
-                        <option value="">1</option>
-                    </select>
+
+
+        </div>
+        <div class="row countpage" style="    margin-top: 58px;">
+            <div class="basetitle">
+                <div class="itemlabel">
+                    <p>1 - 5 de 16 resultados</p>
                 </div>
             </div>
-            <div class="tablemobile">
-
-                <div class="lineinfo">
-                    <div class="baseinfo">
-                        <p>Data do lembrete</p>
-                    </div>
-                    <div class="baseitem">
-                        <p>00/00/0000</p>
-                    </div>
+            <div class="selectpage">
+                <div class="basetitlepage">
+                    <p>Página</p>
                 </div>
+                <select class="basetitleselect">
+                    <option value="">1</option>
+                </select>
+            </div>
+        </div>
+        <div class="tablemobile">
 
-
-                <div class="lineinfo" style="background:#fff">
-                    <div class="baseinfo">
-                        <p>Lembretes</p>
-                    </div>
-                    <div class="baseitem">
-                        <p>Título do lembrete</p>
-                    </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Data do lembrete</p>
                 </div>
-                <div class="lineinfo">
-                    <div class="baseinfo">
-                        <p>Etiqueta</p>
-                    </div>
-                    <div class="baseitem position-relative">
-                        <span class="etAzul"></span>
-                    </div>
-                </div>
-                <div class="lineinfo" style="background:#fff">
-                    <div class="baseinfo">
-                        <p>Situação</p>
-                    </div>
-                    <div class="baseitem">
-                        <span class="finalizado">Ativo</span>
-                    </div>
-                </div>
-                <div class="lineinfo">
-                    <div class="baseinfo">
-                        <p>Ação</p>
-                    </div>
-                    <div class="baseitem">
-                        <div class="dropdown  detalhesrecisao">
-
-                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <i class="fas fa-ellipsis-v"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
-                                </a>
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#editarMovimentacao"><img src="img/desativar.png">Desativar
-                                </a>
-                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="baseitem">
+                    <p>00/00/0000</p>
                 </div>
             </div>
 
-            <div class="container  mt-5">
-                <div class="titulotela">
-                    <div class="dropdown  botoesmobile">
 
-                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+            <div class="lineinfo" style="background:#fff">
+                <div class="baseinfo">
+                    <p>Lembretes</p>
+                </div>
+                <div class="baseitem">
+                    <p>Título do lembrete</p>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Etiqueta</p>
+                </div>
+                <div class="baseitem position-relative">
+                    <span class="etAzul"></span>
+                </div>
+            </div>
+            <div class="lineinfo" style="background:#fff">
+                <div class="baseinfo">
+                    <p>Situação</p>
+                </div>
+                <div class="baseitem">
+                    <span class="finalizado">Ativo</span>
+                </div>
+            </div>
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Ação</p>
+                </div>
+                <div class="baseitem">
+                    <div class="dropdown  detalhesrecisao">
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <img src="img/botoesmobile.png" alt="">
+                            <i class="fas fa-ellipsis-v"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a href="criar-novo-lembrete.html" class="btnRegulamento" >Criar novo lembrete</a>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#verDetalhes"><img
+                                    src="img/editgray.png">Editar
+                            </a>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#editarMovimentacao"><img src="img/desativar.png">Desativar
+                            </a>
+                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
+                            </a>
 
                         </div>
                     </div>
-                    <div class="titulosecao" style="margin-left: 172px;">
-                        <p><b> Meus Lembretes</b>
-                    </div>
-                    <div class="row btnscliente position-absolute" style="margin-top:-12px; margin-left:757px;">
+                </div>
 
+            </div>
+        </div>
 
+        <div class="container  mt-5">
+            <div class="titulotela">
+                <div class="dropdown  botoesmobile">
 
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                        <img src="img/botoesmobile.png" alt="">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="criar-novo-lembrete.html" class="btnRegulamento">Criar novo lembrete</a>
 
-                        <a href="criar-novo-lembrete.html" class="btn addnovo lembrete">Criar novo lembrete</a>
                     </div>
                 </div>
-                <div class="col-md-9 plan1 p-0 pb-2 lembrete mb-5" style="top: 261px;">
+                <div class="titulosecao">
+                    <p><b> Meus Lembretes</b>
+                </div>
+                <div class="row btnscliente position-absolute">
 
 
-                    <div class="row table-responsive w-100">
-                        <table class="table nftable">
-                            <thead class="table-dark">
-                                <tr>
 
-                                    <th scope="col" style="width: 252px;
+
+                    <a href="criar-novo-lembrete.html" class="btnRegulamento">Criar novo lembrete</a>
+                </div>
+            </div>
+            <div class="col-md-9 plan1 p-0 pb-2 lembrete mb-5" style="top: 261px;">
+
+
+                <div class="row table-responsive w-100">
+                    <table class="table nftable">
+                        <thead class="table-dark">
+                            <tr>
+
+                                <th scope="col" style="width: 252px;
                                     height: 52px;">Data do lembrete</th>
-                                    <th scope="col" style="width: 252px;
+                                <th scope="col" style="width: 252px;
                                     height: 52px;">Lembretes</th>
-                                    <th scope="col" style="width: 252px;
+                                <th scope="col" style="width: 252px;
                                     height: 52px;">Etiqueta</th>
-                                    <th scope="col" style="width: 252px;
+                                <th scope="col" style="width: 252px;
                                     height: 52px;">Situação</th>
-                                    <th scope="col" style="width: 88px;
+                                <th scope="col" style="width: 88px;
                                     height: 52px;
                                     ">Ação</th>
 
-                                </tr>
-                            </thead>
-                            <tbody class="table-group-divider ">
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider ">
 
-                                <tr>
-
-
-                                    <td>00/00/0000</td>
-                                    <td>Título do lembrete aqui</td>
-                                    <td class="position-relative"><span class="etAzul"></span></td>
-                                    <td><span class="finalizado">Ativo</span></td>
-                                    <td>
-                                        <div class="dropdown  detalhesrecisao">
-
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="true">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/desativar.png">Desativar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/lixeira.png">Excluir
-                                                </a>
-
-                                            </div>
-                                    </td>
-                                </tr>
-                                <tr>
+                            <tr>
 
 
-                                    <td>00/00/0000</td>
-                                    <td>Título do lembrete aqui</td>
-                                    <td class="position-relative"><span class="etVerde"></span></td>
-                                    <td><span class="finalizado">Ativo</span></td>
-                                    <td>
-                                        <div class="dropdown  detalhesrecisao">
+                                <td>00/00/0000</td>
+                                <td>Título do lembrete aqui</td>
+                                <td class="position-relative"><span class="etAzul"></span></td>
+                                <td><span class="finalizado">Ativo</span></td>
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
 
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="true">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/desativar.png">Desativar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/lixeira.png">Excluir
-                                                </a>
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img
+                                                    src="img/desativar.png">Desativar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
+                                            </a>
 
-                                            </div>
-                                    </td>
-                                </tr>
-                                <tr>
-
-
-                                    <td>00/00/0000</td>
-                                    <td>Título do lembrete aqui</td>
-                                    <td class="position-relative"><span class="etRoxo"></span></td>
-                                    <td><span class="rcorreio">Desativado</span></td>
-                                    <td>
-                                        <div class="dropdown  detalhesrecisao">
-
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="true">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/desativar.png">Desativar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/lixeira.png">Excluir
-                                                </a>
-
-                                            </div>
-                                    </td>
-                                </tr>
-                                <tr>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
 
 
-                                    <td>00/00/0000</td>
-                                    <td>Título do lembrete aqui</td>
-                                    <td class="position-relative"><span class="etVermelho"></span></td>
-                                    <td><span class="finalizado">Ativo</span></td>
-                                    <td>
-                                        <div class="dropdown  detalhesrecisao">
+                                <td>00/00/0000</td>
+                                <td>Título do lembrete aqui</td>
+                                <td class="position-relative"><span class="etVerde"></span></td>
+                                <td><span class="finalizado">Ativo</span></td>
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
 
-                                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="true">
-                                                <i class="fas fa-ellipsis-v"></i>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/desativar.png">Desativar
-                                                </a>
-                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#editarMovimentacao"><img
-                                                        src="img/lixeira.png">Excluir
-                                                </a>
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img
+                                                    src="img/desativar.png">Desativar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
+                                            </a>
 
-                                            </div>
-                                    </td>
-                                </tr>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td>00/00/0000</td>
+                                <td>Título do lembrete aqui</td>
+                                <td class="position-relative"><span class="etRoxo"></span></td>
+                                <td><span class="rcorreio">Desativado</span></td>
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img
+                                                    src="img/desativar.png">Desativar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
+                                            </a>
+
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td>00/00/0000</td>
+                                <td>Título do lembrete aqui</td>
+                                <td class="position-relative"><span class="etVermelho"></span></td>
+                                <td><span class="finalizado">Ativo</span></td>
+                                <td>
+                                    <div class="dropdown  detalhesrecisao">
+
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#verDetalhes"><img src="img/editgray.png">Editar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img
+                                                    src="img/desativar.png">Desativar
+                                            </a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                data-bs-target="#editarMovimentacao"><img src="img/lixeira.png">Excluir
+                                            </a>
+
+                                        </div>
+                                </td>
+                            </tr>
 
 
 
 
 
-                        </table>
+                    </table>
 
 
-                    </div>
-                    <nav aria-label="Page navigation" class="paginacao">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">
-                                    <</a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">></a></li>
-
-                        </ul>
-                    </nav>
                 </div>
-            </div>
+                <nav aria-label="Page navigation" class="paginacao">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">
+                                <</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
 
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <!--Modal filtro mobile-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+    </div>
+
+    <!--Modal filtro mobile-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
 --bs-modal-height: 342px;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-center">Filtro</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">Filtro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
 
-                        <div class="row inputs">
+                    <div class="row inputs">
 
 
-                            <div class="col mt-2">
-                                <div class="pesquisar">
-                                    <img src="img/lupa.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Pesquisar">
-                                </div>
+                        <div class="col mt-2">
+                            <div class="pesquisar">
+                                <img src="img/lupa.png" alt="">
+                                <input type="text" class="form-control" placeholder="Pesquisar">
                             </div>
-
-
-                            <div class="row periodos">
-                                <div class=" col col-md-5 periodo1 mt-2">
-                                    <img src="img/calendar.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Período" id="datamob">
-                                </div>
-                                <span class="gray col col-md-2"> Até</span>
-
-                                <div class="periodo2 mt-2 col col-md-5">
-                                    <img src="img/calendar.png" alt="">
-                                    <input type="text" class="form-control" placeholder="Período" id="datamob2">
-                                </div>
-                            </div>
-
                         </div>
+
+
+                        <div class="row periodos">
+                            <div class=" col col-md-5 periodo1 mt-2">
+                                <img src="img/calendar.png" alt="">
+                                <input type="text" class="form-control" placeholder="Período" id="datamob">
+                            </div>
+                            <span class="gray col col-md-2"> Até</span>
+
+                            <div class="periodo2 mt-2 col col-md-5">
+                                <img src="img/calendar.png" alt="">
+                                <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="modal-footer filtro">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Filtrar</button>
-                    </div>
+                </div>
+                <div class="modal-footer filtro">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Filtrar</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!--Modal avaliaçao 1-->
-        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                            atendê-lo
-                            melhor.
-                        </p>
-                        <img src="img/avaliações.png" alt="Avaliacoes">
-                    </div>
-                    <div class="modal-footer text-center">
-                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                            aria-label="Close">Continuar</button>
-                    </div>
+    <!--Modal avaliaçao 1-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                        atendê-lo
+                        melhor.
+                    </p>
+                    <img src="img/avaliações.png" alt="Avaliacoes">
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
                 </div>
             </div>
         </div>
-        <!--Rodapé
+    </div>
+    <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">

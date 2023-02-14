@@ -1,92 +1,3 @@
-$(document).ready(function(){
-    //progress bar
-
-    let containerA=document.querySelector('#circleA');
-
-    let circleA= new ProgressBar.Circle(containerA, {
-        color:'#64daf9',
-        strokeWidth:8,
-        duration:1400,
-        from:{color: '#aaa'},
-        to:{color:'#64daf9'},
-
-        step:function(state, circle){
-            circle.path.setAttribute('stroke', state.color);
-            let value=Math.round(circle.value()*60);
-            circle.setText(value);
-        }
-    });
-   
-
-    let containerB=document.querySelector('#circleB');
-
-    let circleB= new ProgressBar.Circle(containerB, {
-        color:'#64daf9',
-        strokeWidth:8,
-        duration:1600,
-        from:{color: '#aaa'},
-        to:{color:'#64daf9'},
-
-        step:function(state, circle){
-            circle.path.setAttribute('stroke', state.color);
-            let value=Math.round(circle.value()*200);
-            circle.setText(value);
-        }
-    });
-    
-
-    let containerC=document.querySelector('#circleC');
-
-    let circleC= new ProgressBar.Circle(containerC, {
-        color:'#64daf9',
-        strokeWidth:8,
-        duration:1800,
-        from:{color: '#aaa'},
-        to:{color:'#64daf9'},
-
-        step:function(state, circle){
-            circle.path.setAttribute('stroke', state.color);
-            let value=Math.round(circle.value()*380);
-            circle.setText(value);
-        }
-    });
-    
-
-    let containerD=document.querySelector('#circleD');
-
-    let circleD= new ProgressBar.Circle(containerD, {
-        color:'#64daf9',
-        strokeWidth:8,
-        duration:2000,
-        from:{color: '#aaa'},
-        to:{color:'#64daf9'},
-
-        step:function(state, circle){
-            circle.path.setAttribute('stroke', state.color);
-            let value=Math.round(circle.value()*980);
-            circle.setText(value);
-        }
-    });
-
-    
-let dataAreaOffset=$('#data-area').offset();
-let stop=0;
-$(window).scroll(function(e){
-    let scroll=$(window).scrollTop();
-
-    if(scroll> (dataAreaOffset.top-500) && stop ==0){
-        circleA.animate(1.0);
-        circleB.animate(1.0);
-        circleC.animate(1.0);
-        circleD.animate(1.0);
-    }
-});
-//paralax
-
-setTimeout(function(){
-    $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
-}, 250);
-});
 
 
 
@@ -449,7 +360,7 @@ $(document).ready(function(){
     evento.addEventListener('change', function(e){
         e.preventDefault();
         console.log(evento.value);
-    switch(evento.value){
+        switch(evento.value){
         
         case ('1'):
             console.log(evento.value);
@@ -499,11 +410,11 @@ $(document).ready(function(){
                     
 
 
-    }
+        }
 
 
    
-});
+    });
 
 
 
@@ -535,38 +446,8 @@ $(document).ready(function(){
 
 });
 
-/*$(document).ready(function(){
-    var check=document.querySelector('.impostocheck');
-    var contador=document.querySelector('.contadorselect');
-  
-
-    $('input[type=checkbox]').on('change', function () {
-
-        var total = $('input[type=checkbox]:checked').length;
-
-        if(total < 1){
-            contador.style.display="none";
-        }else if(total  == 0){
-            contador.style.display="none";
-           
-            
-        }else{
-            
-            contador.style.display="block";
-            contador.innerHTML= total+' Holerites Selecionados';
-        }
-        
-    });
 
 
-
-});
-
-
-
-
-
-*/
 $(document).ready(function(){
     var btnSaidas=document.querySelector("#saidasBtn");
     var btnEntradas=document.querySelector("#entradasBtn");
@@ -727,121 +608,7 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-    var btnmensalidade=document.querySelector("#mensalidadeBtn");
-    var btnhistorico=document.querySelector("#histBtn");
-    var btnavulsos=document.querySelector("#avulsosBtn");
-    var btncredito=document.querySelector("#creditosBtn");
-   
 
-    var mensalidade=document.querySelector('.mensalidades');
-    var historico=document.querySelector('.historicoM');
-    var avulsos=document.querySelector('.avulsos');
-    var credito=document.querySelector('.creditost');
-    var saldoc=document.querySelector('.saldoCreditos');
-    var menuFinanceiro=document.querySelector('#menuFinanceiro');
-    var metodosPagamento=document.querySelector('.metodospag');
-    
-   
-
-    btnmensalidade.addEventListener('click', function(e){
-        e.preventDefault();
-        mensalidade.style.display='block';
-        historico.style.display='none';
-        avulsos.style.display='none';
-        credito.style.display='none';
-        saldoc.style.display='none';
-       
-        btnavulsos.style.border='none';
-        btncredito.style.border='none';
-        btnhistorico.style.border='none';
-        btnmensalidade.style.borderBottom='2px solid #4aa3e5';
-        btnmensalidade.style.fontWeight='600';
-        menuFinanceiro.style.height='auto';
-        metodosPagamento.style.marginTop='0px';
-        btncredito.style.fontWeight='100';
-        btnhistorico.style.fontWeight='100';
-        
-       
-      
-        
-    });
-
-    btnhistorico.addEventListener('click', function(e){
-        e.preventDefault();
-        mensalidade.style.display='none';
-        historico.style.display='block';
-        avulsos.style.display='none';
-        credito.style.display='none';
-        saldoc.style.display='none';
-       
-        btnavulsos.style.border='none';
-        btncredito.style.border='none';
-        btnhistorico.style.borderBottom='2px solid #4aa3e5';
-        btnhistorico.style.fontWeight='600';
-        btnmensalidade.style.borderBottom='none';
-        menuFinanceiro.style.height='auto';
-        metodosPagamento.style.marginTop='0px';
-        btncredito.style.fontWeight='100';
-        
-        btnmensalidade.style.fontWeight='100';
-       
-      
-        
-    });
-
-    btnavulsos.addEventListener('click', function(e){
-        e.preventDefault();
-        mensalidade.style.display='none';
-        historico.style.display='none';
-        avulsos.style.display='block';
-        credito.style.display='none';
-        saldoc.style.display='none';
-       
-        btnavulsos.style.borderBottom='2px solid #4aa3e5';
-        btnavulsos.style.fontWeight='600';
-        btncredito.style.fontWeight='100';
-        btnhistorico.style.fontWeight='100';
-        btnmensalidade.style.fontWeight='100';
-        btncredito.style.border='none';
-        btnhistorico.style.border='none';
-        btnmensalidade.style.borderBottom='none';
-        menuFinanceiro.style.height='auto';
-        metodosPagamento.style.marginTop='0px';
-       
-      
-        
-    });
-
-    btncredito.addEventListener('click', function(e){
-        e.preventDefault();
-        mensalidade.style.display='none';
-        historico.style.display='none';
-        avulsos.style.display='none';
-        credito.style.display='block';
-        saldoc.style.display='block';
-       
-        btnavulsos.style.border='none';
-        btncredito.style.borderBottom='2px solid #4aa3e5';
-        btncredito.style.fontWeight='600';
-        btnavulsos.style.fontWeight='100';
-
-        btnhistorico.style.border='none';
-        btnmensalidade.style.border='none';
-       menuFinanceiro.style.height='188px';
-       metodosPagamento.style.marginTop='-76px';
-       
-       btnhistorico.style.fontWeight='100';
-       btnmensalidade.style.fontWeight='100';
-
-      
-        
-    });
-
-   
-
-
-});
 
 $(document).ready(function(){
     var btnManual=document.querySelector("#manual");
@@ -962,15 +729,7 @@ $(document).ready(function(){
 
 
 });
-$(document).ready(function(){
-    var btnclose=document.querySelector("#btnclose");
-    var avaliacao=document.querySelector("#avaliacaofooter");
 
-    btnclose.addEventListener('click', function(e){
-        e.preventDefault();
-        avaliacao.style.display='none';
-    });
-});
 
 
 $(document).ready(function(){

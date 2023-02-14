@@ -17,8 +17,42 @@ body{
     margin-left: 14%;
     width: 88%;
 }
+.iconeslembrete {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 279px;
+    height: 96px;
+    position: relative;
+    margin-left: 44px;
+}
+form.w-100.novolembreteform .btn-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: 131.5px;
+    height: 38px;
+    background: #4AA3E5;
+    border-radius: 4px;
+}
+.iconeslembrete input {
+    position: absolute;
+    top: 8px;
+    margin-left: 8px;
+}
 .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
     display: flex;
+}
+.col-md-9.plan1.mb-5.mt-5.criarlembrete {
+    top: 6px;
+    left: 183px;
+    /* width: 125%; */
 }
 .col-md-11.tabelasect.mb-5.mt-3.indique {
     margin-left: 38%;
@@ -695,11 +729,11 @@ nav.navbar.navbar-expand.pagamentos {
     display:block;
     margin-left: 18px;
 }
-#linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn, #eventosbtnm{
+#linkCartao, #investimentohora, #histreservas, #acessosbtn, #dados-cadastrais-btn, #eventosbtn, #eventosbtnm, #mensalidadeBtnm{
     border-bottom: 2px solid #4aa3e5;
     font-weight: 600;
 }
-#salario, #horarios, #sindicato, #descontosProventos, #pisctps{
+#salario, #horarios, #sindicato, #descontosProventos, #pisctps, .servicosavulsosmotile, .historicomobile{
     display: none;
 }
 #tboutrosp{
@@ -1138,7 +1172,7 @@ border-radius: 8px;
 }
 .row.btnsfinanceiro {
     display: flex;
-    right: 236px;
+    right: -297px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
@@ -1231,7 +1265,7 @@ p.titulosecao.u.cartoescad {
     margin-bottom: -54px;
     margin-left: 0px;
 }
-.saldoCreditos {
+.saldoCreditos, .saldoCreditosm {
     width: 147px;
     height: 24px;
     font-family: 'Poppins';
@@ -1393,8 +1427,8 @@ a.btn.btn-danger.mensalidadesa {
 nav.navbar.navbar-expand.financeiro {
     margin-top: 64px;
     border-radius: 9px;
-    margin-left: -282px;
-    width: 146%;
+    margin-left: -149px;
+    width: max-content;
 }
 form.w-100.novolembreteform img, .novolembreteform i {
     margin-top: 16px !important;
@@ -1830,7 +1864,35 @@ thead.table-dark tr {
   .slider.round {
     border-radius: 34px;
   }
-  
+  .btnRegulamento{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 174px;
+height: 38px;
+
+/* Info / Darker */
+
+background: #004578;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Cinza / 100 */
+
+color: #F8F9FA !important;
+margin-right: 60px;
+margin-top: 11px;
+  }
   
   .slider.round:before {
     border-radius: 50%;
@@ -1845,6 +1907,7 @@ thead.table-dark tr {
     margin-left: 318px;
     margin-bottom: -26px;
     margin-top: 21px;
+    width: auto;
 }
 .row.btnsimposto {
     display: flex;
@@ -4575,7 +4638,9 @@ margin-bottom: 13px;
     margin-top: 31px;
     
 }
-
+.menufinanceiromobile{
+    display: none;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -4588,6 +4653,97 @@ margin-bottom: 13px;
         flex-direction: row;
        
         margin-left: -54px;
+    }
+    .row.saldoCreditosm p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #868E96;
+    }
+    
+    .mensalidades{
+        display:none;
+    }
+    .menufinanceiromobile {
+        /* display: flex; */
+        /* margin-top: 86px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        position: absolute;
+        width: 327px;
+        height: 152px;
+        left: 24px;
+        top: 288px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+    }
+    .row.menufinanceiromobile ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        width: 131.5px;
+        height: 44px;
+        align-content: center;
+        flex-wrap: nowrap;
+        
+    }
+    .menufinanceiromobile ul li a{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px !important;
+    text-align: center;
+    color: #212529 !important;
+
+    }
+    ul.metodospag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 279px;
+        height: 104px;
+    }
+    .menufinanceiromobile .row{
+     
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 0px;
+        gap: 16px !important;
+        width: 279px;
+        height: 44px;
+
+
+    }
+   
+    .menufinanceiromobile {
+        /* display: flex; */
+        /* margin-top: 86px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        position: absolute;
+        width: 327px;
+        height: 152px;
+        left: 24px;
+        top: 288px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+        transition: .3s;
     }
     .novolembreteform .btn-primary {
         display: flex;
@@ -4614,7 +4770,7 @@ margin-bottom: 13px;
     }
     .col-md-9.plan1.mb-5.mt-5.criarlembrete {
         width: -webkit-fill-available !important;
-        margin-left: 135px;
+        margin-left: -186px;
     }
     .col-md-11.tabelasect.p-4.mb-2.mt-3.reservarhorario.first {
         /* margin-left: 216px; */
@@ -5610,14 +5766,7 @@ color: #F8F9FA;
     .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
         display: none;
     }
-    .plan11, .plan2, .plan1 {
-    
-        width: 100%;
-    /* margin-left: 0px !important; */
-    margin-top: 14px;
-    left: -133px !important;
-      
-    }
+  
     .etAzul {
       
         left: 72%;
@@ -6975,9 +7124,12 @@ z-index: 999;
     }
      
 }
-@media only screen and (max-width: 1024px){
+@media  (max-width: 1024px){
     .dados-empresa, .addColaborador, .holeritediv, .addSocio {
         margin-left: 198px;
+    }
+    .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
+        width: 91%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.socios {
         margin-left: 51%;
@@ -7035,7 +7187,7 @@ z-index: 999;
         margin-left: 34%;
     }
     .titulosecao, .titulosecaod {
-        margin-left: 43% !important;
+        margin-left: 43% ;
         width: auto;
     }
     nav.navbar.navbar-expand.eventos {
@@ -7101,17 +7253,15 @@ z-index: 999;
         .stepinativo {
             width: 234px;
         }
-        .titlesection {
+        main.col-md-9.titlesection {
     
-            width: 95% !important;
+            width: 88%;
             height: 77px;
         }
         .col.col-md-10.centraldocumentos {
             margin-left: 21%;
         }
-        .plan1 {
-            width: 69% !important;
-        }
+     
         .col-md-9.nfe.mb-5.mt-5.p-0.pb-2.nffaturamento {
             width: 72%;
         }
@@ -7132,7 +7282,7 @@ z-index: 999;
         }
         .row.btnscliente {
             position: absolute;
-            width: -webkit-fill-available;
+            width: auto;
             right: -127px;
         }
         p.gray.dataanexo {
@@ -7160,66 +7310,61 @@ z-index: 999;
             display: none;
         }
 }
-@media only screen and (max-width: 1080px){
-    .col-md-2.minbusca {
-     
-        right: 63px;
-    }
 
-}
-@media only screen and  (max-width: 1200px){
-   
 
-    a.btn.btn-danger.close {
-     
-        right: 9px;
-    }
- 
-   
-}
 @media only screen and (max-width: 1380px){
     .minbusca {
-        right: 34px !important;
+        right: 34px;
+    }
+    .col-md-9.plan1.mb-5.mt-5.criarlembrete {
+        width: 96%;
     }
   
     .col.col-md-10.addColaborador.socios {
-        margin-top: 68px !important;
+        margin-top: 68px;
         margin-left: 137px;
         width: 87%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb .step {
         width: 232px;
     }
-    .plan1 {
-        width: 77% !important;
+    .titulotela {
+        width: 294px;
+        margin-left: 316px;
     }
     main.col-md-9.titlesection.full {
-        width: 77% ;
+        width: -webkit-fill-available ;
+    }
+    .col-md-9.plan1.mb-5.table-responsive.p-0.pb-2.servicosa {
+        width: -webkit-fill-available;
     }
     main.col-md-9.titlesection {
-        width: 77%;
+        width: -webkit-fill-available;
     }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
-        width: 91% !important;
+        width: 91%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
         width: 64%;
         margin-left: 129px;
     }
+    .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
+        width: 75%;
+    }
     .titulosecao, .titulosecaod {
-        margin-left: 33% ;
+        margin-left: 16% ;
         width: auto;
     }
     .col-md-9.btnreservah {
        
-        right: -49px !important;
+        right: -49px;
         /* top: 258px; */
     }
     .col-md-9.btnreservah {
-        right: -66px !important;
+        right: -66px;
     }
     .col-md-11.tabelasect.mb-5.centraldocumentos {
-        width: 90% !important;
+        width: 90% ;
     }
     .dropdown.addrecisao {
       
@@ -7231,14 +7376,14 @@ z-index: 999;
     }
    
 }
-@media only screen and (max-width: 1440px){
+@media only screen and (min-width: 1440px){
     .col-md-9.btnreservah {
        
         right: -47px;
        
     }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
-        width: 95%;
+        width: 91%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.socios {
       
@@ -7262,7 +7407,7 @@ z-index: 999;
         right: 391px;
     }
     .col-md-11.tabelasect.mb-5.dados-empresa {
-        width: 96%;
+        width: 93%;
     }
     table.table.resumo {
         margin-left: -15px;
@@ -7289,13 +7434,16 @@ z-index: 999;
         width: 94%;
     }
     .visualizacao {
-    right: 9%;
+    right: 13%;
+}
+.col.col-md-10.addColaborador.socios {
+    width: 85%;
 }
 .col-md-11.tabelasect.mb-5.meuscolaboradores.car {
-    width: 95%;
+    width: 92%;
 }
 .col-md-11.tabelasect.mb-5.colaboradores.car {
-    width: 95%;
+    width: 92%;
 }
     .row.btnsfluxoimposto {
        
@@ -7340,11 +7488,7 @@ z-index: 999;
     main.col-md-9.titlesection.full {
         width: 79%;
     }
-    .plan1 {
-       
-        width: 79%;
-       
-    }
+
     .col.col-md-10.addColaborador.socios {
         margin-top: 64px;
       
@@ -7354,14 +7498,6 @@ z-index: 999;
 }
 
 
-@media only screen and (min-width: 1580px){
-    .tabelasect {
-      
-    
-        width: 99%;
-        
-}
-}
 
 
 
