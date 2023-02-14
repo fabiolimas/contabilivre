@@ -29,6 +29,9 @@ body{
     position: relative;
     margin-left: 44px;
 }
+.col.col-md-10.metododepagamento {
+    margin-left: 16%;
+}
 form.w-100.novolembreteform .btn-primary {
     display: flex;
     flex-direction: row;
@@ -3945,7 +3948,7 @@ border-radius: 50px 24px 0px 50px;
 }
 p.titulosecao {
     float: left;
-    margin-left: -128px;
+    margin-left: 4px;
     width: max-content;
 }
 p.titulosecao.u{
@@ -3961,6 +3964,9 @@ p.titulosecao.u{
     float: left;
     margin-left: -128px;
     width: max-content;
+}
+.col.col-md-10.novocartao {
+    margin-left: 13%;
 }
 .titulosecao p, p.titulosecaod {
     font-size: 16px;
@@ -4654,6 +4660,163 @@ margin-bottom: 13px;
        
         margin-left: -54px;
     }
+    .modal-body .col p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+        color: #495057;
+    }
+    .row.poupe p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212529;
+    }
+    .infob p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+        color: #495057;
+        margin-left: -5px;
+    }
+    .row.promoform {
+        margin-left: -24px;
+    }
+    .desconto .row.mb-3 {
+        margin-left: -20px;
+    }
+    .infob {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 16px;
+        width: 279px;
+        height: 58px;
+        background: #B4DFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 8px;
+        margin-left: -12px;
+    }
+    button.btn.btn-success {
+        width: -webkit-fill-available;
+    }
+    .menudesconto {
+        overflow-x: scroll;
+        width: 300px;
+    }
+    .promocao h4 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4AA3E5;
+    }
+    img.imginfo {
+        display: none;
+    }
+    .col-md-9.plan1.mb-5.desconto {
+        margin-left: -277px;
+        width: -webkit-fill-available;
+        margin-top: 21px;
+    }
+    .info {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 16px;
+        width: -webkit-fill-available;
+        height: 108px;
+        background: #FFF4BB;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 8px;
+    }
+    #promocao h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4AA3E5;
+    }
+    .modal-body span.gray {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 150%;
+        color: #868E96;
+    }
+    .btnPlanoAnual{
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 8px;
+
+width: 231px;
+height: 56px;
+
+/* Secundária / Main */
+
+background: #74C83C;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+text-align: center;
+
+/* Cinza / 100 */
+
+color: #F8F9FA;
+    }
+.btnMensalidade{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+
+width: 231px;
+height: 76px;
+
+/* Erro / Lighter */
+
+border: 1px solid #FFB5B5;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* or 173% */
+
+text-align: center;
+
+/* Erro / Main */
+
+color: #FF452C;
+}
     .row.saldoCreditosm p {
         font-family: 'Poppins';
         font-style: normal;
@@ -5289,6 +5452,7 @@ color: #58C0ED;
     ul.metodospag.navbar-nav.me-auto.mb-2.mb-lg-0 {
         background: none;
         margin-left: -33px;
+        width: auto;
     }
     nav#navbar-links {
         position: absolute;
@@ -5942,14 +6106,64 @@ color: #F8F9FA;
     }
         
     .row.bts .btn {
-        font-size: 12px;
+        /*font-size: 12px;
         width: max-content;
-        margin-left: 20px;
+        margin-left: 20px;*/
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+    width: -webkit-fill-available;
+    height: 38px;
+    background: #4AA3E5;
+    border-radius: 4px;
+    width: max-content;
+    margin-left: 20px;
     }
     .nffaturamento .row.bts {
         margin-left: -17px !important;
         margin-top:44px !important;
         
+    }
+    .metododepagamento a.btn.addnovo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: 279px;
+        height: 38px;
+        background: #004578;
+        border-radius: 4px;
+        position: absolute;
+        left: 10px;
+        top: 195px;
+    }
+    .col-md-11.tabelasect.mb-5.mt-5.metododepagamento {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        position: absolute;
+        width: 327px;
+        height: 257px !important;
+        left: -165px;
+        top: 239px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+    }
+    .col.col-md-10.novocartao {
+        margin-top: 156px;
+        margin-left: -180px;
+        width: 100%;
+    }
+    .metodotab{
+        display: none;
     }
     .col-md-9.nfe.mb-5.mt-5.p-0.pb-2.nffaturamento input {
         margin-bottom: -35px;
@@ -6339,7 +6553,7 @@ position: absolute !important;
         left: 0px !important;
         height: auto !important;
             width: -webkit-fill-available !important;
-            display: none;
+            
     }
     .btnfsmobile{
         display: flex;
@@ -7135,8 +7349,11 @@ z-index: 999;
         margin-left: 51%;
         width: 80%;
     }
+    .col-md-11.tabelasect.mb-5.mt-3.p-0.pb-2.saladereuniao {
+        width: 76%;
+    }
     .col-md-9.btnreservah {
-        right: -29% !important;
+        right: -4% !important;
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
         width: 81%;
@@ -7186,9 +7403,18 @@ z-index: 999;
         width: 78%;
         margin-left: 34%;
     }
+    .col-md-9.plan1.mb-5.servicosa {
+        width: 77%;
+    }
     .titulosecao, .titulosecaod {
         margin-left: 43% ;
         width: auto;
+    }
+    .servicosa .col.col-md-7.p-4 {
+        width: -webkit-fill-available;
+    }
+    div#cartao .col-md-2 {
+        width: 73px;
     }
     nav.navbar.navbar-expand.eventos {
        
@@ -7245,18 +7471,18 @@ z-index: 999;
         .row.filtros.d-flex.justify-content-center {
             width: max-content;
         }
-        .tabelasect {
-    
-            width: 81% ;
-        
+        .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
+            width: 76%;
         }
         .stepinativo {
             width: 234px;
         }
-        main.col-md-9.titlesection {
-    
-            width: 88%;
+        main.col-md-9.titlesection.full.servicosavulsos {
+            width: 77%;
             height: 77px;
+        }
+        main.col-md-9.titlesection.enderecofiscal {
+            width: 72%;
         }
         .col.col-md-10.centraldocumentos {
             margin-left: 21%;
@@ -7312,12 +7538,15 @@ z-index: 999;
 }
 
 
-@media only screen and (max-width: 1380px){
+@media only screen and (min-width: 1380px){
     .minbusca {
         right: 34px;
     }
     .col-md-9.plan1.mb-5.mt-5.criarlembrete {
         width: 96%;
+    }
+    .col-md-11.tabelasect.mb-5.mt-3.p-0.pb-2.saladereuniao {
+        width: 94%;
     }
   
     .col.col-md-10.addColaborador.socios {
@@ -7336,13 +7565,16 @@ z-index: 999;
         width: -webkit-fill-available ;
     }
     .col-md-9.plan1.mb-5.table-responsive.p-0.pb-2.servicosa {
-        width: -webkit-fill-available;
+        width:79%;
     }
-    main.col-md-9.titlesection {
-        width: -webkit-fill-available;
+    .col-md-9.plan1.mb-5.servicosa {
+        width: 79%;
+    }
+    main.col-md-9.titlesection.enderecofiscal {
+        width: 77%;
     }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
-        width: 91%;
+        width: 93%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb {
         width: 64%;
@@ -7361,7 +7593,9 @@ z-index: 999;
         /* top: 258px; */
     }
     .col-md-9.btnreservah {
-        right: -66px;
+       
+    right: -89px;
+
     }
     .col-md-11.tabelasect.mb-5.centraldocumentos {
         width: 90% ;
@@ -7382,8 +7616,11 @@ z-index: 999;
         right: -47px;
        
     }
+    div#cartao .col-md-2 {
+        width: 114px;
+    }
     .col-md-11.tabelasect.mb-5.p-0.pb-2.enderecofiscal {
-        width: 91%;
+        width: 90%;
     }
     .col-md-11.tabelasect.mb-5.mt-3.socios {
       
@@ -7473,17 +7710,14 @@ z-index: 999;
        
         right: 22px;
     }
-    .titlesection {
-  
-        width: 79%;
+    main.col-md-9.titlesection.enderecofiscal {
+        width: 78%;
     }
     .titulosecao, .titulosecaod {
         margin-left: 352px;
     }
-    .tabelasect {
-       
-        width: 89%;
-        
+    .col-md-11.tabelasect.mb-5.mt-3.p-0.pb-2.saladereuniao {
+        width: 91%;
     }
     main.col-md-9.titlesection.full {
         width: 79%;

@@ -3019,3 +3019,18 @@ span.avisocli {
     width: auto;
   }
 }
+
+@media screen and (max-width: 1024px){
+    .form-control, .form-select {
+       
+        width: 348px;
+      
+    }
+    form .col.col-md-4.mt-3 {
+        margin-left: -172px;
+    }
+    .footercontent {
+     
+        margin-left: -110px;
+    }
+}

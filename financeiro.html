@@ -222,9 +222,7 @@
 
 
                     <div class="col-md-2 minbusca">
-                        <a href="#"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
-                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
-                            class="form-control" placeholder="Pesquisar">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt="" id="iconfiltros"></a>
                     </div>
                 </main>
 
@@ -233,14 +231,26 @@
                         <a href="financeiro.html">Financeiro</a> <i class="fa fa-chevron-right"></i>Pagamentos
                     </div>
                     <div class="row">
+                        <div class="dropdown  botoesmobile">
 
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="img/botoesmobile.png" alt="">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="#" class="btnPlanoAnual" data-bs-toggle="modal" data-bs-target="#promocao">Plano anual com 3,5% de desconto</a>
+                                <a href="#" class="btnMensalidade">Existem mensalidades em aberto</a>
+                            </div>
+                        </div>
                         <div class="row btnsclientec position-relative" style="margin-top: 69px;">
 
                             <div class=" col col-md-3">
                                 <p class="titulosecao u"><b>Pagamentos</b></p>
-
+                                
                             </div>
+                            
                             <div class="col col-md-9">
+
                                 <div class="row btnsfinanceiro position-absolute">
 
 
@@ -777,7 +787,7 @@
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                << /a>
+                                <</a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -862,7 +872,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                << /a>
+                                <</a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -935,7 +945,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                << /a>
+                                <</a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -1016,7 +1026,7 @@ height: 52px;">Situação</th>
                 <nav aria-label="Page navigation" class="paginacao">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">
-                                << /a>
+                                <</a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -1059,6 +1069,8 @@ height: 52px;">Situação</th>
                             <p><b>R$0,00</b></p>
 
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col col-md-6">
                             <span class="gray">Reajuste contratual pela IGPM - Locação de endereço fiscal
                                 (Últimos 12
@@ -1076,11 +1088,14 @@ height: 52px;">Situação</th>
                             <p><b>R$0,00</b></p>
 
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col col-md-6">
                             <span class="gray">Valor Total</span>
                             <p><b>R$0,00</b></p>
 
                         </div>
+                    </div>
                     </div>
                     <div class="modal-footer text-center">
 
@@ -1111,9 +1126,9 @@ height: 52px;">Situação</th>
                     <div class="row">
                         <div class="info">
                             <div class="col-md-1">
-                                <img src="img/info.png" alt="">
+                                <img src="img/info.png" alt="" class="imginfo">
                             </div>
-                            <div class="col-md-10">
+                            <div class="col">
                                 <p style="    padding-top: 12px;">Se durante o período do crédito houver
                                     adicionais de
                                     faturamento, sócios, funcionários e correspondências, fora da situação atual
@@ -1159,6 +1174,52 @@ height: 52px;">Situação</th>
         </div>
     </div>
     </div>
+    <!--Modal filtro mobile-->
+ <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom" style="--bs-modal-width: 327px;
+ --bs-modal-height: 342px;">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title text-center">Filtro</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                     aria-label="Close"></button>
+                             </div>
+                             <div class="modal-body text-center">
+ 
+                                 <div class="row inputs">
+ 
+ 
+                                     <div class="col mt-2">
+                                         <div class="pesquisar">
+                                             <img src="img/lupa.png" alt="">
+                                             <input type="text" class="form-control" placeholder="Pesquisar">
+                                         </div>
+                                     </div>
+ 
+                                   
+                                     <div class="row periodos">
+                                         <div class=" col col-md-5 periodo1 mt-2">
+                                             <img src="img/calendar.png" alt="">
+                                             <input type="text" class="form-control" placeholder="Período" id="datamob">
+                                         </div>
+                                         <span class="gray col col-md-2"> Até</span>
+     
+                                         <div class="periodo2 mt-2 col col-md-5">
+                                             <img src="img/calendar.png" alt="">
+                                             <input type="text" class="form-control" placeholder="Período" id="datamob2">
+                                         </div>
+                                     </div>
+                                     
+                                 </div>
+                             </div>
+                             <div class="modal-footer filtro">
+                                 <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                                 <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                     aria-label="Close">Filtrar</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
 
 
 
@@ -1171,7 +1232,7 @@ height: 52px;">Situação</th>
         var btncredito = document.querySelector("#creditosBtn");
 
 
-        var mensalidade = document.querySelector('.mensalidadesmobile');
+        var mensalidade = document.querySelector('.mensalidades');
         var historico = document.querySelector('.historicoM');
         var avulsos = document.querySelector('.avulsos');
         var credito = document.querySelector('.creditost');
