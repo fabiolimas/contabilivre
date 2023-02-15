@@ -3,48 +3,12 @@
 
 $(document).ready(function() {
     $('#boasvindas').modal('show');
-})
-
-
-
-
-$(document).ready(function(){
-
-    
-var investimentohora=document.querySelector('#investimentohora');
-var outroprod=document.querySelector("#outrosprodutos");
-
-var tabinvesthora=document.querySelector("#tbinvestimento");
-var taboutroprod=document.querySelector("#tboutrosp");
-
-investimentohora.addEventListener('click', function(e){
-    e.preventDefault();
-    tabinvesthora.style.display='inline-table';
-     investimentohora.style.borderBottom='2px solid #4aa3e5';
-     investimentohora.style.fontWeight='600';
-     outroprod.style.fontWeight='100';
-   taboutroprod.style.display='none';
-   outroprod.style.border='none';
-   
-   
-    
-});
-
-outroprod.addEventListener('click', function(e){
-    e.preventDefault();
-    tabinvesthora.style.display='none';
-   outroprod.style.borderBottom='2px solid #4aa3e5';
-   outroprod.style.fontWeight='600';
-   investimentohora.style.fontWeight='100';
-   taboutroprod.style.display='inline-table';
-     investimentohora.style.border='none';
-   
-   
-    
 });
 
 
-});
+
+
+
 
 
 

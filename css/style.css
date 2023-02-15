@@ -29,6 +29,95 @@ body{
     position: relative;
     margin-left: 44px;
 }
+.dmed .infoanexo p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px !important;
+    display: flex;
+    align-items: center;
+    color: #212529;
+}
+.dmed p.gray.dataanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 98px;
+    height: 47px;
+    margin-top: 10px;
+    margin-left: -60px;
+}
+.dmed a.btn.btn-success {
+    margin-top: 63px;
+    margin-left: 23px;
+}
+.dmed .iconeanexo {
+    margin-top: 23px;
+    margin-left: -14px;
+}
+.dmed .closeanexo {
+    margin-left: 81px;
+    width: auto;
+}
+.dmed .iconanexo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    
+    width: 44px;
+    height: 48px;
+}
+.dmed .infoanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 173px;
+    height: 92px;
+    margin-left: -65px;
+}
+.dmed .anexos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    width: 516px;
+    height: 108px;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+    border-radius: 8px;
+}
+.row.mt-3.confirmep {
+    width: -webkit-fill-available;
+}
+.distribuicaodelucros p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #212529;
+}
+.row.mt-3.confirmep .row {
+    display: contents;
+}
+.distribuicaodelucros p.gray {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    color: #868E96;
+}
+.distribuicaodelucros .row.bts {
+    right: 25px;
+    position: absolute;
+}
 .col.col-md-10.metododepagamento {
     margin-left: 16%;
 }
@@ -3449,13 +3538,12 @@ margin-top: 12px;
 }
 
 
-
-}
 a.btn.addnovo.lembrete {
     position: relative;
     margin-right: 20px;
     margin-top: 13px;
 }
+
 .col-md-9.plan1.mb-5.mt-5.p-4.servicosa p.gray {
     font-family: 'Inter';
     font-style: normal;
@@ -4647,6 +4735,9 @@ margin-bottom: 13px;
 .menufinanceiromobile{
     display: none;
 }
+.col-md-9.plan1.mb-5.mt-5.p-4.paginaobrigado {
+    width: 79%;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -4659,6 +4750,207 @@ margin-bottom: 13px;
         flex-direction: row;
        
         margin-left: -54px;
+    }
+    .row.mt-3.confirmep .row {
+        display: flex;
+    }
+    .modal-body.listaaviso {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+        width: 96%;
+        height: auto;
+        background: rgba(56, 171, 255, 0.08);
+        border: 1px solid #58C0ED;
+        border-radius: 4px;
+        margin-left: 7px;
+    }
+    div#aviso .btn-primary {
+        width: -webkit-fill-available;
+    }
+    .distribuicaobtn{
+        box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 8px;
+
+width: 231px;
+height: 102px;
+
+/* Secundária / Main */
+
+border: 1px solid #74C83C !important;
+border-radius: 4px;
+
+    }
+    .dmed .successnf, .dmed .btn-primary {
+        width: -webkit-fill-available !important;
+        margin-left: -11px;
+    }
+    .dmed form {
+        width: -webkit-fill-available;
+        margin-left: -14px;
+    }
+    img.helpdmd {
+        position: absolute;
+        right: 27px;
+        top: 29px;
+    }
+   .dmedinputs {
+        display: grid;
+    }
+    .row.manual {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        /* width: 279px; */
+        height: 390px;
+        margin-bottom: 40px;
+    }
+    .dmed a.btn.btn-primary {
+    
+        margin-left: -51px;
+   
+    }
+    .row.importPlanilha .col-md-6 {
+        margin-bottom: 56px !important;
+    }
+    .dmed label.form-check-label {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #212529;
+        margin-top: -24px;
+        margin-left: 36px;
+    }
+    .dmed .closeanexo {
+        
+        margin-top: 54px;
+        top: 51px;
+    }
+    .dmed .form-select {
+        width: 300px;
+    }
+    .col-md-9.plan1.mb-5.p-4.dmed {
+        margin-left: -274px;
+        width: -webkit-fill-available;
+    }
+    .paginaobrigado p.gray {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #495057;
+    }
+    h1.obrigado {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        color: #4FCE66;
+    }
+    .col-md-9.plan1.mb-5.mt-5.p-4.paginaobrigado {
+        margin-left: -274px;
+        width: -webkit-fill-available;
+        top: 165px;
+    }
+    .col-md-9.plan1.mb-5.mt-5.p-4.distribuicaodelucros {
+        left: 4px;
+        top: 159px;
+        width: -webkit-fill-available;
+    }
+    .row.inputradios label {
+        width: 230px;
+        margin-bottom: 34px;
+    }
+    .row.inputradios {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 279px;
+        height: 140px;
+        margin-top: 15px;
+    }
+    .row.valordolucro {
+        width: -webkit-fill-available;
+    }
+    .distribuicaodelucros p.gray {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 150%;
+        color: #868E96;
+    }
+    .row.mt-3.confirmep input {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 8px;
+        width: 131.5px;
+        height: 56px;
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    .distribuicaodelucros .row.bts a {
+        width: -webkit-fill-available;
+        margin-left: 11px;
+    }
+    .distribuicaodelucros .bts {
+        margin-top: -50px;
+        width: -webkit-fill-available;
+    }
+    .row.mt-3.confirmep {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: -webkit-fill-available;
+       
+    }
+    form.formlucros {
+        width: -webkit-fill-available;
+        margin-left: -13px;
+        margin-top: -1px;
+    }
+    .distribuicaodelucros p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #212529;
+    }
+    .distribuicaodelucros form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 279px;
+        height: 264px;
     }
     .modal-body .col p {
         font-family: 'Inter';
@@ -4876,7 +5168,7 @@ color: #FF452C;
         padding: 0px;
         gap: 16px;
         width: 279px;
-        height: 104px;
+        height: 72px;
     }
     .menufinanceiromobile .row{
      
@@ -6048,6 +6340,9 @@ color: #F8F9FA;
         line-height: 24px;
      
     }
+    .dmed .anexos p{
+        margin-left: 46px;
+    }
     .row p b {
       
         font-size: 16px;
@@ -6255,7 +6550,7 @@ position: absolute !important;
         position: absolute;
         width: 354px !important;
         height: auto;
-        left: -108px !important;
+        left: -183px !important;
         top: 323px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -6650,18 +6945,22 @@ position: absolute !important;
        
         margin-top: 55px;
     }
-    .plan11, .plan2, .plan1.servicosa {
-     
+    .col-md-9.plan1.mb-5.servicosa {
         left: 0px !important;
         height: auto !important;
-            width: -webkit-fill-available !important;
-            
+        width: 99% !important;
     }
-    .btnfsmobile{
+    .col-md-9.plan1.mb-5.p-0.pb-2.servicosa {
+        display: none;
+    }
+    .servicosa .row{
+        width:-webkit-fill-available;
+    }
+    .btnfsmobile {
         display: flex;
         position: absolute;
         left: -257px;
-        top: 219px;
+        top: 213px;
     }
     .nfentradas{
         display: none;
@@ -7400,7 +7699,7 @@ z-index: 999;
     }
     .tabelasmob {
         margin-top: -71px;
-        margin-left: -40px;
+        margin-left: -6px;
     }
     #tboutrosp {
         
@@ -7408,7 +7707,7 @@ z-index: 999;
         margin-top: -25px;
     }
     .modal-footer {
-        justify-content: end;
+        justify-content: space-around;
     }
     /*.tabelasect {
         width: -webkit-fill-available !important;

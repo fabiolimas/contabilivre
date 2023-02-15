@@ -1006,7 +1006,51 @@ var mask = IMask(data2, maskOptions);
 
 
 </script>
+<script>
+     $(document).ready(function(){
+    var btnSaidas=document.querySelector("#saidasBtnm");
+    var btnEntradas=document.querySelector("#entradasBtnm");
+   
 
+    var tabelaSaidas=document.querySelector('.saidaVendas');
+    var tabelaEntradas=document.querySelector('.nfentradas');
+   
+
+    btnSaidas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='flow-root';
+        tabelaEntradas.style.display='none';
+       
+       
+
+        btnEntradas.style.border='none';
+        btnSaidas.style.borderBottom='2px solid #4aa3e5';
+        btnSaidas.style.fontWeight='600';
+        btnEntradas.style.fontWeight='100';
+       
+      
+        
+    });
+
+    btnEntradas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='none';
+        tabelaEntradas.style.display='flow-root';
+       
+       
+
+        btnEntradas.style.borderBottom='2px solid #4aa3e5';
+        btnEntradas.style.fontWeight='600';
+        btnSaidas.style.fontWeight='100';
+        btnSaidas.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
