@@ -276,6 +276,46 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="titsubmenu">Respondidos </span>
+                         <div class="col-md-2 filtroticket">
+
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                    id="iconfiltros"></a>
+                          
+                        </div>
+                         <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       
+                        <a class="dropdown-item" href="ticket.html">
+
+                            Todos
+                        </a>
+                 
+                        <a class="dropdown-item" href="ticket-em-aberto.html">
+
+                            Em aberto
+                        </a>
+                   
+                        <a class="dropdown-item" href="ticket-respondido.html">
+
+                            Respondidos
+                        </a>
+                
+                        <a class="dropdown-item" href="ticket-resolvido.html" style="border: none;">
+
+                            Resolvidos
+                        </a>
+                   
+                        
+                       
+                       
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
 
@@ -295,8 +335,8 @@
 
                         <div class="row corpoticket">
                             <div class="row categorias">
-                                <button class="btn categoria">RESPONDIDO</button>
-                                <button class="btn categoria">RESPONDIDO</button>
+                                <button class="btn categoriar">RESPONDIDO</button>
+                                <button class="btn categoria">DÚVIDA</button>
                                 <div class="frame">
                                     <img src="img/balao.png" alt=""> <span class="contadormsg">2 respostas</span>
                                 </div>
@@ -306,7 +346,9 @@
                                         <span class="ticketatualizacao">Última modificação em: 00/00/0000 às 00:00</span>
                                         <h4>Assunto: [Nome do assunto]</h4>
                                         <p><b>Última mensagem:</b></p>
+                                        <div class="msgticket">
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has...</p>
+                                    </div>
                                     </div>
                                     
                                     <button class="btn btn-success">Ver detalhes do Ticket</button>
@@ -424,23 +466,31 @@
                     </div>
                 </div>
             </div>
-            <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+        <!--Modal filtro mobile-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center">Filtro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+                    <div class="modal-body text-center">
+
+
+
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
+
                     </div>
-
-
-
+                    <div class="modal-footer filtro">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Filtrar</button>
+                    </div>
                 </div>
-
-            </footer>-->
+            </div>
+        </div>
+    </div>
 </body>
 
 

@@ -6391,6 +6391,62 @@ position: absolute !important;
     .col.col-md-10.addColaborador.eventos {
         margin-top: 395px;
     }
+    button.btn.ticket {
+        display: none;
+    }
+    .col-md-2.filtroticket {
+        position: absolute;
+        top: 3px;
+        right: 94px;
+    }
+    .row.corpoticket {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 16px;
+        width: 279px;
+        height: 341px;
+        background: #FFFFFF;
+        border: 1px solid rgba(26, 222, 22, 0.36);
+        border-radius: 16px;
+    }
+    .col.col-md-10.dados-empresa.indique .tabelasect {
+        background: none;
+    }
+    span.ticketatualizacao {
+        width: 160px;
+     
+        right: -7px;
+    }
+    span.nticket {
+       
+        left: -3px;
+        position: absolute;
+    }
+    .row.dadosmsg p {
+        margin-top: 79px;
+        margin-bottom: -73px;
+    }
+    .msgticket {
+        overflow: hidden;
+        height: 133px;
+    }
+    .dadosmsg button.btn.btn-success {
+     
+        right: 40px;
+        bottom: 13px;
+    }
+    .dadosmsg h4 {
+       
+        font-size: 16px;
+        line-height: 24px;
+      
+        position: absolute;
+        left: 9px;
+        top: 139px;
+    }
     .col.col-md-10.addColaborador.socios {
         margin-top: 162px;
         display:none;
@@ -6426,7 +6482,53 @@ position: absolute !important;
     }
     
     .row.bts.mt-3 .col-md-12 {
-        margin-left: 2px !important;
+        margin-left: 21px !important;
+    }
+    .botaoestbtn{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    
+    width: 129px;
+    height: 30px;
+    
+    /* Secundária / Main */
+    
+    background: #74C83C;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+    
+    
+    /* Cinza / 100 */
+    
+    color: #F8F9FA;
+    }
+    a.btnNovoTicket {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        gap: 8px;
+        width: 231px;
+        height: 50px;
+        border: 1px solid #004578;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 26px;
+        color: #004578;
     }
     p.titulosecaoc, .recisaotable {
         
@@ -6454,7 +6556,7 @@ position: absolute !important;
     }
     .col.col-md-10.dados-empresa {
         margin-top: 0px !important;
-        margin-left: -196px;
+        margin-left: -210px;
     }
     .row.position-relative.tit {
          width: 100%; 
@@ -7338,6 +7440,19 @@ z-index: 999;
     }
      
 }
+
+@media screen and (max-width: 414px){
+    .sidebar-sticky {
+       
+        right: 84px;
+    }
+    }
+    @media screen and (max-width: 375px){
+        .sidebar-sticky {
+           
+            right: 126px;
+        }
+        }
 @media  (max-width: 1024px){
     .dados-empresa, .addColaborador, .holeritediv, .addSocio {
         margin-left: 198px;

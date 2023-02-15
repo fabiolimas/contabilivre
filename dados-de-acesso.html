@@ -38,8 +38,45 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <a href="index.html" class="navbar-brand ms-3">
                     <img src="img/logo.png" alt="logo contabilivre" id="logo">
+
                     <img src="img/log.png" alt="" id="logomin">
                 </a>
+                <div class="righthead">
+                    <a href="planos.html" class="btn btn-success m-3  planosbtn">Faça <b>upgrade</b> da sua conta</a>
+
+
+                    <div class="dropdown m-3">
+
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="thumb">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
+                            </div> <span>Nome do Cliente</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="planos.html" class="btn btn-success m-3 planosmobile">Faça <b>upgrade</b> da sua
+                                conta</a>
+                            <a class="dropdown-item" href="editar-perfil.html"><img
+                                    src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
+                            <a class="dropdown-item" href="lembretes.html"><img
+                                    src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
+                            <a class="dropdown-item" href="financeiro.html"><img
+                                    src="img/dropdown/icons/24/financeiro.png">
+                                Financeiro</a>
+                            <a class="dropdown-item" href="indique-e-ganhe.html"><img
+                                    src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
+                        </div>
+                    </div>
+                    <div class="ticket m-2">
+                        <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
+                    </div>
+                    <div class="help"><img src="img/help.png" alt=""></div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
                     area-controls="#navbar-links" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,33 +85,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a href="planos.html" class="btn btn-success m-3">Faça <b>upgrade</b> da sua conta</a>
-                        <div class="dropdown m-3">
 
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="thumb">
-                                    <img src="img/thumb.png" alt="Usuario thumb">
-                                </div> Nome do Cliente
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="editar-perfil.html"><img
-                                        src="img/dropdown/icons/24/editarp.png">Editar perfil</a>
-                                <a class="dropdown-item" href="lembretes.html"><img
-                                        src="img/dropdown/icons/24/lembretes.png">Lembretes</a>
-                                <a class="dropdown-item" href="financeiro.html"><img
-                                        src="img/dropdown/icons/24/financeiro.png">
-                                    Financeiro</a>
-                                <a class="dropdown-item" href="indique-e-ganhe.html"><img
-                                        src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                <a class="dropdown-item" href="#"><img src="img/dropdown/icons/24/sair.png">Sair</a>
-                            </div>
-                        </div>
-                        <div class="ticket m-2">
-                            <a href="ticket.html"><img src="img/iconticket.png" alt="Ticket"></a>
-                        </div>
-                        <div class="help"><img src="img/help.png" alt=""></div>
-                        
+
 
                     </div>
                 </div>
@@ -464,7 +476,44 @@
         </div>
    
 </body>
+<script>
+    $(document).ready(function(){
 
+var btnacessos=document.querySelector('#acessosbtn');
+var btncert=document.querySelector('#certificadobtn');
+
+var formempresa=document.querySelector('.formempresa');
+var formcert=document.querySelector('.formcertificado');
+
+btnacessos.addEventListener('click', function(e){
+    e.preventDefault();
+    formempresa.style.display='flex';
+    formcert.style.display='none';
+    btnacessos.style.borderBottom='2px solid #4aa3e5';
+    btnacessos.style.fontWeight='600';
+    btncert.style.fontWeight='100';
+    btncert.style.border='none';
+   
+   
+    
+});
+
+btncert.addEventListener('click', function(e){
+    e.preventDefault();
+    formempresa.style.display='none';
+    formcert.style.display='block';
+    btncert.style.borderBottom='2px solid #4aa3e5';
+    btncert.style.fontWeight='600';
+    btnacessos.style.fontWeight='100';
+    btnacessos.style.border='none';
+   
+   
+    
+});
+
+
+});
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

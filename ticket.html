@@ -214,15 +214,25 @@
         </aside>
         <div class="row">
             <!--planos-->
+            <div class="dropdown  botoesmobile">
 
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <img src="img/botoesmobile.png" alt="">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#" class="btnNovoTicket" data-bs-toggle="modal" data-bs-target="#novoTicket">Criar novo ticket</a>
+                    
+                </div>
+            </div>
             <div class="col col-md-12">
                 <main class="col-md-9 titlesection">
                     <div class="row">
-
+                       
                         <div class="col-md-4">
                             <p><b>Ticket</b></p>
                         </div>
-
+                        
 
 
                         <button class="btn ticket" data-bs-toggle="modal" data-bs-target="#novoTicket">Criar novo ticket</button>
@@ -240,7 +250,7 @@
                     <div class="col-md-5"></div>
                     <div class="col-md-7">
 
-
+                       
                     </div>
                 </div>
             </div>
@@ -276,6 +286,46 @@
                     </ul>
 
                 </div>
+                <div class="submenumobile">
+
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="titsubmenu">Todos </span>
+                         <div class="col-md-2 filtroticket">
+
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#filtrom"><img src="img/filtros.png" alt=""
+                                    id="iconfiltros"></a>
+                          
+                        </div>
+                         <span class="iconrefresh"><img src="img/refresh.png" alt=""></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       
+                        <a class="dropdown-item" href="ticket.html">
+
+                            Todos
+                        </a>
+                 
+                        <a class="dropdown-item" href="ticket-em-aberto.html">
+
+                            Em aberto
+                        </a>
+                   
+                        <a class="dropdown-item" href="ticket-respondido.html">
+
+                            Respondidos
+                        </a>
+                
+                        <a class="dropdown-item" href="ticket-resolvido.html" style="border: none;">
+
+                            Resolvidos
+                        </a>
+                   
+                        
+                       
+                       
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row">
 
@@ -306,7 +356,9 @@
                                         <span class="ticketatualizacao">Última modificação em: 00/00/0000 às 00:00</span>
                                         <h4>Assunto: [Nome do assunto]</h4>
                                         <p><b>Última mensagem:</b></p>
+                                        <div class="msgticket">
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has...</p>
+                                    </div>
                                     </div>
                                     
                                     <button class="btn btn-success">Ver detalhes do Ticket</button>
@@ -328,7 +380,9 @@
                                         <span class="ticketatualizacao">Última modificação em: 00/00/0000 às 00:00</span>
                                         <h4>Assunto: [Nome do assunto]</h4>
                                         <p><b>Última mensagem:</b></p>
+                                        <div class="msgticket">
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has...</p>
+                                    </div>
                                     </div>
                                     
                                     <button class="btn btn-success">Ver detalhes do Ticket</button>
@@ -388,23 +442,35 @@
                                     <div class="row mt-3">
                                         <p><b>Arquivos enviados</b></p>
                                     </div>
-                                    <div class="row table-responsive">
+                                    <div class="row ">
 
-                                        <div class="row anexos">
-                                            <div class="col col-md-1">
-                                                <img src="img/pdficon.png" alt="">
+                                        <div class="row anexosmini">
+                                            <div class="rowt">
+        
+                                                <div class="framet">
+                                                    <div class="col col-md-1 iconmini">
+                                                        <img src="img/pdficon.png" alt="">
+                                                    </div>
+                                                    <div class="infot">
+                                                        <div class="col ">
+                                                            <p>Campo para a descrição do documento</p>
+                                                        </div>
+        
+                                                        <div class="col col-md-1 me-2">
+                                                            <p class="gray">01/02/2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="botoest">
+                                                    <div class="col col-md-2 ms-3"><a href="#" class="botaoestbtn">Ver
+                                                            documento</a>
+                                                    </div>
+        
+                                                    <div class="col col-md-1 "><a href="#"><img src="img/closeico.png"
+                                                                class="close"></a></div>
+                                                </div>
+        
                                             </div>
-                                            <div class="col col-md-5">
-                                                <p>Campo para a descrição do documento</p>
-                                            </div>
-                                            <div class="col col-md-2"></div>
-                                            <div class="col col-md-1 me-2">
-                                                <p class="gray">01/02/2020</p>
-                                            </div>
-                                            <div class="col col-md-2 ms-3"><a href="#" class="btn btn-success">Ver documento</a>
-                                            </div>
-            
-                                            <div class="col col-md-1 "><a href="#" ><img src="img/closeico.png" class="close"></a></div>
                                         </div>
 
                                     </div>
@@ -444,23 +510,31 @@
                     </div>
                 </div>
             </div>
-            <!--Rodapé
-            <footer>
-                <div class="row">
-                    <div class="col col-md-12">
-                        <p class="mt-2">Nos ajude a melhorar nosso serviço! Avalie e nos dê seu feedback</p>
+          <!--Modal filtro mobile-->
+        <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="filtrom">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center">Filtro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col col-md-2 btns">
-                        <a href="#" class="btn btn-primary avaliaServ" data-bs-toggle="modal"
-                            data-bs-target="#avaliacao1">Avaliar Serviço</a>
-                        <a href="#" class="btn btn-danger"><i class="far fa-times-circle"></i> </a>
+                    <div class="modal-body text-center">
+
+
+
+                        <i class="fa fa-search position-absolute end-0 m-2"></i><input type="text" name="pesquisa"
+                            class="form-control" placeholder="Pesquisar">
+
                     </div>
-
-
-
+                    <div class="modal-footer filtro">
+                        <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="Close">Filtrar</button>
+                    </div>
                 </div>
-
-            </footer>-->
+            </div>
+        </div>
+    </div>
 </body>
 
 
