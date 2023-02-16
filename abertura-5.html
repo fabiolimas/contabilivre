@@ -44,7 +44,7 @@
         <!--Menu lateral-->
 
         <div class="row">
-            <div class="interface" style="height: 1188px;">
+            <div class="interface" style="height: 1104px;">
                 <div class="row stepscontainer">
                     <div class="step"><span class="menuitem ativo"><span class="label">1</span></span></div>
                     <div class="step"><span class="menuitem ativo"><span class="label">2</span></span></div>
@@ -59,12 +59,12 @@
                 </div>
                 <div class="content" style="width:1128px;">
                     <div class="row">
-                        <form action="#">
+                        <form action="#" class="formpagamento">
                             <p class="tituloform">Meios de pagamento:</p>
                             <div class="row radiosselect">
                                 <div class="radiocustom">
                                     <input type="radio" name="metodo" id="cartao"><label for="cartao"
-                                        class="campos">Cartão de crédito <span class="comentario">Aprovação
+                                        class="campos lbelcartao">Cartão de crédito <span class="comentario">Aprovação
                                             instantânea</span></label>
                                 </div>
 
@@ -95,7 +95,7 @@
                         </div>
                             <div class="row radiosselect">
                                 <div class="radiocustom">
-                                    <input type="radio" name="metodo" id="pix"><label for="pix" class="campos">Pagamento
+                                    <input type="radio" name="metodo" id="pix"><label for="pix" class="campos labelpix">Pagamento
                                         por PIX <span class="comentario">Aprovação instantânea</span></label>
                                 </div>
                                 <span class="metodoPix">Para visualizar o QR Code que será gerado, clique em Pagar e concluir</span>
@@ -104,7 +104,7 @@
                             <div class="row radiosselect">
                                 <div class="radiocustom">
                                     <input type="radio" name="metodo" id="boleto"><label for="boleto"
-                                        class="campos">Boleto bancário <span class="comentario">Aprovação em até 2 dias
+                                        class="campos labelboleto">Boleto bancário <span class="comentario">Aprovação em até 2 dias
                                             úteis após o pagamento</span></label>
                                 </div>
 
@@ -113,9 +113,9 @@
                             <hr>
 
 
-                            <div class="row">
+                            <div class="row resumoa">
                                 <p class="tituloform">Resumo:</p>
-                                <div class="row">
+                                <div class="row resumos">
                                     <div class="campor">
                                         <div class="lab">Valor do plano básico</div>
                                         <div class="val">R$0,00</div>
@@ -124,6 +124,8 @@
                                         <div class="lab">Taxas obrigatórias do governo</div>
                                         <div class="val">R$0,00</div>
                                     </div>
+                                </div>
+                                <div class="row resumos">
                                     <div class="campor">
                                         <div class="lab">Adicional por sócio</div>
                                         <div class="val">R$0,00</div>
@@ -132,6 +134,8 @@
                                         <div class="lab">Valor da mensalidade (Após emissão do CNPJ)</div>
                                         <div class="val">R$0,00</div>
                                     </div>
+                                </div>
+                                <div class="row resumos">
                                     <div class="campor">
                                         <div class="lab">Desconto</div>
                                         <div class="val">R$0,00</div>
@@ -141,16 +145,18 @@
                                         <div class="val">R$0,00</div>
 
                                     </div>
+                                </div>
+                                <div class="row resumos">
                                     <div class="cuponsr"><input type="text" class="form-control addcupom"
                                             placeholder="Adicionar cupom">
                                         <button class="addcupombtn">Adicionar</button>
                                     </div>
 
-
+                                
                                 </div>
-                                <div class="check" style="width: auto; margin-top: 26px;">
+                                <div class="check contrato" style="width: auto; margin-top: 26px;">
                                     <input type="checkbox" id="li" class="form-check-input" checked
-                                        style="width: 18px;"><label for="li">
+                                        ><label for="li">
                                         <p style="width: auto;">Eu li e aceito o <span class="verde">contrato de prestação de serviço</span> da
                                             contabilivre, os <span class="verde">termos e condições de uso </span>e a <span class="verde">política de privacidade e
                                             segurança</span>.</p>
@@ -158,9 +164,9 @@
                                 </div>
                             </div>
                            
-                            <div class=" row footercontent" style="width:1095px;">
+                            <div class=" row footercontent">
                                 <hr>
-                                <div class="buttons" style="width: 243px;">
+                                <div class="buttons" >
                                     <a href="abertura-4.html" class="voltar">Voltar</a>
 
                                     <a href="#" class="avancar Cartaopag" style="width: 149px;" data-bs-toggle="modal"
@@ -387,6 +393,77 @@
     var cvv = IMask(inputcvv, mascaracvv);
     var validade = IMask(inputvalidade, mascaravalidade);
 
+</script>
+<script>
+    $(document).ready(function(){
+
+var btncartao=document.querySelector('#cartao');
+var btnpix=document.querySelector('#pix');
+var btnboleto=document.querySelector('#boleto');
+
+var metodocartao=document.querySelector('.metodocartao');
+var metodopix=document.querySelector('.metodoPix');
+var metodoboleto=document.querySelector('.metodoBoleto');
+var boletopag=document.querySelector('.Boletopag');
+var pixpag=document.querySelector('.Pixpag');
+var cartaopag=document.querySelector('.Cartaopag');
+var labelcartao=document.querySelector('.lbelcartao');
+var labelpix=document.querySelector('.labelpix');
+var labelboleto=document.querySelector('.labelboleto');
+
+
+
+btncartao.addEventListener('click', function(e){
+    e.preventDefault();
+    metodocartao.style.display="block";
+    metodopix.style.display="none";
+    metodoboleto.style.display="none";
+    boletopag.style.display="none";
+    pixpag.style.display="none";
+    cartaopag.style.display="block";
+    labelcartao.style.color="#74C83C";
+    labelpix.style.color="#000";
+    labelboleto.style.color="#000";
+    
+   
+   
+    
+});
+btnpix.addEventListener('click', function(e){
+    e.preventDefault();
+    metodocartao.style.display="none";
+    metodopix.style.display="flex";
+    metodoboleto.style.display="none";
+    boletopag.style.display="none";
+    pixpag.style.display="block";
+    cartaopag.style.display="none";
+    labelcartao.style.color="#000";
+    labelpix.style.color="#74C83C";
+    labelboleto.style.color="#000";
+   
+    
+});
+btnboleto.addEventListener('click', function(e){
+    e.preventDefault();
+    metodocartao.style.display="none";
+    metodopix.style.display="none";
+    metodoboleto.style.display="flex";
+    boletopag.style.display="block";
+    pixpag.style.display="none";
+    cartaopag.style.display="none";
+    labelcartao.style.color="#000";
+    labelpix.style.color="#000";
+    labelboleto.style.color="#74C83C";
+
+   
+   
+    
+});
+
+
+
+
+});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

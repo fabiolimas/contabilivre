@@ -3107,7 +3107,7 @@ main {
     padding: 40px;
     gap: 32px;
     position: absolute;
-    width: 49%;
+    width: 45%;
     height: auto;
     left: 280px;
     top: 112px;
@@ -4475,6 +4475,7 @@ span.year {
 .col-md-5.right-side {
     width: 456px;
     margin-top: -75px;
+    margin-left: -57px;
 }
 .plan2 {
     background: #fff;
@@ -5757,6 +5758,9 @@ color: #58C0ED;
         width: 348px;
         margin-left: -16px;
     }
+    .wraper {
+        width: 68% !important;
+    }
     .titulo1 {
        
         width: auto;
@@ -6219,6 +6223,7 @@ color: #F8F9FA;
     .col.col-md-8.side {
         
          margin-left: 0px;
+         width: 65% !important;
     }
     .row.btnscliente .btn {
         width: 332px;
@@ -7791,9 +7796,44 @@ z-index: 999;
             right: 126px;
         }
         }
+        @media (max-width: 980px){
+            .card.card-primary {
+              
+                margin-left: 144%;
+            }
+        }
 @media  (max-width: 1024px){
     .dados-empresa, .addColaborador, .holeritediv, .addSocio {
         margin-left: 198px;
+    }
+    .card.card-primary {
+    
+        width: 152%;
+      
+    }
+    .wraper {
+        width: 39%;
+    }
+    .chart {
+        margin-left: -48px;
+        width: 116% !important;
+        overflow: auto;
+    }
+    .card-body.mt-4.grafico2 {
+        width: 108%;
+        overflow: auto;
+        margin-left: 0px;
+    }
+    .row.chartdon {
+     
+        margin-left: 92px;
+    }
+    .col.col-md-8.side {
+        width: 37%;
+      
+    }
+    .card-body.mt-4.grafico1 {
+        width: 108%;
     }
     .col-md-9.plan1.p-0.pb-2.lembrete.mb-5 {
         width: 91%;
@@ -8002,12 +8042,28 @@ z-index: 999;
 }
 
 
-@media only screen and (min-width: 1380px){
+@media only screen and (min-width: 1366px){
     .minbusca {
         right: 34px;
     }
     .col-md-9.plan1.mb-5.mt-5.criarlembrete {
         width: 96%;
+    }
+    .card-body.mt-4.grafico1 {
+        width: 100%;
+    }
+    .legendas {
+      
+        width: 82%;
+    }
+    .chart {
+        margin-left: -48px;
+        overflow-x: scroll;
+        width: 111%;
+    }
+    .row.chartdon {
+      
+        margin-left: -36px;
     }
     .col-md-11.tabelasect.mb-5.mt-3.p-0.pb-2.saladereuniao {
         width: 94%;
@@ -8076,6 +8132,9 @@ z-index: 999;
     }
     div#cartao .col-md-2 {
         width: 105px;
+    }
+    .card.card-primary {
+        width: 89%;
     }
    
 }

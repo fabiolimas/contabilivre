@@ -166,3 +166,8 @@ input[type="checkbox"]:checked ~ h4 {
     display: flex;
     justify-content: space-between;
 }
+@media  (max-width: 1024px){
+    .wraper {
+        width: 39%;
+    }
+}

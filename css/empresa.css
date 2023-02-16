@@ -4,7 +4,7 @@ body{
     font-family:'Poppins', sans-serif;
     position: relative;
     width: 100%;
-    height: 1080px;
+    
     
     /* Gradientes / Info */
     
@@ -34,7 +34,19 @@ height: 16px;
     background: #FFFFFF;
     justify-content: center;
 }
-
+.anexos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px 24px;
+    width: 279px;
+    height: 168px;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+    border-radius: 8px;
+    width: fit-content;
+    position: relative;
+}
 .progress{
     position: absolute;
 width: 100%;
@@ -316,9 +328,10 @@ margin-left: 12px;
 
 }
 .check input {
-   
-    width: 18px;
-    margin-top: 10px;
+       /* width: 18px; */
+       margin-top: 11px;
+       padding: 0;
+       width: 15px;
 }
 .check p{
     font-family: 'Inter';
@@ -364,16 +377,21 @@ height: 0px;
 border: 1px solid rgba(74, 163, 229, 0.2);
 
 }
+.row.resumos {
+    width: fit-content;
+}
 .buttons{
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-width: 193px;
-height: 38px;
-margin-top: -27px;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 16px;
+    width: -webkit-fill-available;
+    height: 38px;
+    margin-top: -42px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin-right: 72px;
 }
 .voltar{
     display: flex;
@@ -407,7 +425,7 @@ align-items: center;
 padding: 10px 20px;
 gap: 8px;
 
-width: 96px;
+width: -webkit-fill-available;
 height: 38px;
 
 /* Primária / Main */
@@ -1410,6 +1428,33 @@ width: 44px;
 height: 48px;
 
 }
+.iconeanexo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 44px;
+    height: 48px;
+}
+.closeanexo {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    width: auto;
+}
+.botaoanexo {
+    display: flex;
+    padding: 0px;
+    gap: 8px;
+    width: 247px;
+    height: 32px;
+    margin-left: -262px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
 .infot {
     display: flex;
     flex-direction: row;
@@ -1417,6 +1462,44 @@ height: 48px;
     padding: 0px;
     width: 516px;
     height: 20px;
+}
+.iconeanexo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 44px;
+    height: 48px;
+}
+.closeanexo {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    width: auto;
+}
+
+p.gray.dataanexo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* padding: 16px; */
+    width: 98px;
+    height: 47px;
+    margin-left: -106px;
+    margin-top: -7px;
+}
+.botaoanexo {
+    display: flex;
+    padding: 0px;
+    gap: 8px;
+    width: 247px;
+    height: 32px;
+    margin-left: -262px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
 }
 .infot p{
     font-family: 'Inter';
@@ -1896,6 +1979,9 @@ gap: 4px;
 width: 200px;
 height: 36px;
 }
+.lbelcartao{
+    color: #74C83C;
+}
 .campos{
     display: flex;
 flex-direction: column;
@@ -1918,7 +2004,7 @@ line-height: 18px;
 
 /* Secundária / Main */
 
-color: #74C83C;
+
 margin-top: 19px;
 }
 .comentario{
@@ -2048,9 +2134,9 @@ margin-left: 12px;
 .cuponsr {
     width: auto;
     /* position: absolute; */
-    margin-left: 460px;
+    margin-left: 57%;
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .checkab5{
     display: flex;
@@ -2703,15 +2789,33 @@ height: 36px;
     .title{
         width:auto;
     }
+    input#cvv, input#validade {
+        width: 40%;
+    }
     .title h4 {
        
         font-size: 16px;
         margin-bottom: -19px;
     }
+ 
+    a.avancar {
+        margin-left: 64px;
+        width: 131.5px;
+    }
     .stepscontainer {
        
         flex-wrap: nowrap;
         margin-bottom: -48px;
+    }
+    .qrcode {
+   
+        margin-left: 28%;
+
+    }
+    .upload {
+       
+        width: auto;
+    
     }
     .step {
        
@@ -2736,9 +2840,9 @@ height: 36px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 24px;
+        /* padding: 24px; */
         gap: 24px;
-        width: auto;
+        /* width: auto; */
         height: 250px;
         background: #FFFFFF;
         box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
@@ -2753,18 +2857,48 @@ height: 36px;
         text-align: left;
     }
     .footercontent {
-     
-        width: 360px !important;
-       
+        width: auto;
+        margin-left: 20px !important;
+        /* position: absolute; */
+        bottom: -62px;
+        margin-top: -6%;
+        margin-bottom: -34px;
+    }
+    .row.resumos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        width: 279px;
+        height: 51px;
+        margin-left: 28px;
+    }
+    .campor {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 135.5px;
+        height: 36px;
     }
     form {
         height: auto;
+        width: -webkit-fill-available !important;
+        margin-left: -2px;
     }
     .content{
         margin-top: -30px;
         height: auto;
         width: auto !important;
 
+    }
+   
+    .queroContratar {
+        
+        width: auto;
+    
+        margin-right: 12px;
     }
     .lineform {
        
@@ -2777,7 +2911,7 @@ height: 36px;
       
     }
     .check{
-        margin-top: 8px;
+        margin-top: 32px !important;
     margin-bottom: 33px;
 }
     
@@ -2792,10 +2926,13 @@ height: 36px;
     }
     .addcupombtn {
         
-        width: 100%;
+        width: 346px;
         margin-top: 16px;
-        margin-left: 0;
+        margin-left: 11px;
        
+    }
+    input.form-control.addcupom {
+        margin-left: 18px;
     }
     .addcupom{
         box-sizing: border-box;
@@ -2839,10 +2976,21 @@ textarea.form-control {
     margin: 0 auto;
     
 }
+.formpagamento{
+    height: auto;
+    width: -webkit-fill-available !important;
+    margin-left: 36px;
+
+}
+.check.contrato {
+    margin-top: 87px !important;
+    margin-bottom: 77px;
+    width: -webkit-fill-available;
+}
 .servicosemp {
     
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 63px;
    
 }
 .search {
@@ -3005,11 +3153,7 @@ span.tituloabe {
     text-align: center;
     margin-top: -9px;
 }
-.campor {
-   
-    width: -webkit-fill-available;
-   
-}
+
 span.avisocli {
     font-size: 10px;
     width: auto;
