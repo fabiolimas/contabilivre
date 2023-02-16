@@ -795,6 +795,7 @@ header, .navbar{
 nav.navbar.navbar-expand.pagamentos {
     background: #fff;
     box-shadow: none;
+    overflow: hidden;
    
 }
 .gray{
@@ -4751,6 +4752,11 @@ margin-bottom: 13px;
        
         margin-left: -54px;
     }
+    .col-md-11.tabelasect.mb-5.mt-3.saladereuniao {
+        width: -webkit-fill-available;
+        margin-top: 102px !important;
+        margin-left: 181px;
+    }
     .row.mt-3.confirmep .row {
         display: flex;
     }
@@ -4767,6 +4773,11 @@ margin-bottom: 13px;
         border: 1px solid #58C0ED;
         border-radius: 4px;
         margin-left: 7px;
+    }
+    nav.navbar.navbar-expand.pagamentos {
+       
+        overflow: scroll;
+       
     }
     div#aviso .btn-primary {
         width: -webkit-fill-available;
@@ -4805,8 +4816,11 @@ border-radius: 4px;
         right: 27px;
         top: 29px;
     }
-   .dmedinputs {
+   .dmedinputs, .dimodinputs {
         display: grid;
+    }
+    .venda, .aluguel {
+        width: -webkit-fill-available;
     }
     .row.manual {
         display: flex;
@@ -4814,9 +4828,21 @@ border-radius: 4px;
         align-items: flex-start;
         padding: 0px;
         gap: 16px;
-        /* width: 279px; */
-        height: 390px;
+       
         margin-bottom: 40px;
+    }
+    button.btn.btn-success.successnf {
+      
+        margin-top: 13px;
+        margin-left: 13px;
+    }
+    .dimodmeses .row {
+        height: 65px;
+        width: max-content;
+        /* overflow-x: auto; */
+    }
+    .dimodmeses {
+        overflow-x: scroll;
     }
     .dmed a.btn.btn-primary {
     
@@ -4839,8 +4865,21 @@ border-radius: 4px;
     .dmed .closeanexo {
         
         margin-top: 54px;
-        top: 51px;
+        top: 27px;
     }
+    .plan11.p-5.planopro {
+        margin-left: -22px !important;
+        margin-top: -36px;
+   
+    }
+    main.col-md-9.titlesection.planos {
+        margin-left: -8px;
+    }
+    .plan2.p-5.planopro {
+        margin-left: -23px !important;
+      
+    }
+ 
     .dmed .form-select {
         width: 300px;
     }
@@ -7949,6 +7988,17 @@ z-index: 999;
         .col-md-2.minbusca input, .col-md-2.minbusca i, .formbusca input, .formbusca select, .formbusca img, .formbusca .gray {
             display: none;
         }
+        .stepinativo {
+     
+            width: 182px;
+          
+        }
+        .step {
+            width: 230px;
+        }
+        .wraper {
+            width: -webkit-fill-available;
+        }
 }
 
 
@@ -7967,6 +8017,11 @@ z-index: 999;
         margin-top: 68px;
         margin-left: 137px;
         width: 87%;
+    }
+    .stepinativo {
+     
+        width: 230px;
+      
     }
     .col-md-11.tabelasect.mb-5.mt-3.reservarhorariomb .step {
         width: 232px;

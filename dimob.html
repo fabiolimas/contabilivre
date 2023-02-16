@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Contabilivre - DIMOB</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
@@ -12,7 +13,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/anacss.css">
     <link rel="stylesheet" href="css/anacss.css">
     <!--scripts-->
@@ -32,7 +33,7 @@
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -50,7 +51,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -65,11 +67,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -231,12 +232,12 @@
                     </div>
                 </main>
 
- 
+
 
 
                 <div class="container mt-5">
 
-                    <div class="col-md-9 plan1 mb-5 servicosa">
+                    <div class="col-md-9 plan1 mb-5 p-4 dmed">
                         <div class="row">
                             <p><b>Seleciona o tipo de registro que deseja enviar primeiro</b></p>
                             <p class="gray">Informe todos os seus registros de contratação e comissões imobiliárias
@@ -266,15 +267,16 @@
                                     <p><b>Seleciona a forma de envio dos registros:</b></p>
                                     <form action="#">
                                         <div class="row">
-                                            <div class="col col-md-8 mt-2">
+                                            <div class="col col-md-8 mt-2 dimodinputs">
                                                 <input type="radio" name="envio" id="manual"
                                                     class="form-check-input ms-2">
-                                                <label for="manual" class="form-check-label">Manualmente <p class="sub"
-                                                        style="font-size: 10px;">Preencha as informações</p></label>
+                                                <label for="manual" class="form-check-label dimodManual">Manualmente <p
+                                                        class="sub" style="font-size: 10px;">Preencha as informações</p>
+                                                    </label>
                                                 <input type="radio" name="envio" id="excel"
                                                     class="form-check-input ms-2">
-                                                <label for="excel" class="form-check-label">Planilha do Excel <p
-                                                        class="sub" style="font-size: 10px;">Importe uma planilha do
+                                                <label for="excel" class="form-check-label dimodexcel">Planilha do Excel
+                                                    <p class="sub" style="font-size: 10px;">Importe uma planilha do
                                                         Excel</p></label>
 
                                             </div>
@@ -361,10 +363,10 @@
                                                     </div>
 
 
-                                                    <div class="col col-md-2 mt-2">
+                                                 
                                                         <button class="btn btn-success successnf">Salvar</button>
-                                                    </div>
-
+                                                   
+                                                    <div class="dimodmeses">
                                                     <div class="row mt-3">
                                                         <div class="col col-md-1 mt-2 ">
                                                             <div class="mesbtn ativo">Janeiro</div>
@@ -403,7 +405,7 @@
                                                             <div class="mesbtn">Dezembro</div>
                                                         </div>
                                                     </div>
-
+                                                </div>
                                                     <hr class="mt-3">
                                                     <div class="row table-responsive">
                                                         <table class="table resumo">
@@ -470,7 +472,7 @@
                                                 </div>
 
 
-                                               
+
                                                 <div class="modal-body text-center">
 
 
@@ -489,22 +491,26 @@
                                                         <div class="row mt-3">
                                                             <p><b>Arquivos enviados</b></p>
                                                         </div>
-                                                        <div class="row table-responsive">
+                                                        <div class="row ">
 
-                                                            <div class="row anexos s">
-                                                                <div class="col col-md-5">
+                                                            <div class="row anexos">
+                                                                <div class="iconeanexo">
+                                                                    <img src="img/pdficon.png" alt="">
+                                                                </div>
+                                                                <div class="infoanexo">
                                                                     <p>Campo para a descrição do documento</p>
                                                                 </div>
-                                                                <div class="col col-md-2">
-                                                                    <p class="gray">01/02/2020</p>
+                                                                <div class="col col-md-2"></div>
+                                                                <div class="col col-md-1 me-2">
+                                                                    <p class="gray dataanexo">01/02/2020</p>
                                                                 </div>
-                                                                <div class="col col-md-3"><a href="#"
+                                                                <div class="botaoanexo"><a href="#"
                                                                         class="btn btn-success">Ver
                                                                         documento</a>
                                                                 </div>
-
-                                                                <div class="col col-md-2"><a href="#"
-                                                                        class="btn btn-danger">X</a></div>
+    
+                                                                <div class="closeanexo"><a href="#"><img
+                                                                            src="img/closeico.png" class="close"></a></div>
                                                             </div>
 
                                                         </div>
@@ -540,15 +546,17 @@
                                     <p><b>Seleciona a forma de envio dos registros:</b></p>
                                     <form action="#">
                                         <div class="row">
-                                            <div class="col col-md-8 mt-2">
+                                            <div class="col col-md-8 mt-2 dimodinputs ">
                                                 <input type="radio" name="envio" id="manuall"
                                                     class="form-check-input ms-2">
-                                                <label for="manuall" class="form-check-label">Manualmente <p class="sub"
-                                                        style="font-size: 10px;">Preencha as informações</p></label>
+                                                <label for="manuall" class="form-check-label dimodManualv">Manualmente
+                                                    <p class="sub" style="font-size: 10px;">Preencha as informações</p>
+                                                    </label>
                                                 <input type="radio" name="envio" id="excell"
                                                     class="form-check-input ms-2">
-                                                <label for="excell" class="form-check-label">Planilha do Excel <p
-                                                        class="sub" style="font-size: 10px;">Importe uma planilha do
+                                                <label for="excell" class="form-check-label dimodExcelv">Planilha do
+                                                    Excel <p class="sub" style="font-size: 10px;">Importe uma planilha
+                                                        do
                                                         Excel</p></label>
 
                                             </div>
@@ -638,7 +646,7 @@
                                                     <div class="col col-md-2 mt-2">
                                                         <button class="btn btn-success successnf">Salvar</button>
                                                     </div>
-
+                                                    <div class="dimodmeses">
                                                     <div class="row mt-3">
                                                         <div class="col col-md-1 mt-2 ">
                                                             <div class="mesbtn ativo">Janeiro</div>
@@ -677,7 +685,7 @@
                                                             <div class="mesbtn">Dezembro</div>
                                                         </div>
                                                     </div>
-
+</div>
                                                     <hr class="mt-3">
                                                     <div class="row table-responsive">
                                                         <table class="table resumo">
@@ -744,7 +752,7 @@
                                                 </div>
 
 
-                                               
+
                                                 <div class="modal-body text-center">
 
 
@@ -763,22 +771,26 @@
                                                         <div class="row mt-3">
                                                             <p><b>Arquivos enviados</b></p>
                                                         </div>
-                                                        <div class="row table-responsive">
+                                                        <div class="row ">
 
-                                                            <div class="row anexos s">
-                                                                <div class="col col-md-5">
+                                                            <div class="row anexos">
+                                                                <div class="iconeanexo">
+                                                                    <img src="img/pdficon.png" alt="">
+                                                                </div>
+                                                                <div class="infoanexo">
                                                                     <p>Campo para a descrição do documento</p>
                                                                 </div>
-                                                                <div class="col col-md-2">
-                                                                    <p class="gray">01/02/2020</p>
+                                                                <div class="col col-md-2"></div>
+                                                                <div class="col col-md-1 me-2">
+                                                                    <p class="gray dataanexo">01/02/2020</p>
                                                                 </div>
-                                                                <div class="col col-md-3"><a href="#"
+                                                                <div class="botaoanexo"><a href="#"
                                                                         class="btn btn-success">Ver
                                                                         documento</a>
                                                                 </div>
-
-                                                                <div class="col col-md-2"><a href="#"
-                                                                        class="btn btn-danger">X</a></div>
+    
+                                                                <div class="closeanexo"><a href="#"><img
+                                                                            src="img/closeico.png" class="close"></a></div>
                                                             </div>
 
                                                         </div>
@@ -794,7 +806,8 @@
                                             <div class="col-md-12 d-flex justify-content-end">
 
                                                 <div class="col-md-3"><a href="#" class="btn btn-primary"
-                                                        data-bs-toggle="modal" data-bs-target="#confirmacao1">Registrar Vendas</a></div>
+                                                        data-bs-toggle="modal" data-bs-target="#confirmacao1">Registrar
+                                                        Vendas</a></div>
 
                                             </div>
                                         </div>
@@ -805,60 +818,60 @@
                             </form>
                         </div>
 
-                        </div>
-
-
                     </div>
 
 
+                </div>
 
 
-                    <!--Modal avaliaçao 1-->
-                    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="aviso" style="--bs-modal-width: 888px;
+
+
+                <!--Modal avaliaçao 1-->
+                <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="aviso" style="--bs-modal-width: 888px;
                 --bs-modal-height: 425px;">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title greentitle">Antes de continuar, leia os avisos abaixo: </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body listaaviso">
-                                    <ul>
-                                        <li>
-                                            A distribuição é apenas fiscal. Sua empresa <b>não precisa ter o
-                                                dinheiro</b>
-                                            para distribuir.
-                                        </li>
-                                        <li>A distribuição de lucros <b>não gera impostos a pagar, tanto para a empresa
-                                                como
-                                                para os sócios.</b></li>
-                                        <li>Essa tela só dá uma sugestão do valor máximo a distribuir. Você <b>não
-                                                precisa
-                                                distribuir nada</b> se não quiser. O valor não distribuído fica
-                                            acumulado
-                                            para o ano seguinte.</li>
-                                        <li>Se sua empresa <b>não teve lucro em 2021</b> e mesmo assim apresenta
-                                            distribuição nesta tela, provavalemte é porque possuía lucros de anos
-                                            anteriores
-                                            não distribuídos.</li>
-                                        <li>Se você <b>antecipou em 2021 um valor maior do que o lucro apresentado</b>
-                                            aqui,
-                                            nós vamos classificar a diferença como empréstimo da empresa aos sócios que
-                                            será
-                                            abatido de lucros futuros. Não haverá tributação por conta disto.</li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer text-center">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title greentitle">Antes de continuar, leia os avisos abaixo: </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body listaaviso">
+                                <ul>
+                                    <li>
+                                        A distribuição é apenas fiscal. Sua empresa <b>não precisa ter o
+                                            dinheiro</b>
+                                        para distribuir.
+                                    </li>
+                                    <li>A distribuição de lucros <b>não gera impostos a pagar, tanto para a empresa
+                                            como
+                                            para os sócios.</b></li>
+                                    <li>Essa tela só dá uma sugestão do valor máximo a distribuir. Você <b>não
+                                            precisa
+                                            distribuir nada</b> se não quiser. O valor não distribuído fica
+                                        acumulado
+                                        para o ano seguinte.</li>
+                                    <li>Se sua empresa <b>não teve lucro em 2021</b> e mesmo assim apresenta
+                                        distribuição nesta tela, provavalemte é porque possuía lucros de anos
+                                        anteriores
+                                        não distribuídos.</li>
+                                    <li>Se você <b>antecipou em 2021 um valor maior do que o lucro apresentado</b>
+                                        aqui,
+                                        nós vamos classificar a diferença como empréstimo da empresa aos sócios que
+                                        será
+                                        abatido de lucros futuros. Não haverá tributação por conta disto.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer text-center">
 
-                                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                        aria-label="Close">Entendi</button>
-                                </div>
+                                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">Entendi</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <!--Rodapé
+                </div>
+
+                <!--Rodapé
             <footer>
                 <div class="row">
                     <div class="col col-md-12">
@@ -877,7 +890,145 @@
             </footer>-->
 </body>
 
+<script>
+    $(document).ready(function () {
+        var btnManual = document.querySelector("#manual");
+        var btnExcel = document.querySelector("#excel");
+        var labelmanual = document.querySelector(".dimodManual");
+        var labelexcel = document.querySelector(".dimodexcel");
 
+
+        var manual = document.querySelector('.manual');
+        var excel = document.querySelector('.importPlanilha');
+
+
+        btnManual.addEventListener('click', function (e) {
+            e.preventDefault();
+            manual.style.display = 'block';
+            excel.style.display = 'none';
+            btnExcel.checked = false;
+            btnManual.checked = true;
+            labelmanual.style.color = "#74C83C";
+            labelexcel.style.color = "#000";
+
+
+
+        });
+
+        btnExcel.addEventListener('click', function (e) {
+            e.preventDefault();
+            manual.style.display = 'none';
+            excel.style.display = 'flex';
+            btnExcel.checked = true;
+            btnManual.checked = false;
+            labelmanual.style.color = "#000";
+            labelexcel.style.color = "#74C83C";
+
+
+
+
+
+
+
+        });
+
+
+    });
+    /*manual e excel*/
+    $(document).ready(function () {
+        var btnManual = document.querySelector("#manuall");
+        var btnExcel = document.querySelector("#excell");
+        var labelmanual = document.querySelector(".dimodManualv");
+        var labelexcel = document.querySelector(".dimodExcelv");
+
+        var manual = document.querySelector('.manuall');
+        var excel = document.querySelector('.importPlanilhal');
+
+
+        btnManual.addEventListener('click', function (e) {
+            e.preventDefault();
+            manual.style.display = 'block';
+            excel.style.display = 'none';
+            btnExcel.checked = false;
+            btnManual.checked = true;
+            labelmanual.style.color = "#74C83C";
+            labelexcel.style.color = "#000";
+
+
+
+
+        });
+
+        btnExcel.addEventListener('click', function (e) {
+            e.preventDefault();
+            manual.style.display = 'none';
+            excel.style.display = 'flex';
+            btnExcel.checked = true;
+            btnManual.checked = false;
+            labelmanual.style.color = "#000";
+            labelexcel.style.color = "#74C83C";
+
+
+
+
+
+
+
+        });
+
+
+    });
+
+    /*vendas e locação*/
+    $(document).ready(function () {
+        var btnVendas = document.querySelector("#vendasBtn");
+        var btnLocacao = document.querySelector("#locacaoBtn");
+        var labelmanual = document.querySelector(".dimodManualv");
+        var labelexcel = document.querySelector(".dimodexcelv");
+
+
+        var venda = document.querySelector('.venda');
+        var aluguel = document.querySelector('.aluguel');
+
+
+        btnVendas.addEventListener('click', function (e) {
+            e.preventDefault();
+            venda.style.display = 'block';
+            aluguel.style.display = 'none';
+
+            btnLocacao.style.border = 'none';
+            btnVendas.style.borderBottom = '2px solid #4aa3e5';
+            btnVendas.style.fontWeight = '600';
+            btnLocacao.style.fontWeight = '100';
+            labelmanual.style.color = "#74C83C";
+            labelexcel.style.color = "#000";
+
+
+
+
+        });
+
+        btnLocacao.addEventListener('click', function (e) {
+            e.preventDefault();
+            venda.style.display = 'none';
+            aluguel.style.display = 'block';
+            btnLocacao.style.borderBottom = '2px solid #4aa3e5';
+            btnLocacao.style.fontWeight = '600';
+            btnVendas.style.fontWeight = '100';
+            btnVendas.style.borderBottom = 'none';
+            labelmanual.style.color = "#000";
+            labelexcel.style.color = "#74C83C";
+
+
+
+
+
+
+        });
+
+
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
