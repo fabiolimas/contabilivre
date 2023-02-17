@@ -268,7 +268,7 @@ align-items: flex-start;
 padding: 0px;
 gap: 16px;
 
-width: 1128px;
+width: auto;
 height: auto;
 
 }
@@ -381,7 +381,7 @@ padding: 0px;
 gap: 24px;
 
 width: auto;
-height: 62px;
+height: auto;
 flex: none;
 order: 3;
 align-self: stretch;
@@ -889,6 +889,15 @@ border-radius: 4px;
     border-radius: 16px;
     
     cursor: pointer;
+}
+.row.infoendereco {
+    display: flex;
+    
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: auto;
+    height: 378px;
 }
 .copiacodigo{
     display: flex;
@@ -2261,6 +2270,7 @@ border: 1px solid #E9ECEF;
 border-radius: 4px;
 
 }
+
 .rightg ul{
     display: flex;
 flex-direction: column;
@@ -2816,17 +2826,58 @@ height: 36px;
         width: 102%;
     }
     input#cvv, input#validade {
-        width: 40%;
+        width: 47%;
+    }
+    .valorcontrate {
+        height: auto;
+    }
+    .conteudo {
+      
+        width: auto;
+        margin-top: -16px;
     }
     .title h4 {
        
         font-size: 16px;
         margin-bottom: -19px;
     }
+    .acoes {
+    
+        height: auto;
+        
+    }
+    .conteudoacao {
+       
+     
+        height: auto;
+    }
+    .iconcontainer {
+    
+        height: 133px;
+      
+    }
+    .infosocio {
+   
+        width: -webkit-fill-available;
+       
+    }
+    .row.infoendereco {
+        margin-top: 253px;
+    }
  
     a.avancar {
-        margin-left: 64px;
-        width: 131.5px;
+      
+        width: -webkit-fill-available;
+    }
+    h3.titulocheckout {
+        font-size: 16px;
+    }
+    span.valorcont {
+        font-size: 32px;
+        height:auto;
+    }
+    a.naoPerciso {
+        font-size: 14px;
     }
     .stepscontainer {
        
@@ -2842,6 +2893,9 @@ height: 36px;
        
         width: auto;
     
+    }
+    .infocontrate {
+        width: 84%;
     }
     .step {
        
@@ -2884,7 +2938,7 @@ height: 36px;
     }
     .footercontent {
         width: auto;
-        margin-left: 20px !important;
+        margin-left: 0px !important;
         /* position: absolute; */
         bottom: -62px;
        
@@ -2934,7 +2988,7 @@ height: 36px;
         
         width: auto;
     
-        margin-right: 12px;
+        margin-right: 27px;
     }
     .lineform {
        
@@ -3015,7 +3069,7 @@ textarea.form-control {
 .formpagamento{
     height: auto;
     width: -webkit-fill-available !important;
-    margin-left: 36px;
+    margin-left: 0px;
 
 }
 .check.contrato {
