@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Contabilivre - Faturamento</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <!--Bootstrap-->
@@ -12,7 +13,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/anacss.css">
     <!--scripts-->
     <!--Fulcallendar-->
@@ -26,12 +27,12 @@
     <script src="js/progressbar.min.js"></script>
     <!--parallax-->
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 
 </head>
 
 <body class="position-relative">
-   <header>
+    <header>
         <!--Header-->
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top">
@@ -49,7 +50,8 @@
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="thumb">
-                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt="" class="setabaixo">
+                                <img src="img/thumb.png" alt="Usuario thumb"> <img src="img/setabaixo.png" alt=""
+                                    class="setabaixo">
                             </div> <span>Nome do Cliente</span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -64,11 +66,10 @@
                                 Financeiro</a>
                             <a class="dropdown-item" href="indique-e-ganhe.html"><img
                                     src="img/dropdown/icons/24/inique.png">Indique e ganhe</a>
-                                    <a class="dropdown-item" href="ticket.html"><img
-                                        src="img/envelopecinza.png">Tickets</a>
-                                        <a class="dropdown-item" href="#"><img
-                                            src="img/helpcinza.png">Ajuda</a>
-                            <a class="dropdown-item" href="#" style="border: none;"><img src="img/dropdown/icons/24/sair.png">Sair</a>
+                            <a class="dropdown-item" href="ticket.html"><img src="img/envelopecinza.png">Tickets</a>
+                            <a class="dropdown-item" href="#"><img src="img/helpcinza.png">Ajuda</a>
+                            <a class="dropdown-item" href="#" style="border: none;"><img
+                                    src="img/dropdown/icons/24/sair.png">Sair</a>
                         </div>
                     </div>
                     <div class="ticket m-2">
@@ -250,7 +251,8 @@
 
             <div class="submenumobile" style="top: 229px;">
 
-                <p class="titsubmenu"><a href="notas-fiscais.html"><i class="fa fa-chevron-left"></i></a>Registrar faturamento sem nota fiscal</p>
+                <p class="titsubmenu"><a href="notas-fiscais.html"><i class="fa fa-chevron-left"></i></a>Registrar
+                    faturamento sem nota fiscal</p>
             </div>
             <div class="container mt-5">
                 <div class="col-md-4 menu nffaturamento" style="margin-top: -25px;">
@@ -274,9 +276,9 @@
                     <nav class="navbar navbar-expand nfs">
                         <ul class="metodospag navbar-nav me-auto">
 
-                            <li class="nav-item"><a href="#" class="nav-link" id="importarBtn">Registrar</a>
+                            <li class="nav-item"><a href="#" class="nav-link" id="registrarbtnd">Registrar</a>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtn">Últimos
+                            <li class="nav-item"><a href="#" class="nav-link" id="ultimasemissoesBtnd">Últimos
                                     Registros
                                 </a>
                             </li>
@@ -289,256 +291,297 @@
 
                     <div class="row mb-3">
 
-                      
-                        
+
+                        <div class="registrarnf">
                             <form action="">
-                            <div class="row formempresa">
+                                <div class="row formempresa">
 
 
 
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Competência">
-                                </div>
-
-                                <div class="col col-md-6 mt-3">
-                                    <input type="text" class="form-control" placeholder="Valor">
-                                </div>
-
-
-
-                                </form>
-                            </div>
-
-                            <hr>
-                            <div class="row bts mt-3 " >
-                                <div class="col-md-12 d-flex justify-content-end">
-                                    <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
-                                    <div class="col-md-3"><a href="#" class="btn btn-primary">Registrar</a>
+                                    <div class="col col-md-6 mt-3">
+                                        <input type="text" class="form-control" placeholder="Competência">
                                     </div>
 
+                                    <div class="col col-md-6 mt-3">
+                                        <input type="text" class="form-control" placeholder="Valor">
+                                    </div>
+
+
+
+                            </form>
+                        </div>
+
+                        <hr>
+                        <div class="row bts mt-3 ">
+                            <div class="col d-flex">
+                                <div class="col-md-2"><a href="#" class="ms-3">Cancelar</a></div>
+                                <div class="col-md-3"><a href="#" class="btn btn-primary">Registrar</a>
                                 </div>
+
                             </div>
-                       
-
-                        <!--tabela ultimas emissões-->
-                        <div class="row table-responsive w-100">
-                            <table class="table ultimasEmissoes">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th scope="col">Competência</th>
-                                        <th scope="col">Valor</th>
-                                        <th scope="col">Ação</th>
-                                     
-
-
-
-
-                                    </tr>
-                                </thead>
-                                <tbody class="table-group-divider text-center">
-
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>00/00/0000</td>
-                                        <td>R$0.000,00</td>
-                                        <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
-
-
-                                    </tr>
-                                    
-                                    
-
-
-
-
-
-                                    
-                            </table>
                         </div>
-                        
                     </div>
                 </div>
-            </div>
+                <div id="ultimasEmissoes">
 
-            <div class="ultimasEmissoesmobile">
-                <div class="row countpage" style="margin-top: 38px;">
-                    <div class="basetitle">
-                        <div class="itemlabel">
-                            <p>1 - 5 de 16 resultados</p>
-                        </div>
+                    <!--tabela ultimas emissões-->
+                    <div class="row table-responsive w-100">
+                        <table class="table ultimasEmissoes">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Competência</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Ação</th>
+
+
+
+
+
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider text-center">
+
+                                <tr>
+                                    <td>00/00/0000</td>
+                                    <td>R$0.000,00</td>
+                                    <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>00/00/0000</td>
+                                    <td>R$0.000,00</td>
+                                    <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>00/00/0000</td>
+                                    <td>R$0.000,00</td>
+                                    <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>00/00/0000</td>
+                                    <td>R$0.000,00</td>
+                                    <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>00/00/0000</td>
+                                    <td>R$0.000,00</td>
+                                    <td><a href="#" class="btn btn-success">Ver nota fiscal</a></td>
+
+
+                                </tr>
+
+
+
+
+
+
+
+
+                        </table>
                     </div>
-                    <div class="selectpage">
-                        <div class="basetitlepage">
-                            <p>Página</p>
-                        </div>
-                        <select class="basetitleselect">
-                            <option value="">1</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="tablemobile">
-                    
-                    <div class="lineinfo">
-                        <div class="baseinfo">
-                            <p>Competência</p>
-                        </div>
-                        <div class="baseitem">
-                            <p>00/00/0000</p>
-                        </div>
-                    </div>
-                    <div class="lineinfo" style="background: #fff;">
-                        <div class="baseinfo">
-                            <p>Valor</p>
-                        </div>
-                        <div class="baseitem">
-                            <p>R$0.000,00</p>
-                        </div>
-                    </div>
-                    
-                    <div class="lineinfo" >
-                        <div class="baseinfo">
-                            <p>Ação</p>
-                        </div>
-                        <div class="baseitem">
-                            <a href="#" class="btnVerFolha ">Ver NF</a>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="tablemobile">
-                    
-                    <div class="lineinfo">
-                        <div class="baseinfo">
-                            <p>Competência</p>
-                        </div>
-                        <div class="baseitem">
-                            <p>00/00/0000</p>
-                        </div>
-                    </div>
-                    <div class="lineinfo" style="background: #fff;">
-                        <div class="baseinfo">
-                            <p>Valor</p>
-                        </div>
-                        <div class="baseitem">
-                            <p>R$0.000,00</p>
-                        </div>
-                    </div>
-                    
-                    <div class="lineinfo" >
-                        <div class="baseinfo">
-                            <p>Ação</p>
-                        </div>
-                        <div class="baseitem">
-                            <a href="#" class="btnVerFolha ">Ver NF</a>
-                        </div>
-                    </div>
-    
                 </div>
 
             </div>
+        </div>
+    </div>
 
-
-
-
-            <!--Modal avaliaçao 1-->
-            <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
-                                atendê-lo
-                                melhor.
-                            </p>
-                            <img src="img/avaliações.png" alt="Avaliacoes">
-                        </div>
-                        <div class="modal-footer text-center">
-                            <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
-                                aria-label="Close">Continuar</button>
-                        </div>
-                    </div>
+    <div class="ultimasEmissoesmobile">
+        <div class="row countpage" style="margin-top: 38px;">
+            <div class="basetitle">
+                <div class="itemlabel">
+                    <p>1 - 5 de 16 resultados</p>
                 </div>
             </div>
-          
+            <div class="selectpage">
+                <div class="basetitlepage">
+                    <p>Página</p>
+                </div>
+                <select class="basetitleselect">
+                    <option value="">1</option>
+                </select>
+            </div>
+        </div>
+        <div class="tablemobile">
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Competência</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Valor</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0.000,00</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Ação</p>
+                </div>
+                <div class="baseitem">
+                    <a href="#" class="btnVerFolha ">Ver NF</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="tablemobile">
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Competência</p>
+                </div>
+                <div class="baseitem">
+                    <p>00/00/0000</p>
+                </div>
+            </div>
+            <div class="lineinfo" style="background: #fff;">
+                <div class="baseinfo">
+                    <p>Valor</p>
+                </div>
+                <div class="baseitem">
+                    <p>R$0.000,00</p>
+                </div>
+            </div>
+
+            <div class="lineinfo">
+                <div class="baseinfo">
+                    <p>Ação</p>
+                </div>
+                <div class="baseitem">
+                    <a href="#" class="btnVerFolha ">Ver NF</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Modal avaliaçao 1-->
+    <div class="modal fade" aria-labelledby="mySmallModalLabel" tabindex="-1" id="avaliacao1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title greentitle">Nos ajude a melhorar!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sua avaliação é muito importante para que possamos evoluir nossa plataforma e
+                        atendê-lo
+                        melhor.
+                    </p>
+                    <img src="img/avaliações.png" alt="Avaliacoes">
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close">Cancelar</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script>
-    $(document).ready(function(){
-    var btnImportar=document.querySelector("#registrarbtn");
-    var btnUltimasEm=document.querySelector("#ultimosregistrosbtn");
-   
+    $(document).ready(function () {
+        var btnImportar = document.querySelector("#registrarbtn");
+        var btnUltimasEm = document.querySelector("#ultimosregistrosbtn");
 
-    var importar=document.querySelector('.nffato');
-    var ultimasEmissoes=document.querySelector('.ultimasEmissoesmobile');
-   
 
-    btnImportar.addEventListener('click', function(e){
-        e.preventDefault();
-        importar.style.display='flow-root';
-        ultimasEmissoes.style.display='none';
-       
-       
+        var importar = document.querySelector('.nffato');
+        var ultimasEmissoes = document.querySelector('.ultimasEmissoesmobile');
 
-        btnUltimasEm.style.border='none';
-        btnImportar.style.borderBottom='2px solid #4aa3e5';
-        btnImportar.style.fontWeight='600';
-        btnUltimasEm.style.fontWeight='100';
-       
-      
-        
+
+        btnImportar.addEventListener('click', function (e) {
+            e.preventDefault();
+            importar.style.display = 'flow-root';
+            ultimasEmissoes.style.display = 'none';
+
+
+
+            btnUltimasEm.style.border = 'none';
+            btnImportar.style.borderBottom = '2px solid #4aa3e5';
+            btnImportar.style.fontWeight = '600';
+            btnUltimasEm.style.fontWeight = '100';
+
+
+
+        });
+
+        btnUltimasEm.addEventListener('click', function (e) {
+            e.preventDefault();
+            importar.style.display = 'none';
+            ultimasEmissoes.style.display = 'flow-root';
+
+
+
+            btnUltimasEm.style.borderBottom = '2px solid #4aa3e5';
+            btnUltimasEm.style.fontWeight = '600';
+            btnImportar.style.fontWeight = '100';
+            btnImportar.style.borderBottom = 'none';
+
+
+
+        });
+
+
     });
+    $(document).ready(function () {
+        var btnImportar = document.querySelector("#registrarbtnd");
+        var btnUltimasEm = document.querySelector("#ultimasemissoesBtnd");
 
-    btnUltimasEm.addEventListener('click', function(e){
-        e.preventDefault();
-        importar.style.display='none';
-        ultimasEmissoes.style.display='flow-root';
-       
-       
 
-        btnUltimasEm.style.borderBottom='2px solid #4aa3e5';
-        btnUltimasEm.style.fontWeight='600';
-        btnImportar.style.fontWeight='100';
-        btnImportar.style.borderBottom='none';
-       
-      
-        
+        var registrar = document.querySelector('.registrarnf');
+        var ultimasEmissoes = document.querySelector('.ultimasEmissoes');
+
+
+        btnImportar.addEventListener('click', function (e) {
+            e.preventDefault();
+            registrar.style.display = 'block';
+            ultimasEmissoes.style.display = 'none';
+
+
+
+            btnUltimasEm.style.border = 'none';
+            btnImportar.style.borderBottom = '2px solid #4aa3e5';
+            btnImportar.style.fontWeight = '600';
+            btnUltimasEm.style.fontWeight = '100';
+
+
+
+        });
+        btnUltimasEm.addEventListener('click', function (e) {
+            e.preventDefault();
+            registrar.style.display = 'none';
+            ultimasEmissoes.style.display = 'inline-table';
+
+
+
+            btnUltimasEm.style.border = '2px solid #4aa3e5';
+            btnImportar.style.borderBottom = 'none';
+            btnImportar.style.fontWeight = '100';
+            btnUltimasEm.style.fontWeight = '600';
+
+        });
     });
-
-
-});
 </script>
 
 

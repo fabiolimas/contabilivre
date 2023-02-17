@@ -1198,7 +1198,70 @@
             </div>
 
 </body>
+<script>
+    $(document).ready(function(){
+    var btneventos=document.querySelector("#eventosbtn");
+    var atestadobtn=document.querySelector("#atestadobtn");
+    var consultabtn=document.querySelector("#consultabtn");
 
+    var tabelaeventos=document.querySelector('.eventostable');
+    var tabelaatestados=document.querySelector('.atestadoTable');
+    var tabelaconsultaf=document.querySelector('.consultaFerias');
+
+    btneventos.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='inline-table';
+        tabelaatestados.style.display='none';
+        tabelaconsultaf.style.display='none';
+       
+
+        atestadobtn.style.border='none';
+        btneventos.style.borderBottom='2px solid #4aa3e5';
+        btneventos.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
+        consultabtn.style.border='none';
+      
+        
+    });
+
+    atestadobtn.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='none';
+        tabelaatestados.style.display='inline-table';
+        tabelaconsultaf.style.display='none';
+       
+
+        atestadobtn.style.borderBottom='2px solid #4aa3e5';
+        atestadobtn.style.fontWeight='600';
+        btneventos.style.borderBottom='none';
+        consultabtn.style.border='none';
+        btneventos.style.fontWeight='100';
+        consultabtn.style.fontWeight='100';
+      
+        
+    });
+
+    consultabtn.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaeventos.style.display='none';
+        tabelaatestados.style.display='none';
+        tabelaconsultaf.style.display='inline-table';
+       
+
+        atestadobtn.style.border='none';
+        btneventos.style.borderBottom='none';
+        consultabtn.style.borderBottom='2px solid #4aa3e5';
+        consultabtn.style.fontWeight='600';
+        atestadobtn.style.fontWeight='100';
+        btneventos.style.fontWeight='100';
+      
+        
+    });
+
+
+});
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

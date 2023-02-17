@@ -387,7 +387,7 @@
                                 </nav>
                             </div>
 
-                            <div class="col-md-4 menu">
+                            <div class="col-md-4 menunotasfiscais">
 
                                 <nav class="navbar navbar-expand nfs">
                                     <ul class="metodospag navbar-nav me-auto">
@@ -1036,6 +1036,51 @@ var mask = IMask(data2, maskOptions);
         e.preventDefault();
         tabelaSaidas.style.display='none';
         tabelaEntradas.style.display='flow-root';
+       
+       
+
+        btnEntradas.style.borderBottom='2px solid #4aa3e5';
+        btnEntradas.style.fontWeight='600';
+        btnSaidas.style.fontWeight='100';
+        btnSaidas.style.borderBottom='none';
+       
+      
+        
+    });
+
+
+});
+</script>
+<script>
+    $(document).ready(function(){
+    var btnSaidas=document.querySelector("#saidasBtn");
+    var btnEntradas=document.querySelector("#entradasBtn");
+   
+
+    var tabelaSaidas=document.querySelector('.nftable');
+    var tabelaEntradas=document.querySelector('.entradasCompras');
+   
+
+    btnSaidas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='inline-table';
+        tabelaEntradas.style.display='none';
+       
+       
+
+        btnEntradas.style.border='none';
+        btnSaidas.style.borderBottom='2px solid #4aa3e5';
+        btnSaidas.style.fontWeight='600';
+        btnEntradas.style.fontWeight='100';
+       
+      
+        
+    });
+
+    btnEntradas.addEventListener('click', function(e){
+        e.preventDefault();
+        tabelaSaidas.style.display='none';
+        tabelaEntradas.style.display='inline-table';
        
        
 

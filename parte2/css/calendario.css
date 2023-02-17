@@ -1,0 +1,173 @@
+.wraper{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 424px;
+height: 311px;
+
+/* Shadow / XL */
+
+
+border-radius: 8px;
+position: relative;
+}
+.prev {
+display: flex;
+justify-content: space-between;
+position: absolute;
+left: 0px;
+top: 17px;
+cursor: pointer;
+}
+.next {
+display: flex;
+justify-content: space-between;
+position: absolute;
+right: 42px;
+top: 17px;
+cursor: pointer;
+}
+.mes{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 175%;
+margin-top: 38px;
+/* identical to box height, or 32px */
+
+
+/* Cinza/09 */
+
+color: #343A40;
+
+}
+.days-week{
+    display: flex;
+    width: 100%;
+    
+    flex-wrap: wrap;
+
+
+/* Caption / Caption-2 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Cinza/09 */
+
+color: #343A40;
+
+}
+.number-days{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Cinza / 600 */
+    
+    color: #ADB5BD;
+    margin-left: 20px;
+    
+}
+.hoje{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+width: 38px !important;
+height: 32px;
+background: #1C6A00;
+border: 1px solid #399E09;
+border-radius: 4px;
+    margin-right: 21px !important;
+    line-height: 1;
+    color: #fff !important;
+    font-size: 12px;
+    margin-left: 0px !important;
+}
+.agendado{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+width: 38px !important;
+height: 32px;
+
+border: 1px solid #399E09;
+border-radius: 4px;
+margin-right: 16px !important;
+line-height: 1;
+color: #1C6A00 !important;
+font-size: 12px;
+margin-left: -4px !important;
+
+
+}
+.days-week span{
+    color: black;
+    display: inline-block;
+    width: 14.2%;
+}
+input[type="checkbox"]:checked ~ h4 {
+    margin-left: 25px;
+    border: 1px solid blue;
+  }
+.number-days span{
+    color: #ccc;
+    display: inline-block;
+    width: 14.2%;
+    margin:8px 0;
+    cursor: pointer;
+}
+.checkday{
+    display: none;
+}
+
+.month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.month pre{
+    display: flex;
+    justify-content: space-between;
+}
+@media  (max-width: 1024px){
+    .wraper {
+        width: 39%;
+    }
+}

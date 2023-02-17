@@ -29,6 +29,19 @@ body{
     position: relative;
     margin-left: 44px;
 }
+.col-md-9.plan1.mb-5.p-4.dmed {
+    width: 79%;
+}
+.col-md-9.plan1.mb-5.mt-5.p-4.distribuicaodelucros {
+    margin-top: -10px !important;
+    width: 77%;
+}
+label.form-check-label.dmedmanual, label.form-check-label.dimodManual, label.form-check-label.dimodManualv {
+    color: #74C83C;
+}
+.col-md-4.menunotasfiscais {
+    margin-left: -213px;
+}
 .dmed .infoanexo p {
     font-family: 'Inter';
     font-style: normal;
@@ -38,6 +51,10 @@ body{
     display: flex;
     align-items: center;
     color: #212529;
+}
+.row.manual .successnf {
+    margin-top: 11px;
+    margin-left: 10px;
 }
 .dmed p.gray.dataanexo {
     display: flex;
@@ -1269,14 +1286,14 @@ border-radius: 8px;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.row p b {
+/* .row p b {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: #212529;
-}
+} */
 .row.filtros.d-flex.justify-content-center {
     margin-bottom: 19px;
 }
@@ -3223,23 +3240,34 @@ input.form-control.periodo {
 
 .btarquivoslista {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 16px;
-    gap: 8px;
-    width: 129px;
-    height: 30px;
-    background: #4AA3E5;
-    border-radius: 4px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-size: 12px;
-    margin-left: 38px;
-    position: absolute;
-    right: 71px;
-    top: 27px;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 16px;
+gap: 8px;
+
+width: max-content;
+height: 30px;
+
+/* Primária / Main */
+
+background: #4AA3E5;
+border-radius: 4px;
+}
+.col.col-md-10.atmobile {
+    margin-left: 15%;
+}
+.buttonlista img{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
 }
 .searchbar {
     display: flex;
@@ -3395,25 +3423,77 @@ i.fas.fa-calendar.position-absolute.m-2.inputdata1,i.fas.fa-calendar.position-ab
 }
 .lista {
     display: flex;
-    /* flex-direction: column; */
-    gap: 55px;
-    width: 100%;
-   
-      background: #FFFFFF;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    width: 872px;
     height: 68px;
-    align-content: center;
-    align-items: baseline;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+    border-radius: 8px;
     position: relative;
-    box-shadow: 0px 17px 33px -2px rgba(28, 39, 49, 0.05);
-border-radius: 8px;
-    
 }
-.lista img {
+.iconlista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    width: 44px;
+    height: 48px;
+}
+.iconlista img{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+isolation: isolate;
+
+width: 22px;
+height: 27.5px;
+
+}
+.infolista{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+
+width: 529px;
+height: 52px;
+}
+.infolista p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400 !important;
+font-size: 14px !important;
+line-height: 20px !important;
+/* identical to box height, or 143% */
+
+display: flex !important;
+align-items: center !important;
+
+/* Cinza / 1000 */
+
+color: #212529;
+
+}
+.datalista{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+
+width: 98px;
+height: 47px;
+}
+/* .lista img {
     position: absolute;
     left: 13px;
     top: 22px;
-}
+} */
 
 
 a.btn.btn-danger.remover {
@@ -3454,8 +3534,8 @@ a.btn.btn-danger.remover i {
     color: #38ABFF;
     cursor: pointer;
 }
-.lista p {
-    /*width: 261px; */
+/* .lista p {
+    /*width: 261px; 
     height: 20px;
     font-family: 'Inter';
     font-style: normal;
@@ -3469,12 +3549,29 @@ a.btn.btn-danger.remover i {
     margin-left: -165px;
     margin-right: 307px;
    
-}
+} */
 .arquivos i {
     font-size: 47px;
     color: #4AA3E5;
 }
 .lista .gray {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Cinza / 800 */
+    
+    color: #495057;
+    
+    
+}
+.buttonlista {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -4289,10 +4386,7 @@ p.titulosecao.titimport {
 #importarBtn, #mensalidadeBtn{
     border-bottom:2px solid #4aa3e5;
 }
-table.table.ultimasEmissoes {
-    margin-top: 54px;
-   
-}
+
 .ultimasEmissoes{
     display: none;
 }
@@ -5310,7 +5404,7 @@ color: #FF452C;
         padding: 24px;
         gap: 16px;
         position: absolute;
-        width: auto !important;
+        width: -webkit-fill-available !important;
         height: 254px;
         left: 24px;
         top: 326px;
@@ -6887,7 +6981,7 @@ position: absolute !important;
         align-items: center;
         padding: 0px;
         gap: 24px;
-        width: auto;
+        width: -webkit-fill-available !important;
         height: auto;
         
         
@@ -7811,6 +7905,43 @@ z-index: 999;
         width: 152%;
       
     }
+    .botoesUltimasMov {
+    
+        right: -69px;
+    }
+    .botoesUltimasMov button.gerenciarconta {
+        right: 303px;
+        font-size: 12px;
+        width: 101px;
+    }
+    .botoesUltimasMov .dropdown.addnovo .btn {
+        color: #fff !important;
+        font-size: 12px;
+        
+    }
+    form.filtrosf {
+        margin-left: 20px;
+    }
+    .row.btnsfluxoimposto.position-absolute {
+        right: -120px;
+    }
+    .col-md-11.tabelasect.mb-5.fluxodecaixa {
+        width: 88%;
+        margin-left: 34%;
+    }
+   
+    .botoesUltimasMov .addnovo {
+        right: 189px !important;
+    }
+    main.col-md-9.titlesection.movimentacoes {
+        width: 82%;
+    }
+    .botoesUltimasMov .addmovimentacao {
+        font-size: 12px;
+    }
+    .col-md-11.tabelasect.mb-5.p-0.pb-2.movimentacoes {
+        width: 87%;
+    }
     .wraper {
         width: 39%;
     }
@@ -8048,6 +8179,22 @@ z-index: 999;
     }
     .col-md-9.plan1.mb-5.mt-5.criarlembrete {
         width: 96%;
+    }
+    .col-md-9.nfe.p-3.mb-5.mt-5.nfse {
+        width: 79%;
+    }
+    .col-md-11.tabelasect.mb-5.dados-empresa {
+        width: 95%;
+    }
+    p.titulosecao.titimport {
+        margin-left: -11%;
+    }
+    .dropdown.m-3.addevento.holeritswitch {
+        font-size: 12px;
+        right: -252px;
+    }
+    .botoesUltimasMov .addnovo {
+        right: 252px !important;
     }
     .card-body.mt-4.grafico1 {
         width: 100%;
