@@ -20,6 +20,12 @@ a{
 width: 195.49px;
 height: 16px;
 }
+span.bluetext {
+    color: #4AA3E5;
+}
+.cardcont{
+    display: none;
+}
 .abertura-empresa{
     display: flex;
     flex-direction: row;
@@ -877,7 +883,7 @@ border-radius: 4px;
     padding: 32px 0px;
     gap: 12px;
     
-    width: 1077px;
+    width: auto;
     height: 172px;
     
     /* Primária / 8% */
@@ -1421,8 +1427,8 @@ color: #F8F9FA;
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 16px 24px;
-    width: 548px;
-    height: 164px;
+    width: 531px;
+    height: 120px;
     background: #FFFFFF;
     box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
     border-radius: 8px;
@@ -2822,8 +2828,210 @@ height: 36px;
     .title{
         width:auto;
     }
+    .row.anexosmini {
+        height: 127px;
+        width: 57%;
+    }
+    .buttons.cab4fim {
+        width: -webkit-fill-available;
+    }
+    a.finalizar {
+        width: -webkit-fill-available;
+        margin-left: 2px;
+    }
+    .col.col-md-1.iconmini {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        gap: 8px;
+        width: 44px;
+        height: 48px;
+    }
+    .infot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        width: 316px;
+        height: 38px;
+    }
+    .cardcont{
+        display: flex;
+    }
     .form-control, .form-select {
         width: 102%;
+    }
+    .row.stepsocios {
+        width: auto;
+    }
+    .uploadmini {
+        width: -webkit-fill-available;
+    }
+    .row .anexos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px 24px;
+        width: 279px;
+        height: 168px;
+        background: #FFFFFF;
+        box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+        border-radius: 8px;
+        width: fit-content;
+        position: relative;
+    }
+    .infoanexo {
+      
+        margin-top: -16px;
+    }
+    .contRealizada {
+   
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 145px;
+    }
+    .interface.cadastroabertura2 {
+        height: 1637px !important;
+     
+    }
+
+    a.btnsocion {
+        width: -webkit-fill-available;
+    }
+    .interface.novosocio {
+        height: 1598px !important;
+    }
+    .buttons .cab2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .buttons.cab2 {
+        margin-left: 28px;
+    }
+    .row.cardContrato {
+        display: none;
+    }
+    .iconcontainertipoempresa {
+        display: none;
+    }
+    .alertacontudo p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+        color: #495057;
+        width: auto;
+    }
+    .row.tipoempresa {
+        margin-top: 239px;
+    }
+    .cardsContratoMobile {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        
+        width: 279px;
+        height: 123px;
+        background: #FFFFFF;
+        border: 4px solid #74C83C;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 12px;
+        margin-top: 24px;
+    }
+    .cardsContratoMobile2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        margin-top: 24px;
+        width: 279px;
+        height: 123px;
+        background: #FFFFFF;
+        border: 1px solid #CED4DA;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+    .cardsContratoMobile .titleCard p, .cardsContratoMobile2 .titleCard p {
+      
+        font-size: 12px;
+        line-height: 15px;
+        color: #157BC6;
+    }
+    .cardsContratoMobile p.tituloform, .cardsContratoMobile2 p.tituloform {
+       
+        font-size: 12px;
+        line-height: 15px;
+        
+    }
+    .cardsContartoMobile .valorCard, .cardsContartoMobile2 .valorCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        width: 247px;
+        height: 29px;
+    }
+    .cardsContratoMobile .titleCard, .cardsContratoMobile2 .titleCard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        width: 247px;
+        height: 15px;
+    }
+    .cardsContratoMobile .vantagensCard, .cardsContratoMobile2 .vantagensCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        isolation: isolate;
+        width: 247px;
+        height: 15px;
+    }
+    .valorCardv {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .alertainfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 16px;
+        width: -webkit-fill-available;
+        height: 48px;
+        background: #B4DFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 8px;
+    }
+    .alertacontudo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 9px 0px;
+        gap: 8px;
+        width: 199px;
+        height: 48px;
+    }
+    .frame130, .frame131 {
+        width: auto;
+    }
+    .contRealizada ul {
+        width: auto;
+    }
+    .botoes {
+        margin-bottom: 48px;
+        margin-top: 24px;
     }
     input#cvv, input#validade {
         width: 47%;
@@ -2935,6 +3143,10 @@ height: 36px;
         width: 238px !important;
         height: 15px;
         text-align: left;
+    }
+    .row.footercontent.pagboleto {
+        display: flex;
+        align-items: center;
     }
     .footercontent {
         width: auto;
@@ -3262,5 +3474,48 @@ span.avisocli {
     .footercontent {
      
         margin-left: -110px;
+    }
+    .row.title {
+        width: auto;
+        margin: 0 auto;
+    }
+    div#socio1, div#socio2 {
+        width: 46%;
+    }
+    .row.stepsocios {
+        width: auto;
+    }
+  
+    textarea.form-control.textareas {
+        width: 82%;
+    }
+    a.escolherPlano {
+        width: -webkit-fill-available;
+    }
+    .cuponsr {
+        margin-left: 19%;
+    }
+    span.subtitulo {
+        font-size: 12px;
+    }
+    .uploadmini {
+        width: 148%;
+    }
+    .col.col-md-6.secao {
+        width: 50%;
+      
+    }
+    .row.anexosmini {
+        width: 78%;
+    }
+    .qrcode {
+       
+        margin-left: 141%;
+        
+    }
+    p.gray.dataanexo {
+      
+        margin-left: -322px;
+        
     }
 }

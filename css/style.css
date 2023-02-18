@@ -7890,12 +7890,7 @@ z-index: 999;
             right: 126px;
         }
         }
-        @media (max-width: 980px){
-            .card.card-primary {
-              
-                margin-left: 144%;
-            }
-        }
+      
 @media  (max-width: 1024px){
     .dados-empresa, .addColaborador, .holeritediv, .addSocio {
         margin-left: 198px;
