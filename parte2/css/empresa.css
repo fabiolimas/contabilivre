@@ -321,7 +321,7 @@ a.concordo {
     margin-top: -36px;
 }
 .chat {
-    display: flex;
+    
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -1320,6 +1320,8 @@ border-radius: 4px;
     gap: 16px;
     width: 360px;
     height: 296px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     
 }
 .stepmitem.ativo {
@@ -1523,6 +1525,9 @@ a.btnAcessarRevisao {
     line-height: 18px;
     color: #74C83C;
 }
+.ltbuttonmobile{
+    display: none;
+}
 span.lttitle {
     font-family: 'Inter';
     font-style: normal;
@@ -1565,6 +1570,7 @@ span.lttitle.ativo {
     height: 74px;
     background: rgba(74, 163, 229, 0.08);
     border-radius: 12px;
+    
 }
 .stepmitem {
     display: flex;
@@ -1601,6 +1607,7 @@ span.lttitle.ativo {
     box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
     border-radius: 24px;
     margin-top: 48px;
+    
 }
 .row.infoendereco {
     display: flex;
@@ -3547,9 +3554,135 @@ height: 36px;
     .title{
         width:auto;
     }
+    .infob .icon {
+        display: none;
+    }
+    .cardatividade {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 16px;
+        width: auto;
+        height: auto;
+        background: #FFFFFF;
+        border: 1px solid rgba(74, 163, 229, 0.08);
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 16px;
+    }
+    textarea.form-control.chatext {
+        width: -webkit-fill-available;
+    }
+    .infob {
+        height: auto;
+        padding: 6px;
+    }
+    .imports {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .row.agendamentod h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4AA3E5;
+    }
+    .row.formd3 input {
+        margin-top: 14px;
+    }
+    .row.agendamentod {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        width: auto !important;
+        height: auto;
+        flex-wrap: nowrap;
+    }
     .row.anexosmini {
         height: 127px;
-        width: 57%;
+        width: 54% !important;
+    }
+    .col-md-6.agenda {
+        width: -webkit-fill-available !important;
+        /* margin-left: 9%; */
+    }
+    .col-md-6.contenttext {
+    
+        padding: 4px 32px;
+    
+         height: auto; 
+    }
+    .agenda p {
+        margin-top: -126px;
+    }
+    a.buttonhorariod {
+        width: -webkit-fill-available;
+    }
+    .horariosd {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: 279px;
+        height: auto;
+        margin-top: -53px;
+    }
+    .modal-footer.naoconcordo {
+        justify-content: center;
+        /* display: flex; */
+        align-content: flex-end;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 13px;
+    }
+    .linhadotempo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 16px;
+        width: -webkit-fill-available;
+        height: 264px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+        margin-left: 2%;
+    }
+    .ltbuttonmobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 8px;
+        width: auto;
+        height: 38px;
+        border-radius: 4px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #74C83C;
+        margin-top: -13px;
+    }
+    .row.detalhelt {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        width: auto;
+        height: 30px;
     }
     .buttons.cab4fim {
         width: -webkit-fill-available;
@@ -3558,6 +3691,93 @@ height: 36px;
         width: -webkit-fill-available;
         margin-left: 2px;
     }
+    .steplt {
+    
+        width: 85%;
+        margin-left: -5%;
+     
+    }
+    .stepslt {
+       
+        width: inherit;
+        
+    }
+    .linhadotempo {
+       
+        width: -webkit-fill-available;
+      
+    }
+    .steplt.ativo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px;
+        gap: 16px;
+        width: 85%;
+        height: 74px;
+        background: #4AA3E5;
+        border-radius: 12px;
+    }
+    .info {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        gap: 16px;
+        width: auto;
+        height: 88px;
+        background: #FFF4BB;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 8px;
+    }
+    .infocontent {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+    }
+    .info .icon {
+        display: none;
+    }
+    .ltdetalhes {
+      
+        width: auto;
+       
+    }
+    a.btnAcessarRevisao {
+     
+        width: auto;
+      
+    }
+    .analise {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 16px;
+        width: -webkit-fill-available !important;
+        height: 356px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -10px rgb(28 39 49 / 8%);
+        border-radius: 24px;
+        margin-left: 4% !important;
+    }
+    .titlelt p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4AA3E5;
+    }
+    .ltbutton{
+        display: none;
+    }
+    
     .col.col-md-1.iconmini {
         display: flex;
         flex-direction: row;
@@ -3578,6 +3798,14 @@ height: 36px;
     }
     .cardcont{
         display: flex;
+        margin-left: -14%;
+    }
+    .col.col-md-6.secao {
+        width: 63% !important;
+    }
+    .row.colaboradordocs {
+        display: flex;
+        flex-direction: column;
     }
     .form-control, .form-select {
         width: 102%;
@@ -3586,24 +3814,34 @@ height: 36px;
         width: auto;
     }
     .uploadmini {
-        width: -webkit-fill-available;
+        width: -webkit-fill-available !important;
+    }
+    .wraper {
+        width: 139% !important;
+        margin-left: 13%;
+    }
+    .botoest {
+        margin-top: 26px;
+        margin-left: -10px;
     }
     .row .anexos {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 16px 24px;
-        width: 279px;
-        height: 168px;
-        background: #FFFFFF;
-        box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
-        border-radius: 8px;
-        width: fit-content;
-        position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px 24px;
+    height: 168px;
+    background: #FFFFFF;
+    box-shadow: 0px 17px 33px -2px rgb(28 39 49 / 5%);
+    border-radius: 8px;
+    width: -webkit-fill-available;
+    position: relative;
+    margin-left: 8%;
     }
     .infoanexo {
       
-        margin-top: -16px;
+        margin-top: -14px;
+        font-size: 15px;
+        width: auto;
     }
     .contRealizada {
    
@@ -3611,9 +3849,21 @@ height: 36px;
         width: auto;
         margin-bottom: 145px;
     }
+    .botaoanexo {
+      
+        right: -8px;
+    }
+    .sugestao {
+      
+        height: auto;
+        margin-top: 124px;
+    }
     .interface.cadastroabertura2 {
         height: 1637px !important;
      
+    }
+    .formempresa .upload {
+        width: 111%;
     }
 
     a.btnsocion {
@@ -3804,7 +4054,8 @@ height: 36px;
         height:auto;
     }
     a.naoPerciso {
-        font-size: 14px;
+        font-size: 12px;
+    width: -webkit-fill-available;
     }
     .stepscontainer {
        
@@ -3813,8 +4064,18 @@ height: 36px;
     }
     .qrcode {
    
-        margin-left: 28%;
+        margin-left: 17% !important;
 
+    }
+    .secao span.subtitulo {
+        font-size: 12px;
+        width: 153%;
+    }
+    p.gray.dataanexo {
+       
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .upload {
        
@@ -3917,9 +4178,10 @@ height: 36px;
    
     .queroContratar {
         
-        width: auto;
-    
-        margin-right: 27px;
+        width: -webkit-fill-available;
+        margin-right: 72px;
+        font-size: 14px;
+        padding: 1px;
     }
     .lineform {
        
@@ -3937,23 +4199,29 @@ height: 36px;
 }
     
     .cuponsr {
-        width: auto;
+      
         /* position: absolute; */
-        margin-left: 0; 
+      
         display: flex;
         margin-top: 15px;
         flex-direction: column;
         align-items: center;
+        margin-left: 23%;
+        width: -webkit-fill-available;
     }
     .addcupombtn {
         
-        width: 346px;
+        width: -webkit-fill-available;
         margin-top: 16px;
-        margin-left: 11px;
-       
+        margin-left: -93px;
     }
     input.form-control.addcupom {
-        margin-left: 18px;
+        margin-left: -93px;
+    }
+    .row.sociosempresa {
+        display: flex;
+        flex-direction: column;
+        margin-top: 82px;
     }
     .addcupom{
         box-sizing: border-box;
@@ -3977,8 +4245,8 @@ border-radius: 8px;
 
     }
     .carda {
-         /* width: 365px; */
-    /* margin-left: 355px; */
+        width: auto;
+    margin-left: -25px;
     margin-bottom: 15px;
 }
 .cardconteudo {
@@ -4187,12 +4455,59 @@ span.avisocli {
 
 @media screen and (max-width: 1024px){
    
-    form .col.col-md-4.mt-3 {
-        margin-left: -172px;
-    }
+ 
     .footercontent {
      
         margin-left: -110px;
+    }
+    .col.col-md-4.dados {
+        width: max-content;
+    }
+  
+    .row.agendamentod {
+        width: -webkit-fill-available;
+    }
+  
+    .wraper {
+        width: 108%;
+        margin-left: -15%;
+    }
+    .analise {
+       
+        width: 112%;
+      
+        margin-left: -11%;
+    }
+    .col-md-6.agenda {
+        width: 48%;
+    }
+    .col-md-6.contenttext {
+      
+        width: 432px;
+       
+    }
+    .ltdetalhes {
+     
+        width: auto;
+       
+    }
+    .info .icon{
+        display: none;
+    }
+    .info {
+        
+        height: auto;
+        
+        padding: 5px;
+    }
+    .titlelt p {
+     
+        font-size: 18px;
+      
+    }
+    .ltbutton {
+       
+        margin-top: -14px;
     }
     .row.title {
         width: auto;
@@ -4218,7 +4533,16 @@ span.avisocli {
         font-size: 12px;
     }
     .uploadmini {
-        width: 148%;
+        width: 100%;
+    }
+    .row.formempresa {
+        width: 85%;
+    }
+    .chat {
+        margin-top: 85px;
+    }
+    textarea.form-control.chatext {
+        margin-top: 8px;
     }
     .col.col-md-6.secao {
         width: 50%;
