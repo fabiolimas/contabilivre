@@ -1053,6 +1053,63 @@ width: 1128px;
 height: 56px;
 
 }
+div#leiaComAtencao h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #4AA3E5;
+}
+div#leiaComAtencao .modal-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 24px;
+    width: auto;
+    height: 68px;
+    margin-right: 13px;
+    /* flex-wrap: nowrap; */
+}
+div#leiaComAtencao label p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #343A40;
+}
+a#linkCartao {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212529;
+    border-bottom: 2px solid #4aa3e5;
+}
+.infoSobreEndereco{
+    display: none;
+}
+a#linkBoleto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212529;
+   
+}
+
+div#leiaComAtencao p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+}
 .servicosemp{
     display: flex;
 flex-direction: row;
