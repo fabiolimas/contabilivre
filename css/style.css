@@ -5849,11 +5849,14 @@ color: #58C0ED;
         border-radius: 12px;
     }
     .agendamento .wraper {
-        width: 348px;
+        width: 348px !important;
         margin-left: -16px;
     }
     .wraper {
         width: 68% !important;
+    }
+    div#boasvindas .modal-footer {
+        justify-content: end;
     }
     .titulo1 {
        
@@ -7841,7 +7844,7 @@ z-index: 999;
     }
     #tboutrosp {
         
-        margin-left: -30px;
+        
         margin-top: -25px;
     }
     .modal-footer {
