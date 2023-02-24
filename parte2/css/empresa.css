@@ -330,6 +330,10 @@ a.concordo {
     height: 200px;
     margin-top: 50px;
 }
+.col.col-md-6.secao .uploadmini {
+    width: 183%;
+    /* margin-left: 20%; */
+}
 .cardatividade {
     box-sizing: border-box;
     display: flex;
@@ -2380,7 +2384,7 @@ color: #212529;
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    width: 548px;
+    width: 50%;
     height: 426px;
 }
 span.subtitulo {
@@ -3698,7 +3702,7 @@ height: 36px;
     }
     .row.anexosmini {
         height: 127px;
-        width: 60% !important;
+        width: 68% !important;
     }
     .col-md-6.agenda {
         width: -webkit-fill-available !important;
@@ -4651,6 +4655,15 @@ span.avisocli {
     p.gray.dataanexo {
       
         margin-left: -322px;
+        
+    }
+    .col.col-md-6.secao .uploadmini {
+        width: 150% !important;
+    }
+}
+@media screen and (max-width:1380px){
+    .col.col-md-6.secao .uploadmini {
+        width: 185%;
         
     }
 }
